@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="과거 우승 사례 P003·P027과 현재 연구계획서를 결합한 AI 경진대회 상대 우승 가능성 분석"
+    />
+    <meta name="theme-color" content="#07111f" />
+    <title>AI 경진대회 우승 가능성 분석</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="분석 첫 화면으로 이동">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>
+          <strong>CAUMIL</strong>
+          <small>Competition Intelligence</small>
+        </span>
+      </a>
+      <nav aria-label="주요 섹션">
+        <a href="#forecast">예측</a>
+        <a href="#history">과거 반영</a>
+        <a href="#reliability">신뢰도</a>
+        <a href="#method">방법론</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">2026 AI COMPETITION FORECAST</p>
+          <h1 id="page-title">
+            숫자 하나보다,<br />
+            <span>우승 가능성의 근거</span>를 봅니다.
+          </h1>
+          <p class="hero-summary">
+            과거 팀 우승 <strong>P003</strong>, 개인 우승 <strong>P027</strong>과
+            현재 팀·개인 연구안을 같은 6개 기준으로 비교한 조건부 상대예측입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#forecast">결과 바로 보기</a>
+            <a class="button button-ghost" href="#reliability">신뢰도 먼저 확인</a>
+          </div>
+        </div>
+
+        <aside class="hero-status" aria-label="분석 상태 요약">
+          <div class="status-head">
+            <span>MODEL AUDIT</span>
+            <span class="live-dot">검증 완료</span>
+          </div>
+          <div class="audit-score" aria-label="감사 신뢰도 100점 만점에 46점">
+            <div class="score-ring" style="--score: 46">
+              <span><strong>46</strong>/100</span>
+            </div>
+            <div>
+              <strong>낮음–보통</strong>
+              <p>순위 참고용으로는 유효하나, 정확한 실제 우승확률로는 제한적입니다.</p>
+            </div>
+          </div>
+          <dl class="status-list">
+            <div><dt>과거 대회</dt><dd>팀 1회 · 개인 1회</dd></div>
+            <div><dt>우승 라벨</dt><dd>P003 · P027</dd></div>
+            <div><dt>확률 성격</dt><dd>후보군 내 상대값</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section forecast" id="forecast" aria-labelledby="forecast-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">FORECAST</p>
+            <h2 id="forecast-title">이번 대회의 상대 우승 가능성</h2>
+          </div>
+          <p>점 추정치는 후보군 전체가 합계 100%가 되도록 정규화한 값입니다.</p>
+        </div>
+
+        <div class="prediction-grid">
+          <article class="prediction-card team-card">
+            <div class="card-topline">
+              <span class="category">TEAM · P107</span>
+              <span class="rank-chip">3 / 7위</span>
+            </div>
+            <h3>7조 <small>MSG</small></h3>
+            <div class="primary-number">17.83<span>%</span></div>
+            <p class="interpretation">평균 14.29%보다 높으며, 설정 변화 시 대체로 <strong>1~4위권</strong>입니다.</p>
+            <div class="range-block">
+              <div class="range-label"><span>시나리오 P10</span><strong>12.66%–22.74%</strong><span>P90</span></div>
+              <div class="range-track"><span style="--start: 12.66; --end: 22.74; --point: 17.83"></span></div>
+            </div>
+            <ul class="mini-facts">
+              <li><span>합리적 설정 범위</span><strong>14.34%–20.16%</strong></li>
+              <li><span>Top 3 유지 비율</span><strong>88.9%</strong></li>
+            </ul>
+          </article>
+
+          <article class="prediction-card personal-card">
+            <div class="card-topline">
+              <span class="category">PERSONAL · P201</span>
+              <span class="rank-chip">5 / 21위</span>
+            </div>
+            <h3>최석철 <small>VTC 신뢰성 AI</small></h3>
+            <div class="primary-number">6.74<span>%</span></div>
+            <p class="interpretation">평균 4.76%보다 높으며, 81개 설정 조합 모두에서 <strong>5위</strong>를 유지했습니다.</p>
+            <div class="range-block">
+              <div class="range-label"><span>시나리오 P10</span><strong>4.49%–9.63%</strong><span>P90</span></div>
+              <div class="range-track personal"><span style="--start: 4.49; --end: 9.63; --point: 6.74"></span></div>
+            </div>
+            <ul class="mini-facts">
+              <li><span>합리적 설정 범위</span><strong>5.14%–8.03%</strong></li>
+              <li><span>현재 Excel 재계산</span><strong>6.77% · 5/20위</strong></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="ranking-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">TEAM RANKING</p>
+              <h3>팀 후보 상대 순위</h3>
+            </div>
+            <div class="legend"><span></span> 7조</div>
+          </div>
+          <div id="team-ranking" class="bar-chart" aria-label="팀별 상대 우승 확률 막대그래프"></div>
+        </div>
+
+        <div class="plain-language">
+          <span aria-hidden="true">→</span>
+          <p><strong>한 문장 해석</strong> 7조는 우승권에 도전할 상위권 팀이고, 최석철은 개인 후보 중 약 5위권입니다. 다만 소수점까지의 확률은 실제 적중률이 아니라 상대 우위를 표현한 지표입니다.</p>
+        </div>
+      </section>
+
+      <section class="section history" id="history" aria-labelledby="history-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LEARNING FROM LAST WINNERS</p>
+            <h2 id="history-title">저번 우승은 이렇게 반영됩니다</h2>
+          </div>
+          <p>모델은 저번 결과를 그대로 복사하지 않고, 어떤 평가 특성이 우승자에게 두드러졌는지 반영합니다.</p>
+        </div>
+
+        <div class="model-flow" aria-label="모델 결합 구조">
+          <div class="flow-card">
+            <span class="flow-number">75%</span>
+            <h3>평가기준을 다시 조정</h3>
+            <p>기존 중요도를 출발점으로 삼고 P003·P027의 우승 결과가 계수를 끌어당깁니다.</p>
+          </div>
+          <span class="flow-plus" aria-hidden="true">+</span>
+          <div class="flow-card">
+            <span class="flow-number">25%</span>
+            <h3>우승자와 닮은 정도</h3>
+            <p>현재 후보가 과거 우승자와 비우승 평균 중 어디에 더 가까운지 비교합니다.</p>
+          </div>
+          <span class="flow-equals" aria-hidden="true">=</span>
+          <div class="flow-card result">
+            <span class="flow-number">100%</span>
+            <h3>후보군 내 상대확률</h3>
+            <p>한 팀·한 명이 우승한다는 조건으로 전체 후보의 확률 합계를 100%로 맞춥니다.</p>
+          </div>
+        </div>
+
+        <div class="history-grid">
+          <article class="history-card">
+            <header>
+              <div><span>TEAM WINNER</span><h3>P003이 남긴 교훈</h3></div>
+              <span class="winner-badge">우승</span>
+            </header>
+            <p class="history-lead">HW 점수는 낮아도 독창성과 발표 완성도가 좋으면 팀 대회에서 이길 수 있다.</p>
+            <div class="delta-list" aria-label="P003과 팀 비우승 평균의 차이">
+              <div><span>독창성</span><i class="positive" style="--size: 27%"></i><strong>+0.068</strong></div>
+              <div><span>발표력</span><i class="positive" style="--size: 19%"></i><strong>+0.048</strong></div>
+              <div><span>HW 유용성</span><i class="negative" style="--size: 80%"></i><strong>−0.490</strong></div>
+              <div><span>HW 결합도</span><i class="negative" style="--size: 100%"></i><strong>−0.610</strong></div>
+            </div>
+            <p class="impact"><strong>7조 영향</strong> 소프트웨어 중심인 P107이 HW 부족으로 지나치게 감점되지 않도록 합니다.</p>
+          </article>
+
+          <article class="history-card">
+            <header>
+              <div><span>PERSONAL WINNER</span><h3>P027이 남긴 교훈</h3></div>
+              <span class="winner-badge">우승</span>
+            </header>
+            <p class="history-lead">개인 대회는 독창성뿐 아니라 실제 구현·HW 결합·안정적인 시연이 강해야 한다.</p>
+            <div class="delta-list" aria-label="P027과 개인 비우승 평균의 차이">
+              <div><span>HW 유용성</span><i class="positive" style="--size: 100%"></i><strong>+0.451</strong></div>
+              <div><span>HW 결합도</span><i class="positive" style="--size: 96%"></i><strong>+0.433</strong></div>
+              <div><span>안정성</span><i class="positive" style="--size: 35%"></i><strong>+0.159</strong></div>
+              <div><span>독창성</span><i class="positive" style="--size: 26%"></i><strong>+0.116</strong></div>
+            </div>
+            <p class="impact"><strong>최석철 영향</strong> P201의 HW 유용성 0.85와 결합도 0.90이 개인 모델에서 강점으로 작용합니다.</p>
+          </article>
+        </div>
+
+        <div class="component-panel">
+          <div class="panel-heading">
+            <div><p class="eyebrow">MODEL COMPONENTS</p><h3>최종 수치를 만든 두 관점</h3></div>
+          </div>
+          <div id="component-chart" class="component-chart" aria-label="평가기준 모델과 닮은꼴 모델 비교"></div>
+          <p class="chart-note">최석철 구성요소는 현재 보관된 20명 입력으로 재계산한 값이며, 저장 출력 6.74%와의 차이는 0.03%p입니다.</p>
+        </div>
+      </section>
+
+      <section class="section reliability" id="reliability" aria-labelledby="reliability-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">RELIABILITY AUDIT</p>
+            <h2 id="reliability-title">왜 신뢰도는 46/100인가</h2>
+          </div>
+          <p>잘 실행되는 코드와 미래를 잘 맞히는 모델은 다릅니다. 두 가지를 분리해서 평가했습니다.</p>
+        </div>
+
+        <div class="audit-layout">
+          <div class="audit-breakdown" id="audit-breakdown" aria-label="신뢰도 항목별 점수"></div>
+          <div class="audit-commentary">
+            <div class="finding good"><span>+</span><p><strong>유지된 결론</strong> P223을 제외해 다시 계산해도 7조 17.83%·3위, 최석철 6.77%·5위로 핵심 순위는 같습니다.</p></div>
+            <div class="finding caution"><span>!</span><p><strong>재현성 주의</strong> 저장된 노트북 출력에는 P223이 있지만 현재 최종 Excel에는 없어 그대로 재실행하면 21명 검증에서 중단됩니다.</p></div>
+            <div class="finding risk"><span>×</span><p><strong>통계적 한계</strong> 독립적인 과거 대회가 팀·개인 각 1회뿐이라 테스트셋, 적중률, Brier Score, 확률 보정을 계산할 수 없습니다.</p></div>
+          </div>
+        </div>
+
+        <div class="reliability-cards">
+          <article><span>팀 모델</span><strong>54.3%</strong><p>합리적인 81개 설정에서 P003이 과거 후보 1위를 유지한 비율</p></article>
+          <article><span>개인 모델</span><strong>100%</strong><p>같은 81개 설정에서 P027이 과거 후보 1위를 유지한 비율</p></article>
+          <article><span>최석철 순위</span><strong>81 / 81</strong><p>모든 설정에서 개인 5위를 유지한 횟수</p></article>
+        </div>
+
+        <aside class="data-alert" role="note">
+          <div class="alert-icon" aria-hidden="true">!</div>
+          <div>
+            <strong>사용 전 먼저 고칠 데이터 스냅샷 문제</strong>
+            <p>백지훈 P223을 최종 Excel에 정식 반영하거나 20명 분석으로 확정한 뒤, 모든 셀을 처음부터 다시 실행해 입력과 저장 출력을 일치시켜야 합니다.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section method" id="method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">METHODOLOGY</p><h2 id="method-title">해석할 때 기억할 네 가지</h2></div>
+        </div>
+        <div class="method-grid">
+          <article><span>01</span><h3>상대확률</h3><p>실제 빈도 예측이 아니라 현재 입력된 후보들 사이의 상대적 우위입니다.</p></article>
+          <article><span>02</span><h3>정성 입력</h3><p>0~1 점수는 공식 심사점수가 아니라 연구계획서에서 같은 기준으로 정리한 값입니다.</p></article>
+          <article><span>03</span><h3>소표본</h3><p>과거 우승자가 팀·개인 한 명씩이므로 새 대회의 특성을 충분히 대표하지 못합니다.</p></article>
+          <article><span>04</span><h3>업데이트 가능</h3><p>실험 결과와 발표 리허설 점수를 갱신하면 같은 모델로 결과를 다시 계산할 수 있습니다.</p></article>
+        </div>
+        <blockquote>
+          “7조는 현재 팀 중 상위 1~4위권, 최석철은 약 5위권으로 평가된다. 17.83%와 6.74%는 통계적으로 보정된 실제 적중확률이 아니라 후보군 내 상대 우위 지표다.”
+        </blockquote>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <strong>CAUMIL · Competition Intelligence</strong>
+        <p>의사결정을 돕는 분석이며 공식 심사 결과를 보장하지 않습니다.</p>
+      </div>
+      <p>분석 기준일 <time datetime="2026-08-30">2026.08.30</time></p>
+    </footer>
+  </body>
+</html>
