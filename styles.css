@@ -334,6 +334,15 @@ h1 span { color: var(--cyan); }
 .mini-facts li { display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 13px; }
 .mini-facts span { color: var(--subtle); }
 
+.additional-personal-ranks { margin-top: 22px; padding-top: 20px; border-top: 1px solid rgba(102,152,255,.24); }
+.additional-personal-ranks > p { margin: 0 0 10px; color: var(--subtle); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.additional-rank-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 8px; padding: 13px 15px; background: rgba(102,152,255,.07); border: 1px solid rgba(102,152,255,.16); border-radius: 12px; }
+.additional-rank-row > span { display: flex; align-items: baseline; gap: 8px; }
+.additional-rank-row > span > strong { color: var(--ink); font-size: 15px; }
+.additional-rank-row > span > small { color: var(--subtle); font-size: 10px; font-weight: 700; letter-spacing: .08em; }
+.rank-only { color: var(--blue); font-size: 22px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.rank-only small { color: var(--muted); font-size: 12px; font-weight: 700; }
+
 .ranking-panel, .component-panel { margin-top: 20px; padding: clamp(24px, 4vw, 38px); border: 1px solid var(--line); border-radius: var(--radius); background: rgba(13,26,44,.7); }
 .panel-heading { margin-bottom: 26px; }
 .panel-heading h3 { margin: 0; font-size: 24px; }
