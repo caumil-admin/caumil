@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="과거 우승 사례 P003·P027과 현재 연구계획서를 결합한 AI 경진대회 상대 우승 가능성 분석"
+      content="민감도 분석으로 7조와 최석철의 우승 가능성을 가장 크게 높이는 개선요소를 시각화한 AI 경진대회 전략 페이지"
     />
     <meta name="theme-color" content="#07111f" />
-    <title>AI 경진대회 우승 가능성 분석</title>
+    <title>AI 경진대회 우승 가능성·개선 전략</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -25,51 +25,210 @@
         </span>
       </a>
       <nav aria-label="주요 섹션">
+        <a href="#improvement">개선 전략</a>
         <a href="#forecast">예측</a>
         <a href="#history">과거 반영</a>
         <a href="#reliability">신뢰도</a>
-        <a href="#method">방법론</a>
       </nav>
     </header>
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="page-title">
         <div class="hero-copy">
-          <p class="eyebrow">2026 AI COMPETITION FORECAST</p>
+          <p class="eyebrow">SENSITIVITY-DRIVEN IMPROVEMENT</p>
           <h1 id="page-title">
-            숫자 하나보다,<br />
-            <span>우승 가능성의 근거</span>를 봅니다.
+            우승 가능성을 높이는,<br />
+            <span>가장 효과적인<br />개선부터.</span>
           </h1>
           <p class="hero-summary">
-            과거 팀 우승 <strong>P003</strong>, 개인 우승 <strong>P027</strong>과
-            현재 팀·개인 연구안을 같은 6개 기준으로 비교한 조건부 상대예측입니다.
+            민감도 분석으로 7조와 최석철의 입력을 0.05씩 개선했을 때
+            <strong>어떤 변화가 우승 가능성을 가장 크게 움직이는지</strong> 찾았습니다.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#forecast">결과 바로 보기</a>
-            <a class="button button-ghost" href="#reliability">신뢰도 먼저 확인</a>
+            <a class="button button-primary" href="#improvement">개선 우선순위 보기</a>
+            <a class="button button-ghost" href="#forecast">현재 예측 확인</a>
           </div>
         </div>
 
-        <aside class="hero-status" aria-label="분석 상태 요약">
+        <aside class="hero-status" aria-label="가장 큰 단일 입력 개선 효과">
           <div class="status-head">
-            <span>MODEL AUDIT</span>
-            <span class="live-dot">검증 완료</span>
+            <span>IMPROVEMENT SIGNAL</span>
+            <span class="live-dot">민감도 분석</span>
           </div>
-          <div class="audit-score" aria-label="감사 신뢰도 100점 만점에 46점">
-            <div class="score-ring" style="--score: 46">
-              <span><strong>46</strong>/100</span>
-            </div>
-            <div>
-              <strong>낮음–보통</strong>
-              <p>순위 참고용으로는 유효하나, 정확한 실제 우승확률로는 제한적입니다.</p>
-            </div>
+          <div class="leverage-stack">
+            <article>
+              <div>
+                <span>7조 · P107</span>
+                <strong>프레임워크 독창성</strong>
+                <small>0.95 → 1.00</small>
+              </div>
+              <em>+1.26<small>%p</small></em>
+            </article>
+            <article class="personal-leverage">
+              <div>
+                <span>최석철 · P201</span>
+                <strong>HW 시연 유용성</strong>
+                <small>0.85 → 0.90</small>
+              </div>
+              <em>+0.85<small>%p</small></em>
+            </article>
           </div>
-          <dl class="status-list">
-            <div><dt>과거 대회</dt><dd>팀 1회 · 개인 1회</dd></div>
-            <div><dt>우승 라벨</dt><dd>P003 · P027</dd></div>
-            <div><dt>확률 성격</dt><dd>후보군 내 상대값</dd></div>
-          </dl>
+          <div class="hero-priority">
+            <span>실행 우선순위</span>
+            <p><strong>P107</strong> SOTA 비교·ablation과 운용효과 시연</p>
+            <p><strong>P201</strong> VTC-ASSURE end-to-end 안정성 입증</p>
+          </div>
+          <p class="status-note">각 수치는 다른 항목을 고정하고 입력 하나만 0.05 높인 단일 개선 효과입니다.</p>
         </aside>
+      </section>
+
+      <section class="section improvement" id="improvement" aria-labelledby="improvement-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">IMPROVEMENT PRIORITIES</p>
+            <h2 id="improvement-title">다음 0.05,<br />어디에 투자할까</h2>
+          </div>
+          <p>막대가 길수록 해당 항목 하나를 0.05 개선했을 때 모델상 상대 우승 확률이 더 크게 상승합니다.</p>
+        </div>
+
+        <div class="sensitivity-grid">
+          <article class="sensitivity-card team-sensitivity">
+            <header>
+              <div>
+                <span class="category">TEAM · P107</span>
+                <h3>7조 우승 가능성 개선 레버</h3>
+              </div>
+              <div class="base-probability"><span>현재</span><strong>17.83%</strong></div>
+            </header>
+
+            <div class="sensitivity-list" aria-label="7조 항목별 0.05 개선 민감도">
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>프레임워크 독창성</strong><span>0.95 → 1.00</span><em>+1.26%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:100%"></i></div>
+                <p>단일 개선 시 <strong>19.09%</strong></p>
+              </div>
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>SOTA 실험 수준</strong><span>0.85 → 0.90</span><em>+0.96%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:76.2%"></i></div>
+                <p>단일 개선 시 <strong>18.79%</strong></p>
+              </div>
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>HW 시연 유용성</strong><span>0.30 → 0.35</span><em>+0.92%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:73%"></i></div>
+                <p>단일 개선 시 <strong>18.75%</strong></p>
+              </div>
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>발표 전달력</strong><span>0.95 → 1.00</span><em>+0.57%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:45.2%"></i></div>
+                <p>단일 개선 시 <strong>18.40%</strong></p>
+              </div>
+            </div>
+
+            <div class="priority-insight">
+              <span>실질적 우선순위</span>
+              <p>독창성과 발표는 이미 상한에 가깝습니다. 실제 투자효율은 <strong>SOTA 비교·ablation·반복실험</strong>과 <strong>원격탐사 SW의 운용효과 시연</strong>에서 가장 큽니다.</p>
+            </div>
+          </article>
+
+          <article class="sensitivity-card personal-sensitivity">
+            <header>
+              <div>
+                <span class="category">PERSONAL · P201</span>
+                <h3>최석철 우승 가능성 개선 레버</h3>
+              </div>
+              <div class="base-probability"><span>현재</span><strong>6.74%</strong></div>
+            </header>
+
+            <div class="sensitivity-list" aria-label="최석철 항목별 0.05 개선 민감도">
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>HW 시연 유용성</strong><span>0.85 → 0.90</span><em>+0.85%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:100%"></i></div>
+                <p>단일 개선 시 <strong>7.59%</strong></p>
+              </div>
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>HW–알고리즘 결합도</strong><span>0.90 → 0.95</span><em>+0.64%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:75.3%"></i></div>
+                <p>단일 개선 시 <strong>7.38%</strong></p>
+              </div>
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>프레임워크 독창성</strong><span>0.85 → 0.90</span><em>+0.58%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:68.2%"></i></div>
+                <p>단일 개선 시 <strong>7.32%</strong></p>
+              </div>
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>라이브 시연 안정성</strong><span>0.65 → 0.70</span><em>+0.57%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:67.1%"></i></div>
+                <p>단일 개선 시 <strong>7.31%</strong></p>
+              </div>
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>발표 전달력</strong><span>0.90 → 0.95</span><em>+0.48%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:56.5%"></i></div>
+                <p>단일 개선 시 <strong>7.22%</strong></p>
+              </div>
+              <div class="sensitivity-row">
+                <div class="sensitivity-meta"><strong>SOTA 실험 수준</strong><span>0.70 → 0.75</span><em>+0.41%p</em></div>
+                <div class="sensitivity-track"><i style="--effect:48.2%"></i></div>
+                <p>단일 개선 시 <strong>7.15%</strong></p>
+              </div>
+            </div>
+
+            <div class="priority-insight personal-insight">
+              <span>최우선 실행</span>
+              <p><strong>실제 음성 입력부터 사용자 확인까지</strong> 한 번에 연결하고, 정상·잡음·패킷손실·장비 재연결 조건에서 안정성을 수치로 입증해야 합니다.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="sensitivity-caveat">
+          <span aria-hidden="true">i</span>
+          <p>표시된 상승폭은 각 항목을 <strong>개별적으로</strong> 개선한 민감도입니다. 여러 항목의 상승폭을 단순 합산한 값은 실제 결합 효과와 다를 수 있으며, 우승을 보장하지 않습니다.</p>
+        </div>
+
+        <div class="execution-grid">
+          <article class="execution-card p107-plan">
+            <div class="execution-heading">
+              <span>7조 · P107</span>
+              <h3>점수가 아닌 증거를 강화합니다</h3>
+              <p>독창성은 유지하되, 심사위원이 재현성과 운용효과를 한눈에 확인할 수 있게 만듭니다.</p>
+            </div>
+            <ol class="priority-steps">
+              <li><span>01</span><div><strong>SOTA 비교와 ablation</strong><p>기존 SAHI·균일 슬라이싱·미적용 기준과 비교하고 각 구성요소 제거 실험을 제시합니다.</p></div></li>
+              <li><span>02</span><div><strong>반복실험의 신뢰도</strong><p>다중 seed·객체 크기별 성능·처리시간·연산량과 평균±편차를 함께 보여 줍니다.</p></div></li>
+              <li><span>03</span><div><strong>원격탐사 운용효과</strong><p>확률지도 → 유망 slice 선택 → 소표적 탐지 → 시간·자원 절감의 흐름을 실제 화면으로 시연합니다.</p></div></li>
+            </ol>
+          </article>
+
+          <article class="execution-card p201-plan">
+            <div class="execution-heading">
+              <span>최석철 · P201</span>
+              <h3>VTC-ASSURE를 끊김 없이 증명합니다</h3>
+              <p>가장 낮은 안정성 입력을 보완하면서 HW 유용성과 알고리즘 결합도를 동시에 보여 주는 시연입니다.</p>
+            </div>
+
+            <div class="demo-pipeline" aria-label="VTC-ASSURE end-to-end 시연 흐름">
+              <div><span>01</span><strong>실제 음성 입력</strong></div>
+              <i aria-hidden="true">→</i>
+              <div><span>02</span><strong>ASR·명료화</strong></div>
+              <i aria-hidden="true">→</i>
+              <div><span>03</span><strong>명령·복창 비교</strong></div>
+              <i aria-hidden="true">→</i>
+              <div><span>04</span><strong>스마트글라스 경고</strong></div>
+              <i aria-hidden="true">→</i>
+              <div><span>05</span><strong>사용자 확인</strong></div>
+            </div>
+
+            <div class="test-proof">
+              <div>
+                <span class="proof-label">시험 조건</span>
+                <ul class="condition-chips"><li>정상</li><li>잡음</li><li>패킷손실</li><li>장비 재연결</li></ul>
+              </div>
+              <div>
+                <span class="proof-label">필수 지표</span>
+                <ul class="metric-chips"><li>성공률</li><li>오경보·누락률</li><li>P95 지연시간</li><li>복구시간</li></ul>
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="section forecast" id="forecast" aria-labelledby="forecast-title">
@@ -132,7 +291,7 @@
 
         <div class="plain-language">
           <span aria-hidden="true">→</span>
-          <p><strong>한 문장 해석</strong> 7조는 우승권에 도전할 상위권 팀이고, 최석철은 개인 후보 중 약 5위권입니다. 다만 소수점까지의 확률은 실제 적중률이 아니라 상대 우위를 표현한 지표입니다.</p>
+          <p><strong>결과는 고정된 판정이 아닙니다.</strong> 7조는 SOTA·운용 시연 증거를, 최석철은 end-to-end 안정성을 보강할 때 모델상 우승 가능성이 가장 효율적으로 상승합니다.</p>
         </div>
       </section>
 
