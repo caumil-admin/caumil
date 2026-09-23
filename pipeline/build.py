@@ -96,12 +96,14 @@ def main():
     data = build_data(public, a.basis_date, a.last_sync)
     template = open(os.path.join(SITE, "template.html"), encoding="utf-8").read()
     app = open(os.path.join(SITE, "app.js"), encoding="utf-8").read()
-    djs = data_js(data)
     robots = ROBOTS if public else ""
 
     os.makedirs(a.out, exist_ok=True)
-    artifact = render(template, robots, f"<script>\n{djs}</script>\n<script>\n{app}</script>")
+    data["meta"]["host"] = "artifact"  # 아티팩트 샌드박스는 파일 내려받기를 막으므로 CSV 는 복사로
+    artifact = render(template, robots, f"<script>\n{data_js(data)}</script>\n<script>\n{app}</script>")
     open(os.path.join(a.out, "artifact.html"), "w", encoding="utf-8").write(artifact)
+    data["meta"]["host"] = "pages"
+    djs = data_js(data)
     site = os.path.join(a.out, "site")
     write_site(site, template, app, djs, FAVICON + ("\n" + robots if robots else ""))
     for name in ("favicon.svg", ".nojekyll"):

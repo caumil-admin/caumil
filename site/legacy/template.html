@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="CAUMIL 개인·팀 논문을 경진대회 엑셀의 6개 변수로 채점하고 가중치 노트북의 사전함수로 순위를 매긴 페이지" />
+<meta name="theme-color" content="#07111f" />
+{{HEAD_EXTRA}}
+<title>CAUMIL 논문 순위</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<style>
+/* CAUMIL Paper Rank — caumil 저장소(Competition Intelligence)의 토큰을 이어받은 다크 우선 디자인 */
+:root {
+  --bg: #07111f;
+  --bg-deep: #040a13;
+  --panel: #0e1a2b;
+  --panel-2: #132238;
+  --ink: #f5f8fc;
+  --muted: #9eacc0;
+  --subtle: #738197;
+  --line: rgba(180, 201, 226, 0.14);
+  --line-strong: rgba(180, 201, 226, 0.28);
+  --cyan: #38d9d4;
+  --cyan-soft: rgba(56, 217, 212, 0.13);
+  --blue: #6698ff;
+  --blue-soft: rgba(102, 152, 255, 0.15);
+  --amber: #ffbd66;
+  --amber-soft: rgba(255, 189, 102, 0.14);
+  --red: #ff6b78;
+  --red-soft: rgba(255, 107, 120, 0.14);
+  --grid-line: rgba(255, 255, 255, 0.025);
+  --glow-a: rgba(56, 217, 212, 0.12);
+  --glow-b: rgba(102, 152, 255, 0.11);
+  --header-bg: rgba(7, 17, 31, 0.8);
+  --on-accent: #07111f;
+  --max: 1180px;
+  --radius: 22px;
+  --radius-sm: 12px;
+  --font-body: "Noto Sans KR", Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #eef3f8;
+    --bg-deep: #e3ebf4;
+    --panel: #ffffff;
+    --panel-2: #f1f5fa;
+    --ink: #0b1726;
+    --muted: #465770;
+    --subtle: #66768c;
+    --line: rgba(11, 23, 38, 0.12);
+    --line-strong: rgba(11, 23, 38, 0.24);
+    --cyan: #0a7f7b;
+    --cyan-soft: rgba(10, 127, 123, 0.1);
+    --blue: #2b58c4;
+    --blue-soft: rgba(43, 88, 196, 0.1);
+    --amber: #935300;
+    --amber-soft: rgba(147, 83, 0, 0.1);
+    --red: #bb2f45;
+    --red-soft: rgba(187, 47, 69, 0.1);
+    --grid-line: rgba(11, 23, 38, 0.04);
+    --glow-a: rgba(10, 127, 123, 0.1);
+    --glow-b: rgba(43, 88, 196, 0.08);
+    --header-bg: rgba(238, 243, 248, 0.86);
+    --on-accent: #ffffff;
+    color-scheme: light;
+  }
+}
+
+:root[data-theme="light"] {
+  --bg: #eef3f8;
+  --bg-deep: #e3ebf4;
+  --panel: #ffffff;
+  --panel-2: #f1f5fa;
+  --ink: #0b1726;
+  --muted: #465770;
+  --subtle: #66768c;
+  --line: rgba(11, 23, 38, 0.12);
+  --line-strong: rgba(11, 23, 38, 0.24);
+  --cyan: #0a7f7b;
+  --cyan-soft: rgba(10, 127, 123, 0.1);
+  --blue: #2b58c4;
+  --blue-soft: rgba(43, 88, 196, 0.1);
+  --amber: #935300;
+  --amber-soft: rgba(147, 83, 0, 0.1);
+  --red: #bb2f45;
+  --red-soft: rgba(187, 47, 69, 0.1);
+  --grid-line: rgba(11, 23, 38, 0.04);
+  --glow-a: rgba(10, 127, 123, 0.1);
+  --glow-b: rgba(43, 88, 196, 0.08);
+  --header-bg: rgba(238, 243, 248, 0.86);
+  --on-accent: #ffffff;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] { color-scheme: dark; }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% -6%, var(--glow-a), transparent 34rem),
+    radial-gradient(circle at 88% 10%, var(--glow-b), transparent 30rem),
+    var(--bg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  padding-inline: 20px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black, transparent 70%);
+  z-index: 0;
+}
+
+main, .site-header, .site-footer { position: relative; z-index: 1; }
+a { color: inherit; }
+button, input, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 6px; }
+
+.skip-link {
+  position: fixed; z-index: 100; top: 10px; left: 10px; padding: 10px 14px;
+  color: var(--on-accent); background: var(--cyan); border-radius: 8px; transform: translateY(-160%);
+}
+.skip-link:focus { transform: translateY(0); }
+
+/* ---------- header ---------- */
+.site-header {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 50;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  max-width: var(--max); min-height: 68px; margin: 0 auto;
+  border-bottom: 1px solid var(--line);
+  background: var(--header-bg);
+  backdrop-filter: blur(18px);
+}
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand-mark {
+  display: grid; place-items: center; width: 38px; height: 38px; border-radius: 12px;
+  background: var(--cyan); color: var(--on-accent); font-weight: 900;
+}
+.brand strong { display: block; font-size: 0.95rem; letter-spacing: 0.08em; }
+.brand small { display: block; color: var(--muted); font-size: 0.72rem; letter-spacing: 0.06em; }
+.site-header nav { display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+.site-header nav a {
+  padding: 8px 11px; border-radius: 999px; color: var(--muted); text-decoration: none;
+  font-size: 0.88rem; white-space: nowrap;
+}
+.site-header nav a:hover, .site-header nav a[aria-current="location"] { color: var(--cyan); background: var(--cyan-soft); }
+
+main { max-width: var(--max); margin: 0 auto; }
+
+/* ---------- type ---------- */
+.eyebrow {
+  margin: 0 0 10px; color: var(--cyan); font-family: var(--font-mono);
+  font-size: 0.74rem; font-weight: 600; letter-spacing: 0.16em;
+}
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(2.2rem, 5.2vw, 3.9rem); line-height: 1.08; font-weight: 900; letter-spacing: -0.03em; }
+h1 span { color: var(--cyan); }
+h2 { font-size: clamp(1.55rem, 3vw, 2.25rem); line-height: 1.2; font-weight: 900; letter-spacing: -0.02em; }
+h3 { font-size: 1.02rem; font-weight: 700; }
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+.mono, .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+/* ---------- hero ---------- */
+.hero {
+  display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 36px; align-items: start;
+  padding-block: 56px 40px;
+}
+.hero-summary { max-width: 60ch; color: var(--muted); font-size: 1.04rem; margin: 18px 0 20px; }
+.hero-summary strong { color: var(--ink); }
+.sync-chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+.sync-chips li {
+  display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--panel); font-size: 0.84rem; color: var(--muted);
+}
+.sync-chips b { color: var(--ink); font-family: var(--font-mono); font-weight: 600; }
+.sync-chips .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--subtle); }
+.sync-chips .dot.new { background: var(--cyan); }
+.sync-chips .dot.updated { background: var(--amber); }
+
+.hero-status {
+  border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--panel);
+  padding: 22px; display: grid; gap: 16px;
+}
+.status-head { display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; color: var(--muted); }
+.live-dot { display: inline-flex; align-items: center; gap: 6px; color: var(--cyan); font-family: var(--font-body); letter-spacing: 0; }
+.live-dot::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 0 4px var(--cyan-soft); }
+.leader { display: grid; grid-template-columns: auto 1fr; gap: 4px 16px; align-items: end; }
+.leader .big { grid-row: span 2; font-family: var(--font-mono); font-weight: 600; font-size: clamp(2.6rem, 6vw, 3.4rem); line-height: 1; color: var(--cyan); }
+.leader .big small { font-size: 0.4em; color: var(--muted); margin-left: 2px; }
+.leader .who { font-weight: 700; font-size: 1.05rem; }
+.leader .what { color: var(--muted); font-size: 0.86rem; line-height: 1.45; }
+.runners { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); padding-top: 14px; }
+.runners li { display: grid; grid-template-columns: 26px 1fr auto; gap: 10px; align-items: center; font-size: 0.9rem; }
+.runners .r { font-family: var(--font-mono); color: var(--subtle); }
+.runners .v { font-family: var(--font-mono); color: var(--muted); }
+.status-note { margin: 0; color: var(--subtle); font-size: 0.78rem; line-height: 1.5; }
+
+/* ---------- sections ---------- */
+.section { padding-block: 44px; border-top: 1px solid var(--line); }
+.section-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px; align-items: end; margin-bottom: 24px; }
+.section-heading > p { margin: 0; color: var(--muted); max-width: 62ch; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; }
+
+/* ---------- toolbar ---------- */
+.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 14px; }
+.segmented { display: inline-flex; padding: 3px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); }
+.segmented button {
+  border: 0; background: transparent; padding: 7px 14px; border-radius: 999px; cursor: pointer; color: var(--muted); font-size: 0.9rem;
+}
+.segmented button[aria-checked="true"] { background: var(--cyan); color: var(--on-accent); font-weight: 700; }
+.select { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 0.9rem; }
+.select select { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 7px 10px; }
+.model-pill { margin: 0 0 0 auto; font-size: 0.82rem; color: var(--muted); }
+.model-pill b { color: var(--ink); }
+.model-pill button { border: 0; background: none; color: var(--cyan); cursor: pointer; text-decoration: underline; padding: 0 0 0 6px; }
+
+/* ---------- leaderboard ---------- */
+.board { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.row, .detail, .detail-grid > *, .kv, .lab > *, .plan-grid > *, .method-grid > * { min-width: 0; }
+.table-wrap { max-width: 100%; }
+.row {
+  border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--panel);
+  transition: border-color 0.2s;
+}
+.row.lead { border-color: var(--line-strong); }
+.row-main {
+  display: grid; grid-template-columns: 52px minmax(0, 1fr) 176px 150px 120px 40px; gap: 16px; align-items: center;
+  padding: 14px 16px;
+}
+.rank { font-family: var(--font-mono); font-weight: 600; font-size: 1.5rem; color: var(--subtle); text-align: center; line-height: 1; }
+.row.lead .rank { color: var(--cyan); }
+.rank small { display: block; font-size: 0.62rem; margin-top: 4px; letter-spacing: 0.04em; }
+.rank .up { color: var(--cyan); }
+.rank .down { color: var(--amber); }
+.ident { min-width: 0; }
+.ident .name { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-weight: 700; }
+.ident .title { color: var(--muted); font-size: 0.86rem; line-height: 1.45; margin-top: 3px; overflow-wrap: anywhere; }
+.chip {
+  display: inline-flex; align-items: center; gap: 4px; padding: 1px 8px; border-radius: 999px; font-size: 0.72rem; font-weight: 500;
+  border: 1px solid var(--line); color: var(--muted); white-space: nowrap; line-height: 1.6;
+}
+.chip.venue-ee { color: var(--cyan); border-color: var(--cyan-soft); background: var(--cyan-soft); }
+.chip.venue-it { color: var(--blue); border-color: var(--blue-soft); background: var(--blue-soft); }
+.chip.venue-dt { color: var(--muted); }
+.chip.new { color: var(--on-accent); background: var(--cyan); border-color: var(--cyan); font-weight: 700; }
+.chip.updated { color: var(--amber); background: var(--amber-soft); border-color: transparent; }
+.chip.high { color: var(--red); background: var(--red-soft); border-color: transparent; }
+.chip.mid { color: var(--amber); background: var(--amber-soft); border-color: transparent; }
+.chip.more { cursor: default; }
+
+.strip { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; align-items: end; height: 44px; }
+.strip .bar { position: relative; height: 100%; border-radius: 4px; background: var(--panel-2); overflow: hidden; }
+.strip .bar i { position: absolute; left: 0; right: 0; bottom: 0; background: var(--cyan); border-radius: 4px 4px 0 0; opacity: 0.9; }
+.strip .bar.hw i { background: var(--blue); }
+.strip-labels { display: grid; grid-template-columns: repeat(6, 1fr); gap: 5px; margin-top: 4px; font-size: 0.64rem; color: var(--subtle); text-align: center; white-space: nowrap; }
+.strip-labels .hw { color: var(--blue); }
+
+.metric .val { font-family: var(--font-mono); font-weight: 600; font-size: 1.25rem; }
+.metric .val small { font-size: 0.7rem; color: var(--muted); margin-left: 2px; }
+.metric .lbl { font-size: 0.72rem; color: var(--subtle); }
+.meter { height: 6px; border-radius: 999px; background: var(--panel-2); overflow: hidden; margin-top: 6px; }
+.meter i { display: block; height: 100%; background: var(--cyan); border-radius: 999px; }
+.stab { font-size: 0.78rem; color: var(--muted); line-height: 1.4; }
+.stab b { font-family: var(--font-mono); color: var(--ink); font-weight: 600; }
+
+.expand {
+  width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--line); background: var(--panel-2); cursor: pointer;
+  display: grid; place-items: center; color: var(--muted);
+}
+.expand svg { transition: transform 0.2s; }
+.expand[aria-expanded="true"] svg { transform: rotate(180deg); }
+.expand:hover { color: var(--cyan); border-color: var(--cyan-soft); }
+
+.detail { border-top: 1px solid var(--line); padding: 18px 16px 20px; display: grid; gap: 18px; }
+.detail-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px; }
+.detail p { margin: 0; }
+.detail .lede { color: var(--ink); max-width: 72ch; }
+.detail h4 { margin: 0 0 8px; font-size: 0.8rem; letter-spacing: 0.04em; color: var(--subtle); font-weight: 700; }
+.crit-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+.crit-table th, .crit-table td { padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+.crit-table th { font-weight: 500; color: var(--subtle); font-size: 0.74rem; white-space: nowrap; }
+.crit-table td:first-child { white-space: nowrap; color: var(--ink); }
+.crit-table td.n { font-family: var(--font-mono); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.crit-table .why { color: var(--muted); line-height: 1.5; }
+.delta.neg { color: var(--amber); }
+.delta.pos { color: var(--cyan); }
+.mini-bar { display: inline-block; width: 46px; height: 5px; border-radius: 999px; background: var(--panel-2); vertical-align: middle; margin-left: 6px; position: relative; overflow: hidden; }
+.mini-bar i { position: absolute; inset: 0 auto 0 0; background: var(--cyan); }
+.kv { display: grid; gap: 14px; align-content: start; }
+.numbers { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; }
+.numbers li { padding: 8px 10px; border-radius: 10px; background: var(--panel-2); font-size: 0.86rem; }
+.levers { display: grid; gap: 6px; }
+.lever { display: grid; grid-template-columns: 138px 1fr 70px; gap: 8px; align-items: center; font-size: 0.84rem; }
+.lever > span:first-child { white-space: nowrap; }
+.lever .track { height: 6px; border-radius: 999px; background: var(--panel-2); overflow: hidden; }
+.lever .track i { display: block; height: 100%; background: var(--cyan); }
+.lever .d { font-family: var(--font-mono); text-align: right; color: var(--cyan); }
+.fixes { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; font-size: 0.9rem; }
+.flags { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 0.86rem; }
+.flags li { display: grid; grid-template-columns: auto 1fr; gap: 8px; align-items: start; color: var(--muted); }
+.autochk { display: flex; flex-wrap: wrap; gap: 6px; }
+.source-link { font-size: 0.84rem; color: var(--cyan); }
+.also { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+
+/* ---------- weight lab ---------- */
+.lab { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 18px; align-items: start; }
+.lab-controls { display: grid; gap: 18px; }
+.preset-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.preset {
+  border: 1px solid var(--line); background: var(--panel-2); border-radius: 999px; padding: 7px 13px; cursor: pointer;
+  font-size: 0.85rem; color: var(--muted);
+}
+.preset[aria-checked="true"] { border-color: var(--cyan); color: var(--cyan); background: var(--cyan-soft); font-weight: 700; }
+.sliders { display: grid; gap: 12px; }
+.slider { display: grid; grid-template-columns: 112px 1fr 58px; gap: 10px; align-items: center; font-size: 0.88rem; }
+.slider label { color: var(--muted); }
+.slider output { font-family: var(--font-mono); text-align: right; }
+.slider input[type="range"] { width: 100%; accent-color: var(--cyan); }
+.toggle { display: flex; gap: 10px; align-items: flex-start; font-size: 0.88rem; cursor: pointer; }
+.toggle input { margin-top: 5px; accent-color: var(--cyan); }
+.toggle small { display: block; color: var(--subtle); font-size: 0.78rem; }
+.lab-foot { margin: 0; font-size: 0.8rem; color: var(--subtle); }
+.lab-output { display: grid; gap: 18px; }
+.curve-panel { margin: 0; }
+.curve-panel figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 8px; font-size: 0.9rem; }
+.curve-panel figcaption span { color: var(--muted); font-size: 0.8rem; }
+.curve-wrap svg { display: block; width: 100%; height: auto; }
+.curve-wrap text { font-family: var(--font-mono); }
+.stability-panel h3 { margin-bottom: 4px; }
+.table-wrap { overflow-x: auto; }
+.stab-table, .sub-table, .anchor-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.stab-table th, .stab-table td, .sub-table th, .sub-table td, .anchor-table th, .anchor-table td {
+  padding: 8px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top;
+}
+.stab-table th, .sub-table th, .anchor-table th { color: var(--subtle); font-weight: 500; font-size: 0.74rem; white-space: nowrap; }
+.stab-table td.n, .sub-table td.n { font-family: var(--font-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.range-bar { position: relative; width: 120px; height: 12px; }
+.range-bar::before { content: ""; position: absolute; left: 0; right: 0; top: 5px; height: 2px; background: var(--panel-2); border-radius: 2px; }
+.range-bar i { position: absolute; top: 3px; height: 6px; border-radius: 3px; background: var(--cyan); opacity: 0.55; }
+.range-bar b { position: absolute; top: 1px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: var(--cyan); }
+
+/* ---------- plan ---------- */
+.plan-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr); gap: 18px; align-items: start; }
+.plan-grid h3 { margin-bottom: 12px; }
+.dumbbells { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+.db-card h4 { margin: 0 0 2px; font-size: 0.92rem; }
+.db-card p { margin: 0 0 8px; font-size: 0.76rem; color: var(--subtle); }
+.db-card svg { display: block; width: 100%; height: auto; }
+.db-card text { font-family: var(--font-body); }
+.legend-line { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin: 14px 0 0; font-size: 0.8rem; color: var(--muted); }
+.lg { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; vertical-align: -1px; }
+.lg.plan { border: 2px solid var(--subtle); }
+.lg.paper { background: var(--cyan); }
+.plan-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; font-size: 0.86rem; }
+.plan-list li { display: grid; grid-template-columns: 30px 1fr auto; gap: 8px; padding: 6px 8px; border-radius: 8px; align-items: center; }
+.plan-list li.has { background: var(--cyan-soft); }
+.plan-list .r { font-family: var(--font-mono); color: var(--subtle); }
+.plan-list .v { font-family: var(--font-mono); color: var(--muted); font-size: 0.8rem; }
+.plan-list .p { font-size: 0.74rem; color: var(--cyan); }
+
+/* ---------- status ---------- */
+.sub-table td .t { color: var(--ink); }
+.sub-table td .f { color: var(--subtle); font-size: 0.76rem; overflow-wrap: anywhere; }
+.risk-head { margin: 28px 0 12px; }
+.risk-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.risk-list li {
+  display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 14px 16px;
+  border: 1px solid var(--line); border-left: 3px solid var(--red); border-radius: var(--radius-sm); background: var(--panel);
+}
+.risk-list .who { font-weight: 700; font-size: 0.9rem; }
+.risk-list .who small { display: block; color: var(--subtle); font-weight: 400; font-family: var(--font-mono); }
+.risk-list p { margin: 0; color: var(--muted); font-size: 0.88rem; }
+
+/* ---------- method ---------- */
+.method-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.method-grid h3 { margin-bottom: 10px; }
+.formula { font-family: var(--font-mono); font-size: 0.86rem; line-height: 1.9; padding: 12px 14px; border-radius: 12px; background: var(--panel-2); overflow-x: auto; margin: 0 0 10px; }
+.fix-list, .caveats { margin: 0; padding-left: 1.1em; display: grid; gap: 8px; font-size: 0.9rem; color: var(--muted); }
+.caveats strong, .fix-list strong { color: var(--ink); }
+.anchor-table td:first-child { white-space: nowrap; color: var(--ink); }
+.anchor-table td { color: var(--muted); }
+
+.site-footer {
+  max-width: var(--max); margin: 0 auto; padding-block: 28px 44px; border-top: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; font-size: 0.82rem; color: var(--subtle);
+}
+.site-footer p { margin: 0; overflow-wrap: anywhere; }
+.site-footer strong { color: var(--muted); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px) {
+  .hero, .lab, .plan-grid, .section-heading, .detail-grid, .method-grid { grid-template-columns: 1fr; }
+  .row-main { grid-template-columns: 44px minmax(0, 1fr) minmax(0, 1fr) 40px; grid-template-areas: "rank ident ident exp" "rank strip strip strip" "rank metric stab stab"; row-gap: 12px; }
+  .row-main .rank { grid-area: rank; align-self: start; }
+  .row-main .ident { grid-area: ident; }
+  .row-main .strip-box { grid-area: strip; }
+  .row-main .metric { grid-area: metric; }
+  .row-main .stab { grid-area: stab; }
+  .row-main .expand { grid-area: exp; align-self: start; }
+  .model-pill { margin-left: 0; width: 100%; }
+}
+@media (max-width: 560px) {
+  body { padding-inline: 16px; }
+  .site-header { flex-direction: column; align-items: flex-start; padding-block: 10px; gap: 8px; }
+  .site-header nav { width: 100%; }
+  .hero { padding-block: 32px 28px; }
+  .row-main { grid-template-columns: 36px minmax(0, 1fr) minmax(0, 1fr) 36px; grid-template-areas: "rank ident ident exp" "strip strip strip strip" "metric metric stab stab"; column-gap: 12px; }
+  .slider { grid-template-columns: 92px 1fr 52px; }
+  .risk-list li { grid-template-columns: 1fr; gap: 4px; }
+  .lever { grid-template-columns: 124px 1fr 62px; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="첫 화면으로 이동">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span><strong>CAUMIL</strong><small>Paper Rank</small></span>
+      </a>
+      <nav aria-label="주요 섹션">
+        <a href="#ranking">순위</a>
+        <a href="#weights">가중치</a>
+        <a href="#plan">계획서 대비</a>
+        <a href="#team">팀논문</a>
+        <a href="#status">제출·리스크</a>
+        <a href="#method">방법</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow" id="hero-eyebrow">PERSONAL PAPER RANKING</p>
+          <h1 id="page-title">개인논문 순위,<br /><span>경진대회 가중치로.</span></h1>
+          <p class="hero-summary" id="hero-summary"></p>
+          <ul class="sync-chips" id="sync-chips" aria-label="동기화 요약"></ul>
+        </div>
+        <aside class="hero-status" aria-label="현재 순위 요약" id="hero-status"></aside>
+      </section>
+
+      <section class="section" id="ranking" aria-labelledby="ranking-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">LEADERBOARD</p>
+            <h2 id="ranking-title">개인논문 순위</h2>
+          </div>
+          <p id="ranking-note"></p>
+        </div>
+        <div class="toolbar" role="group" aria-label="순위 보기 설정">
+          <div class="segmented" role="radiogroup" aria-label="순위 단위">
+            <button type="button" id="view-papers" role="radio" aria-checked="true" data-view="papers">논문별</button>
+            <button type="button" id="view-people" role="radio" aria-checked="false" data-view="people">사람별 대표작</button>
+          </div>
+          <label class="select">
+            <span>학회</span>
+            <select id="venue-filter">
+              <option value="all">전체</option>
+              <option value="ee">전자공학회 특별호</option>
+              <option value="it">정보기술학회</option>
+            </select>
+          </label>
+          <p class="model-pill" id="model-pill"></p>
+        </div>
+        <ol class="board" id="board"></ol>
+      </section>
+
+      <section class="section" id="weights" aria-labelledby="weights-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">WEIGHT LAB</p>
+            <h2 id="weights-title">가중치를 바꾸면<br />순위가 어떻게 움직이나</h2>
+          </div>
+          <p>프리셋을 고르거나 막대를 움직이면 위 순위표와 아래 곡선이 바로 다시 계산됩니다. 슬라이더 값은 합이 1이 되도록 자동으로 맞춰집니다.</p>
+        </div>
+        <div class="lab">
+          <div class="lab-controls panel">
+            <div class="preset-row" id="preset-row" role="radiogroup" aria-label="가중치 프리셋"></div>
+            <div class="sliders" id="sliders"></div>
+            <label class="toggle">
+              <input type="checkbox" id="synergy-toggle" checked />
+              <span>상호작용 항 포함 <small id="synergy-desc"></small></span>
+            </label>
+            <p class="lab-foot" id="lab-foot"></p>
+          </div>
+          <div class="lab-output">
+            <figure class="panel curve-panel">
+              <figcaption>
+                <strong>사전함수 곡선 위의 원고</strong>
+                <span id="curve-caption"></span>
+              </figcaption>
+              <div class="curve-wrap" id="curve"></div>
+            </figure>
+            <div class="panel stability-panel">
+              <h3>순위 안정성</h3>
+              <p class="muted small" id="stability-note"></p>
+              <div class="table-wrap"><table class="stab-table" id="stability-table"></table></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="plan" aria-labelledby="plan-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PLAN → PAPER</p>
+            <h2 id="plan-title">계획서 점수와<br />논문 점수의 차이</h2>
+          </div>
+          <p>엑셀의 계획서 기반 잠정치(○)가 실제 원고 근거(●)로 어떻게 바뀌었는지 보여 줍니다. 엑셀 입력가이드의 "실제 실험 결과가 나오면 점수를 갱신"하는 단계에 해당합니다.</p>
+        </div>
+        <div class="plan-grid">
+          <div class="panel">
+            <h3>같은 과제의 원고</h3>
+            <div class="dumbbells" id="dumbbells"></div>
+            <p class="legend-line"><span class="lg plan"></span>계획서(엑셀) <span class="lg paper"></span>원고 채점</p>
+          </div>
+          <div class="panel">
+            <h3>경진대회 개인 후보 계획서 기준 순위</h3>
+            <p class="muted small" id="plan-list-note"></p>
+            <ol class="plan-list" id="plan-list"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="team" aria-labelledby="team-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">TEAM PAPERS</p>
+            <h2 id="team-title">팀논문 순위</h2>
+          </div>
+          <p id="team-note"></p>
+        </div>
+        <ol class="board" id="team-board"></ol>
+      </section>
+
+      <section class="section" id="status" aria-labelledby="status-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SUBMISSIONS &amp; RISKS</p>
+            <h2 id="status-title">제출 현황과<br />투고 전 확인할 것</h2>
+          </div>
+          <p id="status-note"></p>
+        </div>
+        <div class="panel">
+          <div class="table-wrap"><table class="sub-table" id="sub-table"></table></div>
+        </div>
+        <h3 class="risk-head">심각도 높은 리스크</h3>
+        <ul class="risk-list" id="risk-list"></ul>
+      </section>
+
+      <section class="section method" id="method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">METHODOLOGY</p>
+            <h2 id="method-title">점수를 읽을 때<br />기억할 것</h2>
+          </div>
+          <p>엑셀의 6개 변수와 노트북의 사전함수를 그대로 쓰되, 원고 텍스트에 적힌 근거만으로 다시 채점했습니다.</p>
+        </div>
+        <div class="method-grid">
+          <article class="panel">
+            <h3>계산식</h3>
+            <p class="formula" id="formula"></p>
+            <p class="muted small" id="formula-note"></p>
+          </article>
+          <article class="panel">
+            <h3>노트북 이식 시 바로잡은 점</h3>
+            <ul class="fix-list" id="fix-list"></ul>
+            <p class="muted small" id="validation-note"></p>
+          </article>
+          <article class="panel">
+            <h3>채점 기준 (엑셀 입력가이드)</h3>
+            <div class="table-wrap"><table class="anchor-table" id="anchor-table"></table></div>
+          </article>
+          <article class="panel">
+            <h3>한계</h3>
+            <ul class="caveats">
+              <li><strong>상대 지표</strong> 적합도(%)는 통계적으로 보정된 우승 확률이 아니라 노트북의 경험 기반 가정을 수치화한 점수입니다.</li>
+              <li><strong>텍스트 기반</strong> hwp·hwpx에서 추출한 본문과 수식만 읽었습니다. 그림은 채점 근거에 넣지 않았습니다.</li>
+              <li><strong>평가자 판단</strong> 0.05 단위의 정성 점수입니다. 각 점수의 한 줄 근거를 펼쳐 볼 수 있고, 안정성 표는 점수를 ±0.05 흔든 결과를 포함합니다.</li>
+              <li><strong>계획서와 분리</strong> 계획서 점수는 낙관적 계획치라 원고 점수와 한 표에 섞지 않았습니다.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>CAUMIL · Paper Rank</strong> <span id="footer-meta"></span></p>
+      <p>의사결정을 돕는 분석이며 공식 심사 결과를 대신하지 않습니다.</p>
+    </footer>
+{{SCRIPTS}}
+</body>
+</html>
