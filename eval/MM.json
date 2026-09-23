@@ -1,0 +1,79 @@
+{
+ "id": "MM",
+ "paperTitle": "북한·러시아 공개 군사교리 기반 멀티모달 적 위험 예측 AI 시스템의 설계 및 구현",
+ "paperTitleEn": "Design and Implementation of a Multimodal Enemy Threat Assessment AI System Based on Open-Source North Korean and Russian Military Doctrine",
+ "authorsInText": [
+  "이진욱"
+ ],
+ "venueHeader": "20**년 **월 전자공학회논문지 제**권 제**호",
+ "scores": {
+  "sota": 0.6,
+  "orig": 0.7,
+  "hwUse": 0.25,
+  "hwFit": 0.2,
+  "stability": 0.6,
+  "delivery": 0.7
+ },
+ "rationale": {
+  "sota": "기준선이 도메인 기능을 뺀 동일 모델(Base Gemma) zero-shot뿐이고 자료도 온톨로지 제약으로 자체 생성한 합성 160개 시나리오(TEST 96·최종검증 80시점)이지만, 시나리오·계열 단위 분할과 이중 hold-out에서 Macro-F1 0.4363→0.9338(McNemar p<0.001)과 절제 3종을 보였고, 1회 실행·Ontology 효과 비유의(p=0.219)·방법에 적은 ECE/Brier 미보고를 감안해 계획서 0.90에서 0.60으로 낮춤.",
+  "orig": "탐지기 보조 VLM·온톨로지 검색·LoRA 등 기존 요소의 결합이지만 적성국 교리의 전술행동–관측지표를 공격 진행상태(A1~A4)·위협변화 판단으로 잇는 문제 정의는 새로우며, 계획서의 Gold Evidence Chain·S0~S4 출처 신뢰도는 구현·평가되지 않아 0.95→0.70.",
+  "hwUse": "RTX 5070 단일 PC에서 4비트 NF4 양자화 Gemma-4-E4B를 구동하는 순수 SW이고 전술지도도 합성 이미지여서 물리 HW가 문제 해결에 필수적이지 않으므로 사전값 0.25 유지.",
+  "hwFit": "탐지기→VLM→질의계획·Ontology→LoRA가 한 PC 안에서 SW로 연결될 뿐 센서·C2 장비와의 실시간 연동이 없어 사전값 0.20 유지.",
+  "stability": "두 hold-out 세트 결과가 일관(Macro-F1 0.9696/0.9338)하나 합성데이터 오프라인 평가 1회뿐이고 시드 반복·지연시간·오류사례 분석이 없으며 불완전·상충 관측 검증도 후속연구로 미뤄 0.80→0.60.",
+  "delivery": "RQ1/RQ2 구조와 결과 표는 명확하지만 국·영문 초록과 결론에 정량 수치가 전혀 없고('안정적인 판단성능') 제목의 '러시아'·'위험'이 실험 범위(북한군 공격 시나리오)·본문 용어('위협')와 어긋나 0.95→0.70."
+ },
+ "planDelta": "계획서의 M1/M2/M3 통제실험, unsupported-claim, ECE/Brier, template holdout, paired bootstrap, Gold Evidence Chain(S0~S4)은 원고에 없고, Base Gemma 대비 비교와 Detector·Ontology·LoRA 단일 제거 실험(McNemar)만 남았다. 그래서 sota·orig·delivery를 크게 낮췄다(ECE·Brier는 방법 절에만 언급됨).",
+ "keyNumbers": [
+  "TEST Macro-F1 0.4386→0.9696, Acc 0.5833→0.9688 (Base Gemma→Full)",
+  "최종검증 Macro-F1 0.4363→0.9338, 교정 33건/악화 0건, McNemar p<0.001",
+  "절제(최종검증 Macro-F1): LoRA OFF 0.3167, Detector OFF 0.7399, Ontology OFF 0.8850(p=0.219)",
+  "위협변화 Macro-F1 0.680→0.944, T0~T3 전체 일치 시나리오 0.200→0.800 (최종검증)"
+ ],
+ "summary": "전술지도와 상황보고를 입력으로 받아 군사부호 탐지기, 구조화 관측정보, 질의계획과 북한·러시아 교리 Ontology(전술행동–관측지표), 과업 특화 LoRA를 적용한 Gemma-4-E4B VLM을 차례로 연결한다. 이를 통해 적 공격 진행상태(A1~A4)와 시간적 위협변화(상승·유지·하락·보류)를 판단한다. 온톨로지 제약 합성데이터 160개 시나리오(640시점)로 Base Gemma 대비 성능(RQ1)과 구성요소 제거 효과(RQ2)를 평가했다.",
+ "strengths": "시나리오·계열 단위 분할, TEST·최종검증 이중 hold-out, 640시점 정답 전수검토, McNemar 대응검정 등 평가 설계가 체계적이고, Ontology 효과가 비유의(p=0.219)라는 결과도 숨기지 않고 절제해 해석했다.",
+ "fixes": [
+  "초록·결론에 대표 수치(최종검증 Macro-F1 0.4363→0.9338, 절제 결과)를 넣고, 제목의 '러시아' 범위와 '위험/위협' 용어를 실험 범위에 맞게 정리할 것",
+  "강한 기준선과 통계를 보강할 것: 탐지기·Ontology 없이 LoRA만 적용한 조건, 대형 범용 VLM few-shot 비교를 추가한다. LoRA OFF(0.3167)가 Base(0.4363)보다 낮은 이유를 분석하고, 시드 반복·신뢰구간, 선언한 ECE·Brier와 Detector OFF 검정 결과를 보고한다",
+  "재현성 정보를 채울 것: 교리 원문 출처를 인용하고 Ontology 규모·구축 절차, 군사부호 탐지기의 구조·학습자료·탐지성능, 질의생성·검증기 구현을 기술한다. 합성데이터 생성과 추론에 같은 Ontology를 쓰는 순환성도 설명하고, 참고문헌 9편을 보강한다"
+ ],
+ "flags": [
+  {
+   "level": "high",
+   "text": "제목·초록의 핵심인 '북한·러시아 공개 군사교리'의 원문 출처가 참고문헌에 하나도 없다. Ontology 규모·구축방법과 군사부호 탐지기의 구조·학습자료·성능도 기술되지 않아 심사·재현성 리스크가 크다."
+  },
+  {
+   "level": "mid",
+   "text": "국·영문 초록과 결론에 정량 결과가 전혀 없다('안정적인 판단성능', 'better performance')."
+  },
+  {
+   "level": "mid",
+   "text": "제목 범위·용어 불일치: '북한·러시아'를 표방하나 실험 시나리오는 북한군 공격 상황만 다룬다. 국문 제목의 '위험 예측'과 본문·영문 제목의 '위협(Threat)'도 서로 다르다."
+  },
+  {
+   "level": "mid",
+   "text": "방법 절에서 NLL·Brier·ECE를 쓴다고 했으나 결과에는 NLL만 있다. Detector OFF(−0.1939)는 McNemar 결과를 보고하지 않았다."
+  },
+  {
+   "level": "mid",
+   "text": "템플릿 잔재: 'Acknowledgment 내용 입력', 소속 '**대학교 **학과', 교신저자 '***@ieie.ac.kr', 접수일 'Month **', 저자소개 템플릿('여기에 제목을 입력하세요', '모대학교') 등이 남아 있다. 참고문헌은 9편으로 적다."
+  },
+  {
+   "level": "mid",
+   "text": "팀논문 ON과 문장·수치·데이터 중복은 없다(공통 부분은 Mandrick 참고문헌 1건). 다만 두 논문 모두 이진욱의 북한군 교리 Ontology를 핵심으로 쓰는데, MM은 Ontology 출처·구축을 밝히지 않고 ON도 인용하지 않는다. 재사용이라면 관계와 기여를 구분해 밝혀야 한다."
+  },
+  {
+   "level": "mid",
+   "text": "동일 저자(이진욱)가 전자공학회논문지 양식으로 개인논문 2편(MM·PK)과 팀논문(ON, 제1저자)을 냈으므로 1인 편수 규정 확인이 필요하다."
+  }
+ ],
+ "refCount": 9,
+ "evidenceQuotes": [
+  "실험 결과 제안 시스템은 범용 Base Gemma보다 안정적인 판단성능을 보였으며",
+  "생성기는 북한군이 아군을 공격하는 가상의 전술상황을 대상으로 총 160개의 시나리오를 생성하였으며",
+  "최종검증 자료에서도 Base Gemma의 Accuracy와 Macro-F1은 각각 0.5250과 0.4363이었으며, Full System은 0.9375와 0.9338을 기록하여",
+  "과업 특화 LoRA를 제거한 경우에는 0.3167로 감소하여 0.6171의 가장 큰 성능저하가 나타났다.",
+  "불완전하거나 상충되는 관측상황을 추가하고 질의계획, 교리정보 탐색 및 시각정보 추출 과정에 대한 개별적인 정량평가도 추가되어야 한다."
+ ],
+ "evaluatedAt": "2026-09-23",
+ "textSha": "023075150afcad5d"
+}

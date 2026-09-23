@@ -1,0 +1,248 @@
+{
+ "MP": {
+  "residue": [
+   {
+    "label": "소속 자리표시자 '[소속 학과 및 부서 기재]'",
+    "count": 1
+   },
+   {
+    "label": "템플릿 권호 'Vol. 01, 2018'",
+    "count": 1
+   },
+   {
+    "label": "이메일 자리표시자",
+    "count": 1
+   }
+  ],
+  "refs": 8,
+  "figures": 1,
+  "tables": 7,
+  "abstractNumbers": null,
+  "chars": 14941
+ },
+ "DR": {
+  "residue": [
+   {
+    "label": "템플릿 권호 'Vol. 01, 2018'",
+    "count": 2
+   }
+  ],
+  "refs": 5,
+  "figures": 2,
+  "tables": 1,
+  "abstractNumbers": null,
+  "chars": 13861
+ },
+ "ON": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '심사용 논문에서는…'",
+    "count": 4
+   },
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   },
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 4
+   },
+   {
+    "label": "사사 자리표시자 'Acknowledgment 내용 입력'",
+    "count": 1
+   }
+  ],
+  "refs": 7,
+  "figures": 3,
+  "tables": 3,
+  "abstractNumbers": true,
+  "chars": 15221
+ },
+ "VT": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '심사용 논문에서는…'",
+    "count": 3
+   },
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 3
+   }
+  ],
+  "refs": 20,
+  "figures": 1,
+  "tables": 5,
+  "abstractNumbers": true,
+  "chars": 20386
+ },
+ "HS": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   }
+  ],
+  "refs": 19,
+  "figures": 5,
+  "tables": 4,
+  "abstractNumbers": true,
+  "chars": 25340
+ },
+ "NM": {
+  "residue": [],
+  "refs": 34,
+  "figures": 2,
+  "tables": 10,
+  "abstractNumbers": true,
+  "chars": 37468
+ },
+ "MM": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '심사용 논문에서는…'",
+    "count": 2
+   },
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   },
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 4
+   },
+   {
+    "label": "사사 자리표시자 'Acknowledgment 내용 입력'",
+    "count": 1
+   }
+  ],
+  "refs": 9,
+  "figures": 2,
+  "tables": 3,
+  "abstractNumbers": false,
+  "chars": 25322
+ },
+ "PK": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '심사용 논문에서는…'",
+    "count": 4
+   },
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   },
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 4
+   },
+   {
+    "label": "저자 자리표시자 '저자명'",
+    "count": 2
+   },
+   {
+    "label": "저자 자리표시자 'Author Name'",
+    "count": 2
+   },
+   {
+    "label": "사사 자리표시자 'Acknowledgment 내용 입력'",
+    "count": 1
+   },
+   {
+    "label": "제목 오타 'PK-Talbe'",
+    "count": 1
+   }
+  ],
+  "refs": 9,
+  "figures": 6,
+  "tables": 1,
+  "abstractNumbers": true,
+  "chars": 18082
+ },
+ "HB": {
+  "residue": [],
+  "refs": 24,
+  "figures": 1,
+  "tables": 4,
+  "abstractNumbers": true,
+  "chars": 29041
+ },
+ "AD": {
+  "residue": [],
+  "refs": 24,
+  "figures": 2,
+  "tables": 1,
+  "abstractNumbers": false,
+  "chars": 20300
+ },
+ "TE": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   },
+   {
+    "label": "자리표시자 '회원구분 입력'",
+    "count": 2
+   },
+   {
+    "label": "과제번호 자리표시자",
+    "count": 1
+   }
+  ],
+  "refs": 16,
+  "figures": 5,
+  "tables": 5,
+  "abstractNumbers": true,
+  "chars": 19674
+ },
+ "TC": {
+  "residue": [
+   {
+    "label": "이메일 자리표시자",
+    "count": 1
+   },
+   {
+    "label": "머리글 '하계' (추계 행사 여부 확인)",
+    "count": 2
+   }
+  ],
+  "refs": 11,
+  "figures": 2,
+  "tables": 3,
+  "abstractNumbers": true,
+  "chars": 10757
+ },
+ "LR": {
+  "residue": [],
+  "refs": 4,
+  "figures": 1,
+  "tables": 1,
+  "abstractNumbers": true,
+  "chars": 8742
+ },
+ "NH": {
+  "residue": [],
+  "refs": 7,
+  "figures": 1,
+  "tables": 2,
+  "abstractNumbers": true,
+  "chars": 9925
+ },
+ "DC": {
+  "residue": [
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 1
+   },
+   {
+    "label": "사사 자리표시자 '지원기관표기'",
+    "count": 1
+   }
+  ],
+  "refs": 9,
+  "figures": 0,
+  "tables": 1,
+  "abstractNumbers": false,
+  "chars": 8163
+ }
+}

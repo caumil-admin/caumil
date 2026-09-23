@@ -1,0 +1,78 @@
+{
+ "id": "ON",
+ "paperTitle": "적성국 교리자료의 기술유형을 고려한 온톨로지 자동 구축 및 CQ 기반 기능평가 : 북한군 지상작전 교리를 중심으로",
+ "paperTitleEn": "Automatic Ontology Construction and CQ-Based Functional Evaluation Considering Description Types of Adversary Doctrine Materials: A Focus on North Korean Ground Operations Doctrine",
+ "authorsInText": [
+  "이진욱",
+  "박규민",
+  "김영수",
+  "배재형"
+ ],
+ "venueHeader": "20**년 **월 전자공학회논문지 제**권 제**호",
+ "scores": {
+  "sota": 0.45,
+  "orig": 0.65,
+  "hwUse": 0.15,
+  "hwFit": 0.1,
+  "stability": 0.55,
+  "delivery": 0.8
+ },
+ "rationale": {
+  "sota": "기준선은 자체 일괄추출 방식뿐이고 단일 문서(ATP 7-100.2)에서 Mediated 16개(오류 13→2건)·Mixed 168개(59→0건) 개선을 보였으나 판정 주체·판정자 일치도·검정 방법이 없고 Mixed는 assertion 생성 25%에 그치며 선언한 개선 전·후 CQ 비교도 미보고라 0.45.",
+  "orig": "'적성국 귀속 사실 vs 분석자 해석'의 의미혼합을 새 문제로 정의하고 기술유형별 추출을 제안한 점은 새롭지만, 방법은 기존 LLM 추출 위에 유형 분류·분리 규칙을 얹는 수준이고 유형 분류 절차(수작업/자동)가 공개되지 않아 0.65.",
+  "hwUse": "문서 기반 온톨로지 구축·SPARQL 평가의 순수 SW로 물리 HW가 없어 엑셀의 'HW 없음' SW 과제(P103·P104 0.15)에 맞춰 0.15.",
+  "hwFit": "HW 연동 요소가 없고 실행 환경·사용 LLM도 기술되지 않아 'HW 없음' 과제 수준인 0.10.",
+  "stability": "1,136개 Source Unit 전체 적용과 Direct assertion 2,180개 100% 보존은 보였으나 LLM 파이프라인 반복실행이 없고 Mixed 분리 후 assertion 생성 25%, 300개 CQ 중 204개만 유형별 분석에 포함되는 등 통제된 오프라인 결과에 그쳐 0.55.",
+  "delivery": "'의미혼합'이라는 문제, 유형별 추출이라는 방법, 1,136개·CQ 300개·81.25%→12.50%라는 수치가 초록·서론·결론에서 짧고 일관되게 전달되지만, 대표 수치가 Mediated 16개 표본임이 초록에 드러나지 않고 제목의 CQ 기능평가가 개선 후에는 보고되지 않아 0.80."
+ },
+ "planDelta": "",
+ "keyNumbers": [
+  "Source Unit 1,136개(Direct 952·Mediated 16·Mixed 168), CQ 300개",
+  "Mediated 의미혼합 오류 13/16(81.25%)→2/16(12.50%)",
+  "Mixed 의미혼합 오류 59/168(35.12%)→0/168, 단 분리 후 assertion 생성 42/168(25.00%)",
+  "기초 온톨로지 CQ 정답률 Direct 57.14%(112/196) vs Mediated·Mixed 12.50%(1/8), p=0.0233"
+ ],
+ "summary": "미 육군 ATP 7-100.2 「North Korean Tactics」를 Source Unit으로 나누고 LLM으로 북한군 지상작전 교리 온톨로지(개념 4,449개·진술 2,634개·관계 60유형, RDF/OWL)를 자동 구축했다. 구축과 독립적으로 작성한 300개 CQ를 SPARQL로 평가했다. 원문 기술방식을 Direct·Mediated·Mixed로 나눠 유형별로 추출(유지 / Fact·Interpretation 분리 / 의미단위 분해)한 결과, Mediated 의미혼합 오류가 13/16에서 2/16으로, Mixed는 59/168에서 0으로 줄었다.",
+ "strengths": "'적성국 귀속 사실과 제3자 분석자 해석의 혼합(의미혼합)'이라는 정보분석 실무와 직결된 문제를 새로 정의했다. 온톨로지를 고정한 뒤 구축과 독립된 전문가 CQ로 평가한 설계가 명료하고, Mixed의 assertion 생성률 25%라는 한계도 스스로 밝혔다.",
+ "fixes": [
+  "개선 전·후 온톨로지의 CQ 정답률(방법에 선언했으나 미보고)과 300개 중 분석에서 빠진 96개 CQ의 처리 결과를 보고할 것. Mixed 오류 0%가 assertion 미생성(126/168) 때문인지도 구분한다",
+  "재현성과 신뢰도를 밝힐 것: 사용 LLM·프롬프트, 기술유형 분류와 의미혼합 판정의 주체, 판정자 일치도(κ), 각 p값의 검정 방법을 명시한다. Mediated 16개·비Direct CQ 8개라는 소표본 한계는 초록에도 적고, 다른 적성국 자료로 재현을 검증한다",
+  "참고문헌 7편을 보강할 것(LLM 기반 온톨로지 학습·KG 구축, provenance·주장/사실 구분 모델링). 장 번호 Ⅴ 중복, 표 3 영문 제목('Technique –Type-Based'), 템플릿 잔재를 정리하고, 개인논문 MM의 교리 Ontology와의 관계도 명시한다"
+ ],
+ "flags": [
+  {
+   "level": "mid",
+   "text": "참고문헌이 7편으로 매우 적다. LLM 기반 온톨로지 학습·KG 구축, provenance(주장·사실 구분) 모델링 선행연구가 부족하다."
+  },
+  {
+   "level": "mid",
+   "text": "방법 절에서 '개선 전·후 온톨로지에 동일한 CQ 평가조건을 적용'했다고 하나 결과가 없다. 사용 LLM, 기술유형 분류·의미혼합 판정의 주체, 판정자 일치도, 통계검정 방법도 기재되지 않았다."
+  },
+  {
+   "level": "mid",
+   "text": "초록의 대표 수치 81.25%→12.50%가 1,136개 중 Mediated 16개(13→2건)에 근거한다는 점이 초록에 드러나지 않아 과대 해석될 소지가 있다. Mixed 오류 0%도 assertion 생성률 25%와 함께 해석해야 한다."
+  },
+  {
+   "level": "mid",
+   "text": "양식 오류: 'Ⅴ. 실험결과 및 논의'와 'Ⅴ. 결론'의 장 번호가 중복되고, 표 3 영문 제목이 'Technique –Type-Based'로 본문 용어(Description Type)와 다르다."
+  },
+  {
+   "level": "mid",
+   "text": "템플릿 잔재: 'Acknowledgment 내용 입력', 저자 4명에 *~*** 표시를 했으나 소속란은 '**대학교 **학과' 그대로이고, 교신저자 이메일·저자소개 템플릿 원문도 남아 있다."
+  },
+  {
+   "level": "mid",
+   "text": "제1저자(이진욱)의 개인논문 MM도 북한군 교리 Ontology를 핵심 구성요소로 쓴다. 문장·수치·데이터 중복은 확인되지 않았으나(공통 인용은 Mandrick 1편), 같은 학술지 양식이므로 두 온톨로지(ATP 7-100.2 개념·진술 vs 전술행동–관측지표)의 관계와 차별점을 밝혀야 한다."
+  }
+ ],
+ "refCount": 7,
+ "evidenceQuotes": [
+  "제안방식을 전체 1,136개 Source Unit에 적용한 결과, 매개기술형의 의미혼합 오류는 81.25%에서 12.50%로 68.75%p 감소하였다.",
+  "전체 자료의 분류 결과는 Direct 952개, Mediated 16개, Mixed 168개였다.",
+  "다만 의미단위를 분리한 뒤 실제 assertion이 생성된 경우는 42건으로 25.00%에 해당하였다.",
+  "반면 매개기술형(Mediated)은 6개 중 1개로 16.67%였으며, 혼합기술형(Mixed)은 2개 문항 모두 정답을 찾지 못하였다.",
+  "개선 전·후 온톨로지에 동일한 CQ 평가조건을 적용하였다."
+ ],
+ "evaluatedAt": "2026-09-23",
+ "textSha": "f14d3fe033640629"
+}

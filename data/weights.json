@@ -1,0 +1,164 @@
+{
+ "source": {
+  "file": "competition_winner_predictor.ipynb",
+  "function": "experience_prior_probability",
+  "importedAt": "2026-09-23"
+ },
+ "status": "notebook",
+ "default": "notebook",
+ "logistic": {
+  "slope": 8.0,
+  "center": 0.72
+ },
+ "synergies": [
+  {
+   "a": "orig",
+   "b": "hwFit",
+   "coef": 0.1,
+   "label": "독창성 × HW-알고리즘 결합도"
+  },
+  {
+   "a": "hwUse",
+   "b": "stability",
+   "coef": 0.1,
+   "label": "HW 시연 유용성 × 라이브 시연 안정성"
+  }
+ ],
+ "presets": {
+  "notebook": {
+   "label": "노트북 가중치(정규화)",
+   "weights": {
+    "sota": 0.173913,
+    "orig": 0.217391,
+    "hwUse": 0.271739,
+    "hwFit": 0.152174,
+    "stability": 0.108696,
+    "delivery": 0.076087
+   },
+   "synergy": true,
+   "note": "노트북 사전함수. 합 1로 정규화, 상호작용 항 의도대로 보정"
+  },
+  "raw": {
+   "label": "노트북 원본(합 0.92)",
+   "weights": {
+    "sota": 0.16,
+    "orig": 0.2,
+    "hwUse": 0.25,
+    "hwFit": 0.14,
+    "stability": 0.1,
+    "delivery": 0.07
+   },
+   "synergy": true,
+   "note": "노트북 코드 값 그대로(상호작용 열 번호만 보정)"
+  },
+  "equal": {
+   "label": "균등 가중치",
+   "weights": {
+    "sota": 0.166667,
+    "orig": 0.166667,
+    "hwUse": 0.166667,
+    "hwFit": 0.166667,
+    "stability": 0.166667,
+    "delivery": 0.166667
+   },
+   "synergy": false,
+   "note": "비교용 기준선 — 6개 변수 동일 비중, 상호작용 없음"
+  },
+  "noHw": {
+   "label": "HW 변수 제외",
+   "synergy": false,
+   "weights": {
+    "sota": 0.25,
+    "orig": 0.25,
+    "hwUse": 0.0,
+    "hwFit": 0.0,
+    "stability": 0.25,
+    "delivery": 0.25
+   },
+   "note": "민감도 확인용 — HW 시연 유용성·결합도를 빼고 나머지 4개를 균등 비중으로"
+  }
+ },
+ "fixes": [
+  "상호작용 x[:,2]·x[:,4]는 6변수 배열에서 hwUse×stability가 되어 주석 의도('독창적 프레임워크가 HW와 긴밀히 결합될 때의 시너지')와 다릅니다 → 독창성 × HW-알고리즘 결합도로 보정",
+  "상호작용 x[:,3]·x[:,5]는 6변수 배열에서 hwFit×delivery가 되어 주석 의도('HW가 유용하면서 실제 시연도 안정적일 때의 시너지')와 다릅니다 → HW 시연 유용성 × 라이브 시연 안정성로 보정",
+  "가중치 합이 0.92입니다(저장된 이전 출력에는 '실행 자원 적합도' 변수가 있었음) → 비율을 유지해 합 1로 정규화한 값을 기본값으로 사용, 원본은 raw 프리셋으로 보존"
+ ],
+ "validation": {
+  "ok": true,
+  "notebookNN": 79.99,
+  "closedForm": 80.38,
+  "inputs": {
+   "SOTA 실험 수준": 0.5,
+   "HW-알고리즘 결합도": 0.75,
+   "라이브 시연 안정성": 0.7,
+   "실행 자원 적합도": 0.45,
+   "HW 시연 유용성": 0.9,
+   "프레임워크 독창성": 0.95,
+   "발표 전달력": 0.8
+  },
+  "weights": {
+   "HW 시연 유용성": 0.25,
+   "프레임워크 독창성": 0.2,
+   "SOTA 실험 수준": 0.16,
+   "HW-알고리즘 결합도": 0.14,
+   "라이브 시연 안정성": 0.1,
+   "실행 자원 적합도": 0.08,
+   "발표 전달력": 0.07
+  },
+  "note": "이전 7변수 실행의 신경망 출력과 닫힌식 사전함수 값 비교(차이 1%p 미만이면 이식 정상)"
+ },
+ "staleOutputFeatures": [
+  [
+   "HW 시연 유용성",
+   0.25
+  ],
+  [
+   "프레임워크 독창성",
+   0.2
+  ],
+  [
+   "SOTA 실험 수준",
+   0.16
+  ],
+  [
+   "HW-알고리즘 결합도",
+   0.14
+  ],
+  [
+   "라이브 시연 안정성",
+   0.1
+  ],
+  [
+   "실행 자원 적합도",
+   0.08
+  ],
+  [
+   "발표 전달력",
+   0.07
+  ]
+ ],
+ "synergyDetail": [
+  {
+   "a": "orig",
+   "b": "hwFit",
+   "coef": 0.1,
+   "label": "독창성 × HW-알고리즘 결합도",
+   "asCoded": [
+    "hwUse",
+    "stability"
+   ],
+   "comment": "독창적 프레임워크가 HW와 긴밀히 결합될 때의 시너지"
+  },
+  {
+   "a": "hwUse",
+   "b": "stability",
+   "coef": 0.1,
+   "label": "HW 시연 유용성 × 라이브 시연 안정성",
+   "asCoded": [
+    "hwFit",
+    "delivery"
+   ],
+   "comment": "HW가 유용하면서 실제 시연도 안정적일 때의 시너지"
+  }
+ ]
+}

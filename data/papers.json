@@ -1,0 +1,329 @@
+[
+ {
+  "id": "MP",
+  "driveKey": "a0154732165a673d",
+  "track": "team",
+  "authors": [
+   "강현섭",
+   "서보윤",
+   "이시연"
+  ],
+  "projectId": "P106",
+  "projectMatch": "same",
+  "team": "6조",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "6조_국방기술학회_MIL_PLAN_ver4 (멘토수정본).hwpx",
+   "createdTime": "2026-09-16T04:33:01.836Z",
+   "modifiedTime": "2026-09-17T00:18:00.022Z",
+   "fileSize": "126908"
+  },
+  "status": "unchanged",
+  "textSha": "1846613bf833b589"
+ },
+ {
+  "id": "DR",
+  "driveKey": "0018e6faf513c71e",
+  "track": "team",
+  "authors": [
+   "이진욱",
+   "박규민",
+   "김영수",
+   "배재형"
+  ],
+  "projectId": "P102",
+  "projectMatch": "same",
+  "team": "2조",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "여단급 이하 제대를 위한 AI 드론운용 지원체계의 설계 및 구현 (팀논문30_2조_260828).hwp",
+   "createdTime": "2026-09-17T00:33:28.543Z",
+   "modifiedTime": "2026-09-09T00:10:53Z",
+   "fileSize": "3072000"
+  },
+  "status": "unchanged",
+  "textSha": "988a0d8d549f7e15"
+ },
+ {
+  "id": "ON",
+  "driveKey": "a376293773bdc9e0",
+  "track": "team",
+  "authors": [
+   "이진욱",
+   "박규민",
+   "김영수",
+   "배재형"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "team": "2조",
+  "relatedProject": "P210",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문",
+  "file": {
+   "title": "적성국 교리자료의 기술유형을 고려한 온톨로지 자동 구축 및 CQ 기반 기능평가  북한군 지상작전 교리를 중심으로_2팀 팀논문.hwp",
+   "createdTime": "2026-09-22T06:50:06.159Z",
+   "modifiedTime": "2026-09-22T06:49:44.915Z",
+   "fileSize": "3468288"
+  },
+  "status": "unchanged",
+  "textSha": "f14d3fe033640629"
+ },
+ {
+  "id": "VT",
+  "driveKey": "1c85bd6f6852ef6a",
+  "track": "personal",
+  "authors": [
+   "최석철"
+  ],
+  "projectId": "P201",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "최석철_스마트글래스 연동 지휘관 화상회의 복창 검증 프레임워크(대한전자공학회_개인).hwpx",
+   "createdTime": "2026-09-18T09:26:05.666Z",
+   "modifiedTime": "2026-09-18T09:25:09.821Z",
+   "fileSize": "374036"
+  },
+  "status": "unchanged",
+  "textSha": "10af899f5d78d0a9"
+ },
+ {
+  "id": "HS",
+  "driveKey": "59fa1c719effabe1",
+  "track": "personal",
+  "authors": [
+   "이건희"
+  ],
+  "projectId": "P204",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "[이건희] 개인논문 1(최종).hwpx",
+   "createdTime": "2026-09-20T05:57:45.406Z",
+   "modifiedTime": "2026-09-19T18:58:53.302Z",
+   "fileSize": "852774"
+  },
+  "status": "unchanged",
+  "textSha": "b9b6a2f03bd28a96"
+ },
+ {
+  "id": "NM",
+  "driveKey": "a74337b2dcad09ce",
+  "track": "personal",
+  "authors": [
+   "이시연"
+  ],
+  "projectId": "P214",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "이시연_전자공학회특별저널_위험요인 관측가능성 기반 군 아차사고 예방대책 추천 체계 연구.hwp",
+   "createdTime": "2026-09-22T06:49:38.086Z",
+   "modifiedTime": "2026-09-23T01:44:25.298Z",
+   "fileSize": "247808"
+  },
+  "status": "updated",
+  "textSha": "6b2cff6c4b115bd9"
+ },
+ {
+  "id": "MM",
+  "driveKey": "8a7d929fee87b014",
+  "track": "personal",
+  "authors": [
+   "이진욱"
+  ],
+  "projectId": "P210",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "북한·러시아 공개 군사교리 기반 멀티모달 적 위험 예측 AI 시스템의 설계 및 구현_이진욱_개인논문.hwp",
+   "createdTime": "2026-09-22T04:48:34.393Z",
+   "modifiedTime": "2026-09-22T04:48:22.336Z",
+   "fileSize": "2758144"
+  },
+  "status": "unchanged",
+  "textSha": "023075150afcad5d"
+ },
+ {
+  "id": "PK",
+  "driveKey": "3a03cc23db56af03",
+  "track": "personal",
+  "authors": [
+   "이진욱"
+  ],
+  "projectId": "P211",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "KCTC PK-Talbe 기반 AI 화력지원체계의 설계 및 구현(개인논문_이진욱).hwp",
+   "createdTime": "2026-09-17T00:32:42.324Z",
+   "modifiedTime": "2026-09-11T01:53:19Z",
+   "fileSize": "5444608"
+  },
+  "status": "unchanged",
+  "textSha": "ab0540690f0d364f"
+ },
+ {
+  "id": "HB",
+  "driveKey": "f680161d81c85469",
+  "track": "personal",
+  "authors": [
+   "강줄기"
+  ],
+  "projectId": "P217",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "강줄기_트래픽정량화_대한정보공학회_정규논문.hwpx",
+   "createdTime": "2026-09-16T06:43:54.860Z",
+   "modifiedTime": "2026-09-14T01:42:21Z",
+   "fileSize": "295232"
+  },
+  "status": "unchanged",
+  "textSha": "55ef975883372943"
+ },
+ {
+  "id": "AD",
+  "driveKey": "4a59f7266414c16e",
+  "track": "personal",
+  "authors": [
+   "강줄기"
+  ],
+  "projectId": "P217",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "강줄기_사전실행제약_대한정보공학회_정규논문.hwpx",
+   "createdTime": "2026-09-16T06:44:03.382Z",
+   "modifiedTime": "2026-09-10T05:37:27Z",
+   "fileSize": "232146"
+  },
+  "status": "unchanged",
+  "textSha": "411d7bf1b496b46e"
+ },
+ {
+  "id": "TE",
+  "driveKey": "e05fe9c68d1ad4aa",
+  "track": "personal",
+  "authors": [
+   "서보윤"
+  ],
+  "projectId": "P202",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "TICN 장애 유형 판별과 유형별 자율복구를 위한 AI 기반 방법(서보윤).hwp",
+   "createdTime": "2026-09-23T01:41:01.634Z",
+   "modifiedTime": "2026-09-23T01:40:08.853Z",
+   "fileSize": "917504"
+  },
+  "status": "new",
+  "textSha": "ef0879ba47ff65af"
+ },
+ {
+  "id": "TC",
+  "driveKey": "790519f2c4c7426a",
+  "track": "personal",
+  "authors": [
+   "서보윤"
+  ],
+  "projectId": "P202",
+  "projectMatch": "same",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "(서보윤)TICN 백본 노드 파괴에 대한 AI 기반 장애 판별 및 자율복구 방법.hwpx",
+   "createdTime": "2026-09-17T06:15:58.870Z",
+   "modifiedTime": "2026-09-17T06:11:19Z",
+   "fileSize": "291867"
+  },
+  "status": "unchanged",
+  "textSha": "9cbc521bc6a75cce"
+ },
+ {
+  "id": "LR",
+  "driveKey": "c80be10007fbebf8",
+  "track": "personal",
+  "authors": [
+   "강현섭"
+  ],
+  "projectId": "P221",
+  "projectMatch": "related",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "강현섭_한국정보기술학회지.hwpx",
+   "createdTime": "2026-09-17T00:42:46.769Z",
+   "modifiedTime": "2026-09-17T00:41:39Z",
+   "fileSize": "159408"
+  },
+  "status": "unchanged",
+  "textSha": "86186add7bcd421f"
+ },
+ {
+  "id": "NH",
+  "driveKey": "0adb14c126db6274",
+  "track": "personal",
+  "authors": [
+   "이시연"
+  ],
+  "projectId": "P214",
+  "projectMatch": "different",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "이시연_한국정보기술학회지_개인논문양식(멘토수정ver3).hwp",
+   "createdTime": "2026-09-16T03:12:38.952Z",
+   "modifiedTime": "2026-09-23T01:51:00.951Z",
+   "fileSize": "170496"
+  },
+  "status": "updated",
+  "textSha": "ce3ed546922eecb5"
+ },
+ {
+  "id": "DC",
+  "driveKey": "972dbd6097da1752",
+  "track": "personal",
+  "authors": [
+   "강줄기"
+  ],
+  "projectId": "P217",
+  "projectMatch": "different",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "강줄기_한국정보기술학회지.hwp",
+   "createdTime": "2026-09-16T06:43:34.216Z",
+   "modifiedTime": "2026-09-09T09:47:00Z",
+   "fileSize": "156160"
+  },
+  "status": "unchanged",
+  "textSha": "fb069f808ee02a25"
+ }
+]

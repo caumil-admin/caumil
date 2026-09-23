@@ -1,0 +1,8 @@
+# 원고 원본·전문 텍스트·드라이브 목록(소유자 메일 포함)은 올리지 않는다
+raw/
+source_text/
+inputs/
+# 빌드 산출물
+dist/
+__pycache__/
+*.pyc

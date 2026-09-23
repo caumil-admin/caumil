@@ -1,0 +1,31 @@
+{
+ "excel": {
+  "title": "competition_project_inputs_team_and_personal_filled.xlsx"
+ },
+ "folders": [
+  {
+   "key": "c20a4a857e9ad29a",
+   "title": "전자공학회특별저널 개인논문",
+   "venue": "ee",
+   "track": "personal"
+  },
+  {
+   "key": "4a324928a87b4bc4",
+   "title": "정보기술학회 개인논문",
+   "venue": "it",
+   "track": "personal"
+  },
+  {
+   "key": "31fd7c789a004f16",
+   "title": "전자공학회특별저널 팀논문",
+   "venue": "ee",
+   "track": "team"
+  },
+  {
+   "key": "3a5705978b0e36bc",
+   "title": "국방기술학회 팀논문",
+   "venue": "dt",
+   "track": "team"
+  }
+ ]
+}

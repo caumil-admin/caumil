@@ -1,0 +1,524 @@
+[
+ {
+  "id": "P101",
+  "track": "team",
+  "name": "군 시설 내부 선행관찰을 위한 이벤트 중심 로봇 메모리 및 3D-aware VLM 통합 시스템",
+  "hw": "사족보행 로봇",
+  "person": null,
+  "team": "1조",
+  "teamName": "야호",
+  "scores": {
+   "sota": 0.5,
+   "orig": 0.7,
+   "hwUse": 0.95,
+   "hwFit": 0.9,
+   "stability": 0.55,
+   "delivery": 0.85
+  },
+  "source": "https://drive.google.com/file/d/1pmwotYiTDB8qozMiHK2Kohmo2QFm3U0i/view"
+ },
+ {
+  "id": "P102",
+  "track": "team",
+  "name": "여단급 이하 제대를 위한 AI 드론운용 지원체계의 설계 및 구현",
+  "hw": "드론 운용지원 SW",
+  "person": null,
+  "team": "2조",
+  "teamName": "김이박",
+  "scores": {
+   "sota": 0.7,
+   "orig": 0.8,
+   "hwUse": 0.55,
+   "hwFit": 0.45,
+   "stability": 0.85,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1EFVyt6VPm6LpIN3oXXZGc63t7FbZ1_Ut/view"
+ },
+ {
+  "id": "P103",
+  "track": "team",
+  "name": "악기상 환경에서의 표적 학습 데이터 신뢰성 향상을 위한 딥러닝 융합 자동 라벨링 기법",
+  "hw": "없음(라벨링 SW)",
+  "person": null,
+  "team": "3조",
+  "teamName": "에이스",
+  "scores": {
+   "sota": 0.7,
+   "orig": 0.75,
+   "hwUse": 0.15,
+   "hwFit": 0.1,
+   "stability": 0.9,
+   "delivery": 0.8
+  },
+  "source": "https://drive.google.com/file/d/1YVANfzzAB1WHJ1GSlDl7x55y7WN3xKki/view"
+ },
+ {
+  "id": "P104",
+  "track": "team",
+  "name": "합성 공격 전후 영상 기반 전차 피해 변화탐지의 적용 가능성 연구",
+  "hw": "없음(합성·3D SW)",
+  "person": null,
+  "team": "4조",
+  "teamName": "EIII",
+  "scores": {
+   "sota": 0.8,
+   "orig": 0.9,
+   "hwUse": 0.15,
+   "hwFit": 0.1,
+   "stability": 0.65,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1WGke_S_u8eb3C01cM7ZY9vwZ_lLO3qvv/view"
+ },
+ {
+  "id": "P105",
+  "track": "team",
+  "name": "Detection Loss 기반 Modality Translation을 통한 RGB 사전학습 객체 탐지기의 IR 영상 지식 전이",
+  "hw": "IR/열화상(데이터 중심)",
+  "person": null,
+  "team": "5조",
+  "teamName": "오지",
+  "scores": {
+   "sota": 0.75,
+   "orig": 0.9,
+   "hwUse": 0.25,
+   "hwFit": 0.2,
+   "stability": 0.85,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1IL4_w67f3yl23Nw4GubXpaLDPMmFLQkE/view"
+ },
+ {
+  "id": "P106",
+  "track": "team",
+  "name": "합성 군 교육훈련 데이터를 활용한 제약 기반 동적 재계획 모형의 설계 및 성능 평가",
+  "hw": "없음(최적화 SW)",
+  "person": null,
+  "team": "6조",
+  "teamName": "스파크",
+  "scores": {
+   "sota": 0.65,
+   "orig": 0.7,
+   "hwUse": 0.1,
+   "hwFit": 0.05,
+   "stability": 0.95,
+   "delivery": 0.85
+  },
+  "source": "https://drive.google.com/file/d/1Y5dTTjRNQs_WGKWvQkvZmrfbk9_O2RNS/view"
+ },
+ {
+  "id": "P107",
+  "track": "team",
+  "name": "UA-SAHI: Upsample Anything 기반 구조 보존형 예산 제한 슬라이싱을 이용한 원격탐사 소표적 탐지",
+  "hw": "드론(yolo tiny object탐지)",
+  "person": null,
+  "team": "7조",
+  "teamName": "MSG",
+  "scores": {
+   "sota": 0.85,
+   "orig": 0.95,
+   "hwUse": 0.3,
+   "hwFit": 0.25,
+   "stability": 0.9,
+   "delivery": 0.95
+  },
+  "source": "https://drive.google.com/file/d/1LcL2xvjqWy1MmeKzp4DSGKHqcqH6RzaF/view"
+ },
+ {
+  "id": "P201",
+  "track": "personal",
+  "name": "지휘관 화상회의(VTC) 의사소통 신뢰성 보증을 위한 AI 프레임워크: 자동 사전점검, 실시간 명료화, 명령 복창 검증의 통합",
+  "hw": "VTC/마이크·스피커",
+  "person": "최석철",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.7,
+   "orig": 0.85,
+   "hwUse": 0.85,
+   "hwFit": 0.9,
+   "stability": 0.65,
+   "delivery": 0.9
+  },
+  "source": "https://docs.google.com/document/d/10aiGETROxhqU5UmwEhXhY-ubEtjPRexr/edit?usp=drivesdk&ouid=116536920228399378514&rtpof=true&sd=true"
+ },
+ {
+  "id": "P202",
+  "track": "personal",
+  "name": "군 데이터 제약 환경에서의 TICN 자율복구를 위한 계층적 AI 라우팅 아키텍처 설계",
+  "hw": "전술망 시뮬레이션",
+  "person": "서보윤",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.8,
+   "orig": 0.95,
+   "hwUse": 0.3,
+   "hwFit": 0.25,
+   "stability": 0.8,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1eeih6bI70YgafghLqW7BZ-F939LcYdFE/view?usp=drivesdk"
+ },
+ {
+  "id": "P203",
+  "track": "personal",
+  "name": "유전 알고리즘 기반 항적 데이터를 활용한 딥러닝 무인기 충돌회피 기법",
+  "hw": "UAV 3-DoF 시뮬레이션",
+  "person": "김두환",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.85,
+   "orig": 0.85,
+   "hwUse": 0.65,
+   "hwFit": 0.55,
+   "stability": 0.75,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1uXqzFKRbmjq_WJnRVF3bJfswtu8bAoy8/view?usp=drivesdk"
+ },
+ {
+  "id": "P204",
+  "track": "personal",
+  "name": "초분광 영상의 위장표적 탐지를 위한 어텐션 기반 밴드 셀렉션 기법 연구",
+  "hw": "초분광 센서(데이터 중심)",
+  "person": "이건희",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.8,
+   "orig": 0.85,
+   "hwUse": 0.45,
+   "hwFit": 0.35,
+   "stability": 0.9,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1fseqyOHBb_UYU0sPxTAy1Rx0iVzEwln4/view?usp=drivesdk"
+ },
+ {
+  "id": "P205",
+  "track": "personal",
+  "name": "합동·연합전력 추천을 위한 AI 의사결정지원 모델 연구 - JAIOS(Joint AI Orchestration System)",
+  "hw": "가상전장·지휘결심 SW",
+  "person": "전누리",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.9,
+   "orig": 0.95,
+   "hwUse": 0.25,
+   "hwFit": 0.2,
+   "stability": 0.8,
+   "delivery": 0.95
+  },
+  "source": "https://docs.google.com/document/d/1aQ_fe4zI1SYHMiOACcZfCjwUb8rqZd8W/edit?usp=drivesdk&ouid=116536920228399378514&rtpof=true&sd=true"
+ },
+ {
+  "id": "P206",
+  "track": "personal",
+  "name": "경험 지능 기반 업무 절차 진화 시스템 설계 및 구현",
+  "hw": "폐쇄망 업무지원 SW",
+  "person": "김민규",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.8,
+   "orig": 0.9,
+   "hwUse": 0.25,
+   "hwFit": 0.2,
+   "stability": 0.85,
+   "delivery": 0.95
+  },
+  "source": "https://drive.google.com/file/d/1koQBw7KtmfZEHrh9ubwFVgs-s4LrwhXU/view?usp=drivesdk"
+ },
+ {
+  "id": "P207",
+  "track": "personal",
+  "name": "UA-SAHI-MAL: 구조 보존형 예산 제한 슬라이싱을 이용한 악성코드 정밀 지역화 및 탐지 효율화 연구",
+  "hw": "GPU 보안분석 SW",
+  "person": "최석철",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.85,
+   "orig": 0.95,
+   "hwUse": 0.25,
+   "hwFit": 0.2,
+   "stability": 0.9,
+   "delivery": 0.95
+  },
+  "source": "https://docs.google.com/document/d/1l4NmVMJyPumJHdaeur_0z-950GsPRGox/edit?usp=drivesdk&ouid=116536920228399378514&rtpof=true&sd=true"
+ },
+ {
+  "id": "P208",
+  "track": "personal",
+  "name": "다변량 전력품질 시계열 기반 Transformer를 활용한 전력설비 이상징후 사전 탐지",
+  "hw": "전력설비 센서 데이터",
+  "person": "김민균",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.85,
+   "orig": 0.75,
+   "hwUse": 0.35,
+   "hwFit": 0.25,
+   "stability": 0.9,
+   "delivery": 0.85
+  },
+  "source": "https://drive.google.com/file/d/1_uqWVNFy2JJ6-k96ze47XfchElOnZ4xM/view?usp=drivesdk"
+ },
+ {
+  "id": "P209",
+  "track": "personal",
+  "name": "훈련생 자연어 응답 분석 기반 AI 기반 사이버 훈련 시스템 개발",
+  "hw": "로컬 PC·사이버훈련 SW",
+  "person": "남하늘",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.7,
+   "orig": 0.8,
+   "hwUse": 0.3,
+   "hwFit": 0.25,
+   "stability": 0.85,
+   "delivery": 0.85
+  },
+  "source": "https://drive.google.com/file/d/1a2sMgwRmYSeSD-0lumUqcsUedIaEBDAq/view?usp=drivesdk"
+ },
+ {
+  "id": "P210",
+  "track": "personal",
+  "name": "북한·러시아 공개 군사교리 기반 멀티모달 적 위험 예측 시스템의 설계 및 구현",
+  "hw": "멀티모달 지휘결심 SW",
+  "person": "이진욱",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.9,
+   "orig": 0.95,
+   "hwUse": 0.25,
+   "hwFit": 0.2,
+   "stability": 0.8,
+   "delivery": 0.95
+  },
+  "source": "https://docs.google.com/document/d/1X2RgCsYv--SCbHwA2McBZgE8Xg4bNDok/edit?usp=drivesdk&ouid=116536920228399378514&rtpof=true&sd=true"
+ },
+ {
+  "id": "P211",
+  "track": "personal",
+  "name": "공산오차·혼합표적 피해반응·표적 공간분산을 반영한 AI 화력추천 시스템의 설계 및 구현",
+  "hw": "화력효과 시뮬레이션 SW",
+  "person": "이진욱",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.9,
+   "orig": 0.9,
+   "hwUse": 0.25,
+   "hwFit": 0.2,
+   "stability": 0.9,
+   "delivery": 0.95
+  },
+  "source": "https://docs.google.com/document/d/1kvRfv152lwhi_0OvwiusS9pioU5ktj4-/edit?usp=drivesdk&ouid=116536920228399378514&rtpof=true&sd=true"
+ },
+ {
+  "id": "P212",
+  "track": "personal",
+  "name": "물리모델 기반 학습순위화 모델 비교를 통한 통신·거리 균형 경로 추천 연구",
+  "hw": "전술무전·지형 데이터",
+  "person": "박규민",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.85,
+   "orig": 0.8,
+   "hwUse": 0.45,
+   "hwFit": 0.4,
+   "stability": 0.9,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1ZKAzl0d6udp3VJDFA39eRrDsgZdM0Xnv/view?usp=drivesdk"
+ },
+ {
+  "id": "P213",
+  "track": "personal",
+  "name": "CCTVDetect2: 사람·차량 탐지·추적 및 익명 재식별 후보 제시 시스템",
+  "hw": "CCTV/RTSP 카메라",
+  "person": "김영수",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.65,
+   "orig": 0.75,
+   "hwUse": 0.9,
+   "hwFit": 0.9,
+   "stability": 0.8,
+   "delivery": 0.9
+  },
+  "source": "https://docs.google.com/presentation/d/1lfehMQnCi1B_hT7d0QDHsSpPxQphwpD-/edit?usp=drivesdk&ouid=116536920228399378514&rtpof=true&sd=true"
+ },
+ {
+  "id": "P214",
+  "track": "personal",
+  "name": "개인 훈련 이력과 훈련일지 텍스트를 결합한 예비군 취약과목 예측 기법",
+  "hw": "훈련 데이터·업무지원 SW",
+  "person": "이시연",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.8,
+   "orig": 0.85,
+   "hwUse": 0.2,
+   "hwFit": 0.15,
+   "stability": 0.9,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1awe-JyMXwy5N_tjPM15RTqHCsG4dBp7U/view?usp=drivesdk"
+ },
+ {
+  "id": "P215",
+  "track": "personal",
+  "name": "군사 통신 채널 환경이 오디오 딥페이크 탐지 모델의 강건성에 미치는 영향 분석",
+  "hw": "무전 채널·코덱 시뮬레이션",
+  "person": "김정윤",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.95,
+   "orig": 0.85,
+   "hwUse": 0.4,
+   "hwFit": 0.35,
+   "stability": 0.95,
+   "delivery": 0.95
+  },
+  "source": "https://drive.google.com/file/d/1TBa2hnrI2co2isDsyK1elryyCZOMKtNk/view?usp=drivesdk"
+ },
+ {
+  "id": "P216",
+  "track": "personal",
+  "name": "Task·Tool 기반 GPT Planner–Verifier를 활용한 에이전틱 AI 군 시설 운영비서 연구",
+  "hw": "항온항습기 점검자료·SW",
+  "person": "이민우",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.8,
+   "orig": 0.9,
+   "hwUse": 0.35,
+   "hwFit": 0.25,
+   "stability": 0.85,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1wQDjSYNEC1DomUqA_avNSdNbzfuOvk_w/view?usp=drivesdk"
+ },
+ {
+  "id": "P217",
+  "track": "personal",
+  "name": "구조적 무기록(Zero-Persistence) 제약 하의 온디바이스 AI 적용 한계 규명 및 실증",
+  "hw": "Android 단말·Go 서버",
+  "person": "강줄기",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.95,
+   "orig": 1.0,
+   "hwUse": 0.95,
+   "hwFit": 1.0,
+   "stability": 0.9,
+   "delivery": 0.95
+  },
+  "source": "https://drive.google.com/file/d/15T526ZFqt0hS3q1eM1DRHjRAO2LnSaJn/view?usp=drivesdk"
+ },
+ {
+  "id": "P218",
+  "track": "personal",
+  "name": "GC/EI-MS 스펙트럼 데이터 기반 딥러닝을 활용한 화생방 미지 화합물 구조 예측 연구",
+  "hw": "GC/MS 분석 데이터",
+  "person": "김혜인",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.9,
+   "orig": 0.9,
+   "hwUse": 0.35,
+   "hwFit": 0.25,
+   "stability": 0.9,
+   "delivery": 0.95
+  },
+  "source": "https://drive.google.com/file/d/1fp2mVh5ufE7f5uk8pnS_morjiDv88zfW/view?usp=drivesdk"
+ },
+ {
+  "id": "P219",
+  "track": "personal",
+  "name": "Structure-Aware RAG와 경량 LLM을 활용한 자연어 기반 HWPX 보고 문서 양식 생성 및 변환",
+  "hw": "폐쇄망 PC·문서 SW",
+  "person": "라경주",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.75,
+   "orig": 0.9,
+   "hwUse": 0.25,
+   "hwFit": 0.2,
+   "stability": 0.9,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1eYNGyr2yMPT7SqOxon4tJQU6h1Ep-qc2/view?usp=drivesdk"
+ },
+ {
+  "id": "P220",
+  "track": "personal",
+  "name": "얼굴 행동 특징과 개인별 기준값을 활용한 군 장병 피로 위험 추정 모델 연구",
+  "hw": "웹캠·노트북",
+  "person": "강현재",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.8,
+   "orig": 0.8,
+   "hwUse": 0.85,
+   "hwFit": 0.8,
+   "stability": 0.85,
+   "delivery": 0.9
+  },
+  "source": "https://drive.google.com/file/d/1gOoj5INEqd8wNvzRr8r83mP8Y8QsfPmJ/view?usp=drivesdk"
+ },
+ {
+  "id": "P221",
+  "track": "personal",
+  "name": "제한된 GPU 자원의 폐쇄 환경에서 LLM 규모와 RAG 구성에 따른 성능·자원 효율성 비교 연구",
+  "hw": "GPU 워크스테이션·폐쇄망",
+  "person": "강현섭",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.9,
+   "orig": 0.85,
+   "hwUse": 0.8,
+   "hwFit": 0.85,
+   "stability": 0.9,
+   "delivery": 0.95
+  },
+  "source": "https://drive.google.com/file/d/1ApsmtyCT-UTWxl6VOYUvm6xQx3ORvh3q/view?usp=drivesdk"
+ },
+ {
+  "id": "P222",
+  "track": "personal",
+  "name": "합성 다중모달 데이터 기반 침수 도로 손상 평가 및 방향성 링크 안전 우회경로 추천 연구",
+  "hw": "UAV/드론·도로망 시뮬레이션",
+  "person": "임철희",
+  "team": null,
+  "teamName": null,
+  "scores": {
+   "sota": 0.85,
+   "orig": 0.95,
+   "hwUse": 0.7,
+   "hwFit": 0.6,
+   "stability": 0.65,
+   "delivery": 0.95
+  },
+  "source": "https://drive.google.com/file/d/1bubcsWkQ3aGQt_JHCrqWy9uCnkddBrDR/view?usp=drivesdk"
+ }
+]
