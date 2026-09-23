@@ -1,4 +1,4 @@
-/* CAUMIL 논문 지표 v2 — data/data.js(window.RANK_DATA)를 읽어 순위 탐색·범주 개요·지표 산출·원고 프로필을 그린다.
+/* CAUMIL 논문 지표 v3 — data/data.js(window.RANK_DATA)를 읽어 순위 탐색·범주 개요·지표 산출·원고 프로필을 그린다.
    점수 계산식은 pipeline/score.py 와 같다(노트북 experience_prior_probability 의 닫힌식).
    화면 구성은 Claude Design 캔버스 'CAUMIL 논문 순위 v2'(9tBbBaMpePcUWcuFiKSsCm)를 따른다. */
 (function () {
@@ -70,7 +70,7 @@
   // ------------------------------------------------------------------ state
   var state = { page: "rank", cat: "personal", off: {}, sortKey: "rank", sortDir: 1, q: "", pid: null, model: presetModel(W.default), raw: null, labCat: "personal" };
   state.raw = rawFromModel(state.model);
-  try { var sv = localStorage.getItem("caumil.v2.cat"); if (sv && CAT_LABEL[sv]) state.cat = sv; } catch (e) { /* 저장소를 쓸 수 없는 환경 */ }
+  try { var sv = localStorage.getItem("caumil.v3.cat"); if (sv && CAT_LABEL[sv]) state.cat = sv; } catch (e) { /* 저장소를 쓸 수 없는 환경 */ }
 
   // ------------------------------------------------------------------ items & ranking
   function personalPapers() { return PAPERS.filter(function (p) { return p.track === "personal"; }); }
@@ -134,7 +134,7 @@
     Object.keys(ranks).forEach(function (id) {
       var rs = ranks[id].slice().sort(function (a, b) { return a - b; }), n = rs.length;
       var q = function (p) { return rs[Math.min(n - 1, Math.max(0, Math.round(p * (n - 1))))]; };
-      out[id] = { p1: rs.filter(function (v) { return v === 1; }).length / n, top3: rs.filter(function (v) { return v <= 3; }).length / n, p10: q(0.1), p50: q(0.5), p90: q(0.9) };
+      out[id] = { p1: rs.filter(function (v) { return v === 1; }).length / n, top2: rs.filter(function (v) { return v <= 2; }).length / n, top3: rs.filter(function (v) { return v <= 3; }).length / n, p10: q(0.1), p50: q(0.5), p90: q(0.9) };
     });
     return out;
   }
@@ -154,7 +154,7 @@
       + '<div class="title-row"><h1 class="title">' + title + "</h1>" + (pill ? '<span class="pill">' + esc(pill) + "</span>" : "") + "</div>"
       + (lede ? '<p class="lede">' + lede + "</p>" : "") + "</div>" + (right || "") + "</div></section>";
   }
-  function footerText() { return "CAUMIL 논문 지표 v2 · 데이터 기준 " + basisText() + " · " + FOOT_NOTE; }
+  function footerText() { return "CAUMIL 논문 지표 v3 · 데이터 기준 " + basisText() + " · " + FOOT_NOTE; }
 
   // ------------------------------------------------------------------ 순위 탐색
   function rankContext() {
@@ -214,7 +214,7 @@
       var rangeTxt = !s ? "—" : (s.p10 === s.p90 ? s.p10 + "위" : s.p10 + "–" + s.p90 + "위");
       var rbar = s && N > 1 ? '<span class="rbar"><i style="left:' + f1((s.p10 - 1) / (N - 1) * 100) + "%;width:" + f1(Math.max(6, (s.p90 - s.p10) / (N - 1) * 100)) + '%"></i></span>' : "";
       var extra = r.extra ? ' <span class="mono">(' + esc(r.extra) + ")</span>" : "";
-      return '<div class="tgrid trow">'
+      return '<div class="tgrid trow' + (r.rank <= 2 ? ' top2' : '') + '">'
         + '<span class="c-rank">' + r.rank + "</span>"
         + '<span class="c-title"><a href="#' + esc(r.id) + '" class="clamp2">' + esc(r.title) + '</a><span class="who"><b>' + esc(r.who) + '</b><span aria-hidden="true">·</span><span>' + esc(r.venue) + '</span><span class="mono id">' + esc(r.id) + "</span>" + extra + badges(r.paper) + "</span></span>"
         + '<span class="c-prim"><span class="v">' + f1(r.prim) + '</span><span class="bar"><i style="width:' + Math.max(1, Math.round(r.prim)) + '%"></i></span>' + qChip(r.qn, "mq") + "</span>"
@@ -232,7 +232,7 @@
       + '<div class="tbl"><div class="tbl-scroll"><div class="tgrid tgroup"><span>경진대회 6개 변수 · 0–1</span></div><div class="tgrid thead">' + thead + "</div>" + body
       + (rows.length ? "" : '<p class="empty">검색어와 맞는 원고가 없습니다.</p>') + "</div></div>"
       + '<div class="notes"><span class="note">적합도 = 가중치 노트북 사전함수의 경험 기반 점수이며 실제 우승 확률이 아닙니다. 상호작용 항이 없는 가중치(균등, HW 변수 제외)는 환산 점수로 비교합니다.</span>'
-      + '<span class="note">백분위 = (N − R + 0.5) ÷ N × 100 · N은 범주의 원고 수, R은 순위입니다.</span>'
+      + '<span class="note">1·2위는 왼쪽 띠로 강조합니다(상위 2편 기준). 백분위 = (N − R + 0.5) ÷ N × 100 · N은 범주의 원고 수, R은 순위입니다.</span>'
       + '<span class="note">순위 범위 = 가중치와 점수를 흔든 ' + MC.runs.toLocaleString() + "회 재계산에서 순위의 P10–P90입니다. 학회를 거르면 표시하지 않습니다.</span></div>";
     lastRows = rows; lastCtx = c;
   }
@@ -266,7 +266,9 @@
     var n = ranked.length;
     var vals = ranked.map(function (r) { return r.prim; });
     var q1 = ranked.filter(function (r) { return r.qn === 1; });
-    var top = ranked[0];
+    var top = ranked[0], second = ranked[1];
+    var unit = m.syn ? "%" : "점";
+    var who2 = function (r) { return r.paper.track === "team" ? shortWho(r.paper) : r.who; };
     var med = median(vals);
     var means = KEYS.map(function (k) { var v = ranked.reduce(function (s, r) { return s + r.scores[k]; }, 0) / (n || 1); return '<span class="mean" title="' + esc(FULL[k]) + " 평균 " + f2(v) + '" style="background:' + heat(v) + '">' + f2(v) + "</span>"; }).join("");
     var nNew = ranked.filter(function (r) { return r.isNew; }).length, nUpd = ranked.filter(function (r) { return r.isUpd; }).length;
@@ -276,7 +278,7 @@
       + '<span class="num">' + (isNaN(med) ? "—" : f1(med)) + "</span>"
       + '<span class="num">' + (q1.length ? f1(Math.min.apply(null, q1.map(function (r) { return r.prim; }))) : "—") + "</span>"
       + '<span class="dist-cell"><span class="dist"><span class="ax"></span>' + (isNaN(med) ? "" : '<span class="med" title="중앙값" style="left:' + f1(Math.min(100, med)) + '%"></span>') + dots + (top ? '<span class="top" style="left:' + f1(Math.min(100, top.prim)) + '%">' + esc(top.id) + "</span>" : "") + "</span></span>"
-      + '<span class="topc">' + (top ? "<span>" + esc(top.id) + " · " + esc(top.who) + '</span><span class="f">' + f1(top.prim) + (m.syn ? "%" : "점") + "</span>" : "—") + "</span>"
+      + '<span class="topc">' + (top ? '<span><span class="r">1</span>' + esc(top.id) + " · " + esc(who2(top)) + ' <span class="f">' + f1(top.prim) + unit + "</span></span>" : "—") + (second ? '<span><span class="r">2</span>' + esc(second.id) + " · " + esc(who2(second)) + ' <span class="f">' + f1(second.prim) + unit + "</span></span>" : "") + "</span>"
       + means + '<span class="st">' + (nNew || nUpd ? nNew + " · " + nUpd : "–") + "</span></div>";
   }
   function renderCategories() {
@@ -296,10 +298,10 @@
     main.innerHTML = pageHead("<span>범주 개요</span>", "범주 개요", "범주마다 원고 수, " + esc(ml) + " 분포, 6개 변수의 평균을 비교합니다. " + esc(modelLabel(m)) + " 가중치 기준입니다.")
       + '<div class="inner cat-wrap"><div class="tbl"><div class="tbl-scroll">'
       + '<div class="cgrid chead"><span style="padding-left:16px">범주</span><span style="text-align:right">원고</span><span style="text-align:right">' + esc(ml) + ' 중앙값</span><span style="text-align:right">Q1 경계</span>'
-      + '<span class="dist"><span>' + esc(ml) + ' 분포</span><span class="ax"><span>0</span><span>50</span><span>100</span></span></span><span>1위 원고</span>'
+      + '<span class="dist"><span>' + esc(ml) + ' 분포</span><span class="ax"><span>0</span><span>50</span><span>100</span></span></span><span>상위 2편</span>'
       + '<span class="means"><span class="t">6개 변수 평균 · 0–1</span><span class="k">' + KEYS.map(function (k) { return "<span>" + TINY[k] + "</span>"; }).join("") + "</span></span>"
       + '<span style="text-align:right;padding-right:12px">신규 · 수정</span></div>' + rows.join("") + "</div></div>"
-      + '<div class="notes"><span class="note">' + esc(ml) + ' 분포의 점은 원고 한 편, 검은 눈금은 중앙값입니다. 범주 이름을 누르면 해당 순위표로 갑니다.</span>'
+      + '<div class="notes"><span class="note">' + esc(ml) + ' 분포의 점은 원고 한 편, 검은 눈금은 중앙값입니다. 상위 2편은 1·2위 원고입니다. 범주 이름을 누르면 해당 순위표로 갑니다.</span>'
       + '<span class="note">Q1 경계는 Q1에 든 원고 가운데 가장 낮은 ' + esc(ml) + '입니다. 원고가 2편 이하인 범주는 백분위 정의상 Q1이 생기지 않습니다.</span></div></div>';
   }
 
@@ -368,7 +370,7 @@
     var moved = 0;
     var rows = ranked.map(function (r, i) {
       var d = (base[r.id] || r.rank) - r.rank; if (d !== 0) moved += 1;
-      return '<div class="lgrid"><span class="mono" style="font-weight:600">' + r.rank + '</span><span class="id"><span class="mono">' + esc(r.id) + "</span> " + esc(shortWho(r.paper)) + '</span><span class="m"><span class="bar"><i style="width:' + Math.max(1, Math.round(r.prim)) + '%"></i></span><span class="v">' + f1(r.prim) + '</span></span><span class="d ' + (d > 0 ? "up" : d < 0 ? "down" : "muted") + '">' + (d > 0 ? "▲" + d : d < 0 ? "▼" + (-d) : "–") + "</span></div>";
+      return '<div class="lgrid' + (r.rank <= 2 ? ' top2' : '') + '"><span class="mono" style="font-weight:600">' + r.rank + '</span><span class="id"><span class="mono">' + esc(r.id) + "</span> " + esc(shortWho(r.paper)) + '</span><span class="m"><span class="bar"><i style="width:' + Math.max(1, Math.round(r.prim)) + '%"></i></span><span class="v">' + f1(r.prim) + '</span></span><span class="d ' + (d > 0 ? "up" : d < 0 ? "down" : "muted") + '">' + (d > 0 ? "▲" + d : d < 0 ? "▼" + (-d) : "–") + "</span></div>";
     }).join("");
     document.getElementById("lab-rows").innerHTML = '<div class="lgrid h"><span>순위</span><span>원고</span><span style="text-align:right">' + esc(metricLabel(m)) + '</span><span style="text-align:right">기본 대비</span></div>' + rows;
     var mv = document.getElementById("lab-moved");
@@ -434,7 +436,7 @@
       + '<div class="kpi"><span class="l">순위</span><span class="v">' + me.rank + '<small class="mu"> / ' + N + '</small></span><span class="s">' + esc(trackLabel(p)) + " 전체</span></div>"
       + '<div class="kpi"><span class="l">백분위</span><span class="v">' + f1(me.pctl) + '</span><span class="s">(N − R + 0.5) ÷ N × 100</span></div>'
       + '<div class="kpi"><span class="l">사분위</span>' + qChip(me.qn) + '<span class="s">' + Q_NOTE[me.qn] + "</span></div>"
-      + '<div class="kpi"><span class="l">1위 확률</span><span class="v">' + (s ? pct(s.p1) : "—") + '</span><span class="s">' + (st.live ? "브라우저 1,500회" : MC.runs.toLocaleString() + "회") + " 재계산 중 1위 비율</span></div></section>";
+      + '<div class="kpi"><span class="l">1위 확률 · 2위 안</span><span class="v">' + (s ? pct(s.p1) : "—") + '<small class="mu"> · ' + (s && s.top2 != null ? pct(s.top2) : "—") + '</small></span><span class="s">' + (st.live ? "브라우저 1,500회" : MC.runs.toLocaleString() + "회") + " 재계산 중 1위 · 2위 안 비율</span></div></section>";
     var catsHtml = cr.rows.map(function (r) { return '<div class="pgrid"><span>' + esc(r.name) + '</span><span class="r">' + r.rank + " / " + r.n + '</span><span class="r pc">' + f1(r.pctl) + '</span><span class="c">' + qChip(r.qn) + "</span></div>"; }).join("");
     var critDesk = KEYS.map(function (k) {
       var v = p.scores[k], pv = planOk ? proj.scores[k] : null, d = pv == null ? null : v - pv;
@@ -458,7 +460,7 @@
       planHtml = '<p class="note" style="font-size:12.5px">' + (proj ? "계획서와 주제가 달라 점수를 비교하지 않습니다." : "엑셀에 대응하는 계획서가 없는 원고입니다.") + "</p>";
     }
     var rangeHtml = s ? '<div class="range"><span class="ax"></span><span class="band" style="left:' + f1(N > 1 ? (s.p10 - 1) / (N - 1) * 100 : 0) + "%;width:" + f1(N > 1 ? Math.max(3, (s.p90 - s.p10) / (N - 1) * 100) : 100) + '%"></span><span class="mid" style="left:' + f1(N > 1 ? (s.p50 - 1) / (N - 1) * 100 : 0) + '%"></span></div><div class="range-ax"><span>1위</span><span>' + N + "위</span></div>"
-      + '<dl class="kv"><dt>순위 범위 P10–P90</dt><dd>' + (s.p10 === s.p90 ? s.p10 + "위" : s.p10 + "–" + s.p90 + "위") + "</dd><dt>중앙 순위</dt><dd>" + s.p50 + "위</dd><dt>1위 확률</dt><dd>" + pct(s.p1) + "</dd><dt>3위 안 확률</dt><dd>" + pct(s.top3) + "</dd></dl>" : '<p class="note">안정성 자료가 없습니다.</p>';
+      + '<dl class="kv"><dt>순위 범위 P10–P90</dt><dd>' + (s.p10 === s.p90 ? s.p10 + "위" : s.p10 + "–" + s.p90 + "위") + "</dd><dt>중앙 순위</dt><dd>" + s.p50 + "위</dd><dt>1위 확률</dt><dd>" + pct(s.p1) + "</dd><dt>2위 안 확률</dt><dd>" + (s.top2 != null ? pct(s.top2) : "—") + "</dd><dt>3위 안 확률</dt><dd>" + pct(s.top3) + "</dd></dl>" : '<p class="note">안정성 자료가 없습니다.</p>';
     var sameList = all.map(function (r) { return '<button type="button" data-act="pick" data-pid="' + esc(r.id) + '" aria-pressed="' + (r.id === p.id) + '"><span class="r">' + r.rank + "</span><span>" + esc(shortWho(r.paper)) + ' <span class="mono muted" style="font-size:11.5px">' + esc(r.id) + '</span></span><span class="f">' + f1(r.prim) + (m.syn ? "%" : "") + "</span></button>"; }).join("");
     var internal = "";
     if (!D.public) {
@@ -506,7 +508,7 @@
       if (r.cat) {
         state.cat = r.cat; state.off = {}; state.sortKey = "rank"; state.sortDir = 1;
         if (r.venue) VENUE_ORDER.forEach(function (v) { if (v !== r.venue) state.off[v] = true; });
-        try { localStorage.setItem("caumil.v2.cat", r.cat); } catch (e) { /* 무시 */ }
+        try { localStorage.setItem("caumil.v3.cat", r.cat); } catch (e) { /* 무시 */ }
       }
       renderRank();
     } else if (r.page === "categories") renderCategories();
@@ -563,7 +565,7 @@
 
   // ------------------------------------------------------------------ boot
   document.getElementById("foot-meta").textContent = footerText();
-  var vc = document.getElementById("ver-cur"); if (vc) vc.textContent = "v2 · " + String(D.meta.basisDate || "").slice(0, 7).replace("-", ".");
+  var vc = document.getElementById("ver-cur"); if (vc) vc.textContent = "v3 · " + String(D.meta.basisDate || "").slice(0, 7).replace("-", ".");
   var q0 = document.getElementById("q"); if (q0) q0.value = state.q;
   route();
 })();

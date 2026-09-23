@@ -14,11 +14,11 @@
 | `data/criteria.json`, `data/weights.json` | 6개 변수 앵커, 가중치 프리셋·상호작용·로지스틱 | ○ |
 | `eval/<ID>.json` | 평가 원자료(점수·근거·리스크·인용) | ○ (사용자 결정 9/23) |
 | `data/lint.json`, `data/results.json` | 자동 점검, 순위·안정성 계산 결과(산출물) | ○ |
-| `site/template.html`, `site/app.js` | 사이트 템플릿과 스크립트(v2 학술 지표 색인형 디자인 구현). `site/legacy/` 는 이전 페이지 | ○ |
+| `site/template.html`, `site/app.js` | v3 사이트(학술 지표 색인형, 보라색 톤). `site/legacy/` 는 v2 페이지(같이 빌드되어 `v2/` 로 배포) | ○ |
 | `inputs/drive_listing.json`, `inputs/*.xlsx` | 드라이브 목록(파일·폴더 ID, 소유자 메일 포함)·엑셀 원본 | × |
 | `raw/`, `source_text/` | 원고 원본, 추출 텍스트 | × |
 | `dist/` | 빌드 산출물(`artifact.html`, `site/`) | × |
-| `index.html`, `app.js`, `data/data.js` | 저장소 루트의 **공개용** 사이트(`./run.sh deploy` 산출물) | ○ |
+| `index.html`, `app.js`, `data/data.js`, `v2/` | 저장소 루트의 **공개용** v3 사이트와 v2 보관본(`./run.sh deploy` 산출물) | ○ |
 
 원고 ID 는 주제를 딴 대문자 2글자(VT, MP …). 파일명은 `raw/<driveId>.<ext>`, `source_text/<ID>.txt`.
 
@@ -95,17 +95,19 @@ make check          # 평가 누락·텍스트 변경·격자·ID 매핑·result
 
 ### 6. 빌드와 게시
 ```bash
-make build          # 내부용: dist/artifact.html + dist/site/ (원문 링크 포함)
+make build          # 내부용: dist/artifact.html + dist/site/ + dist/v2/ (원문 링크 포함)
 make public         # 공개용: 원고 인용문(evidenceQuotes)을 빼고 드라이브 링크를 붙이지 않으며 robots noindex 를 단다 → dist/
-make deploy         # 공개용을 저장소 루트(index.html, app.js, data/data.js)에 배치. 커밋·푸시하면 Pages 가 갱신된다
+make deploy         # 공개용을 저장소 루트(index.html, app.js, data/data.js)와 v2/ 에 배치. 커밋·푸시하면 Pages 가 갱신된다
 ```
 - **claude.ai 아티팩트**(비공개): `dist/artifact.html` 을 기존 URL `https://claude.ai/artifact/L58PAzgKkDc6NZR6QSgbGz` 에 `url` 로 넘겨 다시 게시한다.
 - **GitHub Pages** `caumil-admin/caumil` (`https://caumil-admin.github.io/caumil/`): `make deploy` 로 루트를 갱신하고 커밋·푸시한다. `.github/workflows/pages.yml` 이 main 푸시마다 저장소 전체를 배포한다(v1 은 `v1/` 에 보존됨). 루트에는 항상 공개판만 둔다.
 - 푸시는 내장 브라우저의 `caumil-admin` 세션으로 GitHub 웹 업로드를 쓴다(클라우드 git 프록시가 이 저장소 쓰기를 막음).
 
-## 사이트 구조(v2)
+## 사이트 구조(v3)
 - 한 페이지 앱이며 해시로 화면을 나눈다: `#rank`(`#rank-<personal|people|team>[-<ee|it|dt>]`), `#categories`, `#method`, `#<원고 ID>`.
 - 계산은 전부 브라우저에서 한다(`site/app.js` 의 latent·적합도·환산 점수·백분위·사분위는 `pipeline/score.py` 와 같다). 순위 범위·1위 확률은 프리셋 4종은 `data/results.json` 의 4,000회 값을 쓰고, 사용자 가중치나 학회 필터가 걸리면 브라우저에서 1,500회 다시 계산하거나 표시하지 않는다.
+- 버전: v3 = 현재 디자인(루트), v2 = 캔버스 적용 전 다크 페이지(`v2/`, `site/legacy/`), v1 = 경진대회 전략 사이트(`v1/`). 헤더의 버전 전환과 푸터 링크로 오간다.
+- 상위 2편 기준: 순위표는 1·2위를 왼쪽 띠로 강조하고, 범주 개요는 범주마다 1·2위 원고를 보여 주며, 안정성에는 1위 확률·2위 안 확률(`top2`)·3위 안 확률이 있다(`pipeline/score.py` 몬테카를로).
 - 내부용 빌드(`make build`)에는 원고 프로필에 '투고 전 확인'(리스크·자동 점검·원문 링크) 패널이 있고, 공개판(`make public`/`deploy`)에는 없다. 아티팩트에서는 CSV 내려받기가 막혀 있어 'CSV 복사' 버튼이 된다.
 - 디자인 원본은 Claude Design 캔버스 https://claude.ai/artifact/9tBbBaMpePcUWcuFiKSsCm 이고, 토큰(색·서체)은 `site/template.html` 의 `:root` 에 있다. 다크 테마는 같은 토큰을 재정의한다.
 - 렌더링 확인은 이 머신의 Windows Chrome 을 헤드리스로 쓴다(`"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --screenshot=... file:///...`). 헤드리스 창은 500px 아래로 줄지 않으므로 모바일 폭은 390px iframe 으로 감싸 찍는다.

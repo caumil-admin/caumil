@@ -3,8 +3,9 @@
 
 출력:
   dist/artifact.html      한 파일(CSS·데이터·스크립트 인라인) — claude.ai 아티팩트 게시용(내부용)
-  dist/site/              GitHub Pages 형태(index.html, app.js, data/data.js, favicon.svg)
-  --root                  공개판을 저장소 루트(index.html, app.js, data/data.js)에 써서 Pages 배포 준비
+  dist/site/              GitHub Pages 형태(index.html, app.js, data/data.js, favicon.svg) — v3
+  dist/v2/                캔버스 디자인 적용 전 페이지(site/legacy/) — v2 보관본
+  --root                  공개판을 저장소 루트(index.html, app.js, data/data.js)와 v2/ 에 써서 Pages 배포 준비
 
 --public(공개판): 원고 인용문(evidenceQuotes)을 빼고, 드라이브 파일 ID·원문 링크를 붙이지 않으며, robots noindex 를 단다.
 내부용 빌드는 inputs/drive_listing.json 이 있을 때만 driveId·viewUrl 을 붙인다(카탈로그에는 해시만 있다).
@@ -110,11 +111,16 @@ def main():
         src = os.path.join(ROOT, name)
         if os.path.exists(src):
             shutil.copy(src, os.path.join(site, name))
+    legacy_t = open(os.path.join(SITE, "legacy", "template.html"), encoding="utf-8").read()
+    legacy_a = open(os.path.join(SITE, "legacy", "app.js"), encoding="utf-8").read()
+    legacy_head = '<link rel="icon" href="../favicon.svg" type="image/svg+xml" />' + ("\n" + robots if robots else "")
+    write_site(os.path.join(a.out, "v2"), legacy_t, legacy_a, djs, legacy_head)
     c = data["meta"]["counts"]
     print(f"built {'PUBLIC' if public else 'internal'}: {a.out}/artifact.html ({len(artifact)//1024} KB), {site}/ — papers {c['total']} (new {c['new']}, updated {c['updated']})")
     if a.root:
         write_site(ROOT, template, app, djs, FAVICON + "\n" + robots)
-        print(f"deployed PUBLIC site to repo root: index.html, app.js, data/data.js")
+        write_site(os.path.join(ROOT, "v2"), legacy_t, legacy_a, djs, legacy_head)
+        print("deployed PUBLIC site to repo root: index.html, app.js, data/data.js, v2/")
 
 
 if __name__ == "__main__":

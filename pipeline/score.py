@@ -88,6 +88,7 @@ class Prior:
             q = lambda p: rs[min(n - 1, max(0, int(math.floor(p * (n - 1) + 0.5))))]  # noqa: E731
             out[pid] = {
                 "p1": round(sum(1 for v in rs if v == 1) / n, 4),
+                "top2": round(sum(1 for v in rs if v <= 2) / n, 4),
                 "top3": round(sum(1 for v in rs if v <= 3) / n, 4),
                 "p10": q(0.1), "p50": q(0.5), "p90": q(0.9),
             }

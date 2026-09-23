@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="description" content="CAUMIL 개인·팀 논문 원고를 경진대회 6개 변수로 채점하고 사전함수로 적합도·순위·백분위·사분위를 매긴 학술 지표 페이지" />
-<meta name="theme-color" content="#F6F7F9" />
+<meta name="theme-color" content="#F6F5FA" />
 {{HEAD_EXTRA}}
 <title>CAUMIL 논문 지표</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,12 +13,12 @@
 <style>
 /* CAUMIL 논문 지표 v2 — 학술 지표 색인형. 토큰은 Claude Design 캔버스(9tBbBaMpePcUWcuFiKSsCm)에서 옮겼다. */
 :root {
-  --bg: #F6F7F9; --surface: #FFFFFF; --surface-2: #EEF1F5; --zebra: #FAFBFC;
-  --ink: #18212B; --muted: #566273; --rule: #DDE2E9; --rule-2: #C4CCD7;
-  --accent: #1D5B94; --accent-hover: #123E68; --accent-soft: #E6EEF7; --accent-rgb: 29, 91, 148;
+  --bg: #F6F5FA; --surface: #FFFFFF; --surface-2: #EFEDF5; --zebra: #FAF9FC;
+  --ink: #1B1A2E; --muted: #5B5872; --rule: #DFDCE9; --rule-2: #C7C3D6;
+  --accent: #56489E; --accent-hover: #3E3378; --accent-soft: #ECE9F7; --accent-rgb: 86, 72, 158;
   --up: #0E6B5C; --down: #9E3B2A;
   --q1-fg: #0E6B5C; --q1-bg: #E0F1EC; --q2-fg: #356B25; --q2-bg: #E8F2DF; --q3-fg: #845A08; --q3-bg: #F6EDD6; --q4-fg: #9E3B2A; --q4-bg: #F6E3DE;
-  --upd-fg: #845A08; --upd-bg: #F6EDD6; --chip-ink: #18212B; --on-chip: #FFFFFF;
+  --upd-fg: #845A08; --upd-bg: #F6EDD6; --chip-ink: #1B1A2E; --on-chip: #FFFFFF;
   --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   --font-serif: "Noto Serif KR", "AppleMyungjo", "Batang", Georgia, serif;
   --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -27,22 +27,22 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0F141B; --surface: #161D26; --surface-2: #1C2531; --zebra: #19212B;
-    --ink: #E8EDF3; --muted: #9AA7B8; --rule: #27313E; --rule-2: #364251;
-    --accent: #7FB0E6; --accent-hover: #A5C8F0; --accent-soft: #1B2C40; --accent-rgb: 127, 176, 230;
+    --bg: #12101C; --surface: #1A1727; --surface-2: #211D33; --zebra: #1D1A2C;
+    --ink: #ECEAF5; --muted: #A39FBA; --rule: #2F2A45; --rule-2: #3D3757;
+    --accent: #A99AE6; --accent-hover: #C4B9F0; --accent-soft: #2A2447; --accent-rgb: 169, 154, 230;
     --up: #5FCFB6; --down: #F09A88;
     --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
-    --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #E8EDF3; --on-chip: #0F141B;
+    --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0F141B; --surface: #161D26; --surface-2: #1C2531; --zebra: #19212B;
-  --ink: #E8EDF3; --muted: #9AA7B8; --rule: #27313E; --rule-2: #364251;
-  --accent: #7FB0E6; --accent-hover: #A5C8F0; --accent-soft: #1B2C40; --accent-rgb: 127, 176, 230;
+  --bg: #12101C; --surface: #1A1727; --surface-2: #211D33; --zebra: #1D1A2C;
+  --ink: #ECEAF5; --muted: #A39FBA; --rule: #2F2A45; --rule-2: #3D3757;
+  --accent: #A99AE6; --accent-hover: #C4B9F0; --accent-soft: #2A2447; --accent-rgb: 169, 154, 230;
   --up: #5FCFB6; --down: #F09A88;
   --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
-  --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #E8EDF3; --on-chip: #0F141B;
+  --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
   color-scheme: dark;
 }
 
@@ -163,6 +163,8 @@ p { margin: 0; }
 .j-c { justify-content: center; } .j-e { justify-content: flex-end; } .j-s { justify-content: flex-start; }
 .trow { min-height: 72px; border-top: 1px solid var(--rule); }
 .trow:nth-child(even) { background: var(--zebra); }
+.trow.top2 { box-shadow: inset 3px 0 0 var(--accent); }
+.trow.top2 .c-rank { color: var(--accent); }
 .c-rank { font-family: var(--font-mono); font-size: 16px; font-weight: 600; text-align: center; }
 .c-title { min-width: 0; padding: 10px 14px 10px 6px; display: flex; flex-direction: column; gap: 4px; }
 .c-title a { font-family: var(--font-serif); font-size: 14px; font-weight: 600; line-height: 1.45; text-decoration: none; }
@@ -183,7 +185,7 @@ p { margin: 0; }
 
 /* ---------- categories page ---------- */
 .cat-wrap { padding-block: 20px 28px; display: flex; flex-direction: column; gap: 12px; }
-.cgrid { display: grid; grid-template-columns: minmax(200px, 1fr) 56px 84px 84px 272px 150px repeat(6, 46px) 80px; align-items: center; min-width: 1150px; }
+.cgrid { display: grid; grid-template-columns: minmax(200px, 1fr) 56px 84px 84px 272px 176px repeat(6, 46px) 80px; align-items: center; min-width: 1176px; }
 .chead { align-items: end; background: var(--surface-2); border-bottom: 1px solid var(--rule-2); font-size: 12px; color: var(--muted); }
 .chead > span { padding: 12px 8px; }
 .chead .dist { padding: 8px 16px 10px; display: flex; flex-direction: column; gap: 4px; }
@@ -206,8 +208,9 @@ p { margin: 0; }
 .dist .med { position: absolute; top: 11px; width: 2px; height: 15px; margin-left: -1px; background: var(--ink); }
 .dist .dot { position: absolute; top: 13px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: rgba(var(--accent-rgb), 0.55); border: 1px solid var(--accent); }
 .dist .top { position: absolute; top: 0; font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; color: var(--accent); transform: translateX(-50%); }
-.crow .topc { padding: 0 8px; display: flex; flex-direction: column; gap: 2px; font-size: 12.5px; min-width: 0; }
+.crow .topc { padding: 6px 8px; display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; min-width: 0; }
 .crow .topc .f { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.crow .topc .r { font-family: var(--font-mono); font-weight: 600; color: var(--accent); margin-right: 4px; }
 .crow .mean { align-self: stretch; display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-size: 12.5px; border-left: 1px solid var(--surface); }
 .crow .st { font-family: var(--font-mono); font-size: 13px; text-align: right; padding-right: 12px; }
 
@@ -245,6 +248,7 @@ p { margin: 0; }
 .lgrid .m .bar { flex-grow: 1; height: 4px; }
 .lgrid .m .v { font-family: var(--font-mono); width: 40px; text-align: right; }
 .lgrid .d { font-family: var(--font-mono); text-align: right; }
+.lgrid.top2 > span:first-child { color: var(--accent); }
 .curve svg { display: block; width: 100%; height: auto; }
 .curve text { font-family: var(--font-mono); }
 .legend { display: flex; gap: 16px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
@@ -365,6 +369,7 @@ p { margin: 0; }
   .tgroup, .thead, .c-sec, .c-pctl, .c-var, .c-range { display: none; }
   .tgrid.trow { display: grid; grid-template-columns: 30px minmax(0, 1fr) 64px; grid-template-areas: "rank title prim"; align-items: start; gap: 10px; min-width: 0; min-height: 0; padding: 12px; margin-bottom: 8px; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); }
   .trow:nth-child(even) { background: var(--surface); }
+  .trow.top2 { box-shadow: none; border-color: var(--accent); }
   .c-rank { grid-area: rank; font-size: 18px; line-height: 1.3; text-align: left; }
   .c-title { grid-area: title; padding: 0; }
   .c-title a { font-size: 14.5px; }
@@ -413,17 +418,17 @@ p { margin: 0; }
         <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
         <input id="q" type="search" placeholder="원고 제목·저자·ID 검색" aria-label="원고 검색" autocomplete="off" />
       </label>
-      <div class="version" role="group" aria-label="사이트 버전"><a class="cur" href="#rank" aria-current="page" id="ver-cur">v2</a><a href="https://caumil-admin.github.io/caumil/v1/">v1 · 경진대회 전략(보관)</a></div>
+      <div class="version" role="group" aria-label="사이트 버전"><a class="cur" href="#rank" aria-current="page" id="ver-cur">v3</a><a href="https://caumil-admin.github.io/caumil/v2/">v2 · 논문 순위(보관)</a><a href="https://caumil-admin.github.io/caumil/v1/">v1 · 경진대회 전략(보관)</a></div>
     </div>
   </div>
   <nav class="inner m-row" aria-label="주요 메뉴(모바일)">
     <a href="#rank" data-nav="rank">순위 탐색</a><a href="#categories" data-nav="categories">범주 개요</a><a href="#method" data-nav="method">지표 산출</a>
-    <a class="v1" href="https://caumil-admin.github.io/caumil/v1/">v1 보관본</a>
+    <a class="v1" href="https://caumil-admin.github.io/caumil/v2/">v2</a><a href="https://caumil-admin.github.io/caumil/v1/">v1</a>
   </nav>
 </header>
 <main id="main" tabindex="-1"></main>
 <footer class="site-foot">
-  <div class="inner"><span id="foot-meta"></span><a href="https://caumil-admin.github.io/caumil/v1/">이전 버전(v1) 보기</a></div>
+  <div class="inner"><span id="foot-meta"></span><span>이전 버전 <a href="https://caumil-admin.github.io/caumil/v2/">v2</a> · <a href="https://caumil-admin.github.io/caumil/v1/">v1</a></span></div>
 </footer>
 {{SCRIPTS}}
 </body>
