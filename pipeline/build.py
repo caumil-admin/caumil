@@ -11,7 +11,7 @@
 내부용 빌드는 inputs/drive_listing.json 이 있을 때만 driveId·viewUrl 을 붙인다(카탈로그에는 해시만 있다).
 사용: python3 pipeline/build.py [--public] [--root] [--basis-date YYYY-MM-DD] [--last-sync ISO] [--out dist]
 """
-import argparse, datetime, json, os, shutil, sys
+import argparse, datetime, hashlib, json, os, shutil, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import DATA, DIST, ROOT, SITE, drive_key, load_json, load_listing, load_papers  # noqa: E402
@@ -77,9 +77,14 @@ def render(template, head_extra, scripts):
     return template.replace("{{HEAD_EXTRA}}", head_extra).replace("{{SCRIPTS}}", scripts)
 
 
+def _h(text):
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()[:8]
+
+
 def write_site(dirpath, template, app, djs, head_extra):
+    """Pages 용. 스크립트 주소에 내용 해시를 붙여 브라우저·CDN 캐시가 옛 파일을 잡고 있지 않게 한다."""
     os.makedirs(os.path.join(dirpath, "data"), exist_ok=True)
-    page = render(template, head_extra, '<script src="data/data.js"></script>\n<script src="app.js"></script>')
+    page = render(template, head_extra, f'<script src="data/data.js?v={_h(djs)}"></script>\n<script src="app.js?v={_h(app)}"></script>')
     open(os.path.join(dirpath, "index.html"), "w", encoding="utf-8").write(page)
     open(os.path.join(dirpath, "data", "data.js"), "w", encoding="utf-8").write(djs)
     open(os.path.join(dirpath, "app.js"), "w", encoding="utf-8").write(app)

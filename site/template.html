@@ -19,6 +19,7 @@
   --up: #0E6B5C; --down: #9E3B2A;
   --q1-fg: #0E6B5C; --q1-bg: #E0F1EC; --q2-fg: #356B25; --q2-bg: #E8F2DF; --q3-fg: #845A08; --q3-bg: #F6EDD6; --q4-fg: #9E3B2A; --q4-bg: #F6E3DE;
   --upd-fg: #845A08; --upd-bg: #F6EDD6; --chip-ink: #1B1A2E; --on-chip: #FFFFFF;
+  --thead-bg: #56489E; --thead-fg: #FFFFFF; --thead-rule: rgba(255, 255, 255, 0.32);
   --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   --font-serif: "Noto Serif KR", "AppleMyungjo", "Batang", Georgia, serif;
   --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -33,6 +34,7 @@
     --up: #5FCFB6; --down: #F09A88;
     --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
     --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
+    --thead-bg: #3B3170; --thead-fg: #ECEAF5; --thead-rule: rgba(236, 234, 245, 0.32);
     color-scheme: dark;
   }
 }
@@ -43,6 +45,7 @@
   --up: #5FCFB6; --down: #F09A88;
   --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
   --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
+  --thead-bg: #3B3170; --thead-fg: #ECEAF5; --thead-rule: rgba(236, 234, 245, 0.32);
   color-scheme: dark;
 }
 
@@ -153,12 +156,14 @@ p { margin: 0; }
 .tbl { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
 .tbl-scroll { overflow-x: auto; }
 .tgrid { display: grid; grid-template-columns: 52px minmax(240px, 1fr) 84px 64px 64px 64px repeat(6, 46px) 104px; align-items: center; min-width: 980px; }
-.tgroup { background: var(--surface-2); font-size: 11.5px; color: var(--muted); }
-.tgroup span { grid-column: 7 / span 6; padding: 8px 0 0; text-align: center; font-weight: 600; border-bottom: 1px solid var(--rule-2); margin: 0 6px; }
-.thead { background: var(--surface-2); border-bottom: 1px solid var(--rule-2); }
-.thead button { font-size: 12px; border: 0; background: transparent; min-height: 38px; padding: 0 6px; display: flex; align-items: center; gap: 3px; color: var(--muted); font-weight: 500; width: 100%; }
-.thead button.on { color: var(--accent); font-weight: 700; }
+.tgroup { background: var(--thead-bg); font-size: 11.5px; color: var(--thead-fg); }
+.tgroup span { grid-column: 7 / span 6; padding: 8px 0 0; text-align: center; font-weight: 600; border-bottom: 1px solid var(--thead-rule); margin: 0 6px; opacity: 0.85; }
+.thead { background: var(--thead-bg); border-bottom: 1px solid var(--thead-bg); }
+.thead button { font-size: 12px; border: 0; background: transparent; min-height: 38px; padding: 0 6px; display: flex; align-items: center; gap: 3px; color: var(--thead-fg); opacity: 0.84; font-weight: 500; width: 100%; }
+.thead button:hover:not(:disabled), .thead button.on { opacity: 1; }
+.thead button.on { font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
 .thead button:disabled { cursor: default; }
+.thead button:focus-visible { outline-color: var(--thead-fg); }
 .thead button .arr { font-size: 9px; }
 .j-c { justify-content: center; } .j-e { justify-content: flex-end; } .j-s { justify-content: flex-start; }
 .trow { min-height: 72px; border-top: 1px solid var(--rule); }
@@ -186,13 +191,13 @@ p { margin: 0; }
 /* ---------- categories page ---------- */
 .cat-wrap { padding-block: 20px 28px; display: flex; flex-direction: column; gap: 12px; }
 .cgrid { display: grid; grid-template-columns: minmax(200px, 1fr) 56px 84px 84px 272px 176px repeat(6, 46px) 80px; align-items: center; min-width: 1176px; }
-.chead { align-items: end; background: var(--surface-2); border-bottom: 1px solid var(--rule-2); font-size: 12px; color: var(--muted); }
+.chead { align-items: end; background: var(--thead-bg); border-bottom: 1px solid var(--thead-bg); font-size: 12px; color: var(--thead-fg); }
 .chead > span { padding: 12px 8px; }
 .chead .dist { padding: 8px 16px 10px; display: flex; flex-direction: column; gap: 4px; }
 .chead .dist .ax { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10.5px; }
 .chead .means { grid-column: span 6; padding: 8px 0 0; display: flex; flex-direction: column; gap: 6px; }
 .chead .means .t { text-align: center; font-weight: 600; }
-.chead .means .k { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-top: 1px solid var(--rule-2); }
+.chead .means .k { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-top: 1px solid var(--thead-rule); }
 .chead .means .k span { padding: 6px 0; text-align: center; }
 .crow { min-height: 60px; border-top: 1px solid var(--rule); }
 .crow.sub-row { background: var(--zebra); }
