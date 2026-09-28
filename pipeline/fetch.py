@@ -5,7 +5,7 @@
 크기가 목록과 같은 파일은 건너뛴다(--force 로 다시 받음).
 사용: python3 pipeline/fetch.py [--force] [driveId ...]
 """
-import argparse, os, subprocess, sys
+import argparse, os, re, subprocess, sys, urllib.parse
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import INPUTS, RAW, load_json  # noqa: E402
@@ -25,7 +25,17 @@ def fetch(f, force=False):
         return out, f"curl 실패({r.returncode})"
     head = open(out, "rb").read(4)
     if not any(head.startswith(m) for m in MAGIC):
-        return out, "파일이 아님(로그인/확인 페이지?) — 공유 설정 확인"
+        # 큰 파일은 '바이러스 검사 경고' 페이지가 먼저 온다. 폼의 숨은 필드(id, export, confirm, uuid)로 다시 받는다.
+        html = open(out, "rb").read().decode("utf-8", "replace")
+        m = re.search(r'<form[^>]*id="download-form"[^>]*action="([^"]+)"', html)
+        fields = dict(re.findall(r'<input type="hidden" name="([^"]+)" value="([^"]*)"', html))
+        if not (m and fields.get("confirm")):
+            return out, "파일이 아님(로그인/확인 페이지?) — 공유 설정 확인"
+        url = m.group(1) + "?" + urllib.parse.urlencode(fields)
+        r = subprocess.run(["curl", "-sL", "-m", "600", "-o", out, url], capture_output=True)
+        head = open(out, "rb").read(4) if os.path.exists(out) else b""
+        if r.returncode != 0 or not any(head.startswith(m) for m in MAGIC):
+            return out, "확인 페이지 재요청 실패 — 공유 설정 확인"
     if want and os.path.getsize(out) != want:
         return out, f"크기 불일치 {os.path.getsize(out)} != {want}"
     return out, "ok"

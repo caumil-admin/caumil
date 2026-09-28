@@ -25,7 +25,7 @@
  },
  {
   "id": "DR",
-  "driveKey": "0018e6faf513c71e",
+  "driveKey": "7c381f71d9118917",
   "track": "team",
   "authors": [
    "이진욱",
@@ -40,17 +40,17 @@
   "venueName": "국방기술학회",
   "folder": "국방기술학회 팀논문",
   "file": {
-   "title": "여단급 이하 제대를 위한 AI 드론운용 지원체계의 설계 및 구현 (팀논문30_2조_260828).hwp",
-   "createdTime": "2026-09-17T00:33:28.543Z",
-   "modifiedTime": "2026-09-09T00:10:53Z",
+   "title": "여단급 이하 제대를 위한 AI 드론운용 지원체계의 설계 및 구현 (2팀 국방기술학회 260828).hwp",
+   "createdTime": "2026-09-28T00:28:54.001Z",
+   "modifiedTime": "2026-09-09T00:10:53.480Z",
    "fileSize": "3072000"
   },
-  "status": "unchanged",
+  "status": "updated",
   "textSha": "988a0d8d549f7e15"
  },
  {
   "id": "ON",
-  "driveKey": "a376293773bdc9e0",
+  "driveKey": "39a5ab10f577369e",
   "track": "team",
   "authors": [
    "이진욱",
@@ -67,12 +67,12 @@
   "folder": "전자공학회특별저널 팀논문",
   "file": {
    "title": "적성국 교리자료의 기술유형을 고려한 온톨로지 자동 구축 및 CQ 기반 기능평가  북한군 지상작전 교리를 중심으로_2팀 팀논문.hwp",
-   "createdTime": "2026-09-22T06:50:06.159Z",
-   "modifiedTime": "2026-09-22T06:49:44.915Z",
-   "fileSize": "3468288"
+   "createdTime": "2026-09-28T00:27:11.872Z",
+   "modifiedTime": "2026-09-28T00:26:36.034Z",
+   "fileSize": "4566016"
   },
-  "status": "unchanged",
-  "textSha": "f14d3fe033640629"
+  "status": "updated",
+  "textSha": "6ec806c2a9e2c52a"
  },
  {
   "id": "VT",
@@ -134,12 +134,12 @@
    "modifiedTime": "2026-09-23T01:44:25.298Z",
    "fileSize": "247808"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "6b2cff6c4b115bd9"
  },
  {
   "id": "MM",
-  "driveKey": "8a7d929fee87b014",
+  "driveKey": "5c0315292c1aa4f9",
   "track": "personal",
   "authors": [
    "이진욱"
@@ -151,16 +151,16 @@
   "folder": "전자공학회특별저널 개인논문",
   "file": {
    "title": "북한·러시아 공개 군사교리 기반 멀티모달 적 위험 예측 AI 시스템의 설계 및 구현_이진욱_개인논문.hwp",
-   "createdTime": "2026-09-22T04:48:34.393Z",
-   "modifiedTime": "2026-09-22T04:48:22.336Z",
-   "fileSize": "2758144"
+   "createdTime": "2026-09-28T00:27:35.786Z",
+   "modifiedTime": "2026-09-28T00:23:00.668Z",
+   "fileSize": "3777024"
   },
-  "status": "unchanged",
-  "textSha": "023075150afcad5d"
+  "status": "updated",
+  "textSha": "de5c3501d08da5d3"
  },
  {
   "id": "PK",
-  "driveKey": "3a03cc23db56af03",
+  "driveKey": "88a856d53a20dbbc",
   "track": "personal",
   "authors": [
    "이진욱"
@@ -171,13 +171,13 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "KCTC PK-Talbe 기반 AI 화력지원체계의 설계 및 구현(개인논문_이진욱).hwp",
-   "createdTime": "2026-09-17T00:32:42.324Z",
-   "modifiedTime": "2026-09-11T01:53:19Z",
-   "fileSize": "5444608"
+   "title": "KCTC PK-Talbe 기반 AI 화력지원체계의 설계 및 구현_이진욱_개인논문.hwp",
+   "createdTime": "2026-09-28T00:27:38.224Z",
+   "modifiedTime": "2026-09-28T00:17:43.341Z",
+   "fileSize": "6464000"
   },
-  "status": "unchanged",
-  "textSha": "ab0540690f0d364f"
+  "status": "updated",
+  "textSha": "8e2f4464bc031031"
  },
  {
   "id": "HB",
@@ -239,7 +239,7 @@
    "modifiedTime": "2026-09-23T01:40:08.853Z",
    "fileSize": "917504"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "ef0879ba47ff65af"
  },
  {
@@ -302,7 +302,7 @@
    "modifiedTime": "2026-09-23T01:51:00.951Z",
    "fileSize": "170496"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "ce3ed546922eecb5"
  },
  {
@@ -325,5 +325,58 @@
   },
   "status": "unchanged",
   "textSha": "fb069f808ee02a25"
+ },
+ {
+  "id": "TO",
+  "driveKey": "7bd9519344c8465d",
+  "track": "team",
+  "authors": [
+   "김성수",
+   "이건희",
+   "최석철",
+   "김민규",
+   "백준기"
+  ],
+  "projectId": "P107",
+  "projectMatch": "related",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문",
+  "file": {
+   "title": "7조팀논문(대한전자공학회양식).hwp",
+   "createdTime": "2026-09-28T14:18:22.198Z",
+   "modifiedTime": "2026-09-28T12:44:35.774Z",
+   "fileSize": "250368"
+  },
+  "status": "new",
+  "textSha": "43afc0968d80401a",
+  "team": "7조"
+ },
+ {
+  "id": "US",
+  "driveKey": "1c402591b3a2ddd9",
+  "track": "team",
+  "authors": [
+   "이건희",
+   "최석철",
+   "김민규",
+   "김성수",
+   "조진혁",
+   "백준기"
+  ],
+  "projectId": "P107",
+  "projectMatch": "same",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "7조팀논문(한국국방기술학회).hwpx",
+   "createdTime": "2026-09-28T14:18:14.651Z",
+   "modifiedTime": "2026-09-28T13:28:18.618Z",
+   "fileSize": "853302"
+  },
+  "status": "new",
+  "textSha": "da5ed69e73e74469",
+  "team": "7조"
  }
 ]
