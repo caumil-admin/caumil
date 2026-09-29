@@ -18,7 +18,7 @@
   "figures": 1,
   "tables": 7,
   "abstractNumbers": null,
-  "chars": 14941
+  "chars": 14947
  },
  "DR": {
   "residue": [
@@ -82,7 +82,7 @@
   "figures": 2,
   "tables": 10,
   "abstractNumbers": true,
-  "chars": 37468
+  "chars": 37471
  },
  "MM": {
   "residue": [
@@ -149,7 +149,7 @@
   "figures": 5,
   "tables": 5,
   "abstractNumbers": true,
-  "chars": 19674
+  "chars": 19681
  },
  "TC": {
   "residue": [
@@ -166,7 +166,7 @@
   "figures": 2,
   "tables": 3,
   "abstractNumbers": true,
-  "chars": 10757
+  "chars": 10766
  },
  "LR": {
   "residue": [],
@@ -182,7 +182,7 @@
   "figures": 1,
   "tables": 2,
   "abstractNumbers": true,
-  "chars": 9925
+  "chars": 9928
  },
  "DC": {
   "residue": [
@@ -216,5 +216,21 @@
   "tables": 2,
   "abstractNumbers": null,
   "chars": 13940
+ },
+ "UB": {
+  "residue": [],
+  "refs": 7,
+  "figures": 3,
+  "tables": 6,
+  "abstractNumbers": true,
+  "chars": 17340
+ },
+ "TU": {
+  "residue": [],
+  "refs": 5,
+  "figures": 0,
+  "tables": 0,
+  "abstractNumbers": null,
+  "chars": 6479
  }
 }

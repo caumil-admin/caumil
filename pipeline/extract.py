@@ -205,6 +205,16 @@ def main():
         for f in listing["files"]:
             src = os.path.join(ROOT, "raw", f"{f['id']}.{f['ext']}")
             pid = papers.get(drive_key(f["id"]), drive_key(f["id"]))
+            if f["ext"].lower() == "pdf":
+                # PDF 는 표준 라이브러리 추출기가 없다. 세션의 Drive 커넥터(read_file_content)로 뽑은 텍스트를
+                # source_text/<ID>.txt 에 직접 두면 그대로 쓴다(docs/WORKFLOW.md 3단계).
+                out = os.path.join(ROOT, "source_text", f"{pid}.txt")
+                if os.path.exists(out):
+                    text = open(out, encoding="utf-8").read()
+                    rows.append((pid, "KEEP", len(text), text_sha(text), 0, "pdf — 커넥터 텍스트 유지"))
+                else:
+                    rows.append((pid, "FAIL", 0, "", 0, "pdf — source_text/<ID>.txt 를 Drive 커넥터로 만들어야 함"))
+                continue
             try:
                 text = extract(src)
                 out = os.path.join(ROOT, "source_text", f"{pid}.txt")

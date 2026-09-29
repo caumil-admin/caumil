@@ -1,7 +1,7 @@
 [
  {
   "id": "MP",
-  "driveKey": "a0154732165a673d",
+  "driveKey": "f0555a3eb5cb3839",
   "track": "team",
   "authors": [
    "강현섭",
@@ -16,12 +16,12 @@
   "folder": "국방기술학회 팀논문",
   "file": {
    "title": "6조_국방기술학회_MIL_PLAN_ver4 (멘토수정본).hwpx",
-   "createdTime": "2026-09-16T04:33:01.836Z",
-   "modifiedTime": "2026-09-17T00:18:00.022Z",
-   "fileSize": "126908"
+   "createdTime": "2026-09-29T00:13:08.842Z",
+   "modifiedTime": "2026-09-29T00:12:52.471Z",
+   "fileSize": "127151"
   },
-  "status": "unchanged",
-  "textSha": "1846613bf833b589"
+  "status": "updated",
+  "textSha": "2085b34892938b2a"
  },
  {
   "id": "DR",
@@ -45,7 +45,7 @@
    "modifiedTime": "2026-09-09T00:10:53.480Z",
    "fileSize": "3072000"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "988a0d8d549f7e15"
  },
  {
@@ -71,7 +71,7 @@
    "modifiedTime": "2026-09-28T00:26:36.034Z",
    "fileSize": "4566016"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "6ec806c2a9e2c52a"
  },
  {
@@ -131,11 +131,11 @@
   "file": {
    "title": "이시연_전자공학회특별저널_위험요인 관측가능성 기반 군 아차사고 예방대책 추천 체계 연구.hwp",
    "createdTime": "2026-09-22T06:49:38.086Z",
-   "modifiedTime": "2026-09-23T01:44:25.298Z",
+   "modifiedTime": "2026-09-28T23:38:05.412Z",
    "fileSize": "247808"
   },
-  "status": "unchanged",
-  "textSha": "6b2cff6c4b115bd9"
+  "status": "updated",
+  "textSha": "d3207c9342b53509"
  },
  {
   "id": "MM",
@@ -155,7 +155,7 @@
    "modifiedTime": "2026-09-28T00:23:00.668Z",
    "fileSize": "3777024"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "de5c3501d08da5d3"
  },
  {
@@ -176,7 +176,7 @@
    "modifiedTime": "2026-09-28T00:17:43.341Z",
    "fileSize": "6464000"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "8e2f4464bc031031"
  },
  {
@@ -223,7 +223,7 @@
  },
  {
   "id": "TE",
-  "driveKey": "e05fe9c68d1ad4aa",
+  "driveKey": "1317e5526a221fc2",
   "track": "personal",
   "authors": [
    "서보윤"
@@ -235,16 +235,16 @@
   "folder": "전자공학회특별저널 개인논문",
   "file": {
    "title": "TICN 장애 유형 판별과 유형별 자율복구를 위한 AI 기반 방법(서보윤).hwp",
-   "createdTime": "2026-09-23T01:41:01.634Z",
-   "modifiedTime": "2026-09-23T01:40:08.853Z",
-   "fileSize": "917504"
+   "createdTime": "2026-09-29T00:07:48.785Z",
+   "modifiedTime": "2026-09-29T00:07:06.865Z",
+   "fileSize": "918016"
   },
-  "status": "unchanged",
-  "textSha": "ef0879ba47ff65af"
+  "status": "updated",
+  "textSha": "ada2bd6c5ab754cd"
  },
  {
   "id": "TC",
-  "driveKey": "790519f2c4c7426a",
+  "driveKey": "adc84c8233060e80",
   "track": "personal",
   "authors": [
    "서보윤"
@@ -255,13 +255,13 @@
   "venueName": "정보기술학회",
   "folder": "정보기술학회 개인논문",
   "file": {
-   "title": "(서보윤)TICN 백본 노드 파괴에 대한 AI 기반 장애 판별 및 자율복구 방법.hwpx",
-   "createdTime": "2026-09-17T06:15:58.870Z",
-   "modifiedTime": "2026-09-17T06:11:19Z",
-   "fileSize": "291867"
+   "title": "(서보윤)TICN_백본_노드_파괴에_대한_AI_기반_장애_판별_및_자율복구_방법.hwpx",
+   "createdTime": "2026-09-29T00:08:09.634Z",
+   "modifiedTime": "2026-09-29T00:05:31.141Z",
+   "fileSize": "292254"
   },
-  "status": "unchanged",
-  "textSha": "9cbc521bc6a75cce"
+  "status": "updated",
+  "textSha": "30d8e3279df253e0"
  },
  {
   "id": "LR",
@@ -299,11 +299,11 @@
   "file": {
    "title": "이시연_한국정보기술학회지_개인논문양식(멘토수정ver3).hwp",
    "createdTime": "2026-09-16T03:12:38.952Z",
-   "modifiedTime": "2026-09-23T01:51:00.951Z",
+   "modifiedTime": "2026-09-28T23:37:42.525Z",
    "fileSize": "170496"
   },
-  "status": "unchanged",
-  "textSha": "ce3ed546922eecb5"
+  "status": "updated",
+  "textSha": "0e92ef3e23487f86"
  },
  {
   "id": "DC",
@@ -348,7 +348,7 @@
    "modifiedTime": "2026-09-28T12:44:35.774Z",
    "fileSize": "250368"
   },
-  "status": "new",
+  "status": "removed",
   "textSha": "43afc0968d80401a",
   "team": "7조"
  },
@@ -375,8 +375,54 @@
    "modifiedTime": "2026-09-28T13:28:18.618Z",
    "fileSize": "853302"
   },
-  "status": "new",
+  "status": "removed",
   "textSha": "da5ed69e73e74469",
+  "team": "7조"
+ },
+ {
+  "id": "UB",
+  "driveKey": "15051769cce1ca51",
+  "track": "personal",
+  "authors": [
+   "이건희"
+  ],
+  "projectId": "P204",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "이건희_UaVirBASE_KCI_검토용_논문.pdf",
+   "createdTime": "2026-09-29T01:39:50.425Z",
+   "modifiedTime": "2026-09-29T01:36:37.562Z",
+   "fileSize": "324097"
+  },
+  "status": "new",
+  "textSha": "242d14058a28b086"
+ },
+ {
+  "id": "TU",
+  "driveKey": "cf484ac9d2a2eb9b",
+  "track": "team",
+  "authors": [
+   "이건희",
+   "최석철",
+   "김민규",
+   "조진혁"
+  ],
+  "projectId": "P107",
+  "projectMatch": "same",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "7조_TU-SAHI_국방초소형객체탐지_국방기술학회.hwpx",
+   "createdTime": "2026-09-29T01:39:07.571Z",
+   "modifiedTime": "2026-09-29T01:38:32.760Z",
+   "fileSize": "55287"
+  },
+  "status": "new",
+  "textSha": "6f520c9c8ea0f25a",
   "team": "7조"
  }
 ]

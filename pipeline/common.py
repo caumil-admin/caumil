@@ -36,9 +36,12 @@ def keys():
     return [c["key"] for c in load_json(os.path.join(DATA, "criteria.json"))]
 
 
-def load_papers(with_eval=True):
-    """카탈로그에 평가를 덮어 하나의 레코드로 만든다. 평가의 textSha 는 evalTextSha 로 따로 둔다."""
+def load_papers(with_eval=True, include_removed=False):
+    """카탈로그에 평가를 덮어 하나의 레코드로 만든다. 평가의 textSha 는 evalTextSha 로 따로 둔다.
+    드라이브 목록에서 사라진 원고(status removed)는 순위·사이트·점검에서 뺀다(eval/ 은 기록으로 남김)."""
     papers = load_json(os.path.join(DATA, "papers.json"))
+    if not include_removed:
+        papers = [p for p in papers if p.get("status") != "removed"]
     if not with_eval:
         return papers
     for p in papers:
