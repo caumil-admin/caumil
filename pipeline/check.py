@@ -69,8 +69,14 @@ def main():
         if missing:
             errors.append("results.json 에 없는 원고(make score): " + ", ".join(sorted(missing)))
         latest_eval = max((p.get("evaluatedAt") or "") for p in papers if p.get("evaluated"))
-        if res.get("generatedAt", "")[:10] < latest_eval[:10]:
-            errors.append(f"results.json({res.get('generatedAt')[:10]}) 이 최신 평가({latest_eval}) 보다 오래됨 — make score")
+        gen = res.get("generatedAt", "")
+        try:  # generatedAt 은 UTC, evaluatedAt 은 한국 날짜 — 한국 시간으로 맞춰 날짜만 비교
+            import datetime as _dt
+            gen_kst = (_dt.datetime.fromisoformat(gen.replace("Z", "+00:00")) + _dt.timedelta(hours=9)).date().isoformat()
+        except ValueError:
+            gen_kst = gen[:10]
+        if gen_kst < latest_eval[:10]:
+            errors.append(f"results.json({gen_kst} KST) 이 최신 평가({latest_eval}) 보다 오래됨 — make score")
     else:
         errors.append("data/results.json 없음 — make score")
     lint_p = os.path.join(DATA, "lint.json")

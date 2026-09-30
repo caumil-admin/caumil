@@ -92,7 +92,7 @@
    "modifiedTime": "2026-09-29T06:32:44.448Z",
    "fileSize": "367167"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "657141adaa25fb6d"
  },
  {
@@ -134,7 +134,7 @@
    "modifiedTime": "2026-09-30T07:26:55.322Z",
    "fileSize": "248832"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "79f971970a8c30dd"
  },
  {
@@ -302,7 +302,7 @@
    "modifiedTime": "2026-09-30T07:25:56.367Z",
    "fileSize": "171008"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "0fbae1552775c7fd"
  },
  {
@@ -443,7 +443,7 @@
    "modifiedTime": "2026-09-30T07:26:47.242Z",
    "fileSize": "133245"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "ff69b7bd9715a422"
  },
  {
@@ -467,8 +467,32 @@
    "modifiedTime": "2026-09-30T02:16:09.472Z",
    "fileSize": "1991168"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "1328d2f18f559da8",
   "team": "1조"
+ },
+ {
+  "id": "UF",
+  "driveKey": "35b9d56e2e226998",
+  "track": "team",
+  "authors": [
+   "최석철",
+   "이건희",
+   "김민규"
+  ],
+  "projectId": "P107",
+  "projectMatch": "same",
+  "team": "7조",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "7조_UA-SAHI_KIDT_프레임워크제안.docx",
+   "createdTime": "2026-09-30T23:06:41.814Z",
+   "modifiedTime": "2026-09-30T23:02:28.733Z",
+   "fileSize": "730489"
+  },
+  "status": "new",
+  "textSha": "0ac1bfe00cc663c0"
  }
 ]

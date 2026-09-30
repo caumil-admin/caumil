@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""hwp(5.x)·hwpx 원고에서 본문 텍스트를 뽑는다.
+"""hwp(5.x)·hwpx·docx 원고에서 본문 텍스트를 뽑는다.
 
 - hwp: OLE 복합문서. BodyText/Section* 스트림을 (압축이면) raw deflate로 풀고
   레코드를 순서대로 읽어 PARA_TEXT(본문·표·각주·머리글)와 EQEDIT(수식 스크립트)를 낸다.
@@ -168,6 +168,45 @@ def extract_hwpx(path):
     return "".join(parts)
 
 
+W_NS = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+M_NS = "{http://schemas.openxmlformats.org/officeDocument/2006/math}"
+
+
+def extract_docx(path):
+    """docx(Word). word/document.xml 의 w:t 텍스트, w:tab, w:br, 수식(m:t)을 문서 순서대로 낸다.
+    표 셀도 w:p 단위로 줄이 나뉜다. 각주·미주(footnotes/endnotes.xml)는 본문 뒤에 붙인다."""
+    z = zipfile.ZipFile(path)
+    names = ["word/document.xml"] + sorted(n for n in z.namelist() if re.fullmatch(r"word/(footnotes|endnotes)\.xml", n))
+    if "word/document.xml" not in z.namelist():
+        raise ExtractError("word/document.xml 이 없음")
+    parts = []
+    for name in names:
+        in_math = 0
+        for ev, el in ET.iterparse(io.BytesIO(z.read(name)), events=("start", "end")):
+            if ev == "start":
+                if el.tag == M_NS + "oMath":
+                    in_math += 1
+                    parts.append("[수식: ")
+                continue
+            if el.tag == W_NS + "t":
+                parts.append(el.text or "")
+            elif el.tag == W_NS + "tab":
+                parts.append("\t")
+            elif el.tag == W_NS + "br":
+                parts.append("\n")
+            elif el.tag == M_NS + "t":
+                parts.append(el.text or "")
+            elif el.tag == M_NS + "oMath":
+                in_math -= 1
+                parts.append("]")
+            elif el.tag == W_NS + "p":
+                if parts and not parts[-1].endswith("\n"):
+                    parts.append("\n")
+        if parts and not parts[-1].endswith("\n"):
+            parts.append("\n")
+    return "".join(parts)
+
+
 def normalize(text):
     text = text.replace("\r\n", "\n").replace("\r", "\n").replace("\x00", "")
     text = re.sub(r"[ \t　]+\n", "\n", text)
@@ -181,6 +220,8 @@ def extract(path):
         return normalize(extract_hwpx(path))
     if ext == ".hwp":
         return normalize(extract_hwp(path))
+    if ext == ".docx":
+        return normalize(extract_docx(path))
     raise ExtractError(f"지원하지 않는 확장자: {ext}")
 
 

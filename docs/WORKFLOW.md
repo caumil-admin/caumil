@@ -38,7 +38,7 @@ make fetch
 
 ### 3. 텍스트 추출과 카탈로그 동기화
 ```bash
-make extract        # raw/ → source_text/<ID>.txt (수식은 [수식: …] 로, 표·각주·머리글 포함)
+make extract        # raw/ → source_text/<ID>.txt (hwp·hwpx·docx. 수식은 [수식: …] 로, 표·각주·머리글 포함)
 make sync           # 새 파일 / 수정된 파일 / 텍스트 해시 변화 보고
 make sync-apply     # 반영: 새 파일은 NEW-n 임시 ID 로 추가, status(new/updated/unchanged/removed)·file·textSha 갱신
 ```
@@ -47,6 +47,7 @@ ID 를 바꿨으면 `source_text/NEW-n.txt` 는 지우고 `make extract` 를 다
 `status` 는 직전 동기화 대비 변화다. 다음 동기화에서 변화가 없으면 `unchanged` 로 돌아간다(ID 를 바꾼 뒤 `sync-apply` 를 한 번 더 돌리면 전부 `unchanged` 가 되므로 빌드 전에 new/updated 를 되돌려 둔다).
 - **재업로드로 파일 ID 가 바뀐 원고**(같은 제목·저자): `sync` 전에 `data/papers.json` 의 `driveKey` 를 새 ID 의 해시(`common.drive_key`)로 옮기면 new+removed 가 아니라 `updated` 로 잡힌다.
 - **목록에서 사라진 원고**는 `removed` 가 되고 `common.load_papers()` 가 순위·사이트·점검에서 뺀다. `eval/<ID>.json` 과 `source_text/` 는 기록으로 남긴다.
+- **docx 원고**는 `extract.py` 가 표준 라이브러리로 읽는다(본문·표·각주, OMML 수식은 `[수식: …]`).
 - **PDF 원고**는 `extract.py` 가 다루지 못한다. 세션의 Drive 커넥터 `read_file_content` 로 텍스트를 받아 `source_text/<ID>.txt` 에 직접 넣으면 `make extract` 가 `KEEP` 으로 유지한다(2단 조판이 섞인 부분은 손으로 정리).
 - 큰 파일은 드라이브가 '바이러스 검사 경고' 페이지를 먼저 주는데 `fetch.py` 가 확인 폼을 따라가 받는다.
 카탈로그는 파일 ID 의 해시(`driveKey`)로 목록과 대응한다. 내부용 빌드는 `inputs/drive_listing.json` 이 있을 때만 원문 링크를 붙인다.
