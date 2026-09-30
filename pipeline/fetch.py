@@ -10,7 +10,7 @@ import argparse, os, re, subprocess, sys, urllib.parse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import INPUTS, RAW, load_json  # noqa: E402
 
-MAGIC = (b"PK", b"ÐÏà", b"%PDF")
+MAGIC = (b"PK\x03\x04", b"\xd0\xcf\x11\xe0", b"%PDF")
 
 
 def fetch(f, force=False):

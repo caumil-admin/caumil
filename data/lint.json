@@ -50,7 +50,7 @@
   "residue": [
    {
     "label": "템플릿 안내문 '심사용 논문에서는…'",
-    "count": 3
+    "count": 1
    },
    {
     "label": "소속 자리표시자 '**소속/학과'",
@@ -61,7 +61,7 @@
   "figures": 1,
   "tables": 5,
   "abstractNumbers": true,
-  "chars": 20386
+  "chars": 20291
  },
  "HS": {
   "residue": [
@@ -82,7 +82,7 @@
   "figures": 2,
   "tables": 10,
   "abstractNumbers": true,
-  "chars": 37471
+  "chars": 37498
  },
  "MM": {
   "residue": [
@@ -232,5 +232,38 @@
   "tables": 0,
   "abstractNumbers": null,
   "chars": 6479
+ },
+ "GC": {
+  "residue": [],
+  "refs": 9,
+  "figures": 1,
+  "tables": 3,
+  "abstractNumbers": true,
+  "chars": 10627
+ },
+ "RM": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '심사용 논문에서는…'",
+    "count": 2
+   },
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   },
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 2
+   },
+   {
+    "label": "사사 자리표시자 'Acknowledgment 내용 입력'",
+    "count": 1
+   }
+  ],
+  "refs": 15,
+  "figures": 4,
+  "tables": 8,
+  "abstractNumbers": true,
+  "chars": 24618
  }
 }

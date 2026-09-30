@@ -20,7 +20,7 @@
    "modifiedTime": "2026-09-29T00:12:52.471Z",
    "fileSize": "127151"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "2085b34892938b2a"
  },
  {
@@ -76,7 +76,7 @@
  },
  {
   "id": "VT",
-  "driveKey": "1c85bd6f6852ef6a",
+  "driveKey": "491a50717dfa39a0",
   "track": "personal",
   "authors": [
    "최석철"
@@ -87,13 +87,13 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "최석철_스마트글래스 연동 지휘관 화상회의 복창 검증 프레임워크(대한전자공학회_개인).hwpx",
-   "createdTime": "2026-09-18T09:26:05.666Z",
-   "modifiedTime": "2026-09-18T09:25:09.821Z",
-   "fileSize": "374036"
+   "title": "최석철_스마트글래스 연동 지휘관 화상회의 복창 검증 프레임워크.hwpx",
+   "createdTime": "2026-09-29T05:56:27.875Z",
+   "modifiedTime": "2026-09-29T06:32:44.448Z",
+   "fileSize": "367167"
   },
-  "status": "unchanged",
-  "textSha": "10af899f5d78d0a9"
+  "status": "updated",
+  "textSha": "657141adaa25fb6d"
  },
  {
   "id": "HS",
@@ -118,7 +118,7 @@
  },
  {
   "id": "NM",
-  "driveKey": "a74337b2dcad09ce",
+  "driveKey": "152ef5131d230a96",
   "track": "personal",
   "authors": [
    "이시연"
@@ -129,13 +129,13 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "이시연_전자공학회특별저널_위험요인 관측가능성 기반 군 아차사고 예방대책 추천 체계 연구.hwp",
-   "createdTime": "2026-09-22T06:49:38.086Z",
-   "modifiedTime": "2026-09-28T23:38:05.412Z",
-   "fileSize": "247808"
+   "title": "이시연_전자공학회특별저널_위험요인 관측가능성 기반 군 아차사고 예방대책 추천 체계 연구2.hwp",
+   "createdTime": "2026-09-30T07:27:24.558Z",
+   "modifiedTime": "2026-09-30T07:26:55.322Z",
+   "fileSize": "248832"
   },
   "status": "updated",
-  "textSha": "d3207c9342b53509"
+  "textSha": "79f971970a8c30dd"
  },
  {
   "id": "MM",
@@ -239,7 +239,7 @@
    "modifiedTime": "2026-09-29T00:07:06.865Z",
    "fileSize": "918016"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "ada2bd6c5ab754cd"
  },
  {
@@ -260,7 +260,7 @@
    "modifiedTime": "2026-09-29T00:05:31.141Z",
    "fileSize": "292254"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "30d8e3279df253e0"
  },
  {
@@ -286,7 +286,7 @@
  },
  {
   "id": "NH",
-  "driveKey": "0adb14c126db6274",
+  "driveKey": "7ed446a116c2d0a3",
   "track": "personal",
   "authors": [
    "이시연"
@@ -297,13 +297,13 @@
   "venueName": "정보기술학회",
   "folder": "정보기술학회 개인논문",
   "file": {
-   "title": "이시연_한국정보기술학회지_개인논문양식(멘토수정ver3).hwp",
-   "createdTime": "2026-09-16T03:12:38.952Z",
-   "modifiedTime": "2026-09-28T23:37:42.525Z",
-   "fileSize": "170496"
+   "title": "이시연_한국정보기술학회지_개인논문양식(멘토수정ver4).hwp",
+   "createdTime": "2026-09-30T07:27:38.804Z",
+   "modifiedTime": "2026-09-30T07:25:56.367Z",
+   "fileSize": "171008"
   },
   "status": "updated",
-  "textSha": "0e92ef3e23487f86"
+  "textSha": "0fbae1552775c7fd"
  },
  {
   "id": "DC",
@@ -397,7 +397,7 @@
    "modifiedTime": "2026-09-29T01:36:37.562Z",
    "fileSize": "324097"
   },
-  "status": "new",
+  "status": "removed",
   "textSha": "242d14058a28b086"
  },
  {
@@ -421,8 +421,54 @@
    "modifiedTime": "2026-09-29T01:38:32.760Z",
    "fileSize": "55287"
   },
-  "status": "new",
+  "status": "removed",
   "textSha": "6f520c9c8ea0f25a",
   "team": "7조"
+ },
+ {
+  "id": "GC",
+  "driveKey": "4ba68da003090e5a",
+  "track": "personal",
+  "authors": [
+   "최석철"
+  ],
+  "projectId": "P207",
+  "projectMatch": "related",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "최석철_PSA-XAI_정보기술학회.hwpx",
+   "createdTime": "2026-09-30T07:27:45.014Z",
+   "modifiedTime": "2026-09-30T07:26:47.242Z",
+   "fileSize": "133245"
+  },
+  "status": "new",
+  "textSha": "ff69b7bd9715a422"
+ },
+ {
+  "id": "RM",
+  "driveKey": "f6ffcc9b05e9b65a",
+  "track": "team",
+  "authors": [
+   "강줄기",
+   "김정윤",
+   "이민우",
+   "이재윤"
+  ],
+  "projectId": "P101",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문",
+  "file": {
+   "title": "전자공학회_팀논문(1조).hwp",
+   "createdTime": "2026-09-30T04:40:35.533Z",
+   "modifiedTime": "2026-09-30T02:16:09.472Z",
+   "fileSize": "1991168"
+  },
+  "status": "new",
+  "textSha": "1328d2f18f559da8",
+  "team": "1조"
  }
 ]
