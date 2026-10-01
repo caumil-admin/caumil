@@ -59,6 +59,7 @@ def build_data(public=False, basis_date=None, last_sync=None):
     return {
         "meta": meta,
         "criteria": load_json(os.path.join(DATA, "criteria.json")),
+        "rubric": load_json(os.path.join(DATA, "rubric.json")) if os.path.exists(os.path.join(DATA, "rubric.json")) else None,
         "weights": load_json(os.path.join(DATA, "weights.json")),
         "papers": papers,
         "results": load_json(os.path.join(DATA, "results.json")),

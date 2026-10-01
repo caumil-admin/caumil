@@ -61,6 +61,32 @@ def main():
             errors.append(f"{pid}: 텍스트가 평가 이후 바뀜(eval {p.get('evalTextSha')} ≠ 현재 {p.get('textSha')}) — 재평가 또는 eval.textSha 갱신")
         if not p.get("authors"):
             errors.append(f"{pid}: authors 비어 있음")
+        rub = p.get("rubric")
+        if not rub:
+            warns.append(f"{pid}: 심사 기준 5항목(rubric) 점수 없음")
+        else:
+            crit_def = {c["key"]: [x["key"] for x in c["sub"]] for c in load_json(os.path.join(DATA, "rubric.json"))["criteria"]}
+            tot = []
+            for ck, subs in crit_def.items():
+                c = rub.get(ck)
+                if not isinstance(c, dict) or not isinstance(c.get("sub"), dict):
+                    errors.append(f"{pid}: rubric.{ck} 없음"); continue
+                vals = []
+                for sk in subs:
+                    v = c["sub"].get(sk)
+                    if v is None or not (0 <= v <= 1):
+                        errors.append(f"{pid}: rubric.{ck}.{sk}={v} 범위 밖")
+                    elif abs(v * 20 - round(v * 20)) > 1e-6:
+                        warns.append(f"{pid}: rubric.{ck}.{sk}={v} 가 0.05 격자가 아님")
+                    vals.append(v or 0)
+                mean = sum(vals) / len(vals)
+                if abs((c.get("score") or 0) - mean) > 0.011:
+                    errors.append(f"{pid}: rubric.{ck}.score {c.get('score')} ≠ 세부 평균 {mean:.2f}")
+                if not c.get("why"):
+                    errors.append(f"{pid}: rubric.{ck}.why 없음")
+                tot.append(mean)
+            if tot and abs((rub.get("total") or 0) - 100 * sum(tot) / len(tot)) > 0.11:
+                errors.append(f"{pid}: rubric.total {rub.get('total')} ≠ 항목 평균×100 {100*sum(tot)/len(tot):.1f}")
     evaluated = {p["id"] for p in papers if p.get("evaluated")}
     rp = os.path.join(DATA, "results.json")
     if os.path.exists(rp):

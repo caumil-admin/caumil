@@ -17,6 +17,7 @@ EVAL_FIELDS = [
     "paperTitle", "paperTitleEn", "authorsInText", "venueHeader",
     "scores", "rationale", "planDelta", "keyNumbers", "summary", "strengths",
     "fixes", "flags", "refCount", "overlap", "evidenceQuotes", "evaluatedAt", "textSha",
+    "rubric",  # 심사 기준 5항목(data/rubric.json) — 순위 계산에는 쓰지 않음
 ]
 
 

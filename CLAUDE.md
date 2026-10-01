@@ -17,7 +17,7 @@
 1. **드라이브 파일·폴더 ID, 원문 링크, 소유자 메일을 커밋하지 않는다.** 원고는 링크 공유 파일이라 ID 가 곧 원고 접근권이다. 카탈로그에는 `driveKey`(해시)만 둔다. 커밋 전에 `inputs/drive_listing.json` 의 ID 가 추적 파일에 없는지 확인한다(이전 세션의 검사 스크립트 참고).
 2. **루트에는 공개판만 둔다.** 공개판은 원고 인용문(`evidenceQuotes`)·원문 링크·'투고 전 확인' 패널이 없고 `robots noindex` 가 붙는다. 내부용은 `dist/artifact.html` 로만 만들어 claude.ai 아티팩트 `https://claude.ai/artifact/L58PAzgKkDc6NZR6QSgbGz` 에 `url` 로 재게시한다.
 3. **점수 계산식은 한 곳만 바꾸지 않는다.** `pipeline/score.py` 와 `site/app.js` 의 latent·적합도·환산 점수·백분위·사분위 계산은 같아야 한다. 바꾸면 둘 다 고치고 `score.py --compare data/results.json` 로 확인한다.
-4. **채점 규칙**은 `docs/WORKFLOW.md` 4단계를 따른다: 0.05 단위, 원고 텍스트 근거만, 계획서와 섞지 않음, 리스크는 점수에 넣지 않음, 척도는 원고 간 한 번 맞춤.
+4. **채점 규칙**은 `docs/WORKFLOW.md` 4단계를 따른다: 0.05 단위, 원고 텍스트 근거만, 계획서와 섞지 않음, 리스크는 점수에 넣지 않음, 척도는 원고 간 한 번 맞춤. **심사 기준 5항목**(`data/rubric.json`, `eval/<ID>.json` 의 `rubric`)은 6개 변수와 별개의 점수이며 순위 계산에 넣지 않는다. 평가 프롬프트는 `docs/EVAL_PROMPT.md`, 3인 워크플로는 `pipeline/eval_panel.workflow.js`.
 5. **평가 원자료(`eval/`) 공개는 사용자가 결정했다(2026-09-23).** 다시 묻지 않되, 새 필드를 추가할 때는 공개 저장소임을 감안한다.
 6. 루트 `README.md`, `v1/` 의 내용은 사용자가 요청할 때만 바꾼다.
 
