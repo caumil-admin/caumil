@@ -337,7 +337,7 @@
       + "<dt>사람별 대표작</dt><dd>한 사람이 여러 편을 냈으면 현재 가중치에서 가장 높은 원고 한 편으로 비교합니다.</dd></dl></div></section>"
       + rubricDefs()
       + '<section class="card"><div class="card-b"><h2>원천 자료</h2><dl class="defs">'
-      + "<dt>원고</dt><dd>공유 드라이브 제출 폴더 4곳의 " + D.meta.counts.total + "편(개인 " + D.meta.counts.personal + " · 팀 " + D.meta.counts.team + "), " + esc(basisText()) + " 동기화</dd>"
+      + "<dt>원고</dt><dd>공유 드라이브 제출 폴더 4곳과 그 안의 '핵심5' 하위 폴더의 " + D.meta.counts.total + "편(개인 " + D.meta.counts.personal + " · 팀 " + D.meta.counts.team + "), " + esc(basisText()) + " 동기화</dd>"
       + "<dt>채점</dt><dd>hwp·hwpx 본문과 수식만 읽고 0.05 단위로 채점했습니다. 그림은 근거에 넣지 않았습니다.</dd>"
       + "<dt>가중치</dt><dd>" + esc(W.source.file) + "의 " + esc(W.source["function"]) + "()</dd>"
       + "<dt>계획서 점수</dt><dd>" + esc(D.meta.excel) + "의 과제 " + D.projects.length + "건. 낙관적 잠정치라 원고 점수와 한 표에 섞지 않습니다.</dd>"
@@ -450,6 +450,7 @@
     var projTxt = proj ? p.projectId + (p.projectMatch === "same" ? " · 계획서와 같은 과제" : p.projectMatch === "related" ? " · 관련 과제" : " · 계획서와 다른 주제") : (p.relatedProject ? p.relatedProject + " · 관련 과제(점수 비교 없음)" : "계획서 없음");
     var prev = all[idx - 1], next = all[idx + 1];
     var chips = '<span class="chip">' + esc(VENUE[p.venue] || p.venueName) + '</span><span class="chip">' + esc(trackLabel(p)) + '</span><span class="chip muted">' + esc(projTxt) + "</span>"
+      + (p.folderSub ? '<span class="chip muted" title="제출 폴더의 하위 폴더">' + esc(p.folderSub) + " 폴더</span>" : "")
       + (p.status === "new" ? '<span class="chip on">신규</span>' : "") + (p.status === "updated" ? '<span class="chip upd">수정</span>' : "");
     var head = '<section class="prof-head"><div class="inner">'
       + '<div class="prof-top"><nav class="crumbs" aria-label="현재 위치"><a href="#rank-' + p.track + '">순위 탐색</a><span aria-hidden="true">/</span><span>' + esc(trackLabel(p)) + '</span><span aria-hidden="true">/</span><span class="mono">' + esc(p.id) + "</span></nav>"

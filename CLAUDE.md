@@ -5,7 +5,7 @@
 
 ## 구조 한눈에
 - `pipeline/` 표준 라이브러리만 쓰는 파이썬(3.14). `fetch.py`(내려받기) → `extract.py`(hwp/hwpx/docx 텍스트, PDF 는 커넥터 텍스트를 손으로 둠) → `sync.py`(카탈로그 동기화) → 평가는 사람이 `eval/<ID>.json` → `lint.py` → `score.py` → `check.py` → `build.py`.
-- `data/` 카탈로그·기준·가중치·계획서·결과. `eval/` 원고별 평가 원자료. `site/` v3 템플릿·스크립트, `site/legacy/` v2.
+- `data/` 카탈로그·기준·가중치·계획서·결과. `eval/` 원고별 평가 원자료. 카탈로그의 `folderSub: "핵심5"` 는 제출 폴더 안 '핵심5' 하위 폴더의 원고(용도 미확인, 엑셀 계획서 없는 팀은 `team` 이 `핵심5 N조`). `site/` v3 템플릿·스크립트, `site/legacy/` v2.
 - 루트 `index.html`, `app.js`, `data/data.js`, `v2/` 는 **빌드 산출물(공개판)** 이다. 직접 고치지 말고 `./run.sh deploy` 로 다시 만든다. `v1/` 은 손대지 않는다.
 - `inputs/`, `raw/`, `source_text/`, `dist/` 는 gitignore 대상이다.
 

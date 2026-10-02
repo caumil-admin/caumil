@@ -2,15 +2,7 @@
  "MP": {
   "residue": [
    {
-    "label": "소속 자리표시자 '[소속 학과 및 부서 기재]'",
-    "count": 1
-   },
-   {
     "label": "템플릿 권호 'Vol. 01, 2018'",
-    "count": 1
-   },
-   {
-    "label": "이메일 자리표시자",
     "count": 1
    }
   ],
@@ -18,7 +10,7 @@
   "figures": 1,
   "tables": 7,
   "abstractNumbers": null,
-  "chars": 14947
+  "chars": 14970
  },
  "DR": {
   "residue": [
@@ -31,7 +23,7 @@
   "figures": 2,
   "tables": 1,
   "abstractNumbers": null,
-  "chars": 13861
+  "chars": 14038
  },
  "ON": {
   "residue": [
@@ -44,7 +36,7 @@
   "figures": 3,
   "tables": 3,
   "abstractNumbers": true,
-  "chars": 15103
+  "chars": 15356
  },
  "VT": {
   "residue": [
@@ -82,7 +74,7 @@
   "figures": 2,
   "tables": 10,
   "abstractNumbers": true,
-  "chars": 37498
+  "chars": 37739
  },
  "MM": {
   "residue": [
@@ -95,7 +87,7 @@
   "figures": 2,
   "tables": 3,
   "abstractNumbers": false,
-  "chars": 25040
+  "chars": 25238
  },
  "PK": {
   "residue": [
@@ -112,7 +104,7 @@
   "figures": 6,
   "tables": 1,
   "abstractNumbers": true,
-  "chars": 17726
+  "chars": 17921
  },
  "HB": {
   "residue": [],
@@ -120,43 +112,26 @@
   "figures": 1,
   "tables": 4,
   "abstractNumbers": true,
-  "chars": 29041
+  "chars": 29026
  },
  "AD": {
   "residue": [],
-  "refs": 24,
+  "refs": 22,
   "figures": 2,
   "tables": 1,
   "abstractNumbers": false,
-  "chars": 20300
+  "chars": 20280
  },
  "TE": {
-  "residue": [
-   {
-    "label": "템플릿 안내문 '(수정할 필요 없음)'",
-    "count": 2
-   },
-   {
-    "label": "자리표시자 '회원구분 입력'",
-    "count": 2
-   },
-   {
-    "label": "과제번호 자리표시자",
-    "count": 1
-   }
-  ],
+  "residue": [],
   "refs": 16,
   "figures": 5,
   "tables": 5,
   "abstractNumbers": true,
-  "chars": 19681
+  "chars": 19466
  },
  "TC": {
   "residue": [
-   {
-    "label": "이메일 자리표시자",
-    "count": 1
-   },
    {
     "label": "머리글 '하계' (추계 행사 여부 확인)",
     "count": 2
@@ -166,7 +141,7 @@
   "figures": 2,
   "tables": 3,
   "abstractNumbers": true,
-  "chars": 10766
+  "chars": 10763
  },
  "LR": {
   "residue": [],
@@ -174,7 +149,7 @@
   "figures": 1,
   "tables": 1,
   "abstractNumbers": true,
-  "chars": 8742
+  "chars": 9040
  },
  "NH": {
   "residue": [],
@@ -182,14 +157,10 @@
   "figures": 1,
   "tables": 2,
   "abstractNumbers": true,
-  "chars": 9928
+  "chars": 10229
  },
  "DC": {
   "residue": [
-   {
-    "label": "소속 자리표시자 '**소속/학과'",
-    "count": 1
-   },
    {
     "label": "사사 자리표시자 '지원기관표기'",
     "count": 1
@@ -199,7 +170,7 @@
   "figures": 0,
   "tables": 1,
   "abstractNumbers": false,
-  "chars": 8163
+  "chars": 8248
  },
  "TO": {
   "residue": [],
@@ -245,33 +216,78 @@
   "residue": [
    {
     "label": "템플릿 안내문 '심사용 논문에서는…'",
-    "count": 2
+    "count": 1
    },
    {
     "label": "템플릿 안내문 '(수정할 필요 없음)'",
     "count": 2
-   },
-   {
-    "label": "소속 자리표시자 '**소속/학과'",
-    "count": 2
-   },
-   {
-    "label": "사사 자리표시자 'Acknowledgment 내용 입력'",
-    "count": 1
    }
   ],
   "refs": 15,
   "figures": 4,
   "tables": 8,
   "abstractNumbers": true,
-  "chars": 24618
+  "chars": 24776
  },
  "UF": {
-  "residue": [],
+  "residue": [
+   {
+    "label": "템플릿 권호 'Vol. 01, 2018'",
+    "count": 1
+   }
+  ],
   "refs": 11,
   "figures": 2,
   "tables": 2,
   "abstractNumbers": null,
-  "chars": 13373
+  "chars": 12811
+ },
+ "EG": {
+  "residue": [],
+  "refs": 6,
+  "figures": 2,
+  "tables": 8,
+  "abstractNumbers": true,
+  "chars": 20631
+ },
+ "ML": {
+  "residue": [],
+  "refs": 17,
+  "figures": 2,
+  "tables": 14,
+  "abstractNumbers": true,
+  "chars": 39356
+ },
+ "TD": {
+  "residue": [],
+  "refs": 9,
+  "figures": 4,
+  "tables": 2,
+  "abstractNumbers": true,
+  "chars": 9399
+ },
+ "SR": {
+  "residue": [],
+  "refs": 16,
+  "figures": 4,
+  "tables": 5,
+  "abstractNumbers": true,
+  "chars": 14067
+ },
+ "DI": {
+  "residue": [],
+  "refs": 9,
+  "figures": 2,
+  "tables": 3,
+  "abstractNumbers": null,
+  "chars": 15405
+ },
+ "SL": {
+  "residue": [],
+  "refs": 16,
+  "figures": 1,
+  "tables": 5,
+  "abstractNumbers": null,
+  "chars": 11643
  }
 }

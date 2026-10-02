@@ -1,7 +1,7 @@
 [
  {
   "id": "MP",
-  "driveKey": "f0555a3eb5cb3839",
+  "driveKey": "71ee682f4a3adf4b",
   "track": "team",
   "authors": [
    "강현섭",
@@ -16,16 +16,16 @@
   "folder": "국방기술학회 팀논문",
   "file": {
    "title": "6조_국방기술학회_MIL_PLAN_ver4 (멘토수정본).hwpx",
-   "createdTime": "2026-09-29T00:13:08.842Z",
-   "modifiedTime": "2026-09-29T00:12:52.471Z",
-   "fileSize": "127151"
+   "createdTime": "2026-10-01T05:39:20.581Z",
+   "modifiedTime": "2026-10-01T05:47:42.384Z",
+   "fileSize": "128338"
   },
-  "status": "unchanged",
-  "textSha": "2085b34892938b2a"
+  "status": "updated",
+  "textSha": "680625bdeb4809dd"
  },
  {
   "id": "DR",
-  "driveKey": "7c381f71d9118917",
+  "driveKey": "94622ec176aa4253",
   "track": "team",
   "authors": [
    "이진욱",
@@ -41,16 +41,16 @@
   "folder": "국방기술학회 팀논문",
   "file": {
    "title": "여단급 이하 제대를 위한 AI 드론운용 지원체계의 설계 및 구현 (2팀 국방기술학회 260828).hwp",
-   "createdTime": "2026-09-28T00:28:54.001Z",
-   "modifiedTime": "2026-09-09T00:10:53.480Z",
-   "fileSize": "3072000"
+   "createdTime": "2026-10-01T05:22:29.659Z",
+   "modifiedTime": "2026-10-01T05:19:12.363Z",
+   "fileSize": "3073024"
   },
-  "status": "unchanged",
-  "textSha": "988a0d8d549f7e15"
+  "status": "updated",
+  "textSha": "7c7ca5672e69bdd4"
  },
  {
   "id": "ON",
-  "driveKey": "39a5ab10f577369e",
+  "driveKey": "be334d747e0f1de8",
   "track": "team",
   "authors": [
    "이진욱",
@@ -67,12 +67,12 @@
   "folder": "전자공학회특별저널 팀논문",
   "file": {
    "title": "적성국 교리자료의 기술유형을 고려한 온톨로지 자동 구축 및 CQ 기반 기능평가  북한군 지상작전 교리를 중심으로_2팀 팀논문.hwp",
-   "createdTime": "2026-09-28T00:27:11.872Z",
-   "modifiedTime": "2026-09-28T00:26:36.034Z",
-   "fileSize": "4566016"
+   "createdTime": "2026-10-01T05:21:44.869Z",
+   "modifiedTime": "2026-10-01T05:13:30.736Z",
+   "fileSize": "4608000"
   },
-  "status": "unchanged",
-  "textSha": "6ec806c2a9e2c52a"
+  "status": "updated",
+  "textSha": "f7d71ff7864e9b3b"
  },
  {
   "id": "VT",
@@ -131,15 +131,15 @@
   "file": {
    "title": "이시연_전자공학회특별저널_위험요인 관측가능성 기반 군 아차사고 예방대책 추천 체계 연구2.hwp",
    "createdTime": "2026-09-30T07:27:24.558Z",
-   "modifiedTime": "2026-09-30T07:26:55.322Z",
-   "fileSize": "248832"
+   "modifiedTime": "2026-10-01T05:59:24.354Z",
+   "fileSize": "249344"
   },
-  "status": "unchanged",
-  "textSha": "79f971970a8c30dd"
+  "status": "updated",
+  "textSha": "b5d21ff46379ed51"
  },
  {
   "id": "MM",
-  "driveKey": "5c0315292c1aa4f9",
+  "driveKey": "ed3610b2dc9e4b54",
   "track": "personal",
   "authors": [
    "이진욱"
@@ -151,16 +151,16 @@
   "folder": "전자공학회특별저널 개인논문",
   "file": {
    "title": "북한·러시아 공개 군사교리 기반 멀티모달 적 위험 예측 AI 시스템의 설계 및 구현_이진욱_개인논문.hwp",
-   "createdTime": "2026-09-28T00:27:35.786Z",
-   "modifiedTime": "2026-09-28T00:23:00.668Z",
-   "fileSize": "3777024"
+   "createdTime": "2026-10-01T05:22:07.538Z",
+   "modifiedTime": "2026-10-01T05:19:54.714Z",
+   "fileSize": "3747840"
   },
-  "status": "unchanged",
-  "textSha": "de5c3501d08da5d3"
+  "status": "updated",
+  "textSha": "28f446f7f7ccab6f"
  },
  {
   "id": "PK",
-  "driveKey": "88a856d53a20dbbc",
+  "driveKey": "fe88ee4df0171252",
   "track": "personal",
   "authors": [
    "이진욱"
@@ -172,19 +172,20 @@
   "folder": "전자공학회특별저널 개인논문",
   "file": {
    "title": "KCTC PK-Talbe 기반 AI 화력지원체계의 설계 및 구현_이진욱_개인논문.hwp",
-   "createdTime": "2026-09-28T00:27:38.224Z",
-   "modifiedTime": "2026-09-28T00:17:43.341Z",
-   "fileSize": "6464000"
+   "createdTime": "2026-10-01T05:22:13.370Z",
+   "modifiedTime": "2026-10-01T05:20:14.887Z",
+   "fileSize": "6465536"
   },
-  "status": "unchanged",
-  "textSha": "8e2f4464bc031031"
+  "status": "updated",
+  "textSha": "e63fe25a9d67fb17"
  },
  {
   "id": "HB",
-  "driveKey": "f680161d81c85469",
+  "driveKey": "3f5e8740bbbeacbd",
   "track": "personal",
   "authors": [
-   "강줄기"
+   "강줄기",
+   "이재윤"
   ],
   "projectId": "P217",
   "projectMatch": "different",
@@ -193,19 +194,20 @@
   "folder": "전자공학회특별저널 개인논문",
   "file": {
    "title": "강줄기_트래픽정량화_대한정보공학회_정규논문.hwpx",
-   "createdTime": "2026-09-16T06:43:54.860Z",
-   "modifiedTime": "2026-09-14T01:42:21Z",
-   "fileSize": "295232"
+   "createdTime": "2026-10-01T14:45:41.423Z",
+   "modifiedTime": "2026-10-01T14:45:35.182Z",
+   "fileSize": "296891"
   },
-  "status": "unchanged",
-  "textSha": "55ef975883372943"
+  "status": "updated",
+  "textSha": "272c2b81da686a75"
  },
  {
   "id": "AD",
-  "driveKey": "4a59f7266414c16e",
+  "driveKey": "c3e3ad1b47b67d92",
   "track": "personal",
   "authors": [
-   "강줄기"
+   "강줄기",
+   "이재윤"
   ],
   "projectId": "P217",
   "projectMatch": "different",
@@ -213,17 +215,17 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "강줄기_사전실행제약_대한정보공학회_정규논문.hwpx",
-   "createdTime": "2026-09-16T06:44:03.382Z",
-   "modifiedTime": "2026-09-10T05:37:27Z",
-   "fileSize": "232146"
+   "title": "강줄기_사전실행제약_대한정보공학회.hwpx",
+   "createdTime": "2026-10-01T14:45:17.583Z",
+   "modifiedTime": "2026-10-01T14:44:43.812Z",
+   "fileSize": "231256"
   },
-  "status": "unchanged",
-  "textSha": "411d7bf1b496b46e"
+  "status": "updated",
+  "textSha": "764cf426aecefd30"
  },
  {
   "id": "TE",
-  "driveKey": "1317e5526a221fc2",
+  "driveKey": "a1c23e82ea3471c3",
   "track": "personal",
   "authors": [
    "서보윤"
@@ -235,16 +237,16 @@
   "folder": "전자공학회특별저널 개인논문",
   "file": {
    "title": "TICN 장애 유형 판별과 유형별 자율복구를 위한 AI 기반 방법(서보윤).hwp",
-   "createdTime": "2026-09-29T00:07:48.785Z",
-   "modifiedTime": "2026-09-29T00:07:06.865Z",
-   "fileSize": "918016"
+   "createdTime": "2026-10-01T05:31:22.997Z",
+   "modifiedTime": "2026-10-01T05:30:55.651Z",
+   "fileSize": "913920"
   },
-  "status": "unchanged",
-  "textSha": "ada2bd6c5ab754cd"
+  "status": "updated",
+  "textSha": "d9b95f2811aafe8a"
  },
  {
   "id": "TC",
-  "driveKey": "adc84c8233060e80",
+  "driveKey": "b3126c247b1db329",
   "track": "personal",
   "authors": [
    "서보윤"
@@ -256,16 +258,16 @@
   "folder": "정보기술학회 개인논문",
   "file": {
    "title": "(서보윤)TICN_백본_노드_파괴에_대한_AI_기반_장애_판별_및_자율복구_방법.hwpx",
-   "createdTime": "2026-09-29T00:08:09.634Z",
-   "modifiedTime": "2026-09-29T00:05:31.141Z",
-   "fileSize": "292254"
+   "createdTime": "2026-10-01T05:29:31.678Z",
+   "modifiedTime": "2026-10-01T05:29:13.749Z",
+   "fileSize": "290171"
   },
-  "status": "unchanged",
-  "textSha": "30d8e3279df253e0"
+  "status": "updated",
+  "textSha": "50c0dce7de95bb66"
  },
  {
   "id": "LR",
-  "driveKey": "c80be10007fbebf8",
+  "driveKey": "45d3907734d3912b",
   "track": "personal",
   "authors": [
    "강현섭"
@@ -276,13 +278,13 @@
   "venueName": "정보기술학회",
   "folder": "정보기술학회 개인논문",
   "file": {
-   "title": "강현섭_한국정보기술학회지.hwpx",
-   "createdTime": "2026-09-17T00:42:46.769Z",
-   "modifiedTime": "2026-09-17T00:41:39Z",
-   "fileSize": "159408"
+   "title": "[강현섭]저자원 환경에서 근거 결손의 입도가 대규모 언어모델의 충분성 판단에 미치는 영향.hwpx",
+   "createdTime": "2026-10-01T05:49:00.935Z",
+   "modifiedTime": "2026-10-01T05:48:19.508Z",
+   "fileSize": "161078"
   },
-  "status": "unchanged",
-  "textSha": "86186add7bcd421f"
+  "status": "updated",
+  "textSha": "2f0d4977cbf99ab5"
  },
  {
   "id": "NH",
@@ -299,18 +301,19 @@
   "file": {
    "title": "이시연_한국정보기술학회지_개인논문양식(멘토수정ver4).hwp",
    "createdTime": "2026-09-30T07:27:38.804Z",
-   "modifiedTime": "2026-09-30T07:25:56.367Z",
-   "fileSize": "171008"
+   "modifiedTime": "2026-10-01T05:58:02.397Z",
+   "fileSize": "161792"
   },
-  "status": "unchanged",
-  "textSha": "0fbae1552775c7fd"
+  "status": "updated",
+  "textSha": "4ebe68744dcb4705"
  },
  {
   "id": "DC",
-  "driveKey": "972dbd6097da1752",
+  "driveKey": "ab8c2c7dace4f798",
   "track": "personal",
   "authors": [
-   "강줄기"
+   "강줄기",
+   "이재윤"
   ],
   "projectId": "P217",
   "projectMatch": "different",
@@ -319,12 +322,12 @@
   "folder": "정보기술학회 개인논문",
   "file": {
    "title": "강줄기_한국정보기술학회지.hwp",
-   "createdTime": "2026-09-16T06:43:34.216Z",
-   "modifiedTime": "2026-09-09T09:47:00Z",
-   "fileSize": "156160"
+   "createdTime": "2026-10-01T14:46:33.869Z",
+   "modifiedTime": "2026-10-01T14:46:20.467Z",
+   "fileSize": "160256"
   },
-  "status": "unchanged",
-  "textSha": "fb069f808ee02a25"
+  "status": "updated",
+  "textSha": "92221aa32c887ead"
  },
  {
   "id": "TO",
@@ -448,7 +451,7 @@
  },
  {
   "id": "RM",
-  "driveKey": "f6ffcc9b05e9b65a",
+  "driveKey": "837e1b9f853db55e",
   "track": "team",
   "authors": [
    "강줄기",
@@ -463,22 +466,21 @@
   "folder": "전자공학회특별저널 팀논문",
   "file": {
    "title": "전자공학회_팀논문(1조).hwp",
-   "createdTime": "2026-09-30T04:40:35.533Z",
-   "modifiedTime": "2026-09-30T02:16:09.472Z",
+   "createdTime": "2026-10-01T05:25:29.154Z",
+   "modifiedTime": "2026-10-01T05:25:14.071Z",
    "fileSize": "1991168"
   },
-  "status": "unchanged",
-  "textSha": "1328d2f18f559da8",
+  "status": "updated",
+  "textSha": "574810c3b198ce14",
   "team": "1조"
  },
  {
   "id": "UF",
-  "driveKey": "35b9d56e2e226998",
+  "driveKey": "790a7868da48d251",
   "track": "team",
   "authors": [
-   "최석철",
    "이건희",
-   "김민규"
+   "최석철"
   ],
   "projectId": "P107",
   "projectMatch": "same",
@@ -487,12 +489,161 @@
   "venueName": "국방기술학회",
   "folder": "국방기술학회 팀논문",
   "file": {
-   "title": "7조_UA-SAHI_KIDT_프레임워크제안.docx",
-   "createdTime": "2026-09-30T23:06:41.814Z",
-   "modifiedTime": "2026-09-30T23:02:28.733Z",
-   "fileSize": "730489"
+   "title": "[7조] UA-SAHI_검출기 출력과 업샘플링을 이용한 국방 예산 제약형 선택적 슬라이싱 프레임워크 설계.hwp",
+   "createdTime": "2026-10-01T22:31:12.607Z",
+   "modifiedTime": "2026-10-01T22:31:12.686Z",
+   "fileSize": "441344"
+  },
+  "status": "updated",
+  "textSha": "9cbe94e6d2ff4269"
+ },
+ {
+  "id": "EG",
+  "driveKey": "69d9eb7d4d2d7183",
+  "track": "personal",
+  "authors": [
+   "강현섭"
+  ],
+  "projectId": "P221",
+  "projectMatch": "related",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "[강현섭]저자원 환경에서 근거 결손의 입도가 대규모 언어모델의 결손 명세 능력에 미치는 영향.hwpx",
+   "createdTime": "2026-10-01T05:45:24.656Z",
+   "modifiedTime": "2026-10-01T05:27:40.849Z",
+   "fileSize": "307116"
   },
   "status": "new",
-  "textSha": "0ac1bfe00cc663c0"
+  "textSha": "45fb91f26437170c"
+ },
+ {
+  "id": "ML",
+  "driveKey": "ed81c327fb811599",
+  "track": "team",
+  "authors": [
+   "강현섭",
+   "서보윤",
+   "이시연"
+  ],
+  "projectId": "P106",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문",
+  "file": {
+   "title": "6조_MIL_PLAN_정규논문양식(100) (1).hwpx",
+   "createdTime": "2026-10-01T05:38:50.372Z",
+   "modifiedTime": "2026-10-01T05:32:04.943Z",
+   "fileSize": "261687"
+  },
+  "status": "new",
+  "textSha": "4cd5f9ad7c7a0bc6",
+  "team": "6조"
+ },
+ {
+  "id": "TD",
+  "driveKey": "ea8b856dc4aea58a",
+  "track": "team",
+  "authors": [
+   "임철희",
+   "김민균",
+   "전누리",
+   "이강희"
+  ],
+  "projectId": "P104",
+  "projectMatch": "related",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "2026 한국국방기술학회 팀 4조.hwpx",
+   "createdTime": "2026-10-01T05:24:12.618Z",
+   "modifiedTime": "2026-10-01T05:21:41.722Z",
+   "fileSize": "3352866"
+  },
+  "status": "new",
+  "textSha": "6e9e3c419905600b",
+  "team": "4조"
+ },
+ {
+  "id": "SR",
+  "driveKey": "6dd2149520bb587e",
+  "track": "team",
+  "authors": [
+   "이정민",
+   "반성우",
+   "박동희",
+   "배진영"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문 › 핵심5",
+  "file": {
+   "title": "2026_대한전자공학회_저널_5조(정동진).hwpx",
+   "createdTime": "2026-10-01T04:56:41.930Z",
+   "modifiedTime": "2026-10-01T01:38:23.958Z",
+   "fileSize": "1061519"
+  },
+  "status": "new",
+  "textSha": "fc0a69ad04b90580",
+  "team": "핵심5 5조",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "DI",
+  "driveKey": "011482fb9327c3ef",
+  "track": "team",
+  "authors": [
+   "박명규",
+   "김성진",
+   "이보라",
+   "이성규",
+   "이교석"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문 › 핵심5",
+  "file": {
+   "title": "2026_한국국방기술학회_추계학술대회_6조(육해공).hwp",
+   "createdTime": "2026-10-01T04:17:50.768Z",
+   "modifiedTime": "2026-10-01T01:40:58.788Z",
+   "fileSize": "8866304"
+  },
+  "status": "new",
+  "textSha": "cd9d91df55e90f18",
+  "team": "핵심5 6조",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "SL",
+  "driveKey": "110ec28fc607d63c",
+  "track": "team",
+  "authors": [
+   "반성우",
+   "박동희",
+   "배진영",
+   "이정민"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문 › 핵심5",
+  "file": {
+   "title": "2026_한국국방기술학회_추계학술대회_5조(정동진)_2609281330.hwpx",
+   "createdTime": "2026-10-01T01:29:27.225Z",
+   "modifiedTime": "2026-10-01T01:29:17.426Z",
+   "fileSize": "653999"
+  },
+  "status": "new",
+  "textSha": "13af001c9af021d2",
+  "team": "핵심5 5조",
+  "folderSub": "핵심5"
  }
 ]
