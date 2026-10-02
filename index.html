@@ -4,8 +4,10 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="description" content="CAUMIL 개인·팀 논문 원고를 경진대회 심사 기준 5항목으로 채점해 심사 점수·순위·백분위·사분위를 매긴 학술 지표 페이지(v4)" />
-<meta name="theme-color" content="#56489E" />
-<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<meta name="theme-color" content="#1F2A55" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#131A33" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="favicon.svg?v=7a92e0ed" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <meta name="robots" content="noindex" />
 <title>CAUMIL 논문 지표</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +22,7 @@
   --up: #0E6B5C; --down: #9E3B2A;
   --q1-fg: #0E6B5C; --q1-bg: #E0F1EC; --q2-fg: #356B25; --q2-bg: #E8F2DF; --q3-fg: #845A08; --q3-bg: #F6EDD6; --q4-fg: #9E3B2A; --q4-bg: #F6E3DE;
   --upd-fg: #845A08; --upd-bg: #F6EDD6; --chip-ink: #1B1A2E; --on-chip: #FFFFFF;
-  --header-bg: #56489E; --header-fg: #FFFFFF; --header-muted: rgba(255, 255, 255, 0.78); --header-line: rgba(255, 255, 255, 0.3); --header-field: rgba(255, 255, 255, 0.14); --header-cur-bg: #FFFFFF; --header-cur-fg: #56489E;
+  --header-bg: #1F2A55; --header-fg: #FFFFFF; --header-muted: rgba(255, 255, 255, 0.76); --header-line: rgba(255, 255, 255, 0.26); --header-field: rgba(255, 255, 255, 0.11); --header-cur-bg: #FFFFFF; --header-cur-fg: #1F2A55; --header-accent: #B4A6F0;
   --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   --font-serif: "Noto Serif KR", "AppleMyungjo", "Batang", Georgia, serif;
   --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -35,7 +37,7 @@
     --up: #5FCFB6; --down: #F09A88;
     --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
     --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
-    --header-bg: #241E44; --header-fg: #ECEAF5; --header-muted: rgba(236, 234, 245, 0.78); --header-line: rgba(236, 234, 245, 0.28); --header-field: rgba(236, 234, 245, 0.1); --header-cur-bg: #ECEAF5; --header-cur-fg: #241E44;
+    --header-bg: #131A33; --header-fg: #ECEAF5; --header-muted: rgba(236, 234, 245, 0.76); --header-line: rgba(236, 234, 245, 0.24); --header-field: rgba(236, 234, 245, 0.08); --header-cur-bg: #ECEAF5; --header-cur-fg: #131A33; --header-accent: #A99AE6;
     color-scheme: dark;
   }
 }
@@ -46,7 +48,7 @@
   --up: #5FCFB6; --down: #F09A88;
   --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
   --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
-  --header-bg: #241E44; --header-fg: #ECEAF5; --header-muted: rgba(236, 234, 245, 0.78); --header-line: rgba(236, 234, 245, 0.28); --header-field: rgba(236, 234, 245, 0.1); --header-cur-bg: #ECEAF5; --header-cur-fg: #241E44;
+  --header-bg: #131A33; --header-fg: #ECEAF5; --header-muted: rgba(236, 234, 245, 0.76); --header-line: rgba(236, 234, 245, 0.24); --header-field: rgba(236, 234, 245, 0.08); --header-cur-bg: #ECEAF5; --header-cur-fg: #131A33; --header-accent: #A99AE6;
   color-scheme: dark;
 }
 
@@ -71,7 +73,7 @@ p { margin: 0; }
 .inner { width: 100%; max-width: var(--max); margin: 0 auto; padding-inline: var(--gutter); }
 
 /* ---------- header ---------- */
-.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; background: var(--header-bg); color: var(--header-fg); border-bottom: 1px solid var(--header-bg); }
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30; background: var(--header-bg); color: var(--header-fg); border-bottom: 3px solid var(--header-accent); }
 .top :focus-visible { outline-color: var(--header-fg); }
 .top-inner { display: flex; align-items: stretch; gap: 24px; min-height: 60px; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--header-fg); white-space: nowrap; }
@@ -87,6 +89,7 @@ p { margin: 0; }
 .search input::placeholder { color: var(--header-muted); }
 .search:focus-within { border-color: var(--header-fg); }
 .search input::-webkit-search-cancel-button { cursor: pointer; }
+.m-search { display: none; }  /* 페이지 머리 안 검색창은 700px 이하에서만(아래 미디어 쿼리) */
 .version { display: flex; font-size: 12.5px; border: 1px solid var(--header-line); border-radius: 6px; overflow: hidden; white-space: nowrap; }
 .version a { display: flex; align-items: center; height: 34px; padding: 0 12px; text-decoration: none; color: var(--header-fg); }
 .version a + a { border-left: 1px solid var(--header-line); }
@@ -463,7 +466,7 @@ p { margin: 0; }
 <footer class="site-foot">
   <div class="inner"><span id="foot-meta"></span><span>이전 버전 <a href="https://caumil-admin.github.io/caumil/v3/">v3</a> · <a href="https://caumil-admin.github.io/caumil/v2/">v2</a> · <a href="https://caumil-admin.github.io/caumil/v1/">v1</a></span></div>
 </footer>
-<script src="data/data.js?v=3b1a7ccb"></script>
+<script src="data/data.js?v=7864e516"></script>
 <script src="app.js?v=1932a336"></script>
 </body>
 </html>

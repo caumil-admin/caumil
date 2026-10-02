@@ -19,7 +19,12 @@ from common import DATA, DIST, ROOT, SITE, drive_key, excluded_subs, load_json, 
 PUBLIC_DROP_PAPER = ("evidenceQuotes",)
 V4_DROP_PAPER = ("scores", "rationale", "planDelta")  # v3 까지의 6개 변수 기록 — v4 화면에서 쓰지 않음(eval/ 에는 남음)
 ROBOTS = '<meta name="robots" content="noindex" />'
-FAVICON = '<link rel="icon" href="favicon.svg" type="image/svg+xml" />'
+def favicon_links():
+    """v4 파비콘(남색 바탕 순위 막대). 브라우저가 파비콘을 오래 잡고 있으므로 내용 해시를 붙인다."""
+    svg = os.path.join(ROOT, "favicon.svg")
+    h = hashlib.sha256(open(svg, "rb").read()).hexdigest()[:8] if os.path.exists(svg) else "0"
+    return (f'<link rel="icon" href="favicon.svg?v={h}" type="image/svg+xml" />\n'
+            '<link rel="apple-touch-icon" href="apple-touch-icon.png" />')
 
 
 def build_data(public=False, basis_date=None, last_sync=None):
@@ -111,15 +116,15 @@ def main():
     data["meta"]["host"] = "pages"
     djs = data_js(data)
     site = os.path.join(a.out, "site")
-    write_site(site, template, app, djs, FAVICON + ("\n" + robots if robots else ""))
-    for name in ("favicon.svg", ".nojekyll"):
+    write_site(site, template, app, djs, favicon_links() + ("\n" + robots if robots else ""))
+    for name in ("favicon.svg", "apple-touch-icon.png", ".nojekyll"):
         src = os.path.join(ROOT, name)
         if os.path.exists(src):
             shutil.copy(src, os.path.join(site, name))
     c = data["meta"]["counts"]
     print(f"built {'PUBLIC' if public else 'internal'} v4: {a.out}/artifact.html ({len(artifact)//1024} KB), {site}/ — papers {c['total']} (new {c['new']}, updated {c['updated']}, 핵심5 제외 {c['excluded']})")
     if a.root:
-        write_site(ROOT, template, app, djs, FAVICON + "\n" + robots)
+        write_site(ROOT, template, app, djs, favicon_links() + "\n" + robots)
         print("deployed PUBLIC v4 to repo root: index.html, app.js, data/data.js (v3/·v2/·v1/ 은 그대로)")
 
 
