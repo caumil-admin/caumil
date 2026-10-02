@@ -20,7 +20,7 @@
    "modifiedTime": "2026-10-01T05:47:42.384Z",
    "fileSize": "128338"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "680625bdeb4809dd"
  },
  {
@@ -45,7 +45,7 @@
    "modifiedTime": "2026-10-01T05:19:12.363Z",
    "fileSize": "3073024"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "7c7ca5672e69bdd4"
  },
  {
@@ -71,7 +71,7 @@
    "modifiedTime": "2026-10-01T05:13:30.736Z",
    "fileSize": "4608000"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "f7d71ff7864e9b3b"
  },
  {
@@ -134,7 +134,7 @@
    "modifiedTime": "2026-10-01T05:59:24.354Z",
    "fileSize": "249344"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "b5d21ff46379ed51"
  },
  {
@@ -155,7 +155,7 @@
    "modifiedTime": "2026-10-01T05:19:54.714Z",
    "fileSize": "3747840"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "28f446f7f7ccab6f"
  },
  {
@@ -176,7 +176,7 @@
    "modifiedTime": "2026-10-01T05:20:14.887Z",
    "fileSize": "6465536"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "e63fe25a9d67fb17"
  },
  {
@@ -198,7 +198,7 @@
    "modifiedTime": "2026-10-01T14:45:35.182Z",
    "fileSize": "296891"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "272c2b81da686a75"
  },
  {
@@ -220,7 +220,7 @@
    "modifiedTime": "2026-10-01T14:44:43.812Z",
    "fileSize": "231256"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "764cf426aecefd30"
  },
  {
@@ -241,7 +241,7 @@
    "modifiedTime": "2026-10-01T05:30:55.651Z",
    "fileSize": "913920"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "d9b95f2811aafe8a"
  },
  {
@@ -262,7 +262,7 @@
    "modifiedTime": "2026-10-01T05:29:13.749Z",
    "fileSize": "290171"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "50c0dce7de95bb66"
  },
  {
@@ -283,7 +283,7 @@
    "modifiedTime": "2026-10-01T05:48:19.508Z",
    "fileSize": "161078"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "2f0d4977cbf99ab5"
  },
  {
@@ -304,7 +304,7 @@
    "modifiedTime": "2026-10-01T05:58:02.397Z",
    "fileSize": "161792"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "4ebe68744dcb4705"
  },
  {
@@ -326,7 +326,7 @@
    "modifiedTime": "2026-10-01T14:46:20.467Z",
    "fileSize": "160256"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "92221aa32c887ead"
  },
  {
@@ -470,7 +470,7 @@
    "modifiedTime": "2026-10-01T05:25:14.071Z",
    "fileSize": "1991168"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "574810c3b198ce14",
   "team": "1조"
  },
@@ -494,7 +494,7 @@
    "modifiedTime": "2026-10-01T22:31:12.686Z",
    "fileSize": "441344"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "9cbe94e6d2ff4269"
  },
  {
@@ -515,7 +515,7 @@
    "modifiedTime": "2026-10-01T05:27:40.849Z",
    "fileSize": "307116"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "45fb91f26437170c"
  },
  {
@@ -538,7 +538,7 @@
    "modifiedTime": "2026-10-01T05:32:04.943Z",
    "fileSize": "261687"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "4cd5f9ad7c7a0bc6",
   "team": "6조"
  },
@@ -563,7 +563,7 @@
    "modifiedTime": "2026-10-01T05:21:41.722Z",
    "fileSize": "3352866"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "6e9e3c419905600b",
   "team": "4조"
  },
@@ -588,7 +588,7 @@
    "modifiedTime": "2026-10-01T01:38:23.958Z",
    "fileSize": "1061519"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "fc0a69ad04b90580",
   "team": "핵심5 5조",
   "folderSub": "핵심5"
@@ -615,7 +615,7 @@
    "modifiedTime": "2026-10-01T01:40:58.788Z",
    "fileSize": "8866304"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "cd9d91df55e90f18",
   "team": "핵심5 6조",
   "folderSub": "핵심5"
@@ -641,9 +641,205 @@
    "modifiedTime": "2026-10-01T01:29:17.426Z",
    "fileSize": "653999"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "13af001c9af021d2",
   "team": "핵심5 5조",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "SV",
+  "driveKey": "d1fc9d509e0ef1a6",
+  "track": "team",
+  "authors": [
+   "저자 가림(블라인드본)"
+  ],
+  "projectId": "P107",
+  "projectMatch": "related",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문",
+  "file": {
+   "title": "[7조] 초소형 객체 생존 다운샘플링과 가이드 특징 업샘플링 기반 원격탐사 소형 객체 검출.hwp",
+   "createdTime": "2026-10-02T09:10:42.166Z",
+   "modifiedTime": "2026-10-02T09:08:24.712Z",
+   "fileSize": "539136"
+  },
+  "status": "new",
+  "textSha": "b836fb6a8dd706c2",
+  "team": "7조"
+ },
+ {
+  "id": "AL",
+  "driveKey": "9839e5edd0e65ca2",
+  "track": "team",
+  "authors": [
+   "저자 가림(블라인드본)"
+  ],
+  "projectId": "P103",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문",
+  "file": {
+   "title": "[3조(에이스)] 악기상 환경에서의 표적 학습 데이터 신뢰성 향상을 위한 딥러닝 융합 자동 라벨링 기법.hwp",
+   "createdTime": "2026-10-02T05:42:30.005Z",
+   "modifiedTime": "2026-10-02T05:32:35.555Z",
+   "fileSize": "4251136"
+  },
+  "status": "new",
+  "textSha": "43d9e79c965b08f0",
+  "team": "3조"
+ },
+ {
+  "id": "SF",
+  "driveKey": "c5fdf551fb8459c8",
+  "track": "team",
+  "authors": [
+   "김혜인",
+   "백지훈",
+   "강현재",
+   "노하은",
+   "백민주"
+  ],
+  "projectId": "P105",
+  "projectMatch": "related",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문",
+  "file": {
+   "title": "5조_비레이블 열화상 다중 객체 추적을 위한 소스 프리 도메인 적응(전자).hwp",
+   "createdTime": "2026-10-02T00:31:28.754Z",
+   "modifiedTime": "2026-10-02T00:23:12.507Z",
+   "fileSize": "7228416"
+  },
+  "status": "new",
+  "textSha": "d45ede723c5c164d",
+  "team": "5조"
+ },
+ {
+  "id": "SD",
+  "driveKey": "bc07af327311707b",
+  "track": "team",
+  "authors": [
+   "백민주",
+   "강현재",
+   "백지훈",
+   "김혜인",
+   "노하은"
+  ],
+  "projectId": "P105",
+  "projectMatch": "related",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "5조_비레이블 열화상 다중 객체 추적을 위한 소스 프리 도메인 적응(국방).hwp",
+   "createdTime": "2026-10-02T07:59:44.369Z",
+   "modifiedTime": "2026-10-02T07:59:24.294Z",
+   "fileSize": "5239808"
+  },
+  "status": "new",
+  "textSha": "1b6aa86a0a3c3d5f",
+  "team": "5조"
+ },
+ {
+  "id": "LD",
+  "driveKey": "13164ca0d81f2ae3",
+  "track": "team",
+  "authors": [
+   "김두환",
+   "남하늘",
+   "라경주",
+   "김기열"
+  ],
+  "projectId": "P103",
+  "projectMatch": "related",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "[3조(에이스)] 악기상 환경에서 표적 탐지 기반 자동 라벨링의 신뢰성 저하 분석.hwp",
+   "createdTime": "2026-10-02T05:37:12.745Z",
+   "modifiedTime": "2026-10-02T04:33:43.583Z",
+   "fileSize": "1436672"
+  },
+  "status": "new",
+  "textSha": "7c68bf8e648d440a",
+  "team": "3조"
+ },
+ {
+  "id": "SM",
+  "driveKey": "336dce019b41c60c",
+  "track": "team",
+  "authors": [
+   "김보라",
+   "한상욱",
+   "최은원"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문 › 핵심5",
+  "file": {
+   "title": "2026_대한전자공학회_저널_2조(한국사) 2.hwpx",
+   "createdTime": "2026-10-02T00:27:43.802Z",
+   "modifiedTime": "2026-10-02T00:25:07.395Z",
+   "fileSize": "2103281"
+  },
+  "status": "new",
+  "textSha": "83ce997ffc603124",
+  "team": "핵심5 2조",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "PS",
+  "driveKey": "cde2526ce05fa623",
+  "track": "team",
+  "authors": [
+   "한상욱",
+   "김보라",
+   "최은원"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문 › 핵심5",
+  "file": {
+   "title": "2026_대한전자공학회_저널_2조(한국사) 3.hwpx",
+   "createdTime": "2026-10-02T00:27:46.640Z",
+   "modifiedTime": "2026-10-02T00:26:16.209Z",
+   "fileSize": "2273458"
+  },
+  "status": "new",
+  "textSha": "481e074a09749b93",
+  "team": "핵심5 2조",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "EM",
+  "driveKey": "23de40dc88dfbbe4",
+  "track": "team",
+  "authors": [
+   "김보라",
+   "한상욱",
+   "최은원"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문 › 핵심5",
+  "file": {
+   "title": "2026_대한전자공학회_저널_2조(한국사) 1.hwpx",
+   "createdTime": "2026-10-02T00:27:49.370Z",
+   "modifiedTime": "2026-10-02T00:24:29.331Z",
+   "fileSize": "2322215"
+  },
+  "status": "new",
+  "textSha": "912062a9ba456992",
+  "team": "핵심5 2조",
   "folderSub": "핵심5"
  }
 ]

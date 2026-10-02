@@ -2,14 +2,15 @@
 """빌드 전 정합성 점검. 오류가 있으면 종료 코드 1.
 
 - 드라이브 목록 ↔ 카탈로그(data/papers.json) 대응, NEW- 임시 ID 여부
-- 평가(eval/<ID>.json) 존재, 6개 점수 0~1·0.05 격자, 리스크 level, projectMatch, projectId 존재
+- v4: 순위 대상(핵심5 하위 폴더·removed 제외) 원고마다 평가(eval/<ID>.json)와 심사 기준 5항목(rubric) 필수 — 격자·평균·합계
+- 6개 변수(scores)는 v3 까지의 기록이라 있으면 범위만 본다. 리스크 level, projectMatch, projectId 존재
 - 평가 당시 텍스트 해시(eval.textSha) == 현재 텍스트 해시(카탈로그 textSha)  → 다르면 재평가 필요
 - results.json·lint.json 이 평가된 원고 전부를 담고 있고 평가보다 최신인지
 """
 import os, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from common import DATA, EVAL, INPUTS, drive_key, load_json, load_papers  # noqa: E402
+from common import DATA, EVAL, INPUTS, drive_key, excluded_subs, load_json, load_papers  # noqa: E402
 
 VALID_MATCH = {"same", "related", "different", "none"}
 
@@ -18,38 +19,38 @@ def main():
     errors, warns = [], []
     keys = [c["key"] for c in load_json(os.path.join(DATA, "criteria.json"))]
     papers = load_papers()
+    allp = load_papers(include_excluded=True)
     projects = {p["id"] for p in load_json(os.path.join(DATA, "projects.json"))}
-    ids = [p["id"] for p in papers]
+    ids = [p["id"] for p in allp]
     if len(ids) != len(set(ids)):
         errors.append("중복 ID: " + ", ".join(sorted({i for i in ids if ids.count(i) > 1})))
     lp = os.path.join(INPUTS, "drive_listing.json")
     if os.path.exists(lp):
         listing = load_json(lp)
         listed = {drive_key(f["id"]): f["title"] for f in listing["files"]}
-        cat = {p["driveKey"] for p in papers}
+        cat = {p["driveKey"] for p in allp}
         for d in set(listed) - cat:
             errors.append(f"목록에만 있는 파일(sync --apply 필요): {listed[d]}")
-        for p in papers:
+        for p in allp:
             if p["driveKey"] not in listed and p.get("status") != "removed":
                 warns.append(f"{p['id']}: 드라이브 목록에 없음(status={p.get('status')})")
     else:
         warns.append("inputs/drive_listing.json 없음 — 목록 대조 생략")
+    for p in allp:
+        if p["id"].startswith("NEW-"):
+            errors.append(f"{p['id']}: 임시 ID — 2글자 ID·저자·과제 매핑을 채워야 함")
+    n_ex = sum(1 for p in allp if p.get("folderSub") in excluded_subs())
     for p in papers:
         pid = p["id"]
-        if pid.startswith("NEW-"):
-            errors.append(f"{pid}: 임시 ID — 2글자 ID·저자·과제 매핑을 채우고 eval/ 을 작성해야 함")
         if not p.get("evaluated"):
             errors.append(f"{pid}: eval/{pid}.json 없음(미평가)")
             continue
-        sc = p.get("scores") or {}
-        for k in keys:
-            v = sc.get(k)
-            if v is None or not (0 <= v <= 1):
-                errors.append(f"{pid}: 점수 {k}={v} 범위 밖")
-            elif abs(v * 20 - round(v * 20)) > 1e-6:
-                warns.append(f"{pid}: 점수 {k}={v} 가 0.05 격자가 아님")
-            if not (p.get("rationale") or {}).get(k):
-                errors.append(f"{pid}: {k} 근거(rationale) 없음")
+        sc = p.get("scores")
+        if sc:  # v3 까지의 6개 변수 기록 — 있으면 범위만 본다(v4 순위에는 쓰지 않음)
+            for k in keys:
+                v = sc.get(k)
+                if v is not None and not (0 <= v <= 1):
+                    errors.append(f"{pid}: 점수 {k}={v} 범위 밖")
         for f in p.get("flags") or []:
             if f.get("level") not in ("high", "mid"):
                 errors.append(f"{pid}: flag level '{f.get('level')}' (high|mid)")
@@ -63,7 +64,7 @@ def main():
             errors.append(f"{pid}: authors 비어 있음")
         rub = p.get("rubric")
         if not rub:
-            warns.append(f"{pid}: 심사 기준 5항목(rubric) 점수 없음")
+            errors.append(f"{pid}: 심사 기준 5항목(rubric) 없음 — v4 순위에 필요")
         else:
             crit_def = {c["key"]: [x["key"] for x in c["sub"]] for c in load_json(os.path.join(DATA, "rubric.json"))["criteria"]}
             tot = []
@@ -114,7 +115,7 @@ def main():
         print("WARN ", w)
     for e in errors:
         print("ERROR", e)
-    print(f"check: {len(papers)} papers, {len(evaluated)} evaluated, {len(errors)} errors, {len(warns)} warnings")
+    print(f"check: {len(papers)} papers in scope (+{n_ex} 핵심5 제외), {len(evaluated)} evaluated, {len(errors)} errors, {len(warns)} warnings")
     sys.exit(1 if errors else 0)
 
 

@@ -1,5 +1,7 @@
 // CAUMIL 3인 평가 워크플로 — 독립 평가 3인 → 반박 검증 2인 → 판정자. Claude Code 의 Workflow 도구로 실행한다(사용자가 워크플로를 요청했을 때만).
 // 사용: REPO 와 PAPERS 를 채우고 `Workflow` 도구에 scriptPath 로 넘긴다. 원고당 ≈80만 토큰. 6개 변수 + 심사 기준 5항목(data/rubric.json)을 함께 매긴다.
+// v4(2026-10-02~): 순위는 rubric 만으로 매긴다. 이 스크립트의 6개 변수(scores·rationale) 부분은 v3 기록용이라, v4 빌드는 쓰지 않는다
+// (빌드가 데이터에서 뺀다). 토큰을 아끼려면 SIX 관련 스키마·지시를 지우고 rubric 만 남겨 쓴다 — docs/EVAL_PROMPT.md 가 v4 단일 평가 기준이다.
 export const meta = {
   name: 'caumil-eval-panel',
   description: '새 원고를 독립 평가자 3인이 6개 변수와 심사 기준 5항목으로 채점하고, 반박 검증 2인을 거쳐 판정자가 최종 eval JSON 을 쓴다',

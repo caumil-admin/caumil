@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="description" content="CAUMIL 개인·팀 논문 원고를 경진대회 6개 변수로 채점하고 사전함수로 적합도·순위·백분위·사분위를 매긴 학술 지표 페이지" />
+<meta name="description" content="CAUMIL 개인·팀 논문 원고를 경진대회 심사 기준 5항목으로 채점해 심사 점수·순위·백분위·사분위를 매긴 학술 지표 페이지(v4)" />
 <meta name="theme-color" content="#56489E" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <meta name="robots" content="noindex" />
@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet" />
 <style>
-/* CAUMIL 논문 지표 v2 — 학술 지표 색인형. 토큰은 Claude Design 캔버스(9tBbBaMpePcUWcuFiKSsCm)에서 옮겼다. */
+/* CAUMIL 논문 지표 v4 — 학술 지표 색인형(심사 기준 5항목 순위). 토큰은 Claude Design 캔버스(9tBbBaMpePcUWcuFiKSsCm)에서 옮겼다. */
 :root {
   --bg: #F6F5FA; --surface: #FFFFFF; --surface-2: #EFEDF5; --zebra: #FAF9FC;
   --ink: #1B1A2E; --muted: #5B5872; --rule: #DFDCE9; --rule-2: #C7C3D6;
@@ -162,9 +162,9 @@ p { margin: 0; }
 .warn { font-size: 12px; color: var(--upd-fg); }
 .tbl { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
 .tbl-scroll { overflow-x: auto; }
-.tgrid { display: grid; grid-template-columns: 52px minmax(240px, 1fr) 84px 64px 64px 64px 64px repeat(6, 46px) 104px; align-items: center; min-width: 1044px; }
+.tgrid { display: grid; grid-template-columns: 52px minmax(240px, 1fr) 96px 64px 64px repeat(5, 52px) 104px; align-items: center; min-width: 900px; }
 .tgroup { background: var(--surface-2); font-size: 11.5px; color: var(--muted); }
-.tgroup span { grid-column: 8 / span 6; padding: 8px 0 0; text-align: center; font-weight: 600; border-bottom: 1px solid var(--rule-2); margin: 0 6px; }
+.tgroup span { grid-column: 6 / span 5; padding: 8px 0 0; text-align: center; font-weight: 600; border-bottom: 1px solid var(--rule-2); margin: 0 6px; }
 .thead { background: var(--surface-2); border-bottom: 1px solid var(--rule-2); }
 .thead button { font-size: 12px; border: 0; background: transparent; min-height: 38px; padding: 0 6px; display: flex; align-items: center; gap: 3px; color: var(--muted); font-weight: 500; width: 100%; }
 .thead button:hover:not(:disabled) { color: var(--ink); }
@@ -177,6 +177,7 @@ p { margin: 0; }
 .trow.top2 { box-shadow: inset 3px 0 0 var(--accent); }
 .trow.top2 .c-rank { color: var(--accent); }
 .c-rank { font-family: var(--font-mono); font-size: 16px; font-weight: 600; text-align: center; }
+.c-rank .tie, .same-list .tie, .lgrid .tie { font-size: 11px; font-weight: 500; color: var(--muted); margin-left: 1px; vertical-align: super; }
 .c-title { min-width: 0; padding: 10px 14px 10px 6px; display: flex; flex-direction: column; gap: 4px; }
 .c-title a { font-family: var(--font-serif); font-size: 14px; font-weight: 600; line-height: 1.45; text-decoration: none; }
 .c-title .who { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; font-size: 12px; color: var(--muted); }
@@ -198,14 +199,14 @@ p { margin: 0; }
 
 /* ---------- categories page ---------- */
 .cat-wrap { padding-block: 20px 28px; display: flex; flex-direction: column; gap: 12px; }
-.cgrid { display: grid; grid-template-columns: minmax(200px, 1fr) 56px 84px 84px 272px 176px repeat(6, 46px) 80px; align-items: center; min-width: 1176px; }
+.cgrid { display: grid; grid-template-columns: minmax(200px, 1fr) 56px 84px 84px 272px 176px repeat(5, 52px) 80px; align-items: center; min-width: 1150px; }
 .chead { align-items: end; background: var(--surface-2); border-bottom: 1px solid var(--rule-2); font-size: 12px; color: var(--muted); }
 .chead > span { padding: 12px 8px; }
 .chead .dist { padding: 8px 16px 10px; display: flex; flex-direction: column; gap: 4px; }
 .chead .dist .ax { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10.5px; }
-.chead .means { grid-column: span 6; padding: 8px 0 0; display: flex; flex-direction: column; gap: 6px; }
+.chead .means { grid-column: span 5; padding: 8px 0 0; display: flex; flex-direction: column; gap: 6px; }
 .chead .means .t { text-align: center; font-weight: 600; }
-.chead .means .k { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-top: 1px solid var(--rule-2); }
+.chead .means .k { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--rule-2); }
 .chead .means .k span { padding: 6px 0; text-align: center; }
 .crow { min-height: 60px; border-top: 1px solid var(--rule); }
 .crow.sub-row { background: var(--zebra); }
@@ -220,7 +221,7 @@ p { margin: 0; }
 .dist .ax { position: absolute; left: 0; right: 0; top: 18px; height: 1px; background: var(--rule-2); }
 .dist .med { position: absolute; top: 11px; width: 2px; height: 15px; margin-left: -1px; background: var(--ink); }
 .dist .dot { position: absolute; top: 13px; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; background: rgba(var(--accent-rgb), 0.55); border: 1px solid var(--accent); }
-.dist .top { position: absolute; top: 0; font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; color: var(--accent); transform: translateX(-50%); }
+.dist .toplab { position: absolute; top: 0; font-family: var(--font-mono); font-size: 10.5px; font-weight: 600; color: var(--accent); transform: translateX(-50%); }
 .crow .topc { padding: 6px 8px; display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; min-width: 0; }
 .crow .topc .f { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
 .crow .topc .r { font-family: var(--font-mono); font-weight: 600; color: var(--accent); margin-right: 4px; }
@@ -244,7 +245,7 @@ p { margin: 0; }
 .defs dd { margin: 0; font-size: 13px; line-height: 1.65; color: var(--muted); }
 .defs ul { margin: 0; padding-left: 18px; }
 .lab-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
-.preset-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.preset-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
 .preset-btn { font-size: 12.5px; min-height: 40px; padding: 0 8px; border-radius: 6px; border: 1px solid var(--rule-2); background: var(--surface); color: var(--ink); }
 .preset-btn[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .sliders { display: flex; flex-direction: column; gap: 4px; }
@@ -286,6 +287,7 @@ p { margin: 0; }
 .kpi .v small.mu { color: var(--muted); }
 .kpi .q { align-self: flex-start; font-size: 24px; padding: 2px 12px; border-radius: 6px; line-height: 1.2; }
 .kpi .s { font-size: 11.5px; color: var(--muted); }
+.kpi .v.txt { font-family: var(--font-body); font-size: 19px; font-weight: 700; line-height: 1.35; padding-top: 6px; }
 .prof-layout { padding-bottom: 32px; display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 24px; align-items: start; }
 .pgrid { display: grid; grid-template-columns: minmax(0, 1fr) 110px 100px 90px; align-items: center; min-height: 44px; padding: 0 18px; border-top: 1px solid var(--rule); font-size: 13.5px; }
 .pgrid.h { background: var(--surface-2); font-size: 12px; color: var(--muted); min-height: 0; padding-block: 8px; border-top: 0; }
@@ -411,7 +413,7 @@ p { margin: 0; }
   .prof-en { font-size: 13px; }
   .kpis { gap: 8px; }
   .kpi { padding: 12px; }
-  .kpi .v { font-size: 22px; } .kpi .v small { font-size: 13px; } .kpi .q { font-size: 18px; padding: 1px 10px; }
+  .kpi .v { font-size: 22px; } .kpi .v.txt { font-size: 15px; } .kpi .v small { font-size: 13px; } .kpi .q { font-size: 18px; padding: 1px 10px; }
   .kpi .s { display: none; }
   .vgrid { grid-template-columns: minmax(0, 1fr) 60px 60px; row-gap: 6px; }
   .vgrid > span:nth-child(1) { grid-row: 1; grid-column: 1; }
@@ -449,19 +451,19 @@ p { margin: 0; }
         <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
         <input id="q" type="search" placeholder="원고 제목·저자·ID 검색" aria-label="원고 검색" autocomplete="off" />
       </label>
-      <div class="version" role="group" aria-label="사이트 버전"><a class="cur" href="#rank" aria-current="page" id="ver-cur">v3</a><a href="https://caumil-admin.github.io/caumil/v2/">v2 · 논문 순위(보관)</a><a href="https://caumil-admin.github.io/caumil/v1/">v1 · 경진대회 전략(보관)</a></div>
+      <div class="version" role="group" aria-label="사이트 버전"><a class="cur" href="#rank" aria-current="page" id="ver-cur">v4</a><a href="https://caumil-admin.github.io/caumil/v3/">v3 · 6개 변수(동결)</a><a href="https://caumil-admin.github.io/caumil/v2/">v2 · 논문 순위(보관)</a><a href="https://caumil-admin.github.io/caumil/v1/">v1 · 경진대회 전략(보관)</a></div>
     </div>
   </div>
   <nav class="inner m-row" aria-label="주요 메뉴(모바일)">
     <a href="#rank" data-nav="rank">순위 탐색</a><a href="#categories" data-nav="categories">범주 개요</a><a href="#method" data-nav="method">지표 산출</a>
-    <a class="v1" href="https://caumil-admin.github.io/caumil/v2/">v2</a><a href="https://caumil-admin.github.io/caumil/v1/">v1</a>
+    <a class="v1" href="https://caumil-admin.github.io/caumil/v3/">v3</a><a href="https://caumil-admin.github.io/caumil/v2/">v2</a><a href="https://caumil-admin.github.io/caumil/v1/">v1</a>
   </nav>
 </header>
 <main id="main" tabindex="-1"></main>
 <footer class="site-foot">
-  <div class="inner"><span id="foot-meta"></span><span>이전 버전 <a href="https://caumil-admin.github.io/caumil/v2/">v2</a> · <a href="https://caumil-admin.github.io/caumil/v1/">v1</a></span></div>
+  <div class="inner"><span id="foot-meta"></span><span>이전 버전 <a href="https://caumil-admin.github.io/caumil/v3/">v3</a> · <a href="https://caumil-admin.github.io/caumil/v2/">v2</a> · <a href="https://caumil-admin.github.io/caumil/v1/">v1</a></span></div>
 </footer>
-<script src="data/data.js?v=7a480d46"></script>
-<script src="app.js?v=7d1edada"></script>
+<script src="data/data.js?v=3b1a7ccb"></script>
+<script src="app.js?v=1932a336"></script>
 </body>
 </html>

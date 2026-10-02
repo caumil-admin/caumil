@@ -289,5 +289,97 @@
   "tables": 5,
   "abstractNumbers": null,
   "chars": 11643
+ },
+ "SV": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   },
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 1
+   },
+   {
+    "label": "사사 자리표시자 'Acknowledgment 내용 입력'",
+    "count": 1
+   }
+  ],
+  "refs": 23,
+  "figures": 4,
+  "tables": 5,
+  "abstractNumbers": true,
+  "chars": 24160
+ },
+ "AL": {
+  "residue": [],
+  "refs": 11,
+  "figures": 7,
+  "tables": 12,
+  "abstractNumbers": true,
+  "chars": 26604
+ },
+ "SF": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   }
+  ],
+  "refs": 31,
+  "figures": 2,
+  "tables": 4,
+  "abstractNumbers": true,
+  "chars": 25684
+ },
+ "SD": {
+  "residue": [
+   {
+    "label": "템플릿 권호 'Vol. 01, 2018'",
+    "count": 1
+   }
+  ],
+  "refs": 33,
+  "figures": 3,
+  "tables": 3,
+  "abstractNumbers": null,
+  "chars": 22076
+ },
+ "LD": {
+  "residue": [],
+  "refs": 5,
+  "figures": 1,
+  "tables": 7,
+  "abstractNumbers": null,
+  "chars": 13524
+ },
+ "SM": {
+  "residue": [],
+  "refs": 10,
+  "figures": 6,
+  "tables": 7,
+  "abstractNumbers": true,
+  "chars": 15540
+ },
+ "PS": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   }
+  ],
+  "refs": 11,
+  "figures": 5,
+  "tables": 6,
+  "abstractNumbers": true,
+  "chars": 25480
+ },
+ "EM": {
+  "residue": [],
+  "refs": 19,
+  "figures": 5,
+  "tables": 12,
+  "abstractNumbers": true,
+  "chars": 24255
  }
 }
