@@ -21,7 +21,7 @@
   var BY_ID = {}; PAPERS.forEach(function (p) { BY_ID[p.id] = p; });
   var VENUE = { ee: "전자공학회 특별호", it: "정보기술학회", dt: "국방기술학회" };
   var VENUE_ORDER = ["ee", "it", "dt"];
-  var CATS = [["personal", "개인논문"], ["people", "사람별 대표작"], ["team", "팀논문"]];
+  var CATS = [["team", "팀논문"], ["personal", "개인논문"], ["people", "사람별 대표작"]];  // 팀논문이 맨 왼쪽·첫 화면(사용자 요청 2026-10-02)
   var CAT_LABEL = {}; CATS.forEach(function (c) { CAT_LABEL[c[0]] = c[1]; });
   var MC = R.mc || { runs: 4000, alpha: 60, noise: 0.05, seed: 20260923 };
   var Q_NOTE = { 1: "범주 상위 25% 이내", 2: "범주 상위 25–50%", 3: "범주 하위 25–50%", 4: "범주 하위 25%" };
@@ -65,9 +65,9 @@
   function modelFromRaw(raw) { var tot = 0; KEYS.forEach(function (k) { tot += raw[k]; }); tot = tot || 1; var w = {}; KEYS.forEach(function (k) { w[k] = raw[k] / tot; }); return { preset: "custom", w: w }; }
 
   // ------------------------------------------------------------------ state
-  var state = { page: "rank", cat: "personal", off: {}, sortKey: "rank", sortDir: 1, q: "", pid: null, model: presetModel(DEFAULT), raw: null, labCat: "personal" };
+  var state = { page: "rank", cat: "team", off: {}, sortKey: "rank", sortDir: 1, q: "", pid: null, model: presetModel(DEFAULT), raw: null, labCat: "team" };
   state.raw = rawFromModel(state.model);
-  try { var sv = localStorage.getItem("caumil.v4.cat"); if (sv && CAT_LABEL[sv]) state.cat = sv; } catch (e) { /* 저장소를 쓸 수 없는 환경 */ }
+  // 첫 화면은 항상 팀논문이다. 마지막으로 본 범주를 기억하던 localStorage(caumil.v4.cat)는 쓰지 않는다.
 
   // ------------------------------------------------------------------ items & ranking
   function personalPapers() { return PAPERS.filter(function (p) { return p.track === "personal"; }); }
@@ -294,7 +294,7 @@
     var m = state.model;
     setTitle("범주 개요");
     var rows = [];
-    ["personal", "team"].forEach(function (track) {
+    ["team", "personal"].forEach(function (track) {
       var all = rankItems(items(track, m), m);
       rows.push(groupRow(CAT_LABEL[track], "전체", false, "#rank-" + track, all));
       VENUE_ORDER.forEach(function (v) {
@@ -366,7 +366,7 @@
     if (!document.getElementById("lab-rows")) return;
     var m = state.model, cat = state.labCat, raw = state.raw;
     var tot = KEYS.reduce(function (s, k) { return s + raw[k]; }, 0) || 1;
-    document.getElementById("lab-cats").innerHTML = [["personal", "개인논문"], ["team", "팀논문"]].map(function (c) { return '<button type="button" data-act="lab-cat" data-cat="' + c[0] + '" aria-pressed="' + (c[0] === cat) + '">' + c[1] + "</button>"; }).join("");
+    document.getElementById("lab-cats").innerHTML = [["team", "팀논문"], ["personal", "개인논문"]].map(function (c) { return '<button type="button" data-act="lab-cat" data-cat="' + c[0] + '" aria-pressed="' + (c[0] === cat) + '">' + c[1] + "</button>"; }).join("");
     document.getElementById("lab-presets").innerHTML = PRESET_ORDER.map(function (k) { return '<button type="button" class="preset-btn" data-act="lab-preset" data-preset="' + k + '" aria-pressed="' + (m.preset === k) + '" title="' + esc(PRESETS[k].desc || "") + '">' + esc(PRESETS[k].label) + "</button>"; }).join("");
     KEYS.forEach(function (k) {
       var input = document.getElementById("s-" + k);
@@ -509,7 +509,6 @@
       if (r.cat) {
         state.cat = r.cat; state.off = {}; state.sortKey = "rank"; state.sortDir = 1;
         if (r.venue) VENUE_ORDER.forEach(function (v) { if (v !== r.venue) state.off[v] = true; });
-        try { localStorage.setItem("caumil.v4.cat", r.cat); } catch (e) { /* 무시 */ }
       }
       renderRank();
     } else if (r.page === "categories") renderCategories();
