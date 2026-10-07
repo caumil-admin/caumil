@@ -41,6 +41,7 @@ def build_data(public=False, basis_date=None, last_sync=None):
         "new": sum(p.get("status") == "new" for p in papers),
         "updated": sum(p.get("status") == "updated" for p in papers),
         "excluded": n_ex,
+        "sub": sum(1 for p in papers if p.get("folderSub")),  # 순위에 들어간 하위 폴더(핵심5) 원고 수
     }
     for p in papers:
         for k in ("evaluated", "evalTextSha") + V4_DROP_PAPER:

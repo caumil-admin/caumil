@@ -622,7 +622,7 @@
  },
  {
   "id": "SL",
-  "driveKey": "110ec28fc607d63c",
+  "driveKey": "a268c91c0fe3051c",
   "track": "team",
   "authors": [
    "반성우",
@@ -636,13 +636,13 @@
   "venueName": "국방기술학회",
   "folder": "국방기술학회 팀논문 › 핵심5",
   "file": {
-   "title": "2026_한국국방기술학회_추계학술대회_5조(정동진)_2609281330.hwpx",
-   "createdTime": "2026-10-01T01:29:27.225Z",
-   "modifiedTime": "2026-10-01T01:29:17.426Z",
-   "fileSize": "653999"
+   "title": "2026_한국국방기술학회_추계학술대회_논문양식_5조(정동진)_2610031300.hwpx",
+   "createdTime": "2026-10-03T04:04:44.592Z",
+   "modifiedTime": "2026-10-03T04:02:55.934Z",
+   "fileSize": "653149"
   },
-  "status": "unchanged",
-  "textSha": "13af001c9af021d2",
+  "status": "updated",
+  "textSha": "efe23ab4ddd3cf4b",
   "team": "핵심5 5조",
   "folderSub": "핵심5"
  },
@@ -664,7 +664,7 @@
    "modifiedTime": "2026-10-02T09:08:24.712Z",
    "fileSize": "539136"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "b836fb6a8dd706c2",
   "team": "7조"
  },
@@ -686,13 +686,13 @@
    "modifiedTime": "2026-10-02T05:32:35.555Z",
    "fileSize": "4251136"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "43d9e79c965b08f0",
   "team": "3조"
  },
  {
   "id": "SF",
-  "driveKey": "c5fdf551fb8459c8",
+  "driveKey": "7cde129d708da893",
   "track": "team",
   "authors": [
    "김혜인",
@@ -708,12 +708,12 @@
   "folder": "전자공학회특별저널 팀논문",
   "file": {
    "title": "5조_비레이블 열화상 다중 객체 추적을 위한 소스 프리 도메인 적응(전자).hwp",
-   "createdTime": "2026-10-02T00:31:28.754Z",
-   "modifiedTime": "2026-10-02T00:23:12.507Z",
+   "createdTime": "2026-10-03T01:57:12.727Z",
+   "modifiedTime": "2026-10-03T01:56:09.952Z",
    "fileSize": "7228416"
   },
-  "status": "new",
-  "textSha": "d45ede723c5c164d",
+  "status": "updated",
+  "textSha": "cc4cd1547f41543b",
   "team": "5조"
  },
  {
@@ -738,7 +738,7 @@
    "modifiedTime": "2026-10-02T07:59:24.294Z",
    "fileSize": "5239808"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "1b6aa86a0a3c3d5f",
   "team": "5조"
  },
@@ -763,7 +763,7 @@
    "modifiedTime": "2026-10-02T04:33:43.583Z",
    "fileSize": "1436672"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "7c68bf8e648d440a",
   "team": "3조"
  },
@@ -787,7 +787,7 @@
    "modifiedTime": "2026-10-02T00:25:07.395Z",
    "fileSize": "2103281"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "83ce997ffc603124",
   "team": "핵심5 2조",
   "folderSub": "핵심5"
@@ -812,7 +812,7 @@
    "modifiedTime": "2026-10-02T00:26:16.209Z",
    "fileSize": "2273458"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "481e074a09749b93",
   "team": "핵심5 2조",
   "folderSub": "핵심5"
@@ -837,8 +837,148 @@
    "modifiedTime": "2026-10-02T00:24:29.331Z",
    "fileSize": "2322215"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "912062a9ba456992",
+  "team": "핵심5 2조",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "AC",
+  "driveKey": "185e26d393b22071",
+  "track": "team",
+  "authors": [
+   "김정윤",
+   "강줄기",
+   "이민우",
+   "이재윤"
+  ],
+  "projectId": "P101",
+  "projectMatch": "different",
+  "venue": "dt",
+  "venueName": "국방기술학회",
+  "folder": "국방기술학회 팀논문",
+  "file": {
+   "title": "한국국방기술학회지_팀논문(1조).hwpx",
+   "createdTime": "2026-10-02T09:44:19.250Z",
+   "modifiedTime": "2026-10-02T09:43:57.413Z",
+   "fileSize": "1916875"
+  },
+  "status": "new",
+  "textSha": "72768c1b9b03eb9c",
+  "team": "1조"
+ },
+ {
+  "id": "IT",
+  "driveKey": "e6f55e783dbc8aee",
+  "track": "personal",
+  "authors": [
+   "배진영"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문 › 핵심5",
+  "file": {
+   "title": "전자공학회_저널 페이퍼_특별호_배진영_2610061046.pdf",
+   "createdTime": "2026-10-06T01:55:56.050Z",
+   "modifiedTime": "2026-10-06T01:55:10.064Z",
+   "fileSize": "615256"
+  },
+  "status": "new",
+  "textSha": "dc389271f67dd3bd",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "AP",
+  "driveKey": "28f5aa5eac3b3c48",
+  "track": "personal",
+  "authors": [
+   "저자 가림(AP)"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문 › 핵심5",
+  "file": {
+   "title": "[심사본] 북한 APT 악성 도메인 탐지 및 Attention 기반 설명 가능성과 강건성 검증.pdf",
+   "createdTime": "2026-10-02T13:19:48.508Z",
+   "modifiedTime": "2026-10-02T12:57:34.507Z",
+   "fileSize": "460624"
+  },
+  "status": "new",
+  "textSha": "43391acdf1bc60f5",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "FF",
+  "driveKey": "1efcbfe59da620c7",
+  "track": "team",
+  "authors": [
+   "정동균",
+   "김기원",
+   "심정진"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문 › 핵심5",
+  "file": {
+   "title": "전자공학회 보라매 팀 투고용.hwpx",
+   "createdTime": "2026-10-05T10:11:36.518Z",
+   "modifiedTime": "2026-10-05T10:06:49.140Z",
+   "fileSize": "10665969"
+  },
+  "status": "new",
+  "textSha": "cf54542608568d45",
+  "team": "핵심5 보라매",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "TK",
+  "driveKey": "c7e01c9288da7e82",
+  "track": "personal",
+  "authors": [
+   "정동균"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문 › 핵심5",
+  "file": {
+   "title": "전자공학회 정동균 투고용.hwpx",
+   "createdTime": "2026-10-05T10:12:29.461Z",
+   "modifiedTime": "2026-10-05T10:11:55.493Z",
+   "fileSize": "5204223"
+  },
+  "status": "new",
+  "textSha": "f688abee17a70e5a",
+  "folderSub": "핵심5",
+  "note": "핵심5 팀 폴더에 올라온 1인(학생 저자) 원고라 개인논문으로 분류"
+ },
+ {
+  "id": "CY",
+  "driveKey": "b60aa888183952c8",
+  "track": "team",
+  "authors": [
+   "저자 가림(블라인드본)"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문 › 핵심5",
+  "file": {
+   "title": "2026_대한전자공학회_저널_2조(한국사)_익명투고.hwpx",
+   "createdTime": "2026-10-04T21:09:00.124Z",
+   "modifiedTime": "2026-09-27T12:43:29.945Z",
+   "fileSize": "678906"
+  },
+  "status": "new",
+  "textSha": "a330a292d8edd92b",
   "team": "핵심5 2조",
   "folderSub": "핵심5"
  }

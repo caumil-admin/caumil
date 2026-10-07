@@ -5,7 +5,7 @@
 
 ## 구조 한눈에
 - `pipeline/` 표준 라이브러리만 쓰는 파이썬(3.14). `fetch.py`(내려받기) → `extract.py`(hwp/hwpx/docx 텍스트, PDF 는 커넥터 텍스트를 손으로 둠) → `sync.py`(카탈로그 동기화) → 평가는 사람·에이전트가 `eval/<ID>.json`(v4: `rubric` 필수, 6개 변수 없음) → `lint.py` → `score.py`(심사 점수 순위) → `check.py` → `build.py`.
-- `data/` 카탈로그·기준·가중치·계획서·결과. `data/rubric.json` 이 v4 순위 기준(5항목·세부 요소 앵커, 항목 가중치 프리셋, 제외 범위). `eval/` 원고별 평가 원자료. 카탈로그의 `folderSub: "핵심5"` 는 제출 폴더 안 '핵심5' 하위 폴더의 원고로, **v4 순위에서 뺀다**(`rubric.json` 의 `scope.excludeFolderSub`, `common.load_papers()` 가 기본으로 제외). 평가하지 않아도 된다. `site/` v3 템플릿·스크립트, `site/legacy/` v2.
+- `data/` 카탈로그·기준·가중치·계획서·결과. `data/rubric.json` 이 v4 순위 기준(5항목·세부 요소 앵커, 항목 가중치 프리셋, 제외 범위). `eval/` 원고별 평가 원자료. 카탈로그의 `folderSub: "핵심5"` 는 제출 폴더 안 '핵심5' 하위 폴더의 원고다. **2026-10-07 부터 순위에 포함**한다(사용자 요청 — 10/2~10/6 에는 뺐었다). 빼고 넣는 것은 `rubric.json` 의 `scope.excludeFolderSub` 하나로 정하고 `common.load_papers()` 가 따른다. 포함 중에는 핵심5 원고도 반드시 평가한다. `site/` v3 템플릿·스크립트, `site/legacy/` v2.
 - 루트 `index.html`, `app.js`, `data/data.js` 는 **빌드 산출물(공개판 v4)** 이다. 직접 고치지 말고 `./run.sh deploy` 로 다시 만든다. `v3/`·`v2/`·`v1/` 은 정적 보관본이라 손대지 않는다(빌드도 건드리지 않는다).
 - `inputs/`, `raw/`, `source_text/`, `dist/` 는 gitignore 대상이다.
 
@@ -31,6 +31,6 @@
 - 커밋 메시지는 한국어로 쓰고 끝에 작업한 Claude 모델의 `Co-Authored-By` 줄을 붙인다(예: `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`).
 
 ## 버전 체계
-- v4 = 현재 사이트(루트). 심사 기준 5항목 순위, '핵심5' 제외. 화면은 v3 디자인(학술 지표 색인형, 보라색 톤, 상위 2편 강조)을 이어받는다.
+- v4 = 현재 사이트(루트). 심사 기준 5항목 순위, '핵심5' 하위 폴더 원고 포함(2026-10-07~). 화면은 v3 디자인(학술 지표 색인형, 보라색 톤, 상위 2편 강조)을 이어받는다.
 - v3 = 엑셀 6개 변수 + 노트북 사전함수 순위의 **2026-10-02 동결본**(`v3/` 정적 사본, git 태그 `v3-2026-10-02`, 내부용은 아티팩트 버전 12). 디자인 원본은 Claude Design 캔버스 "CAUMIL 논문 순위 v2"(`https://claude.ai/artifact/9tBbBaMpePcUWcuFiKSsCm`)이며 **캔버스 제목의 v2 는 사이트 v2 가 아니다.**
 - v2 = 캔버스 적용 전 다크 테마 순위 페이지(`v2/`, 10/2 데이터로 고정. 원본 `site/legacy/` 는 더 이상 빌드하지 않음). v1 = 경진대회 전략 사이트(`v1/`).

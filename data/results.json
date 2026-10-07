@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-02T09:33:18+00:00",
+ "generatedAt": "2026-10-07T03:09:54+00:00",
  "method": "rubric",
  "default": "equal",
  "mc": {
@@ -240,6 +240,39 @@
    "equal": 58.0,
    "subEqual": 59.1667
   },
+  "SR": {
+   "crit": {
+    "creativity": 0.733333,
+    "completeness": 0.7,
+    "innovation": 0.55,
+    "feasibility": 0.65,
+    "challenge": 0.45
+   },
+   "equal": 61.6667,
+   "subEqual": 63.3333
+  },
+  "DI": {
+   "crit": {
+    "creativity": 0.75,
+    "completeness": 0.6,
+    "innovation": 0.55,
+    "feasibility": 0.65,
+    "challenge": 0.5
+   },
+   "equal": 61.0,
+   "subEqual": 62.0833
+  },
+  "SL": {
+   "crit": {
+    "creativity": 0.75,
+    "completeness": 0.633333,
+    "innovation": 0.525,
+    "feasibility": 0.65,
+    "challenge": 0.45
+   },
+   "equal": 60.1667,
+   "subEqual": 61.6667
+  },
   "SV": {
    "crit": {
     "creativity": 0.766667,
@@ -294,6 +327,105 @@
    },
    "equal": 54.0,
    "subEqual": 55.0
+  },
+  "SM": {
+   "crit": {
+    "creativity": 0.716667,
+    "completeness": 0.55,
+    "innovation": 0.6,
+    "feasibility": 0.65,
+    "challenge": 0.575
+   },
+   "equal": 61.8333,
+   "subEqual": 62.0833
+  },
+  "PS": {
+   "crit": {
+    "creativity": 0.75,
+    "completeness": 0.716667,
+    "innovation": 0.625,
+    "feasibility": 0.65,
+    "challenge": 0.625
+   },
+   "equal": 67.3333,
+   "subEqual": 68.3333
+  },
+  "EM": {
+   "crit": {
+    "creativity": 0.7,
+    "completeness": 0.616667,
+    "innovation": 0.55,
+    "feasibility": 0.65,
+    "challenge": 0.5
+   },
+   "equal": 60.3333,
+   "subEqual": 61.25
+  },
+  "AC": {
+   "crit": {
+    "creativity": 0.7,
+    "completeness": 0.6,
+    "innovation": 0.55,
+    "feasibility": 0.55,
+    "challenge": 0.625
+   },
+   "equal": 60.5,
+   "subEqual": 61.25
+  },
+  "IT": {
+   "crit": {
+    "creativity": 0.783333,
+    "completeness": 0.7,
+    "innovation": 0.625,
+    "feasibility": 0.675,
+    "challenge": 0.65
+   },
+   "equal": 68.6667,
+   "subEqual": 69.5833
+  },
+  "AP": {
+   "crit": {
+    "creativity": 0.766667,
+    "completeness": 0.65,
+    "innovation": 0.625,
+    "feasibility": 0.675,
+    "challenge": 0.6
+   },
+   "equal": 66.3333,
+   "subEqual": 67.0833
+  },
+  "FF": {
+   "crit": {
+    "creativity": 0.716667,
+    "completeness": 0.55,
+    "innovation": 0.525,
+    "feasibility": 0.625,
+    "challenge": 0.45
+   },
+   "equal": 57.3333,
+   "subEqual": 58.3333
+  },
+  "TK": {
+   "crit": {
+    "creativity": 0.75,
+    "completeness": 0.633333,
+    "innovation": 0.525,
+    "feasibility": 0.6,
+    "challenge": 0.55
+   },
+   "equal": 61.1667,
+   "subEqual": 62.5
+  },
+  "CY": {
+   "crit": {
+    "creativity": 0.75,
+    "completeness": 0.816667,
+    "innovation": 0.625,
+    "feasibility": 0.6,
+    "challenge": 0.7
+   },
+   "equal": 69.8333,
+   "subEqual": 71.25
   }
  },
  "ranks": {
@@ -304,38 +436,53 @@
     "TE": 3,
     "GC": 4,
     "NM": 4,
-    "MM": 6,
-    "EG": 7,
-    "LR": 8,
-    "PK": 8,
-    "TC": 10,
-    "NH": 11,
-    "HB": 12,
-    "AD": 13,
-    "DC": 14
+    "IT": 6,
+    "MM": 7,
+    "AP": 8,
+    "EG": 9,
+    "LR": 10,
+    "PK": 10,
+    "TC": 12,
+    "TK": 13,
+    "NH": 14,
+    "HB": 15,
+    "AD": 16,
+    "DC": 17
    },
    "team": {
-    "ML": 1,
-    "SF": 2,
-    "SV": 3,
-    "RM": 4,
-    "DR": 5,
-    "SD": 6,
-    "ON": 7,
-    "AL": 8,
-    "MP": 9,
-    "TD": 10,
-    "UF": 11,
-    "LD": 12
+    "CY": 1,
+    "PS": 2,
+    "ML": 3,
+    "SF": 4,
+    "SV": 5,
+    "RM": 6,
+    "DR": 7,
+    "SD": 8,
+    "ON": 9,
+    "AL": 10,
+    "MP": 11,
+    "SM": 12,
+    "SR": 13,
+    "DI": 14,
+    "AC": 15,
+    "EM": 16,
+    "SL": 17,
+    "TD": 18,
+    "FF": 19,
+    "UF": 20,
+    "LD": 21
    },
    "people": {
     "최석철": 1,
     "이건희": 2,
     "서보윤": 3,
     "이시연": 4,
-    "이진욱": 5,
-    "강현섭": 6,
-    "강줄기": 7
+    "배진영": 5,
+    "이진욱": 6,
+    "저자 가림(AP)": 7,
+    "강현섭": 8,
+    "정동균": 9,
+    "강줄기": 10
    }
   },
   "subEqual": {
@@ -345,38 +492,53 @@
     "TE": 3,
     "GC": 4,
     "NM": 4,
-    "MM": 6,
-    "EG": 7,
-    "PK": 8,
-    "LR": 9,
-    "TC": 10,
-    "HB": 11,
-    "NH": 12,
-    "AD": 13,
-    "DC": 14
+    "IT": 6,
+    "AP": 7,
+    "MM": 7,
+    "EG": 9,
+    "PK": 10,
+    "LR": 11,
+    "TC": 12,
+    "TK": 13,
+    "HB": 14,
+    "NH": 15,
+    "AD": 16,
+    "DC": 17
    },
    "team": {
-    "ML": 1,
-    "SV": 2,
-    "SF": 3,
-    "RM": 4,
-    "DR": 5,
-    "SD": 6,
-    "ON": 7,
-    "AL": 8,
-    "MP": 9,
-    "TD": 10,
-    "UF": 11,
-    "LD": 12
+    "CY": 1,
+    "ML": 2,
+    "PS": 2,
+    "SV": 4,
+    "SF": 5,
+    "RM": 6,
+    "DR": 7,
+    "SD": 8,
+    "ON": 9,
+    "AL": 10,
+    "SR": 10,
+    "MP": 12,
+    "DI": 13,
+    "SM": 13,
+    "SL": 15,
+    "AC": 16,
+    "EM": 16,
+    "TD": 18,
+    "FF": 19,
+    "UF": 20,
+    "LD": 21
    },
    "people": {
     "최석철": 1,
     "이건희": 2,
     "서보윤": 3,
     "이시연": 4,
-    "이진욱": 5,
-    "강현섭": 6,
-    "강줄기": 7
+    "배진영": 5,
+    "이진욱": 6,
+    "저자 가림(AP)": 6,
+    "강현섭": 8,
+    "정동균": 9,
+    "강줄기": 10
    }
   }
  },
@@ -393,107 +555,131 @@
     },
     "HS": {
      "p1": 0.0,
-     "top2": 0.5723,
-     "top3": 0.798,
+     "top2": 0.5627,
+     "top3": 0.7708,
      "p10": 2,
      "p50": 2,
-     "p90": 4
+     "p90": 5
     },
     "NM": {
      "p1": 0.0,
-     "top2": 0.0963,
-     "top3": 0.3245,
-     "p10": 3,
+     "top2": 0.1022,
+     "top3": 0.3093,
+     "p10": 2,
      "p50": 4,
-     "p90": 5
+     "p90": 6
     },
     "MM": {
      "p1": 0.0,
-     "top2": 0.008,
-     "top3": 0.0348,
+     "top2": 0.0088,
+     "top3": 0.0278,
      "p10": 5,
-     "p50": 6,
-     "p90": 7
+     "p50": 7,
+     "p90": 8
     },
     "PK": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 7,
-     "p50": 8,
-     "p90": 10
+     "top3": 0.0003,
+     "p10": 9,
+     "p50": 10,
+     "p90": 12
     },
     "HB": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 11,
-     "p50": 12,
-     "p90": 12
+     "p10": 14,
+     "p50": 15,
+     "p90": 15
     },
     "AD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 13,
-     "p50": 13,
-     "p90": 13
+     "p10": 16,
+     "p50": 16,
+     "p90": 16
     },
     "TE": {
      "p1": 0.0,
-     "top2": 0.1963,
-     "top3": 0.5042,
+     "top2": 0.1827,
+     "top3": 0.4708,
      "p10": 2,
-     "p50": 3,
-     "p90": 5
+     "p50": 4,
+     "p90": 6
     },
     "TC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 8,
-     "p50": 10,
-     "p90": 10
+     "p10": 10,
+     "p50": 12,
+     "p90": 13
     },
     "LR": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 7,
-     "p50": 8,
-     "p90": 10
+     "p10": 9,
+     "p50": 10,
+     "p90": 12
     },
     "NH": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 11,
-     "p50": 11,
-     "p90": 12
+     "p10": 14,
+     "p50": 14,
+     "p90": 15
     },
     "DC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 14,
-     "p50": 14,
-     "p90": 14
+     "p10": 17,
+     "p50": 17,
+     "p90": 17
     },
     "GC": {
      "p1": 0.0,
-     "top2": 0.1273,
-     "top3": 0.3385,
+     "top2": 0.1153,
+     "top3": 0.305,
      "p10": 2,
      "p50": 4,
-     "p90": 5
+     "p90": 6
     },
     "EG": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 7,
+     "top3": 0.0003,
+     "p10": 8,
+     "p50": 9,
+     "p90": 11
+    },
+    "IT": {
+     "p1": 0.0,
+     "top2": 0.0283,
+     "top3": 0.1138,
+     "p10": 3,
+     "p50": 6,
+     "p90": 7
+    },
+    "AP": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0022,
+     "p10": 6,
      "p50": 8,
      "p90": 9
+    },
+    "TK": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 13,
+     "p90": 13
     }
    },
    "people": {
@@ -507,103 +693,29 @@
     },
     "이건희": {
      "p1": 0.0,
-     "top2": 0.6218,
-     "top3": 0.8635,
+     "top2": 0.611,
+     "top3": 0.835,
      "p10": 2,
      "p50": 2,
      "p90": 4
     },
     "이시연": {
      "p1": 0.0,
-     "top2": 0.135,
-     "top3": 0.467,
+     "top2": 0.1205,
+     "top3": 0.3907,
      "p10": 2,
      "p50": 4,
-     "p90": 5
+     "p90": 6
     },
     "이진욱": {
      "p1": 0.0,
-     "top2": 0.0138,
-     "top3": 0.0525,
+     "top2": 0.0158,
+     "top3": 0.0462,
      "p10": 4,
-     "p50": 5,
-     "p90": 5
+     "p50": 6,
+     "p90": 7
     },
     "강줄기": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 7,
-     "p50": 7,
-     "p90": 7
-    },
-    "서보윤": {
-     "p1": 0.0,
-     "top2": 0.2295,
-     "top3": 0.617,
-     "p10": 2,
-     "p50": 3,
-     "p90": 4
-    },
-    "강현섭": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 6,
-     "p50": 6,
-     "p90": 6
-    }
-   },
-   "team": {
-    "MP": {
-     "p1": 0.0,
-     "top2": 0.0005,
-     "top3": 0.001,
-     "p10": 7,
-     "p50": 8,
-     "p90": 9
-    },
-    "DR": {
-     "p1": 0.1072,
-     "top2": 0.2278,
-     "top3": 0.362,
-     "p10": 1,
-     "p50": 4,
-     "p90": 7
-    },
-    "ON": {
-     "p1": 0.0073,
-     "top2": 0.027,
-     "top3": 0.0592,
-     "p10": 4,
-     "p50": 7,
-     "p90": 9
-    },
-    "RM": {
-     "p1": 0.1333,
-     "top2": 0.3137,
-     "top3": 0.5072,
-     "p10": 1,
-     "p50": 3,
-     "p90": 6
-    },
-    "UF": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 11,
-     "p50": 11,
-     "p90": 12
-    },
-    "ML": {
-     "p1": 0.3197,
-     "top2": 0.52,
-     "top3": 0.6765,
-     "p10": 1,
-     "p50": 2,
-     "p90": 6
-    },
-    "TD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
@@ -611,52 +723,222 @@
      "p50": 10,
      "p90": 10
     },
-    "SV": {
-     "p1": 0.1895,
-     "top2": 0.4075,
-     "top3": 0.621,
-     "p10": 1,
+    "서보윤": {
+     "p1": 0.0,
+     "top2": 0.2175,
+     "top3": 0.5653,
+     "p10": 2,
      "p50": 3,
      "p90": 5
+    },
+    "강현섭": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 7,
+     "p50": 8,
+     "p90": 8
+    },
+    "배진영": {
+     "p1": 0.0,
+     "top2": 0.0343,
+     "top3": 0.1578,
+     "p10": 3,
+     "p50": 5,
+     "p90": 6
+    },
+    "저자 가림(AP)": {
+     "p1": 0.0,
+     "top2": 0.001,
+     "top3": 0.005,
+     "p10": 6,
+     "p50": 7,
+     "p90": 8
+    },
+    "정동균": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 9,
+     "p90": 9
+    }
+   },
+   "team": {
+    "MP": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 12,
+     "p90": 15
+    },
+    "DR": {
+     "p1": 0.019,
+     "top2": 0.0777,
+     "top3": 0.1683,
+     "p10": 3,
+     "p50": 6,
+     "p90": 9
+    },
+    "ON": {
+     "p1": 0.0013,
+     "top2": 0.0037,
+     "top3": 0.015,
+     "p10": 6,
+     "p50": 9,
+     "p90": 12
+    },
+    "RM": {
+     "p1": 0.0097,
+     "top2": 0.0905,
+     "top3": 0.211,
+     "p10": 3,
+     "p50": 5,
+     "p90": 8
+    },
+    "UF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 20,
+     "p90": 21
+    },
+    "ML": {
+     "p1": 0.03,
+     "top2": 0.2268,
+     "top3": 0.406,
+     "p10": 2,
+     "p50": 4,
+     "p90": 8
+    },
+    "TD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 18,
+     "p90": 19
+    },
+    "SR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 13,
+     "p90": 16
+    },
+    "DI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 14,
+     "p90": 17
+    },
+    "SL": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 16,
+     "p90": 18
+    },
+    "SV": {
+     "p1": 0.0192,
+     "top2": 0.1242,
+     "top3": 0.2802,
+     "p10": 2,
+     "p50": 5,
+     "p90": 7
     },
     "AL": {
      "p1": 0.0,
-     "top2": 0.001,
-     "top3": 0.004,
-     "p10": 6,
-     "p50": 8,
-     "p90": 9
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 8,
+     "p50": 11,
+     "p90": 14
     },
     "SF": {
-     "p1": 0.2335,
-     "top2": 0.463,
-     "top3": 0.6715,
-     "p10": 1,
-     "p50": 3,
-     "p90": 5
+     "p1": 0.0257,
+     "top2": 0.1583,
+     "top3": 0.3252,
+     "p10": 2,
+     "p50": 4,
+     "p90": 7
     },
     "SD": {
-     "p1": 0.0095,
-     "top2": 0.0395,
-     "top3": 0.0975,
-     "p10": 4,
-     "p50": 6,
-     "p90": 8
+     "p1": 0.0,
+     "top2": 0.007,
+     "top3": 0.0205,
+     "p10": 5,
+     "p50": 8,
+     "p90": 10
     },
     "LD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 11,
+     "p10": 20,
+     "p50": 21,
+     "p90": 21
+    },
+    "SM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 9,
      "p50": 12,
-     "p90": 12
+     "p90": 16
+    },
+    "PS": {
+     "p1": 0.0735,
+     "top2": 0.3733,
+     "top3": 0.597,
+     "p10": 2,
+     "p50": 3,
+     "p90": 6
+    },
+    "EM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 15,
+     "p90": 17
+    },
+    "AC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 15,
+     "p90": 17
+    },
+    "FF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 17,
+     "p50": 19,
+     "p90": 20
+    },
+    "CY": {
+     "p1": 0.8215,
+     "top2": 0.9385,
+     "top3": 0.9762,
+     "p10": 1,
+     "p50": 1,
+     "p90": 2
     }
    }
   },
   "subEqual": {
    "personal": {
     "VT": {
-     "p1": 0.9985,
+     "p1": 1.0,
      "top2": 1.0,
      "top3": 1.0,
      "p10": 1,
@@ -664,108 +946,132 @@
      "p90": 1
     },
     "HS": {
-     "p1": 0.0015,
-     "top2": 0.755,
-     "top3": 0.9137,
+     "p1": 0.0,
+     "top2": 0.747,
+     "top3": 0.9002,
      "p10": 2,
      "p50": 2,
      "p90": 3
     },
     "NM": {
      "p1": 0.0,
-     "top2": 0.0612,
-     "top3": 0.3235,
+     "top2": 0.067,
+     "top3": 0.2968,
      "p10": 3,
      "p50": 4,
-     "p90": 5
+     "p90": 6
     },
     "MM": {
      "p1": 0.0,
      "top2": 0.0005,
-     "top3": 0.0018,
+     "top3": 0.003,
      "p10": 6,
-     "p50": 6,
-     "p90": 7
+     "p50": 8,
+     "p90": 9
     },
     "PK": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 7,
-     "p50": 8,
-     "p90": 10
+     "p10": 8,
+     "p50": 10,
+     "p90": 12
     },
     "HB": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 11,
-     "p50": 11,
-     "p90": 12
+     "p10": 14,
+     "p50": 14,
+     "p90": 15
     },
     "AD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 13,
-     "p50": 13,
-     "p90": 13
+     "p10": 16,
+     "p50": 16,
+     "p90": 16
     },
     "TE": {
      "p1": 0.0,
-     "top2": 0.1022,
-     "top3": 0.441,
+     "top2": 0.1047,
+     "top3": 0.4465,
      "p10": 2,
      "p50": 4,
-     "p90": 5
+     "p90": 6
     },
     "TC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 8,
-     "p50": 10,
-     "p90": 10
+     "p10": 10,
+     "p50": 12,
+     "p90": 13
     },
     "LR": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 7,
-     "p50": 9,
-     "p90": 10
+     "p10": 9,
+     "p50": 11,
+     "p90": 13
     },
     "NH": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 11,
-     "p50": 12,
-     "p90": 12
+     "p10": 14,
+     "p50": 15,
+     "p90": 15
     },
     "DC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 14,
-     "p50": 14,
-     "p90": 14
+     "p10": 17,
+     "p50": 17,
+     "p90": 17
     },
     "GC": {
      "p1": 0.0,
-     "top2": 0.081,
-     "top3": 0.32,
+     "top2": 0.074,
+     "top3": 0.2988,
      "p10": 3,
      "p50": 4,
-     "p90": 5
+     "p90": 6
     },
     "EG": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 6,
+     "top3": 0.0003,
+     "p10": 8,
+     "p50": 10,
+     "p90": 12
+    },
+    "IT": {
+     "p1": 0.0,
+     "top2": 0.0067,
+     "top3": 0.0542,
+     "p10": 4,
+     "p50": 6,
+     "p90": 7
+    },
+    "AP": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 7,
      "p50": 8,
      "p90": 9
+    },
+    "TK": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 13,
+     "p90": 13
     }
    },
    "people": {
@@ -779,103 +1085,29 @@
     },
     "이건희": {
      "p1": 0.0013,
-     "top2": 0.7937,
-     "top3": 0.9495,
+     "top2": 0.7933,
+     "top3": 0.9445,
      "p10": 2,
      "p50": 2,
      "p90": 3
     },
     "이시연": {
      "p1": 0.0,
-     "top2": 0.0777,
-     "top3": 0.4477,
+     "top2": 0.076,
+     "top3": 0.4105,
      "p10": 3,
      "p50": 4,
-     "p90": 4
+     "p90": 5
     },
     "이진욱": {
      "p1": 0.0,
      "top2": 0.0008,
-     "top3": 0.0067,
-     "p10": 5,
-     "p50": 5,
-     "p90": 6
+     "top3": 0.005,
+     "p10": 6,
+     "p50": 7,
+     "p90": 8
     },
     "강줄기": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 7,
-     "p50": 7,
-     "p90": 7
-    },
-    "서보윤": {
-     "p1": 0.0,
-     "top2": 0.1278,
-     "top3": 0.596,
-     "p10": 2,
-     "p50": 3,
-     "p90": 4
-    },
-    "강현섭": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 5,
-     "p50": 6,
-     "p90": 6
-    }
-   },
-   "team": {
-    "MP": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0013,
-     "p10": 7,
-     "p50": 8,
-     "p90": 9
-    },
-    "DR": {
-     "p1": 0.0537,
-     "top2": 0.135,
-     "top3": 0.2545,
-     "p10": 2,
-     "p50": 5,
-     "p90": 7
-    },
-    "ON": {
-     "p1": 0.0008,
-     "top2": 0.007,
-     "top3": 0.0182,
-     "p10": 5,
-     "p50": 7,
-     "p90": 9
-    },
-    "RM": {
-     "p1": 0.081,
-     "top2": 0.2345,
-     "top3": 0.4412,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
-    },
-    "UF": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 11,
-     "p50": 11,
-     "p90": 12
-    },
-    "ML": {
-     "p1": 0.499,
-     "top2": 0.7093,
-     "top3": 0.8345,
-     "p10": 1,
-     "p50": 2,
-     "p90": 4
-    },
-    "TD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
@@ -883,45 +1115,215 @@
      "p50": 10,
      "p90": 10
     },
-    "SV": {
-     "p1": 0.2203,
-     "top2": 0.5008,
-     "top3": 0.7205,
-     "p10": 1,
-     "p50": 2,
-     "p90": 5
-    },
-    "AL": {
-     "p1": 0.0003,
-     "top2": 0.0022,
-     "top3": 0.005,
-     "p10": 6,
-     "p50": 8,
-     "p90": 9
-    },
-    "SF": {
-     "p1": 0.1335,
-     "top2": 0.3658,
-     "top3": 0.6038,
-     "p10": 1,
+    "서보윤": {
+     "p1": 0.0,
+     "top2": 0.116,
+     "top3": 0.5417,
+     "p10": 2,
      "p50": 3,
      "p90": 5
     },
-    "SD": {
-     "p1": 0.0115,
-     "top2": 0.0455,
-     "top3": 0.121,
+    "강현섭": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 7,
+     "p50": 8,
+     "p90": 8
+    },
+    "배진영": {
+     "p1": 0.0,
+     "top2": 0.014,
+     "top3": 0.0968,
+     "p10": 4,
+     "p50": 5,
+     "p90": 6
+    },
+    "저자 가림(AP)": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0015,
+     "p10": 6,
+     "p50": 7,
+     "p90": 7
+    },
+    "정동균": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 9,
+     "p90": 9
+    }
+   },
+   "team": {
+    "MP": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 12,
+     "p90": 15
+    },
+    "DR": {
+     "p1": 0.0045,
+     "top2": 0.0372,
+     "top3": 0.0935,
+     "p10": 4,
+     "p50": 7,
+     "p90": 9
+    },
+    "ON": {
+     "p1": 0.0,
+     "top2": 0.0013,
+     "top3": 0.0035,
+     "p10": 7,
+     "p50": 10,
+     "p90": 14
+    },
+    "RM": {
+     "p1": 0.0022,
+     "top2": 0.046,
+     "top3": 0.1388,
+     "p10": 3,
+     "p50": 6,
+     "p90": 8
+    },
+    "UF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 20,
+     "p90": 21
+    },
+    "ML": {
+     "p1": 0.0457,
+     "top2": 0.3683,
+     "top3": 0.5843,
+     "p10": 2,
+     "p50": 3,
+     "p90": 6
+    },
+    "TD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 18,
+     "p90": 19
+    },
+    "SR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 8,
+     "p50": 11,
+     "p90": 15
+    },
+    "DI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 10,
+     "p50": 14,
+     "p90": 17
+    },
+    "SL": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 15,
+     "p90": 17
+    },
+    "SV": {
+     "p1": 0.0158,
+     "top2": 0.1378,
+     "top3": 0.3317,
+     "p10": 2,
+     "p50": 4,
+     "p90": 7
+    },
+    "AL": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 8,
+     "p50": 11,
+     "p90": 14
+    },
+    "SF": {
+     "p1": 0.007,
+     "top2": 0.091,
+     "top3": 0.225,
      "p10": 3,
      "p50": 5,
      "p90": 7
+    },
+    "SD": {
+     "p1": 0.0003,
+     "top2": 0.0035,
+     "top3": 0.0168,
+     "p10": 5,
+     "p50": 7,
+     "p90": 10
     },
     "LD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 11,
-     "p50": 12,
-     "p90": 12
+     "p10": 20,
+     "p50": 21,
+     "p90": 21
+    },
+    "SM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 10,
+     "p50": 14,
+     "p90": 17
+    },
+    "PS": {
+     "p1": 0.0485,
+     "top2": 0.3435,
+     "top3": 0.615,
+     "p10": 2,
+     "p50": 3,
+     "p90": 5
+    },
+    "EM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 15,
+     "p90": 18
+    },
+    "AC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 15,
+     "p90": 18
+    },
+    "FF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 17,
+     "p50": 19,
+     "p90": 20
+    },
+    "CY": {
+     "p1": 0.876,
+     "top2": 0.9715,
+     "top3": 0.9902,
+     "p10": 1,
+     "p50": 1,
+     "p90": 2
     }
    }
   }
@@ -2733,6 +3135,264 @@
     "delta": 0.3333
    }
   ],
+  "SR": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   }
+  ],
+  "DI": [
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.3333
+   }
+  ],
+  "SL": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.3333
+   }
+  ],
   "SV": [
    {
     "c": "feasibility",
@@ -3162,6 +3822,780 @@
     "to": 0.8,
     "delta": 0.3333
    }
+  ],
+  "SM": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   }
+  ],
+  "PS": [
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.3333
+   }
+  ],
+  "EM": [
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   }
+  ],
+  "AC": [
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   }
+  ],
+  "IT": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.3333
+   }
+  ],
+  "AP": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.3333
+   }
+  ],
+  "FF": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.3333
+   }
+  ],
+  "TK": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   }
+  ],
+  "CY": [
+   {
+    "c": "feasibility",
+    "s": "commercial",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "impact",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "frontier",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "challenge",
+    "s": "convergence",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5
+   },
+   {
+    "c": "feasibility",
+    "s": "rnd",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5
+   },
+   {
+    "c": "creativity",
+    "s": "applicability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "problem",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "creativity",
+    "s": "scoping",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "logic",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "reliability",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.3333
+   },
+   {
+    "c": "completeness",
+    "s": "references",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.3333
+   }
   ]
  },
  "people": [
@@ -3219,6 +4653,27 @@
    "papers": [
     "LR",
     "EG"
+   ]
+  },
+  {
+   "id": "배진영",
+   "paperId": "IT",
+   "papers": [
+    "IT"
+   ]
+  },
+  {
+   "id": "저자 가림(AP)",
+   "paperId": "AP",
+   "papers": [
+    "AP"
+   ]
+  },
+  {
+   "id": "정동균",
+   "paperId": "TK",
+   "papers": [
+    "TK"
    ]
   }
  ]

@@ -49,7 +49,7 @@
   function whoOf(p) { return p.track === "team" ? ((p.team ? p.team + " " : "") + p.authors.join("·")) : p.authors.join("·"); }
   function shortWho(p) { return p.track === "team" ? (p.team || p.authors[0]) : p.authors[0]; }
   function trackLabel(p) { return p.track === "team" ? "팀논문" : "개인논문"; }
-  function badges(p) { return (p.status === "new" ? ' <span class="badge b-new">신규</span>' : "") + (p.status === "updated" ? ' <span class="badge b-upd">수정</span>' : ""); }
+  function badges(p) { return (p.folderSub ? ' <span class="badge b-sub" title="제출 폴더 안 \'' + esc(p.folderSub) + '\' 하위 폴더의 원고">' + esc(p.folderSub) + "</span>" : "") + (p.status === "new" ? ' <span class="badge b-new">신규</span>' : "") + (p.status === "updated" ? ' <span class="badge b-upd">수정</span>' : ""); }
   function tieMark(r) { return r.tie ? '<span class="tie" title="같은 점수 — 공동 순위">=</span>' : ""; }
   var toastTimer = null;
   function toast(msg) { var el = document.getElementById("toast"); if (!el) { el = document.createElement("div"); el.id = "toast"; el.className = "toast"; el.setAttribute("role", "status"); document.body.appendChild(el); } el.textContent = msg; el.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(function () { el.hidden = true; }, 2600); }
@@ -185,7 +185,7 @@
       + '<div><dt>신규 · 수정</dt><dd class="mono">' + D.meta.counts.new + " · " + D.meta.counts.updated + "</dd></div>"
       + "<div><dt>가중치</dt><dd>" + esc(modelLabel(m)) + "</dd></div></dl>";
     var lede = "경진대회 심사 기준 5항목(" + esc(critNames()) + ")의 세부 요소 12개를 원고 텍스트로 채점하고, 항목 점수의 평균×100(심사 점수)으로 순위를 매겼습니다."
-      + (D.meta.counts.excluded ? " '" + esc(EXCL) + "' 하위 폴더 원고 " + D.meta.counts.excluded + "편은 제외했습니다." : "")
+      + (D.meta.counts.excluded ? " '" + esc(EXCL) + "' 하위 폴더 원고 " + D.meta.counts.excluded + "편은 제외했습니다." : D.meta.counts.sub ? " 제출 폴더 안 '핵심5' 하위 폴더 원고 " + D.meta.counts.sub + "편도 함께 매겼습니다." : "")
       + '<label class="search m-search" for="q-m"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg><input id="q-m" type="search" placeholder="제목·저자·ID 검색" aria-label="원고 검색" autocomplete="off" value="' + esc(state.q) + '" /></label>';
     var head = pageHead("<span>순위 탐색</span><span aria-hidden=\"true\">/</span><span>" + esc(c.catName) + "</span>", esc(c.catName) + " 순위", lede, right, yearOf() + " 제출분");
 
@@ -341,10 +341,10 @@
       + "<dt>순위 범위</dt><dd>항목 가중치를 Dirichlet(α = " + MC.alpha + "·w)로, 모든 세부 요소 점수를 −" + MC.noise + "·0·+" + MC.noise + " 중 하나로 흔들어 " + MC.runs.toLocaleString() + "번 다시 매겼을 때 순위의 P10–P90입니다(시드 " + MC.seed + ").</dd>"
       + "<dt>1위 확률</dt><dd>같은 " + MC.runs.toLocaleString() + "번 가운데 1위를 지킨 비율입니다.</dd>"
       + "<dt>사람별 대표작</dt><dd>한 사람이 여러 편을 냈으면 현재 가중치에서 가장 높은 개인논문 한 편으로 비교합니다.</dd>"
-      + "<dt>제외</dt><dd>제출 폴더 안 '" + esc(EXCL) + "' 하위 폴더의 원고 " + (D.meta.counts.excluded || 0) + "편은 v4 순위에 넣지 않습니다.</dd></dl></div></section>"
+      + (D.meta.counts.excluded ? "<dt>제외</dt><dd>제출 폴더 안 '" + esc(EXCL) + "' 하위 폴더의 원고 " + D.meta.counts.excluded + "편은 순위에 넣지 않습니다.</dd>" : "<dt>범위</dt><dd>제출 폴더 4곳의 원고와 그 안의 '핵심5' 하위 폴더 원고" + (D.meta.counts.sub ? " " + D.meta.counts.sub + "편" : "") + "을 같은 기준으로 함께 매깁니다(2026-10-07부터). 핵심5 원고는 순위표에 '핵심5' 표시가 붙습니다.</dd>") + "</dl></div></section>"
       + rubricDefs()
       + '<section class="card"><div class="card-b"><h2>원천 자료</h2><dl class="defs">'
-      + "<dt>원고</dt><dd>공유 드라이브 제출 폴더 4곳의 " + D.meta.counts.total + "편(개인 " + D.meta.counts.personal + " · 팀 " + D.meta.counts.team + "), " + esc(basisText()) + " 동기화</dd>"
+      + "<dt>원고</dt><dd>공유 드라이브 제출 폴더 4곳" + (D.meta.counts.sub ? "과 그 안의 '핵심5' 하위 폴더" : "") + "의 " + D.meta.counts.total + "편(개인 " + D.meta.counts.personal + " · 팀 " + D.meta.counts.team + "), " + esc(basisText()) + " 동기화</dd>"
       + "<dt>채점</dt><dd>hwp·hwpx·docx 본문과 수식만 읽고 세부 요소마다 0.05 단위로 채점했습니다. 그림은 근거에 넣지 않았습니다. 원고마다 평가자 1명이 공통 척도 지침으로 매기고, 전 원고를 한 표에 놓고 척도를 맞췄습니다.</dd>"
       + "<dt>리스크</dt><dd>중복게재 위험·블라인드 위반·템플릿 잔재 같은 투고 전 문제는 점수에 넣지 않고 따로 기록합니다.</dd>"
       + '<dt>이전 버전</dt><dd><a href="' + V3_URL + '">v3</a>는 경진대회 엑셀 6개 변수와 가중치 노트북 사전함수로 순위를 매긴 2026-10-02 동결본입니다.</dd></dl></div></section></div>';
@@ -445,6 +445,7 @@
     var prev = all[idx - 1], next = all[idx + 1];
     var chips = '<span class="chip">' + esc(VENUE[p.venue] || p.venueName) + '</span><span class="chip">' + esc(trackLabel(p)) + "</span>"
       + (p.team && p.track === "team" ? '<span class="chip muted">' + esc(p.team) + "</span>" : "")
+      + (p.folderSub ? '<span class="chip muted" title="제출 폴더 안 하위 폴더">' + esc(p.folderSub) + " 폴더</span>" : "")
       + (p.status === "new" ? '<span class="chip on">신규</span>' : "") + (p.status === "updated" ? '<span class="chip upd">수정</span>' : "");
     var head = '<section class="prof-head"><div class="inner">'
       + '<div class="prof-top"><nav class="crumbs" aria-label="현재 위치"><a href="#rank-' + p.track + '">순위 탐색</a><span aria-hidden="true">/</span><span>' + esc(trackLabel(p)) + '</span><span aria-hidden="true">/</span><span class="mono">' + esc(p.id) + "</span></nav>"
