@@ -29,7 +29,7 @@
 
 ## 배포
 - **2026-10-14 부터 결과 배포 중단.** 아래는 재개가 결정됐을 때의 절차다. 재개 시 `pages.yml` 의 "Stage closure notice only" 단계를 되돌리고 `CAUMIL_REOPEN=1 ./run.sh deploy` 로 루트를 다시 만든다.
-- `./run.sh deploy` → `./run.sh check` → 커밋 → `git push https://caumil-admin@github.com/caumil-admin/caumil.io.git main`(원격 이름은 `caumil.io`). 이 머신의 자격 증명 관리자에는 개인 계정(`stonesteel84`)도 저장돼 있어 사용자명 없는 푸시는 403 이 난다.
+- `./run.sh deploy` → `./run.sh check` → 커밋 → `git push https://caumil-admin@github.com/caumil-admin/caumil.git main`(GitHub 저장소 이름은 `caumil`, 옛 `caumil.io` 주소는 리다이렉트). 이 머신의 자격 증명 관리자에는 개인 계정(`stonesteel84`)도 저장돼 있어 사용자명 없는 푸시는 403 이 난다.
 - 푸시하면 `.github/workflows/pages.yml` 이 실행된다(폐쇄 중에는 안내 페이지만, 재개 후에는 저장소 전체를 배포). 스크립트 주소에 내용 해시(`app.js?v=…`)가 붙어 있어 캐시 문제는 없다.
 - 커밋 메시지는 한국어로 쓰고 끝에 작업한 Claude 모델의 `Co-Authored-By` 줄을 붙인다(예: `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`).
 
