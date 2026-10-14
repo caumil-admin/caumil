@@ -1,4 +1,8 @@
-name: Deploy static site to GitHub Pages
+name: Deploy closure notice to GitHub Pages
+
+# 2026-10-14 임시 폐쇄: 저장소 전체가 아니라 폐쇄 안내 페이지(index.html, 404.html, 파비콘)만 올린다.
+# 순위·점수·평가 자료(data/, eval/, v1~v3/)는 Pages 에 배포하지 않는다. 재개하려면 이 워크플로와
+# pipeline/build.py 의 CAUMIL_REOPEN 가드를 함께 되돌린다(docs/WORKFLOW.md 6단계).
 
 on:
   push:
@@ -23,12 +27,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Stage closure notice only
+        run: |
+          set -eu
+          mkdir -p _site
+          cp index.html 404.html favicon.svg apple-touch-icon.png _site/
+          touch _site/.nojekyll
+          # 안내 페이지에 점수 데이터가 섞여 들어가지 않았는지 확인
+          ! grep -q "RANK_DATA" _site/index.html
+          ls -la _site
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload static site
+      - name: Upload closure notice
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

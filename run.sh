@@ -15,7 +15,7 @@ case "$t" in
   check)      $PY pipeline/check.py "$@" ;;
   build)      $PY pipeline/build.py "$@" ;;
   public)     $PY pipeline/build.py --public "$@" ;;
-  deploy)     $PY pipeline/build.py --public --root "$@" ;;
+  deploy)     $PY pipeline/build.py --public --root "$@" ;;   # 2026-10-14 임시 폐쇄: CAUMIL_REOPEN=1 없이는 build.py 가 거부
   all)        "$0" extract && "$0" lint && "$0" score && "$0" check && "$0" build "$@" ;;
   *) echo "usage: ./run.sh {fetch|extract|sync|sync-apply|lint|score|check|build|public|deploy|all} [args]" >&2; exit 2 ;;
 esac

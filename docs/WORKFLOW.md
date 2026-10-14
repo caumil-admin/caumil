@@ -20,7 +20,7 @@ v3 까지는 경진대회 엑셀의 6개 변수와 가중치 노트북의 사전
 | `inputs/drive_listing.json`, `inputs/*.xlsx` | 드라이브 목록(파일·폴더 ID, 소유자 메일 포함)·엑셀 원본 | × |
 | `raw/`, `source_text/` | 원고 원본, 추출 텍스트 | × |
 | `dist/` | 빌드 산출물(`artifact.html`, `site/`) | × |
-| `index.html`, `app.js`, `data/data.js` | 저장소 루트의 **공개용** v4 사이트(`./run.sh deploy` 산출물) | ○ |
+| `index.html`, `404.html` | **폐쇄 안내 페이지**(2026-10-14~). 폐쇄 전에는 `index.html`, `app.js`, `data/data.js` 가 루트 공개용 v4 사이트(`./run.sh deploy` 산출물)였다 | ○ |
 | `v3/`, `v2/`, `v1/` | 정적 보관본. v3 = 6개 변수 사전함수 순위 동결본(2026-10-02), v2 = 캔버스 적용 전 다크 페이지, v1 = 경진대회 전략 사이트. **빌드가 건드리지 않는다** | ○ |
 
 원고 ID 는 주제를 딴 대문자 2글자(VT, MP …). 파일명은 `raw/<driveId>.<ext>`, `source_text/<ID>.txt`.
@@ -129,10 +129,11 @@ make check          # 평가 누락·텍스트 변경·격자·ID 매핑·result
 ```bash
 make build          # 내부용: dist/artifact.html + dist/site/ (원문 링크 포함)
 make public         # 공개용: 원고 인용문(evidenceQuotes)을 빼고 드라이브 링크를 붙이지 않으며 robots noindex 를 단다 → dist/
-make deploy         # 공개용을 저장소 루트(index.html, app.js, data/data.js)에 배치(v3/·v2/·v1/ 은 그대로). 커밋·푸시하면 Pages 가 갱신된다
+make deploy         # (2026-10-14 임시 폐쇄 — CAUMIL_REOPEN=1 없이는 거부) 공개용을 저장소 루트에 배치. 커밋·푸시하면 Pages 가 갱신된다
 ```
+- **임시 폐쇄(2026-10-14)**: 사용자 결정(사유 "재미도 없고 경진대회에 직접적인 영향을 끼칠 수 있어서"). 루트 `index.html`·`404.html` 은 안내 페이지, `app.js`·`data/data.js` 는 삭제, `pages.yml` 은 안내 페이지만 올린다. 결과는 `dist/`(gitignore)로만 빌드하고 외부로 내보내지 않는다. 재개 절차: ① `pages.yml` 의 "Stage closure notice only" 단계를 지우고 `path: .` 으로 되돌림 ② `CAUMIL_REOPEN=1 make deploy` ③ `make check` 후 커밋·푸시. 저장소 private 전환·Pages 비활성화는 GitHub 설정에서 사용자가 직접 한다.
 - **claude.ai 아티팩트**(비공개): `dist/artifact.html` 을 기존 URL `https://claude.ai/artifact/L58PAzgKkDc6NZR6QSgbGz` 에 `url` 로 넘겨 다시 게시한다.
-- **GitHub Pages** `caumil-admin/caumil` (`https://caumil-admin.github.io/caumil/`): `make deploy` 로 루트를 갱신하고 커밋·푸시한다. `.github/workflows/pages.yml` 이 main 푸시마다 저장소 전체를 배포한다(v1 은 `v1/` 에 보존됨). 루트에는 항상 공개판만 둔다.
+- **GitHub Pages** `caumil-admin/caumil.io`: (재개 후) `make deploy` 로 루트를 갱신하고 커밋·푸시한다. `.github/workflows/pages.yml` 이 main 푸시마다 배포한다(폐쇄 중에는 안내 페이지만). 루트에는 항상 공개판만 둔다.
 - 푸시는 내장 브라우저의 `caumil-admin` 세션으로 GitHub 웹 업로드를 쓴다(클라우드 git 프록시가 이 저장소 쓰기를 막음).
 
 ## 사이트 구조(v4)

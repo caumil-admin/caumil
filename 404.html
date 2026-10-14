@@ -1,14 +1,67 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>페이지 이동 중</title>
-    <script>
-      const segments = location.pathname.split("/").filter(Boolean);
-      const base = location.hostname.endsWith("github.io") && segments.length ? `/${segments[0]}/` : "/";
-      location.replace(base);
-    </script>
-  </head>
-  <body><p>분석 페이지로 이동하고 있습니다.</p></body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="description" content="CAUMIL 논문 지표 — 임시 폐쇄" />
+<meta name="theme-color" content="#1F2A55" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#131A33" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<title>CAUMIL 논문 지표 — 임시 폐쇄</title>
+<style>
+/* 임시 폐쇄 안내(2026-10-14). 순위·점수 데이터는 싣지 않는다. */
+:root {
+  --bg: #F6F5FA; --surface: #FFFFFF; --ink: #1B1A2E; --muted: #5B5872; --rule: #DFDCE9;
+  --accent: #56489E; --header-bg: #1F2A55; --header-fg: #FFFFFF; --header-accent: #B4A6F0;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12101C; --surface: #1A1727; --ink: #ECEAF5; --muted: #A39FBA; --rule: #2F2A45;
+    --accent: #A99AE6; --header-bg: #131A33; --header-fg: #ECEAF5; --header-accent: #B4A6F0;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh;
+}
+header {
+  background: var(--header-bg); color: var(--header-fg);
+  padding: 20px 16px; border-bottom: 3px solid var(--header-accent);
+}
+header .wrap { max-width: 720px; margin: 0 auto; }
+header h1 { margin: 0; font-size: 18px; font-weight: 600; letter-spacing: 0.01em; }
+main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 48px 16px; }
+.card {
+  background: var(--surface); border: 1px solid var(--rule); border-radius: 12px;
+  max-width: 720px; width: 100%; padding: 32px 28px;
+}
+.card h2 { margin: 0 0 12px; font-size: 24px; font-weight: 700; }
+.card p { margin: 0 0 12px; font-size: 16px; }
+.label { color: var(--muted); font-size: 14px; }
+.reason {
+  margin: 16px 0 0; padding: 14px 16px; border-left: 4px solid var(--accent);
+  background: var(--bg); border-radius: 0 8px 8px 0; font-size: 16px;
+}
+footer { padding: 16px; text-align: center; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>CAUMIL 논문 지표</h1></div></header>
+<main>
+  <section class="card" aria-labelledby="t">
+    <h2 id="t">임시 폐쇄</h2>
+    <p>이 페이지는 임시로 폐쇄되었습니다. 논문 순위·점수·평가 자료는 더 이상 공개하지 않습니다.</p>
+    <p class="label">임시 폐쇄 사유</p>
+    <p class="reason">재미도 없고 경진대회에 직접적인 영향을 끼칠 수 있어서</p>
+  </section>
+</main>
+<footer>2026-10-14 폐쇄</footer>
+</body>
 </html>

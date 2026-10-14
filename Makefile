@@ -33,7 +33,7 @@ build:        ## 내부용 빌드 → dist/artifact.html, dist/site/
 public:       ## 공개용 빌드(인용문·드라이브 ID·원문 링크 제거) → dist/
 	$(PY) pipeline/build.py --public $(BUILD_FLAGS)
 
-deploy:       ## 공개판을 저장소 루트(index.html, app.js, data/data.js)에 배치 → 커밋·푸시하면 Pages 반영
+deploy:       ## (2026-10-14 임시 폐쇄 — CAUMIL_REOPEN=1 없이는 거부) 공개판을 저장소 루트에 배치
 	$(PY) pipeline/build.py --public --root $(BUILD_FLAGS)
 
 clean:

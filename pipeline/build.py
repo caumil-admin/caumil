@@ -5,6 +5,7 @@
   dist/artifact.html      한 파일(CSS·데이터·스크립트 인라인) — claude.ai 아티팩트 게시용(내부용)
   dist/site/              GitHub Pages 형태(index.html, app.js, data/data.js, favicon.svg)
   --root                  공개판을 저장소 루트(index.html, app.js, data/data.js)에 써서 Pages 배포 준비
+                          ※ 2026-10-14 임시 폐쇄: 환경 변수 CAUMIL_REOPEN=1 이 없으면 거부한다(루트는 폐쇄 안내 페이지).
 v3/(6개 변수 사전함수, 2026-10-02 동결)·v2/·v1/ 은 정적 보관본이라 이 스크립트가 건드리지 않는다.
 
 --public(공개판): 원고 인용문(evidenceQuotes)을 빼고, 드라이브 파일 ID·원문 링크를 붙이지 않으며, robots noindex 를 단다.
@@ -104,6 +105,10 @@ def main():
     ap.add_argument("--last-sync")
     ap.add_argument("--out", default=DIST)
     a = ap.parse_args()
+    if a.root and os.environ.get("CAUMIL_REOPEN") != "1":
+        sys.exit("[closed] 2026-10-14 임시 폐쇄 — 결과를 저장소 루트·Pages 에 배포하지 않는다. "
+                 "루트 index.html 은 폐쇄 안내 페이지다. 재개가 결정되면 CAUMIL_REOPEN=1 로 실행하고 "
+                 ".github/workflows/pages.yml 도 되돌린다(docs/WORKFLOW.md 6단계).")
     public = a.public or a.root
     data = build_data(public, a.basis_date, a.last_sync)
     template = open(os.path.join(SITE, "template.html"), encoding="utf-8").read()
