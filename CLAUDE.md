@@ -1,6 +1,6 @@
 # CLAUDE.md — CAUMIL 논문 지표
 
-> **임시 폐쇄(2026-10-14).** 사용자 결정: 사유 "재미도 없고 경진대회에 직접적인 영향을 끼칠 수 있어서". 루트 `index.html`·`404.html` 은 폐쇄 안내 페이지이고, `.github/workflows/pages.yml` 은 그 안내 페이지만 Pages 에 올린다. **결과(순위·점수·평가)를 깃허브 Pages 나 외부로 다시 내보내지 않는다.** `./run.sh deploy` 는 `CAUMIL_REOPEN=1` 없이는 거부한다. 사용자가 재개를 말하기 전에는 `deploy`·푸시로 결과를 배포하지 말고, 내부 확인은 `./run.sh build`/`public` 의 `dist/`(gitignore)만 쓴다. 저장소 공개 범위(private 전환)·Pages 비활성화는 GitHub 설정에서 사용자가 직접 한다.
+> **임시 폐쇄(2026-10-14).** 사용자 결정: 사유 "재미도 없고 경진대회에 직접적인 영향을 끼칠 수 있어서". 루트 `index.html`·`404.html` 은 폐쇄 안내 페이지이고, `.github/workflows/pages.yml` 은 그 안내 페이지만 Pages 에 올린다. **결과(순위·점수·평가)를 깃허브 Pages 나 외부로 다시 내보내지 않는다.** Pages 설정이 "브랜치에서 배포"(Jekyll)라 `_config.yml` 로 안내 페이지 외 전부 제외했다(`.nojekyll` 삭제). `./run.sh deploy` 는 `CAUMIL_REOPEN=1` 없이는 거부한다. 사용자가 재개를 말하기 전에는 `deploy`·푸시로 결과를 배포하지 말고, 내부 확인은 `./run.sh build`/`public` 의 `dist/`(gitignore)만 쓴다. 저장소 공개 범위(private 전환)·Pages 비활성화는 GitHub 설정에서 사용자가 직접 한다.
 
 이 저장소는 CAUMIL 개인·팀 논문 원고를 경진대회 **심사 기준 5항목**(세부 요소 12개)으로 채점하고, 항목 점수의 가중 평균×100(심사 점수)으로 순위를 매겨 GitHub Pages(`https://caumil-admin.github.io/caumil/`)에 올리는 정적 사이트(**v4**)와 그 파이프라인이다. v3(엑셀 6개 변수 + 가중치 노트북 사전함수 순위)는 2026-10-02 에 `v3/` 로 동결했다.
 절차의 정본은 `docs/WORKFLOW.md`, 화면 규격은 `DESIGN.md`, 진행 상황과 다음 일은 `PLAN.md` 에 있다. 이 파일은 작업할 때 지켜야 할 규칙만 적는다.

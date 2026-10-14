@@ -131,7 +131,7 @@ make build          # 내부용: dist/artifact.html + dist/site/ (원문 링크 
 make public         # 공개용: 원고 인용문(evidenceQuotes)을 빼고 드라이브 링크를 붙이지 않으며 robots noindex 를 단다 → dist/
 make deploy         # (2026-10-14 임시 폐쇄 — CAUMIL_REOPEN=1 없이는 거부) 공개용을 저장소 루트에 배치. 커밋·푸시하면 Pages 가 갱신된다
 ```
-- **임시 폐쇄(2026-10-14)**: 사용자 결정(사유 "재미도 없고 경진대회에 직접적인 영향을 끼칠 수 있어서"). 루트 `index.html`·`404.html` 은 안내 페이지, `app.js`·`data/data.js` 는 삭제, `pages.yml` 은 안내 페이지만 올린다. 결과는 `dist/`(gitignore)로만 빌드하고 외부로 내보내지 않는다. 재개 절차: ① `pages.yml` 의 "Stage closure notice only" 단계를 지우고 `path: .` 으로 되돌림 ② `CAUMIL_REOPEN=1 make deploy` ③ `make check` 후 커밋·푸시. 저장소 private 전환·Pages 비활성화는 GitHub 설정에서 사용자가 직접 한다.
+- **임시 폐쇄(2026-10-14)**: 사용자 결정(사유 "재미도 없고 경진대회에 직접적인 영향을 끼칠 수 있어서"). 루트 `index.html`·`404.html` 은 안내 페이지, `app.js`·`data/data.js` 는 삭제, `pages.yml` 은 안내 페이지만 올린다. 결과는 `dist/`(gitignore)로만 빌드하고 외부로 내보내지 않는다. 저장소의 Pages 설정이 "브랜치에서 배포"(Jekyll)여서 `pages.yml` 과 별개로 저장소 전체가 올라가므로 `.nojekyll` 을 지우고 `_config.yml` 로 안내 페이지 외 전부 제외했다. 재개 절차: ① `pages.yml` 의 "Stage closure notice only" 단계를 지우고 `path: .` 으로 되돌림 ② `_config.yml` 삭제, `.nojekyll` 복원 ③ `CAUMIL_REOPEN=1 make deploy` ④ `make check` 후 커밋·푸시. 저장소 private 전환·Pages 비활성화는 GitHub 설정에서 사용자가 직접 한다.
 - **claude.ai 아티팩트**(비공개): `dist/artifact.html` 을 기존 URL `https://claude.ai/artifact/L58PAzgKkDc6NZR6QSgbGz` 에 `url` 로 넘겨 다시 게시한다.
 - **GitHub Pages** `caumil-admin/caumil` (`https://caumil-admin.github.io/caumil/`): (재개 후) `make deploy` 로 루트를 갱신하고 커밋·푸시한다. `.github/workflows/pages.yml` 이 main 푸시마다 배포한다(폐쇄 중에는 안내 페이지만). 루트에는 항상 공개판만 둔다.
 - 푸시는 내장 브라우저의 `caumil-admin` 세션으로 GitHub 웹 업로드를 쓴다(클라우드 git 프록시가 이 저장소 쓰기를 막음).

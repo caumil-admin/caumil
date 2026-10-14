@@ -1,0 +1,26 @@
+# 2026-10-14 임시 폐쇄 — GitHub Pages 의 "브랜치에서 배포"(Jekyll) 경로에서도 안내 페이지만 올린다.
+# 저장소 설정이 브랜치 배포인 동안 Jekyll 이 저장소 전체를 올리므로, 안내 페이지(index.html, 404.html, 파비콘)
+# 를 뺀 모든 경로를 제외한다. 재개 시 이 파일을 지우고 .nojekyll 을 되살린다(docs/WORKFLOW.md 6단계).
+title: CAUMIL 논문 지표 — 임시 폐쇄
+plugins: []
+exclude:
+  - CLAUDE.md
+  - DESIGN.md
+  - PLAN.md
+  - README.md
+  - AGENTS.md
+  - Makefile
+  - run.sh
+  - data/
+  - docs/
+  - eval/
+  - pipeline/
+  - site/
+  - v1/
+  - v2/
+  - v3/
+  - dist/
+  - inputs/
+  - raw/
+  - source_text/
+include: []
