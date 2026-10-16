@@ -12,14 +12,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet" />
 <style>
-/* CAUMIL 논문 지표 v5 — 학술 지표 색인형(심사 기준 4항목 순위). 토큰은 Claude Design 캔버스(9tBbBaMpePcUWcuFiKSsCm)에서 옮겼다. */
+/* CAUMIL 논문 지표 v5 — 학술 지표 색인형(심사 기준 4항목 순위). 토큰은 Claude Design 캔버스(9tBbBaMpePcUWcuFiKSsCm)의 구조를 따르되 2026-10-17 사용자 요청으로 보라 계열을 녹색 계열로 바꿨다. */
 :root {
-  --bg: #F6F5FA; --surface: #FFFFFF; --surface-2: #EFEDF5; --zebra: #FAF9FC;
-  --ink: #1B1A2E; --muted: #5B5872; --rule: #DFDCE9; --rule-2: #C7C3D6;
-  --accent: #56489E; --accent-hover: #3E3378; --accent-soft: #ECE9F7; --accent-rgb: 86, 72, 158;
-  --up: #0E6B5C; --down: #9E3B2A;
-  --q1-fg: #0E6B5C; --q1-bg: #E0F1EC; --q2-fg: #356B25; --q2-bg: #E8F2DF; --q3-fg: #845A08; --q3-bg: #F6EDD6; --q4-fg: #9E3B2A; --q4-bg: #F6E3DE;
-  --upd-fg: #845A08; --upd-bg: #F6EDD6; --chip-ink: #1B1A2E; --on-chip: #FFFFFF;
+  --bg: #F3F8F4; --surface: #FFFFFF; --surface-2: #E8F1EA; --zebra: #F7FBF8;
+  --ink: #16241B; --muted: #55665A; --rule: #D7E4DA; --rule-2: #BCCFC2;
+  --accent: #1F7A4D; --accent-hover: #155A38; --accent-soft: #E1F2E7; --accent-rgb: 31, 122, 77;
+  --up: #0F6B3F; --down: #9E3B2A;
+  --q1-fg: #0F6B3F; --q1-bg: #DBF0E2; --q2-fg: #4E7A1F; --q2-bg: #E9F2D8; --q3-fg: #845A08; --q3-bg: #F6EDD6; --q4-fg: #9E3B2A; --q4-bg: #F6E3DE;
+  --upd-fg: #845A08; --upd-bg: #F6EDD6; --chip-ink: #16241B; --on-chip: #FFFFFF;
   --header-bg: #1F5B3A; --header-fg: #FFFFFF; --header-muted: rgba(255, 255, 255, 0.78); --header-line: rgba(255, 255, 255, 0.26); --header-field: rgba(255, 255, 255, 0.11); --header-cur-bg: #FFFFFF; --header-cur-fg: #1F5B3A; --header-accent: #9FDDB8;
   --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   --font-serif: "Noto Serif KR", "AppleMyungjo", "Batang", Georgia, serif;
@@ -29,23 +29,23 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #12101C; --surface: #1A1727; --surface-2: #211D33; --zebra: #1D1A2C;
-    --ink: #ECEAF5; --muted: #A39FBA; --rule: #2F2A45; --rule-2: #3D3757;
-    --accent: #A99AE6; --accent-hover: #C4B9F0; --accent-soft: #2A2447; --accent-rgb: 169, 154, 230;
-    --up: #5FCFB6; --down: #F09A88;
-    --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
-    --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
+    --bg: #0E1711; --surface: #152019; --surface-2: #1B2A20; --zebra: #182419;
+    --ink: #E7F0E9; --muted: #9DB2A3; --rule: #26382C; --rule-2: #33483A;
+    --accent: #7FD19F; --accent-hover: #A5E2BC; --accent-soft: #1E3A29; --accent-rgb: 127, 209, 159;
+    --up: #7FD8A8; --down: #F09A88;
+    --q1-fg: #7FD8A8; --q1-bg: #12331F; --q2-fg: #B5D98A; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
+    --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #E7F0E9; --on-chip: #0E1711;
     --header-bg: #123A26; --header-fg: #EAF3EC; --header-muted: rgba(234, 243, 236, 0.76); --header-line: rgba(234, 243, 236, 0.24); --header-field: rgba(234, 243, 236, 0.08); --header-cur-bg: #EAF3EC; --header-cur-fg: #123A26; --header-accent: #7FC79A;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #12101C; --surface: #1A1727; --surface-2: #211D33; --zebra: #1D1A2C;
-  --ink: #ECEAF5; --muted: #A39FBA; --rule: #2F2A45; --rule-2: #3D3757;
-  --accent: #A99AE6; --accent-hover: #C4B9F0; --accent-soft: #2A2447; --accent-rgb: 169, 154, 230;
-  --up: #5FCFB6; --down: #F09A88;
-  --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
-  --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
+  --bg: #0E1711; --surface: #152019; --surface-2: #1B2A20; --zebra: #182419;
+  --ink: #E7F0E9; --muted: #9DB2A3; --rule: #26382C; --rule-2: #33483A;
+  --accent: #7FD19F; --accent-hover: #A5E2BC; --accent-soft: #1E3A29; --accent-rgb: 127, 209, 159;
+  --up: #7FD8A8; --down: #F09A88;
+  --q1-fg: #7FD8A8; --q1-bg: #12331F; --q2-fg: #B5D98A; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
+  --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #E7F0E9; --on-chip: #0E1711;
   --header-bg: #123A26; --header-fg: #EAF3EC; --header-muted: rgba(234, 243, 236, 0.76); --header-line: rgba(234, 243, 236, 0.24); --header-field: rgba(234, 243, 236, 0.08); --header-cur-bg: #EAF3EC; --header-cur-fg: #123A26; --header-accent: #7FC79A;
   color-scheme: dark;
 }
