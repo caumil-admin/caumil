@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="description" content="CAUMIL 개인·팀 논문 원고를 경진대회 심사 기준 5항목으로 채점해 심사 점수·순위·백분위·사분위를 매긴 학술 지표 페이지(v4)" />
-<meta name="theme-color" content="#1F2A55" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#131A33" media="(prefers-color-scheme: dark)" />
+<meta name="description" content="CAUMIL 개인·팀 논문 원고를 경진대회 심사 기준 4항목으로 채점해 심사 점수·순위·백분위·사분위를 매긴 학술 지표 페이지(v5)" />
+<meta name="theme-color" content="#1F5B3A" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#123A26" media="(prefers-color-scheme: dark)" />
 {{HEAD_EXTRA}}
 <title>CAUMIL 논문 지표</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Serif+KR:wght@600;700&display=swap" rel="stylesheet" />
 <style>
-/* CAUMIL 논문 지표 v4 — 학술 지표 색인형(심사 기준 5항목 순위). 토큰은 Claude Design 캔버스(9tBbBaMpePcUWcuFiKSsCm)에서 옮겼다. */
+/* CAUMIL 논문 지표 v5 — 학술 지표 색인형(심사 기준 4항목 순위). 토큰은 Claude Design 캔버스(9tBbBaMpePcUWcuFiKSsCm)에서 옮겼다. */
 :root {
   --bg: #F6F5FA; --surface: #FFFFFF; --surface-2: #EFEDF5; --zebra: #FAF9FC;
   --ink: #1B1A2E; --muted: #5B5872; --rule: #DFDCE9; --rule-2: #C7C3D6;
@@ -20,7 +20,7 @@
   --up: #0E6B5C; --down: #9E3B2A;
   --q1-fg: #0E6B5C; --q1-bg: #E0F1EC; --q2-fg: #356B25; --q2-bg: #E8F2DF; --q3-fg: #845A08; --q3-bg: #F6EDD6; --q4-fg: #9E3B2A; --q4-bg: #F6E3DE;
   --upd-fg: #845A08; --upd-bg: #F6EDD6; --chip-ink: #1B1A2E; --on-chip: #FFFFFF;
-  --header-bg: #1F2A55; --header-fg: #FFFFFF; --header-muted: rgba(255, 255, 255, 0.76); --header-line: rgba(255, 255, 255, 0.26); --header-field: rgba(255, 255, 255, 0.11); --header-cur-bg: #FFFFFF; --header-cur-fg: #1F2A55; --header-accent: #B4A6F0;
+  --header-bg: #1F5B3A; --header-fg: #FFFFFF; --header-muted: rgba(255, 255, 255, 0.78); --header-line: rgba(255, 255, 255, 0.26); --header-field: rgba(255, 255, 255, 0.11); --header-cur-bg: #FFFFFF; --header-cur-fg: #1F5B3A; --header-accent: #9FDDB8;
   --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
   --font-serif: "Noto Serif KR", "AppleMyungjo", "Batang", Georgia, serif;
   --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
@@ -35,7 +35,7 @@
     --up: #5FCFB6; --down: #F09A88;
     --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
     --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
-    --header-bg: #131A33; --header-fg: #ECEAF5; --header-muted: rgba(236, 234, 245, 0.76); --header-line: rgba(236, 234, 245, 0.24); --header-field: rgba(236, 234, 245, 0.08); --header-cur-bg: #ECEAF5; --header-cur-fg: #131A33; --header-accent: #A99AE6;
+    --header-bg: #123A26; --header-fg: #EAF3EC; --header-muted: rgba(234, 243, 236, 0.76); --header-line: rgba(234, 243, 236, 0.24); --header-field: rgba(234, 243, 236, 0.08); --header-cur-bg: #EAF3EC; --header-cur-fg: #123A26; --header-accent: #7FC79A;
     color-scheme: dark;
   }
 }
@@ -46,7 +46,7 @@
   --up: #5FCFB6; --down: #F09A88;
   --q1-fg: #7FD8C4; --q1-bg: #12332C; --q2-fg: #A9D68E; --q2-bg: #1E2E15; --q3-fg: #E8C57A; --q3-bg: #3A2C10; --q4-fg: #F0A090; --q4-bg: #3B1F1A;
   --upd-fg: #E8C57A; --upd-bg: #3A2C10; --chip-ink: #ECEAF5; --on-chip: #12101C;
-  --header-bg: #131A33; --header-fg: #ECEAF5; --header-muted: rgba(236, 234, 245, 0.76); --header-line: rgba(236, 234, 245, 0.24); --header-field: rgba(236, 234, 245, 0.08); --header-cur-bg: #ECEAF5; --header-cur-fg: #131A33; --header-accent: #A99AE6;
+  --header-bg: #123A26; --header-fg: #EAF3EC; --header-muted: rgba(234, 243, 236, 0.76); --header-line: rgba(234, 243, 236, 0.24); --header-field: rgba(234, 243, 236, 0.08); --header-cur-bg: #EAF3EC; --header-cur-fg: #123A26; --header-accent: #7FC79A;
   color-scheme: dark;
 }
 
@@ -164,7 +164,7 @@ p { margin: 0; }
 .warn { font-size: 12px; color: var(--upd-fg); }
 .tbl { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }
 .tbl-scroll { overflow-x: auto; }
-.tgrid { display: grid; grid-template-columns: 52px minmax(240px, 1fr) 96px 64px 64px repeat(5, 52px) 104px; align-items: center; min-width: 900px; }
+.tgrid { display: grid; grid-template-columns: 52px minmax(240px, 1fr) 104px 64px 64px repeat(4, 52px) 104px; align-items: center; min-width: 860px; }
 .tgroup { background: var(--surface-2); font-size: 11.5px; color: var(--muted); }
 .tgroup span { grid-column: 6 / span 5; padding: 8px 0 0; text-align: center; font-weight: 600; border-bottom: 1px solid var(--rule-2); margin: 0 6px; }
 .thead { background: var(--surface-2); border-bottom: 1px solid var(--rule-2); }
@@ -187,6 +187,7 @@ p { margin: 0; }
 .c-prim { padding-right: 12px; display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }
 .c-prim .v { font-family: var(--font-mono); font-size: 15px; font-weight: 600; }
 .c-prim .bar { width: 58px; height: 3px; }
+.c-prim .k20 { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
 .c-sec { font-family: var(--font-mono); font-size: 13px; text-align: right; padding-right: 12px; color: var(--muted); }
 .c-q { display: flex; justify-content: center; }
 .c-pctl { font-family: var(--font-mono); font-size: 13px; text-align: right; padding-right: 12px; }
@@ -201,14 +202,14 @@ p { margin: 0; }
 
 /* ---------- categories page ---------- */
 .cat-wrap { padding-block: 20px 28px; display: flex; flex-direction: column; gap: 12px; }
-.cgrid { display: grid; grid-template-columns: minmax(200px, 1fr) 56px 84px 84px 272px 176px repeat(5, 52px) 80px; align-items: center; min-width: 1150px; }
+.cgrid { display: grid; grid-template-columns: minmax(200px, 1fr) 56px 84px 84px 272px 176px repeat(4, 52px) 80px; align-items: center; min-width: 1100px; }
 .chead { align-items: end; background: var(--surface-2); border-bottom: 1px solid var(--rule-2); font-size: 12px; color: var(--muted); }
 .chead > span { padding: 12px 8px; }
 .chead .dist { padding: 8px 16px 10px; display: flex; flex-direction: column; gap: 4px; }
 .chead .dist .ax { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 10.5px; }
 .chead .means { grid-column: span 5; padding: 8px 0 0; display: flex; flex-direction: column; gap: 6px; }
 .chead .means .t { text-align: center; font-weight: 600; }
-.chead .means .k { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); border-top: 1px solid var(--rule-2); }
+.chead .means .k { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--rule-2); }
 .chead .means .k span { padding: 6px 0; text-align: center; }
 .crow { min-height: 60px; border-top: 1px solid var(--rule); }
 .crow.sub-row { background: var(--zebra); }
@@ -453,7 +454,7 @@ p { margin: 0; }
         <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg>
         <input id="q" type="search" placeholder="원고 제목·저자·ID 검색" aria-label="원고 검색" autocomplete="off" />
       </label>
-      <div class="version" role="group" aria-label="사이트 버전"><a class="cur" href="#rank" aria-current="page" id="ver-cur">v4</a><a href="https://caumil-admin.github.io/caumil/v3/">v3 · 6개 변수(동결)</a><a href="https://caumil-admin.github.io/caumil/v2/">v2 · 논문 순위(보관)</a><a href="https://caumil-admin.github.io/caumil/v1/">v1 · 경진대회 전략(보관)</a></div>
+      <div class="version" role="group" aria-label="사이트 버전"><a class="cur" href="#rank" aria-current="page" id="ver-cur">v5</a><a href="https://caumil-admin.github.io/caumil/v3/">v3 · 6개 변수(동결)</a><a href="https://caumil-admin.github.io/caumil/v2/">v2 · 논문 순위(보관)</a><a href="https://caumil-admin.github.io/caumil/v1/">v1 · 경진대회 전략(보관)</a></div>
     </div>
   </div>
   <nav class="inner m-row" aria-label="주요 메뉴(모바일)">

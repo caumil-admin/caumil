@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""v4: 심사 기준 5항목(data/rubric.json)으로 순위·안정성·레버를 계산해 data/results.json 을 만든다.
+"""v5: 심사 기준 4항목(data/rubric.json; 기본 프리셋은 원고 3항목 균등, 발표 가중치 0)으로 순위·안정성·레버를 계산해 data/results.json 을 만든다.
 
 site/app.js 의 계산과 같다:
   항목 점수 x_c = 세부 요소 점수의 평균(반올림하지 않음)
-  심사 점수 S   = 100 · Σ_c w_c · x_c          (Σ w_c = 1, 기본 5항목 균등 → eval 의 rubric.total 과 같다)
+  심사 점수 S   = 100 · Σ_c w_c · x_c          (Σ w_c = 1, 기본 프리셋 → eval 의 rubric.total 과 같다)
 순위는 S 내림차순. S 가 1e-6 단위까지 같으면 같은 순위(1, 2, 2, 4)이며 표시 순서는 id 오름차순.
 백분위 = (N − R + 0.5) / N × 100, 사분위 = 백분위 >75 Q1, >50 Q2, >25 Q3, 나머지 Q4.
 안정성 = 항목 가중치를 Dirichlet(α·w)로, 모든 세부 요소를 {−noise, 0, +noise} 중 하나로(0–1 안에서) 흔들어 runs 번 다시 매긴 순위 분포.

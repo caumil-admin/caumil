@@ -1,6 +1,6 @@
-/* CAUMIL 논문 지표 v4 — data/data.js(window.RANK_DATA)를 읽어 순위 탐색·범주 개요·지표 산출·원고 프로필을 그린다.
-   순위는 경진대회 심사 기준 5항목(data/rubric.json)으로만 매긴다. 계산식은 pipeline/score.py 와 같다:
-     항목 점수 x_c = 세부 요소 평균(반올림 없음), 심사 점수 = 100 × Σ w_c·x_c (Σw = 1, 기본 5항목 균등),
+/* CAUMIL 논문 지표 v5 — data/data.js(window.RANK_DATA)를 읽어 순위 탐색·범주 개요·지표 산출·원고 프로필을 그린다.
+   순위는 경진대회 심사 기준 4항목(data/rubric.json)으로만 매긴다. 계산식은 pipeline/score.py 와 같다:
+     항목 점수 x_c = 세부 요소 평균(반올림 없음), 심사 점수 = 100 × Σ w_c·x_c (Σw = 1, 기본 원고 3항목),
      같은 점수(1e-6 단위)는 같은 순위, 백분위 = (N − R + 0.5) ÷ N × 100.
    화면 구성은 v3(Claude Design 캔버스 'CAUMIL 논문 순위 v2', 9tBbBaMpePcUWcuFiKSsCm)를 이어받는다. */
 (function () {
@@ -28,7 +28,7 @@
   var HOST = D.meta.host || "pages";
   var EXCL = (D.meta.excludedSub || ["핵심5"]).join("·");
   var V3_URL = "https://caumil-admin.github.io/caumil/v3/";
-  var FOOT_NOTE = "심사 점수는 원고 텍스트만 근거로 세부 요소마다 0.05 단위로 매긴 정성 점수이며 공식 심사 결과를 대신하지 않습니다.";
+  var FOOT_NOTE = "항목 5점 환산 = 항목 점수×5, 20점 환산 = 심사 점수÷5. 심사 점수는 원고 텍스트만 근거로 세부 요소마다 0.05 단위로 매긴 정성 점수이며 공식 심사 결과를 대신하지 않습니다.";
 
   // ------------------------------------------------------------------ helpers
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (ch) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]; }); }
@@ -160,7 +160,7 @@
       + '<div class="title-row"><h1 class="title">' + title + "</h1>" + (pill ? '<span class="pill">' + esc(pill) + "</span>" : "") + "</div>"
       + (lede ? '<p class="lede">' + lede + "</p>" : "") + "</div>" + (right || "") + "</div></section>";
   }
-  function footerText() { return "CAUMIL 논문 지표 v4 · 심사 기준 5항목 순위 · 데이터 기준 " + basisText() + " · " + FOOT_NOTE; }
+  function footerText() { return "CAUMIL 논문 지표 v5 · 심사 기준 4항목 순위 · 데이터 기준 " + basisText() + " · " + FOOT_NOTE; }
   function critNames() { return CRIT.map(function (c) { return c.label; }).join("·"); }
 
   // ------------------------------------------------------------------ 순위 탐색
@@ -184,7 +184,7 @@
       + '<div><dt>원고</dt><dd class="mono">' + D.meta.counts.total + "편</dd></div>"
       + '<div><dt>신규 · 수정</dt><dd class="mono">' + D.meta.counts.new + " · " + D.meta.counts.updated + "</dd></div>"
       + "<div><dt>가중치</dt><dd>" + esc(modelLabel(m)) + "</dd></div></dl>";
-    var lede = "경진대회 심사 기준 5항목(" + esc(critNames()) + ")의 세부 요소 12개를 원고 텍스트로 채점하고, 항목 점수의 평균×100(심사 점수)으로 순위를 매겼습니다."
+    var lede = "경진대회 심사 기준 4항목(" + esc(critNames()) + ")의 세부 요소 12개를 원고 텍스트로 채점하고, 발표 전이라 발표 항목을 뺀 기술·혁신·구성 세 항목 점수의 평균×100(심사 점수, 20점 환산은 ÷5)으로 순위를 매겼습니다."
       + (D.meta.counts.excluded ? " '" + esc(EXCL) + "' 하위 폴더 원고 " + D.meta.counts.excluded + "편은 제외했습니다." : D.meta.counts.sub ? " 제출 폴더 안 '핵심5' 하위 폴더 원고 " + D.meta.counts.sub + "편도 함께 매겼습니다." : "")
       + '<label class="search m-search" for="q-m"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"></circle><path d="M11 11l3.5 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg><input id="q-m" type="search" placeholder="제목·저자·ID 검색" aria-label="원고 검색" autocomplete="off" value="' + esc(state.q) + '" /></label>';
     var head = pageHead("<span>순위 탐색</span><span aria-hidden=\"true\">/</span><span>" + esc(c.catName) + "</span>", esc(c.catName) + " 순위", lede, right, yearOf() + " 제출분");
@@ -225,7 +225,7 @@
       return '<div class="tgrid trow' + (r.rank <= 2 ? " top2" : "") + '">'
         + '<span class="c-rank">' + r.rank + tieMark(r) + "</span>"
         + '<span class="c-title"><a href="#' + esc(r.id) + '" class="clamp2">' + esc(r.title) + '</a><span class="who"><b>' + esc(r.who) + '</b><span aria-hidden="true">·</span><span>' + esc(r.venue) + '</span><span class="mono id">' + esc(r.id) + "</span>" + extra + badges(r.paper) + "</span></span>"
-        + '<span class="c-prim"><span class="v">' + f1(r.score) + '</span><span class="bar"><i style="width:' + Math.max(1, Math.round(r.score)) + '%"></i></span>' + qChip(r.qn, "mq") + "</span>"
+        + '<span class="c-prim"><span class="v">' + f1(r.score) + '</span><span class="k20">20점 ' + f1(r.score / 5) + '</span><span class="bar"><i style="width:' + Math.max(1, Math.round(r.score)) + '%"></i></span>' + qChip(r.qn, "mq") + "</span>"
         + '<span class="c-q">' + qChip(r.qn) + "</span>"
         + '<span class="c-pctl">' + f1(r.pctl) + "</span>" + cells
         + '<span class="c-range"><span class="t">' + rangeTxt + "</span>" + rbar + "</span></div>";
@@ -236,9 +236,9 @@
       + (c.filtered ? '<span class="warn">학회를 걸렀습니다 · 순위·백분위를 남은 원고로 다시 매김</span>' : "")
       + (st && st.live ? '<span class="warn">사용자 가중치 · 순위 범위는 브라우저에서 1,500회 계산</span>' : "")
       + '<button type="button" class="btn csv" data-act="csv">' + csvLabel + "</button></div></div>"
-      + '<div class="tbl"><div class="tbl-scroll"><div class="tgrid tgroup"><span>심사 기준 5항목 · 항목 점수 0–1</span></div><div class="tgrid thead">' + thead + "</div>" + body
+      + '<div class="tbl"><div class="tbl-scroll"><div class="tgrid tgroup"><span>심사 기준 4항목 · 항목 점수 0–1</span></div><div class="tgrid thead">' + thead + "</div>" + body
       + (rows.length ? "" : '<p class="empty">검색어와 맞는 원고가 없습니다.</p>') + "</div></div>"
-      + '<div class="notes"><span class="note">심사 점수 = 100 × Σ 항목 가중치 × 항목 점수. 기본(5항목 균등)은 다섯 항목 점수의 평균×100이고, 항목 점수는 세부 요소 점수의 평균입니다.</span>'
+      + '<div class="notes"><span class="note">심사 점수 = 100 × Σ 항목 가중치 × 항목 점수. 기본(원고 3항목 균등)은 기술·혁신·구성 세 항목 점수의 평균×100이고(발표 및 전달력은 발표 전이라 가중치 0, 자리값 0.50), 항목 점수는 세부 요소 점수의 평균입니다. 항목 5점 환산 = 항목 점수×5, 20점 환산 = 심사 점수÷5.</span>'
       + '<span class="note">1·2위는 왼쪽 띠로 강조합니다. 같은 점수는 같은 순위(=)입니다. 백분위 = (N − R + 0.5) ÷ N × 100 · N은 범주의 원고 수, R은 순위입니다.</span>'
       + '<span class="note">순위 범위 = 항목 가중치와 세부 요소 점수(±' + MC.noise + ")를 흔든 " + MC.runs.toLocaleString() + "회 재계산에서 순위의 P10–P90입니다. 학회를 거르면 표시하지 않습니다.</span>"
       + '<span class="note">v3까지 쓰던 엑셀 6개 변수·노트북 사전함수 순위는 <a href="' + V3_URL + '">v3 동결본</a>에 남아 있습니다.</span></div>';
@@ -253,7 +253,7 @@
       return [r.rank, r.id, r.who, r.title, r.venue, f1(r.score), "Q" + r.qn, f1(r.pctl)].concat(KEYS.map(function (k) { return f3(r.x[k]); })).concat(s ? [s.p10, s.p50, s.p90] : ["", "", ""]);
     }));
     var csv = lines.map(function (row) { return row.map(function (v) { v = String(v == null ? "" : v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }).join(","); }).join("\r\n");
-    var name = "caumil-v4-rank-" + c.cat + "-" + m.preset + ".csv";
+    var name = "caumil-v5-rank-" + c.cat + "-" + m.preset + ".csv";
     function copy() {
       var done = function () { toast("CSV를 클립보드에 복사했습니다"); };
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(csv).then(done, function () { toast("복사하지 못했습니다"); });
@@ -303,7 +303,7 @@
       });
       if (track === "personal") rows.push(groupRow("사람별 대표작", "한 사람당 가장 높은 원고 1편", false, "#rank-people", rankItems(items("people", m), m)));
     });
-    main.innerHTML = pageHead("<span>범주 개요</span>", "범주 개요", "범주마다 원고 수, 심사 점수 분포, 다섯 항목 점수의 평균을 비교합니다. " + esc(modelLabel(m)) + " 가중치 기준입니다.")
+    main.innerHTML = pageHead("<span>범주 개요</span>", "범주 개요", "범주마다 원고 수, 심사 점수 분포, 항목 점수의 평균을 비교합니다. " + esc(modelLabel(m)) + " 가중치 기준입니다.")
       + '<div class="inner cat-wrap"><div class="tbl"><div class="tbl-scroll">'
       + '<div class="cgrid chead"><span style="padding-left:16px">범주</span><span style="text-align:right">원고</span><span style="text-align:right">중앙값</span><span style="text-align:right">Q1 경계</span>'
       + '<span class="dist"><span>심사 점수 분포</span><span class="ax"><span>' + DMIN + "</span><span>" + ((DMIN + DMAX) / 2) + "</span><span>" + DMAX + "</span></span></span><span>상위 2편</span>"
@@ -322,15 +322,15 @@
   }
   function renderMethod() {
     setTitle("지표 산출");
-    var pe = PRESETS[DEFAULT].weights, ps = (PRESETS.subEqual || PRESETS[DEFAULT]).weights;
+    var pe = PRESETS[DEFAULT].weights, ps = (PRESETS.equal4 || PRESETS.subEqual || PRESETS[DEFAULT]).weights;
     var vrows = CRIT.map(function (c) {
       return '<div class="vgrid"><span><span style="font-weight:600">' + esc(c.label) + '</span><span class="key">세부 요소 ' + c.sub.length + '개</span></span><span class="anch">' + c.sub.map(function (x) { return esc(x.label); }).join(" · ") + '</span><span class="r" style="font-weight:600">' + f3(pe[c.key]) + '</span><span class="r muted">' + f3(ps[c.key]) + "</span></div>";
     }).join("");
     var left = '<div class="col">'
-      + '<section class="card"><div class="card-b" style="gap:14px"><h2>계산식</h2><div class="formula"><span>세부 요소</span><span>= 0–1, 0.05 단위 (원고 텍스트 근거만)</span><span>항목 점수</span><span>= 세부 요소 점수의 평균</span><span>심사 점수</span><span>= 100 × Σ wₖ · 항목 점수ₖ   (Σ wₖ = 1)</span><span>기본</span><span>= wₖ = 0.2 → 다섯 항목 평균 × 100</span></div>'
-      + '<p class="note" style="font-size:13px">순위는 심사 점수 내림차순이며, 소수 여섯째 자리까지 같으면 같은 순위입니다. v3까지 쓰던 경진대회 엑셀 6개 변수와 가중치 노트북의 사전함수는 v4 순위에 쓰지 않습니다(<a href="' + V3_URL + '">v3 동결본</a>).</p></div></section>'
-      + '<section class="card"><div class="card-h"><h2>항목과 가중치</h2><span>경진대회 심사 기준 5항목</span></div>'
-      + '<div class="vgrid h"><span>항목</span><span>세부 요소</span><span class="r">' + esc(PRESETS[DEFAULT].short) + '</span><span class="r">' + esc((PRESETS.subEqual || PRESETS[DEFAULT]).short) + "</span></div>" + vrows
+      + '<section class="card"><div class="card-b" style="gap:14px"><h2>계산식</h2><div class="formula"><span>세부 요소</span><span>= 0–1, 0.05 단위 (원고 텍스트 근거만)</span><span>항목 점수</span><span>= 세부 요소 점수의 평균</span><span>심사 점수</span><span>= 100 × Σ wₖ · 항목 점수ₖ   (Σ wₖ = 1)</span><span>기본</span><span>= 기술·혁신·구성 wₖ = 1/3, 발표 0 → 세 항목 평균 × 100 (20점 환산 = ÷5, 항목 5점 환산 = 항목 점수 × 5)</span></div>'
+      + '<p class="note" style="font-size:13px">순위는 심사 점수 내림차순이며, 소수 여섯째 자리까지 같으면 같은 순위입니다. v3까지 쓰던 경진대회 엑셀 6개 변수와 가중치 노트북의 사전함수는 v5 순위에 쓰지 않습니다(<a href="' + V3_URL + '">v3 동결본</a>).</p></div></section>'
+      + '<section class="card"><div class="card-h"><h2>항목과 가중치</h2><span>경진대회 심사 기준 4항목</span></div>'
+      + '<div class="vgrid h"><span>항목</span><span>세부 요소</span><span class="r">' + esc(PRESETS[DEFAULT].short) + '</span><span class="r">' + esc((PRESETS.equal4 || PRESETS.subEqual || PRESETS[DEFAULT]).short) + "</span></div>" + vrows
       + '<div class="vgrid f"><span>합</span><span></span><span class="r">' + f3(KEYS.reduce(function (s, k) { return s + pe[k]; }, 0)) + '</span><span class="r muted" style="font-weight:400">' + f3(KEYS.reduce(function (s, k) { return s + ps[k]; }, 0)) + "</span></div></section>"
       + '<section class="card"><div class="card-b"><h2>지표 정의</h2><dl class="defs">'
       + "<dt>심사 점수</dt><dd>항목 점수의 가중 평균×100(0–100). 기본 가중치에서는 원고 평가 파일의 심사 점수(rubric.total)와 같습니다.</dd>"
@@ -341,7 +341,7 @@
       + "<dt>순위 범위</dt><dd>항목 가중치를 Dirichlet(α = " + MC.alpha + "·w)로, 모든 세부 요소 점수를 −" + MC.noise + "·0·+" + MC.noise + " 중 하나로 흔들어 " + MC.runs.toLocaleString() + "번 다시 매겼을 때 순위의 P10–P90입니다(시드 " + MC.seed + ").</dd>"
       + "<dt>1위 확률</dt><dd>같은 " + MC.runs.toLocaleString() + "번 가운데 1위를 지킨 비율입니다.</dd>"
       + "<dt>사람별 대표작</dt><dd>한 사람이 여러 편을 냈으면 현재 가중치에서 가장 높은 개인논문 한 편으로 비교합니다.</dd>"
-      + (D.meta.counts.excluded ? "<dt>제외</dt><dd>제출 폴더 안 '" + esc(EXCL) + "' 하위 폴더의 원고 " + D.meta.counts.excluded + "편은 순위에 넣지 않습니다.</dd>" : "<dt>범위</dt><dd>제출 폴더 4곳의 원고와 그 안의 '핵심5' 하위 폴더 원고" + (D.meta.counts.sub ? " " + D.meta.counts.sub + "편" : "") + "을 같은 기준으로 함께 매깁니다(2026-10-07부터). 핵심5 원고는 순위표에 '핵심5' 표시가 붙습니다.</dd>") + "</dl></div></section>"
+      + (D.meta.counts.excluded ? "<dt>제외</dt><dd>제출 폴더 안 '" + esc(EXCL) + "' 하위 폴더의 원고 " + D.meta.counts.excluded + "편은 순위에 넣지 않습니다(v5, 2026-10-16).</dd>" : "<dt>범위</dt><dd>제출 폴더 4곳의 원고와 그 안의 '핵심5' 하위 폴더 원고" + (D.meta.counts.sub ? " " + D.meta.counts.sub + "편" : "") + "을 같은 기준으로 함께 매깁니다(2026-10-07부터). 핵심5 원고는 순위표에 '핵심5' 표시가 붙습니다.</dd>") + "</dl></div></section>"
       + rubricDefs()
       + '<section class="card"><div class="card-b"><h2>원천 자료</h2><dl class="defs">'
       + "<dt>원고</dt><dd>공유 드라이브 제출 폴더 4곳" + (D.meta.counts.sub ? "과 그 안의 '핵심5' 하위 폴더" : "") + "의 " + D.meta.counts.total + "편(개인 " + D.meta.counts.personal + " · 팀 " + D.meta.counts.team + "), " + esc(basisText()) + " 동기화</dd>"
@@ -402,7 +402,7 @@
         + '<line x1="' + L + '" x2="' + Rr + '" y1="' + y + '" y2="' + y + '" stroke="var(--rule-2)" />'
         + (isNaN(med) ? "" : '<line x1="' + X(med).toFixed(1) + '" x2="' + X(med).toFixed(1) + '" y1="' + (y - 10) + '" y2="' + (y + 10) + '" stroke="var(--ink)" stroke-width="2" />') + dots;
     }).join("");
-    return '<svg viewBox="0 0 ' + Wd + " " + Hd + '" role="img" aria-label="현재 범주 원고의 다섯 항목 점수 분포">' + grid + rowsSvg + "</svg>";
+    return '<svg viewBox="0 0 ' + Wd + " " + Hd + '" role="img" aria-label="현재 범주 원고의 네 항목 점수 분포">' + grid + rowsSvg + "</svg>";
   }
 
   // ------------------------------------------------------------------ 원고 프로필
@@ -411,17 +411,17 @@
     var desk = CRIT.map(function (c) {
       var r = rb[c.key] || { sub: {}, why: "" }, v = critOf(p)[c.key];
       var chips = c.sub.map(function (x) { var sv = r.sub ? r.sub[x.key] : null; return '<span class="subchip">' + esc(x.label) + "<b>" + (sv == null ? "–" : f2(sv)) + "</b></span>"; }).join("");
-      return '<div class="rgrid"><span style="font-weight:600">' + esc(c.label) + '<span class="key" style="display:block;font-family:var(--font-mono);font-size:11px;color:var(--muted);font-weight:400">가중치 ' + f3(m.w[c.key] || 0) + '</span></span><span class="sc"><span class="mono">' + f2(v) + '</span><span class="bar"><i style="width:' + (v * 100) + '%"></i></span></span><span class="subchips">' + chips + '</span><span class="why">' + esc(r.why || "") + "</span></div>";
+      return '<div class="rgrid"><span style="font-weight:600">' + esc(c.label) + '<span class="key" style="display:block;font-family:var(--font-mono);font-size:11px;color:var(--muted);font-weight:400">가중치 ' + f3(m.w[c.key] || 0) + '</span></span><span class="sc"><span class="mono">' + f2(v) + '</span><span class="mono muted" style="font-size:11px">' + f2(v * 5) + '/5</span><span class="bar"><i style="width:' + (v * 100) + '%"></i></span></span><span class="subchips">' + chips + '</span><span class="why">' + esc(r.why || "") + "</span></div>";
     }).join("");
     var mob = CRIT.map(function (c, i) {
       var r = rb[c.key] || { sub: {}, why: "" }, v = critOf(p)[c.key];
       var chips = c.sub.map(function (x) { var sv = r.sub ? r.sub[x.key] : null; return '<span class="subchip">' + esc(x.label) + "<b>" + (sv == null ? "–" : f2(sv)) + "</b></span>"; }).join("");
       return "<details" + (i === 0 ? " open" : "") + '><summary><span class="lbl"><span>' + esc(c.label) + '</span><span class="bar"><i style="width:' + (v * 100) + '%"></i></span></span><span class="r">' + f2(v) + '</span><span></span><svg class="chev" width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" style="color:var(--muted)"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></summary><div class="subchips" style="padding:0 16px 8px">' + chips + '</div><p class="why">' + esc(r.why || "") + "</p></details>";
     }).join("");
-    return '<section class="card"><div class="card-h"><h2>' + esc(RUB.title || "심사 기준 5항목") + '</h2><span>세부 요소 0–1 · 0.05 단위 · 항목 점수는 세부 요소 평균</span></div>'
+    return '<section class="card"><div class="card-h"><h2>' + esc(RUB.title || "심사 기준 4항목") + '</h2><span>세부 요소 0–1 · 0.05 단위 · 항목 점수는 세부 요소 평균</span></div>'
       + '<div class="crit-desk"><div class="rgrid h"><span>항목</span><span>항목 점수</span><span>세부 요소</span><span>근거</span></div>' + desk + "</div>"
       + '<div class="crit-mob">' + mob + "</div>"
-      + '<div class="rgrid f"><span>심사 점수</span><span class="mono">' + f1(score) + ' / 100</span><span class="muted" style="font-weight:400;font-size:12px">' + esc(modelLabel(m)) + " 가중치" + (rb.evaluatedAt ? " · 평가 " + esc(rb.evaluatedAt) : "") + "</span><span></span></div></section>";
+      + '<div class="rgrid f"><span>심사 점수</span><span class="mono">' + f1(score) + ' / 100 <span class="muted" style="font-weight:400;font-size:12px">(20점 환산 ' + f1(score / 5) + ')</span></span><span class="muted" style="font-weight:400;font-size:12px">' + esc(modelLabel(m)) + " 가중치" + (rb.evaluatedAt ? " · 평가 " + esc(rb.evaluatedAt) : "") + "</span><span></span></div></section>";
   }
   function catRows(p, m) {
     var rows = [], track = p.track;
@@ -565,7 +565,7 @@
 
   // ------------------------------------------------------------------ boot
   document.getElementById("foot-meta").textContent = footerText();
-  var vc = document.getElementById("ver-cur"); if (vc) vc.textContent = "v4 · " + String(D.meta.basisDate || "").slice(0, 7).replace("-", ".");
+  var vc = document.getElementById("ver-cur"); if (vc) vc.textContent = "v5 · " + String(D.meta.basisDate || "").slice(0, 7).replace("-", ".");
   var q0 = document.getElementById("q"); if (q0) q0.value = state.q;
   route();
 })();

@@ -1,0 +1,94 @@
+{
+ "id": "BE",
+ "paperTitle": "해양 객체 클래스 순차적 학습에서 학습 성능 및 망각 현상 분석",
+ "paperTitleEn": "Comparative Analysis of Maritime Class-Incremental Object Detection",
+ "authorsInText": [],
+ "venueHeader": "논문 20**-**-*-* (수정할 필요 없음)",
+ "planDelta": "",
+ "keyNumbers": [
+  "기반 클래스 평균 AP(표 3): SeaDronesSee Base 0.5210 → Sequential Fine-tuning Task 1 0.0005·Task 2~3 0.0000 vs YOLO-IOD 0.5050·0.5055·0.4920(유지율 94.4~97.0%); ABOships-PLUS 0.3895 → Fine-tuning 0.0000 vs YOLO-IOD 0.3775·0.3600(92.4~96.9%)",
+  "신규 클래스 AP(표 4, Fine-tuning vs YOLO-IOD): jetski 0.485/0.529(+4.4%p), swimmer 0.281/0.288, life_saving_appliances 0.067/0.077, sailboat 0.399/0.413, stationary 0.319/0.322 — 5단계 모두 YOLO-IOD 우위(0.3~4.4%p)",
+  "epoch별 망각(표 5, SeaDronesSee Task 1 Fine-tuning): boat 0.680 → Epoch 1 0.073 → Epoch 5 0.001; jetski 0.047 → 0.469 → 0.485",
+  "데이터·설정: SeaDronesSee 학습 8,930·검증 1,547장(5클래스), ABOships-PLUS 5,866·1,267장(4클래스); YOLO-World-X+CLIP ViT-B/32, 640×640, 배치 2, AdamW 2×10^-4·weight decay 0.05, 기반 20 epoch·단계별 student 5 epoch·teacher 20 epoch, COCO AP[0.5:0.95], 단일 시드"
+ ],
+ "summary": "군 해양 감시처럼 과거 학습 데이터를 다시 쓰기 어려운 조건에서 신규 객체 클래스를 단계적으로 추가할 때, 지식 보존 장치가 없는 Sequential Fine-tuning 과 YOLO-World 기반 증분 객체 탐지 방법 YOLO-IOD(기존 클래스 pseudo-label, 기존·신규 teacher 의 knowledge distillation, IKS 선택적 커널 갱신)의 기존 클래스 유지(안정성)와 신규 클래스 학습(가소성)을 비교·분석한 원고다. SeaDronesSee(boat·buoy → jetski → swimmer → life_saving_appliances)와 ABOships-PLUS(ship·powerboat → sailboat → stationary)로 다섯 개의 순차 학습 단계를 만들고 같은 Task 0 모델·같은 평가 조건에서 기반 클래스 평균 AP 와 신규 클래스 AP 를 비교했다. Fine-tuning 은 첫 단계부터 기반 클래스 AP 가 0.5210→0.0005, 0.3895→0.0000 으로 무너진 반면 YOLO-IOD 는 92.4~97.0% 를 유지했고 다섯 신규 클래스 모두에서 0.3~4.4%p 높았으며, epoch 별 분석(표 5)에서 Fine-tuning 의 boat AP 가 첫 epoch 에 0.680→0.073 으로 떨어지는 것을 보였다. 새 방법 제안 없이 기존 방법의 해양 적용·비교 분석이며, 두 방법의 검출 head·optimizer 상태 차이 때문에 ablation 이 아니라고 스스로 한정하고 단일 시드임을 밝혔다.",
+ "strengths": "서론에서 던진 두 질문(순차 Fine-tuning 의 망각 정도, YOLO-IOD 의 안정성·가소성 동시 확보 여부)을 표 3·4·5 가 순서대로 답하고, 초록·본문·결론의 대표 수치(92.4~97.0%, 다섯 단계 모두 우위)가 일치한다. 두 데이터셋·다섯 단계를 같은 기반 모델과 같은 전처리·confidence threshold·NMS·AP 조건으로 비교하고(Ⅲ장 4절), ΔAP_base·R_base 지표를 식 (3)·(4)로 정의했으며, epoch 별 AP 추적(표 5)으로 망각이 첫 epoch 에 거의 끝난다는 동역학을 보인 점이 단순 최종 수치 비교보다 낫다. 구현 조건 차이(검출 head·optimizer 상태)와 단일 시드를 숨기지 않고 'ablation 이 아님'을 명시해 해석의 범위를 정직하게 좁혔다.",
+ "fixes": [
+  "같은 저자의 정보기술학회판(BI)과의 관계를 정리한다: BE 의 YOLO-IOD 수치(기반 평균 AP 0.5210→0.5050/0.5055/0.4920, 0.3895→0.3775/0.3600, 신규 AP 0.529/0.288/0.077/0.413/0.322)가 BI 표 4·5·7 과 같은 실험이므로 BI 를 선행 결과로 인용하고 BE 의 기여를 Sequential Fine-tuning 대조군과 epoch 별 망각 분석으로 한정해 서술하거나, 두 원고를 하나로 합친다",
+  "표 3 '감소' 열을 표의 AP 로 다시 계산해 맞추고(52.15→52.10, 1.60→1.55, 2.95→2.90, 39.00→38.95, 1.25→1.20%p; BI 는 2.90%p 로 적음), 식 (4)의 R_base 를 표에 넣고, 본문에만 나오는 'GPS 보정' 을 정의하며, YOLO-IOD 의 pseudo-label 신뢰도 임곗값·KD 가중치·IKS 선택 비율·GPU·학습 시간과 Fine-tuning 의 클래스별 AP(boat·buoy·ship·powerboat)를 표로 보강한다",
+  "비교의 공정성을 높인다: Fine-tuning 도 같은 검출 head·optimizer 상태로 맞추고 낮은 학습률·백본 동결 같은 최소한의 완화 변형을 함께 두며, Joint Training 상한과 KD 만 쓰는 IOD 기준선(LwF 계열) 하나를 추가하고, 시드 3개 이상으로 평균·표준편차를 보고한 뒤 pseudo-label·KD·IKS 를 하나씩 뺀 ablation 으로 유지율 94.4% 의 기여 요인을 가린다"
+ ],
+ "flags": [
+  {
+   "level": "high",
+   "text": "중복게재 위험(BI 와 같은 실험): 같은 저자가 한국정보기술학회 추계 학술대회에 낸 BI('YOLO 기반 Incremental Object Detection 을 활용한 해양 감시 객체의 지속적 학습 및 기존 객체 망각 방지 연구')와 데이터(SeaDronesSee 8,930/1,547장, ABOships-PLUS 5,866/1,267장, 같은 클래스 순서), 구현 설정(YOLO-World-X, CLIP ViT-B/32, 640×640, 배치 2, AdamW 2×10^-4, weight decay 0.05, 20/5/20 epoch), YOLO-IOD 의 모든 결과 수치(BE 표 3 의 0.5050·0.5055·0.4920·0.3775·0.3600 은 BI 표 4·5 클래스별 AP 의 평균과 정확히 일치, BE 표 4 의 0.529·0.288·0.077·0.413·0.322 는 BI 표 7 '도입 직후 student model AP' 와 동일)가 같고 서론 첫 문단·관련 연구·문제 정의 문장이 거의 그대로인데 상호 인용이 없다. BE 에만 있는 것은 Sequential Fine-tuning 대조군(표 3·4 의 FT 열)과 epoch 별 분석(표 5)이고, BI 에만 있는 것은 클래스별 단계 표·teacher 대비 비율·평가 조건 주의 사항이다. 전자공학회 특별호 심사에서 BI 를 선행 발표로 밝히고 BE 의 기여를 비교·분석으로 한정해야 한다."
+  },
+  {
+   "level": "mid",
+   "text": "표 3 감소폭의 산술 불일치: 표의 AP 로 계산하면 SeaDronesSee Task 2·3 Fine-tuning 은 52.10%p(표 52.15), Task 2 YOLO-IOD 는 1.55%p(표 1.60), Task 3 YOLO-IOD 는 2.90%p(표 2.95; BI 표 6 은 2.90%p), ABOships-PLUS Task 1 Fine-tuning 은 38.95%p(표 39.00), YOLO-IOD 는 1.20%p(표 1.25)다. 식 (4)로 정의한 유지율 R_base 는 표에 없고 본문에 '94.4~97.0%' 로만 나오며, Ⅲ장 2절의 'GPS 보정 과정' 은 원고 어디에도 정의되지 않았다(BI 는 '경사 보정 과정' 이라 적음)."
+  },
+  {
+   "level": "mid",
+   "text": "비교의 공정성·범위: Fine-tuning 대조군은 기존 클래스 AP 가 두 데이터셋 모두 0.0000 까지 무너지는 가장 약한 기준선이고, 원고 스스로 검출 head 구조·optimizer 상태(YOLO-IOD 는 보정 단계의 optimizer 상태를 유지, Fine-tuning 은 초기화)가 다르다고 밝혀 YOLO-IOD 의 우위를 지식 보존 기법의 효과로 귀속할 수 없다. Joint Training 상한, 다른 IOD 방법, 구성요소 ablation, 반복 실험이 없어(Ⅲ장 4절 '단일 시드') 신규 클래스 AP 차이 0.3~1.0%p 는 잡음 범위일 수 있다."
+  },
+  {
+   "level": "mid",
+   "text": "재현 정보 부족: YOLO-IOD 의 pseudo-label 신뢰도 임곗값, KD 손실 가중치, IKS 커널 선택 비율, 학습률 스케줄·데이터 증강, GPU·학습 시간이 없고(BI 는 신뢰도 0.1·IoU 0.5·백본 배율 0.1·RTX 5070 Laptop 을 적음) Fine-tuning 의 클래스별 AP 는 표 5 의 boat 외에 제시되지 않아 Task 0 의 buoy·ship·powerboat 개별 AP 를 알 수 없다. 같은 이미지가 여러 단계에서 재사용되는지(BI 는 허용한다고 명시)도 BE 에는 없다."
+  },
+  {
+   "level": "mid",
+   "text": "양식: 저자·소속·사사가 없는 블라인드 형태이며 머리글 '논문 20**-**-*-* (수정할 필요 없음)' 템플릿 지시문이 남아 있다. 같은 특별호에 내는 다른 원고(SF 등)는 저자를 채운 완성본이므로 투고처가 요구하는 판형을 확인해야 한다. AP[0.5:0.95] 를 쓰면서 본문·초록의 비교는 모두 AP 로만 적어 mAP50 과 혼동할 여지가 있다."
+  }
+ ],
+ "refCount": 10,
+ "overlap": "BI(같은 저자 백지훈 외 3인, 한국정보기술학회 추계 학술대회, 'YOLO 기반 Incremental Object Detection 을 활용한 해양 감시 객체의 지속적 학습 및 기존 객체 망각 방지 연구')와 같은 실험을 공유하는 자매 원고다. 공유: SeaDronesSee(8,930/1,547장, boat·buoy → jetski → swimmer → life_saving_appliances)·ABOships-PLUS(5,866/1,267장, ship·powerboat → sailboat → stationary) 데이터와 단계 구성, YOLO-World-X·CLIP ViT-B/32·640×640·배치 2·AdamW 2×10^-4·weight decay 0.05·기반 20 epoch·단계별 5 epoch·teacher 20 epoch 설정, YOLO-IOD 결과 전부(BE 표 3 기반 평균 AP 0.5210→0.5050/0.5055/0.4920 과 0.3895→0.3775/0.3600 은 BI 표 4·5 클래스별 AP 의 평균, BE 표 4 신규 AP 0.529/0.288/0.077/0.413/0.322 는 BI 표 7 의 도입 직후 student AP 와 동일, BI 표 6 의 감소폭 2.90/2.95%p), 서론 첫 문단('해양 감시 환경에서는 기존 학습 데이터에 포함되지 않은 새로운 형상의 선박, 소형 표적 및 특이 객체 등이 …')과 군 환경 데이터 제약·missing annotation 문장, 참고문헌 9편(Shmelkov, Menezes, Cermelli, YOLO-World, YOLO-IOD, SeaDronesSee, ABOships-PLUS, COCO, CLIP). BE 에만 있는 것: Sequential Fine-tuning 대조군과 그 수치(기반 평균 0.0005/0.0000, 신규 AP 0.485/0.281/0.067/0.399/0.319), epoch 별 AP 표 5, ΔAP_base·R_base 식, 안정성·가소성 틀, LwF[1] 인용. BI 에만 있는 것: 클래스별 단계 표(표 4·5)와 mAP50, 신규 클래스 학습 규모 표 2, teacher 대비 student 비율 표 7, pseudo-label 임곗값·IoU 제외 규칙·KD 식·학습률 스케줄·증강·GPU, 동일 이미지 재사용·평가 어휘 변화 등 평가 조건 주의 사항, 미지 클래스 헤드 설명. 상호 인용은 없다. 같은 저자가 공저자로 든 팀 원고 SF·SD(비레이블 열화상 다중 객체 추적·탐지의 소스 프리 도메인 적응, Faster R-CNN·CAMEL/LLVIP·KAIST)와는 주제·데이터·방법이 전혀 달라 중복이 없다. 계획서는 없다.",
+ "evidenceQuotes": [
+  "실험 결과, YOLO-IOD는 초기 클래스의 탐지 성능을 약 92.4~97.0% 유지하였으며, 다섯 개의 순차적 학습 단계 모두에서 Fine-tuning보다 높은 신규 클래스 AP를 기록하였다.",
+  "SeaDronesSee에서 Sequential Fine-tuning은 첫 번째 신규 클래스 학습 이후 기반 클래스 평균 AP가 0.5210에서 0.0005로 급격히 감소하였으며, 이후 학습 단계에서는 0.0000을 기록하였다.",
+  "두 방법은 동일한 학습 데이터와 평가 조건을 사용하였으나, 검출 head 구조와 optimizer 상태 등 일부 구현 조건에는 차이가 존재한다.",
+  "각 실험은 단일 시드로 수행하였으며, 반복 실험에 따른 성능 편차는 측정하지 않았다.",
+  "실험 결과, 기존 클래스인 boat의 AP는 학습 전 0.680에서 첫 번째 epoch 이후 0.073으로 급격히 감소하였으며, 5 epoch 학습 이후에는 0.001까지 감소하였다."
+ ],
+ "rubric": {
+  "technical": {
+   "sub": {
+    "validity": 0.7,
+    "sustainability": 0.6,
+    "understanding": 0.65
+   },
+   "score": 0.65,
+   "why": "타당성 0.70: 과거 데이터 재사용이 제한되는 군 해양 감시라는 과제 조건에서 신규 클래스 정답만으로 학습하는 CIOD 설정과 YOLO-World 기반 YOLO-IOD 를 고른 근거가 서 있고(Ⅰ장, Ⅱ장 2절 가), 두 데이터셋·다섯 단계에서 구현·실험으로 확인했지만(표 3·4) 다른 IOD 방법 대비 YOLO-IOD 를 택한 이유는 'YOLO 기반' 이라는 일반론이고 대조군은 head·optimizer 조건이 다른 가장 약한 Fine-tuning 이다. 지속가능성 0.60: 공개 데이터 오프라인 검증까지 했고 기존 정답 미사용이라는 운용 제약은 설계에 반영했으나, 단계마다 teacher 20 epoch 를 따로 학습하는 비용·GPU·추론 속도·실제 감시 영상 조건은 다루지 않았고 life_saving_appliances AP 0.077 같은 저성능 클래스의 운용 가능성도 논의가 없다. 이해도 0.65: 누락 주석이 배경으로 학습돼 망각이 심화되는 기제(Ⅱ장 1절 가), YOLO-IOD 의 pseudo-label·이중 teacher KD·IKS 역할, 안정성·가소성 틀을 바르게 설명하고 epoch 별 AP(표 5)로 망각이 첫 epoch 에 거의 완료됨을 분석했으며 구현 조건 차이로 'ablation 이 아님' 을 스스로 밝혔지만, 하이퍼파라미터 선택 근거·KD 식·pseudo-label 임곗값이 없고 'GPS 보정' 은 정의되지 않았으며 구성요소별 분석은 없다."
+  },
+  "innovation": {
+   "sub": {
+    "novelty": 0.4,
+    "valueProp": 0.55,
+    "creativeUse": 0.5
+   },
+   "score": 0.48,
+   "why": "참신성 0.40: 새 방법·구조 제안 없이 기존 YOLO-IOD[6]를 해양 데이터에 적용해 순차 Fine-tuning 과 비교한 벤치마크·분석 원고다(제목·Ⅰ장 마지막 문단). 해양 CIOD 설정과 epoch 별 망각 동역학 분석은 작은 보탬이지만 YOLO-IOD 결과 자체는 BI 와 같은 실험이다. 가치제안 0.55: Sequential Fine-tuning 대비 기반 클래스 유지율(92.4~97.0% vs 0%)과 신규 AP 차이(+0.3~4.4%p)를 두 데이터셋에서 정량으로 보였으나, 비교 대상이 가장 단순한 기준선 하나뿐이고 Joint Training 상한·다른 IOD 방법·상용 해양 감시 솔루션과의 차이는 제시하지 않았다. 창의적 활용 0.50: YOLO-IOD 를 변형 없이 표준대로 적용했고, 과제에 맞춘 조정은 클래스 순서·단계 구성과 ΔAP_base·R_base 지표 정의 정도다."
+  },
+  "structure": {
+   "sub": {
+    "flow": 0.65,
+    "dataDriven": 0.6,
+    "market": 0.55
+   },
+   "score": 0.6,
+   "why": "흐름 0.65: 서론의 두 질문 → 문제 정의(식 1) → 두 방법 → 지표(식 2~4) → 표 3·4·5 → 결론으로 이어지고 제목·초록·본문 범위와 대표 수치(92.4~97.0%, 다섯 단계 우위, 0.5210→0.0005)가 일치하지만, 표 3 감소 열 10칸 중 5칸이 표의 AP 로 계산한 값과 0.05%p 어긋나고(2.95 vs 2.90 등) R_base 는 정의만 있고 표에 없으며 'GPS 보정' 이 미정의, 머리글 템플릿 지시문이 남아 있다. 데이터 근거 0.60: 두 데이터셋·다섯 단계·같은 기반 모델·같은 평가 조건(전처리·threshold·NMS)과 주요 설정(해상도·배치·AdamW·학습률·weight decay·epoch)을 적어 큰 틀은 재현 가능하나, 단일 시드·분산 없음을 명시했고 신뢰구간·검정이 없으며 pseudo-label 임곗값·KD 가중치·IKS 비율·GPU·증강이 빠져 YOLO-IOD 쪽 재현은 [6]에 의존하고 Fine-tuning 의 클래스별 AP 는 boat 만 있다. 사업성 0.55: 적용 대상(과거 데이터 접근이 제한되는 군 해양 감시의 탐지 모델 갱신)과 기대 효과(기존 탐지 능력 유지하며 신규 객체 추가)는 분명하지만 갱신 절차·필요 자원·현장 검증 경로가 없고 결론의 확장 계획(반복 실험·ablation·Joint Training·독립 평가셋)은 연구 과제 수준이다."
+  },
+  "presentation": {
+   "sub": {
+    "clarity": 0.5,
+    "timing": 0.5,
+    "qa": 0.5
+   },
+   "score": 0.5,
+   "why": "발표 전 미평가(자리값). clarity 0.5·timing 0.5·qa 0.5 는 자리값이며 발표 후 교체한다."
+  },
+  "total": 57.8,
+  "evaluatedAt": "2026-10-16"
+ },
+ "evaluatedAt": "2026-10-16",
+ "textSha": "2ce5e9a10483cf48"
+}

@@ -181,7 +181,7 @@
  },
  {
   "id": "HB",
-  "driveKey": "3f5e8740bbbeacbd",
+  "driveKey": "da13fdf8b501ab9e",
   "track": "personal",
   "authors": [
    "강줄기",
@@ -193,17 +193,17 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "강줄기_트래픽정량화_대한정보공학회_정규논문.hwpx",
-   "createdTime": "2026-10-01T14:45:41.423Z",
-   "modifiedTime": "2026-10-01T14:45:35.182Z",
+   "title": "강줄기_프로덕션 규모 트랜스포머 추론에서 서브레이어 간직접 전달로 제거 가능한 HBM 트래픽의 정량화_대한정보공학회_정규논문.hwpx",
+   "createdTime": "2026-10-16T13:40:43.343Z",
+   "modifiedTime": "2026-10-16T13:38:55.888Z",
    "fileSize": "296891"
   },
-  "status": "unchanged",
+  "status": "updated",
   "textSha": "272c2b81da686a75"
  },
  {
   "id": "AD",
-  "driveKey": "c3e3ad1b47b67d92",
+  "driveKey": "d6a759d29e1299e3",
   "track": "personal",
   "authors": [
    "강줄기",
@@ -215,12 +215,12 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "강줄기_사전실행제약_대한정보공학회.hwpx",
-   "createdTime": "2026-10-01T14:45:17.583Z",
-   "modifiedTime": "2026-10-01T14:44:43.812Z",
+   "title": "강줄기_에이전트형 AI를 위한 실행 전 제약 실현 허용성과 구조적 허용성_대한정보공학회.hwpx",
+   "createdTime": "2026-10-16T13:40:43.386Z",
+   "modifiedTime": "2026-10-16T13:38:50.106Z",
    "fileSize": "231256"
   },
-  "status": "unchanged",
+  "status": "updated",
   "textSha": "764cf426aecefd30"
  },
  {
@@ -257,12 +257,12 @@
   "venueName": "정보기술학회",
   "folder": "정보기술학회 개인논문",
   "file": {
-   "title": "(서보윤)TICN_백본_노드_파괴에_대한_AI_기반_장애_판별_및_자율복구_방법.hwpx",
+   "title": "(서보윤)TICN 백본 노드 파괴에 대한 AI 기반 장애 판별 및 자율복구 방법.hwpx",
    "createdTime": "2026-10-01T05:29:31.678Z",
-   "modifiedTime": "2026-10-01T05:29:13.749Z",
+   "modifiedTime": "2026-10-15T00:33:39.473Z",
    "fileSize": "290171"
   },
-  "status": "unchanged",
+  "status": "updated",
   "textSha": "50c0dce7de95bb66"
  },
  {
@@ -309,7 +309,7 @@
  },
  {
   "id": "DC",
-  "driveKey": "ab8c2c7dace4f798",
+  "driveKey": "f646120fe866bc35",
   "track": "personal",
   "authors": [
    "강줄기",
@@ -321,12 +321,12 @@
   "venueName": "정보기술학회",
   "folder": "정보기술학회 개인논문",
   "file": {
-   "title": "강줄기_한국정보기술학회지.hwp",
-   "createdTime": "2026-10-01T14:46:33.869Z",
-   "modifiedTime": "2026-10-01T14:46:20.467Z",
+   "title": "강줄기_행위는 관측이 아니다_자율시스템에서 행위 성립의 경계사건으로서의 선언.hwp",
+   "createdTime": "2026-10-16T13:42:34.813Z",
+   "modifiedTime": "2026-10-16T13:41:27.701Z",
    "fileSize": "160256"
   },
-  "status": "unchanged",
+  "status": "updated",
   "textSha": "92221aa32c887ead"
  },
  {
@@ -558,12 +558,12 @@
   "venueName": "국방기술학회",
   "folder": "국방기술학회 팀논문",
   "file": {
-   "title": "2026 한국국방기술학회 팀 4조.hwpx",
+   "title": "[4조]무인기 영상 기반 전차 부품 손상 데이터셋 구축.hwpx",
    "createdTime": "2026-10-01T05:24:12.618Z",
-   "modifiedTime": "2026-10-01T05:21:41.722Z",
+   "modifiedTime": "2026-10-16T10:52:14.380Z",
    "fileSize": "3352866"
   },
-  "status": "unchanged",
+  "status": "updated",
   "textSha": "6e9e3c419905600b",
   "team": "4조"
  },
@@ -641,7 +641,7 @@
    "modifiedTime": "2026-10-03T04:02:55.934Z",
    "fileSize": "653149"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "efe23ab4ddd3cf4b",
   "team": "핵심5 5조",
   "folderSub": "핵심5"
@@ -712,7 +712,7 @@
    "modifiedTime": "2026-10-03T01:56:09.952Z",
    "fileSize": "7228416"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "cc4cd1547f41543b",
   "team": "5조"
  },
@@ -863,7 +863,7 @@
    "modifiedTime": "2026-10-02T09:43:57.413Z",
    "fileSize": "1916875"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "72768c1b9b03eb9c",
   "team": "1조"
  },
@@ -885,7 +885,7 @@
    "modifiedTime": "2026-10-06T01:55:10.064Z",
    "fileSize": "615256"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "dc389271f67dd3bd",
   "folderSub": "핵심5"
  },
@@ -907,7 +907,7 @@
    "modifiedTime": "2026-10-02T12:57:34.507Z",
    "fileSize": "460624"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "43391acdf1bc60f5",
   "folderSub": "핵심5"
  },
@@ -931,7 +931,7 @@
    "modifiedTime": "2026-10-05T10:06:49.140Z",
    "fileSize": "10665969"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "cf54542608568d45",
   "team": "핵심5 보라매",
   "folderSub": "핵심5"
@@ -954,7 +954,7 @@
    "modifiedTime": "2026-10-05T10:11:55.493Z",
    "fileSize": "5204223"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "f688abee17a70e5a",
   "folderSub": "핵심5",
   "note": "핵심5 팀 폴더에 올라온 1인(학생 저자) 원고라 개인논문으로 분류"
@@ -977,9 +977,648 @@
    "modifiedTime": "2026-09-27T12:43:29.945Z",
    "fileSize": "678906"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "a330a292d8edd92b",
   "team": "핵심5 2조",
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "JI",
+  "driveKey": "ecd8b7aa4f3eddb0",
+  "track": "personal",
+  "authors": [
+   "전누리"
+  ],
+  "projectId": "P205",
+  "projectMatch": "related",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "(한국정보기술학회)합동연합화력_AI의사결정지원_전누리.hwp",
+   "createdTime": "2026-10-16T04:29:17.033Z",
+   "modifiedTime": "2026-10-16T11:36:19.034Z",
+   "fileSize": "646656"
+  },
+  "status": "new",
+  "textSha": "91551a797e647a2d"
+ },
+ {
+  "id": "JA",
+  "driveKey": "c00bb80853e5a82f",
+  "track": "personal",
+  "authors": [
+   "전누리"
+  ],
+  "projectId": "P205",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "합동·연합화력 협조를 위한AI 의사결정지원 모델 JAIOS의 설계 및 검증.hwp",
+   "createdTime": "2026-10-16T12:35:13.985Z",
+   "modifiedTime": "2026-10-16T12:24:23.939Z",
+   "fileSize": "2301952"
+  },
+  "status": "new",
+  "textSha": "13d4023ed2356726"
+ },
+ {
+  "id": "CD",
+  "driveKey": "f979aafda0fa90e1",
+  "track": "personal",
+  "authors": [
+   "임철희"
+  ],
+  "projectId": "P222",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "[임철희] 2026 대한전자공학회 저널 논문(합성 전차 부품 변화탐지의 강건성 평가)(최종).hwpx",
+   "createdTime": "2026-10-16T11:39:40.638Z",
+   "modifiedTime": "2026-10-16T11:38:50.119Z",
+   "fileSize": "3606341"
+  },
+  "status": "new",
+  "textSha": "2c3160284abeaa47"
+ },
+ {
+  "id": "PA",
+  "driveKey": "ec25104441e72025",
+  "track": "personal",
+  "authors": [
+   "김민균"
+  ],
+  "projectId": "P208",
+  "projectMatch": "related",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "[김민균]위상–진폭 히스토그램 바닥 대역 정렬과 PRPD Few-Shot 적응을 결합한 미학습 전력설비의 부분방전 탐지 및 종류 판별 개선.hwp",
+   "createdTime": "2026-10-16T01:38:44.605Z",
+   "modifiedTime": "2026-10-16T01:38:07.483Z",
+   "fileSize": "456192"
+  },
+  "status": "new",
+  "textSha": "bbec085a4265fd4a"
+ },
+ {
+  "id": "CT",
+  "driveKey": "ad5ec7cf4098c7ae",
+  "track": "personal",
+  "authors": [
+   "남하늘"
+  ],
+  "projectId": "P209",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "남하늘_LLM 행동 인식과 규칙 기반 상태 전이를 결합한 적응형 사이버 대응 훈련 시스템_대한정보공학회.hwp",
+   "createdTime": "2026-10-16T02:03:06.830Z",
+   "modifiedTime": "2026-10-16T02:02:18.821Z",
+   "fileSize": "595968"
+  },
+  "status": "new",
+  "textSha": "72ccc1b492b7d616"
+ },
+ {
+  "id": "KD",
+  "driveKey": "7b41b102aaef7dd5",
+  "track": "personal",
+  "authors": [
+   "김두환"
+  ],
+  "projectId": "P203",
+  "projectMatch": "related",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "김두환_한국정보기술학회지.hwp",
+   "createdTime": "2026-10-16T00:41:58.709Z",
+   "modifiedTime": "2026-10-16T00:38:49.764Z",
+   "fileSize": "661504"
+  },
+  "status": "new",
+  "textSha": "30064575f144959f"
+ },
+ {
+  "id": "PB",
+  "driveKey": "8c829512c52bd17f",
+  "track": "team",
+  "authors": [
+   "김민균",
+   "임철희",
+   "전누리",
+   "이강희"
+  ],
+  "projectId": "P104",
+  "projectMatch": "related",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 팀논문",
+  "file": {
+   "title": "[4조] PartBDA 무인기 영상 기반 장갑차량의 부품 인지형 전투피해평가.hwp",
+   "createdTime": "2026-10-16T00:14:10.027Z",
+   "modifiedTime": "2026-10-16T00:11:57.109Z",
+   "fileSize": "9318912"
+  },
+  "status": "new",
+  "textSha": "952929280e630777",
+  "team": "4조"
+ },
+ {
+  "id": "BE",
+  "driveKey": "c50deda28bd7037f",
+  "track": "personal",
+  "authors": [
+   "백지훈"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "백지훈_전자공학회논문지_최종본.pdf",
+   "createdTime": "2026-10-16T00:24:25.498Z",
+   "modifiedTime": "2026-10-16T00:23:20.498Z",
+   "fileSize": "638755"
+  },
+  "status": "new",
+  "textSha": "2ce5e9a10483cf48"
+ },
+ {
+  "id": "BI",
+  "driveKey": "cca34006a109c5de",
+  "track": "personal",
+  "authors": [
+   "백지훈"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "백지훈_한국정보기술학회_최종본.pdf",
+   "createdTime": "2026-10-16T00:24:37.137Z",
+   "modifiedTime": "2026-10-16T00:24:03.617Z",
+   "fileSize": "293932"
+  },
+  "status": "new",
+  "textSha": "6b279dcf4963ab5e"
+ },
+ {
+  "id": "RJ",
+  "driveKey": "9602948b47208cab",
+  "track": "personal",
+  "authors": [
+   "라경주"
+  ],
+  "projectId": "P219",
+  "projectMatch": "same",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "라경주_정보기술학회_RAG와 로컬 LLM을 이용한 자연어 명령 기반 HWPX 보고서 서식·표 편집 시스템 설계.hwpx",
+   "createdTime": "2026-10-15T23:00:37.228Z",
+   "modifiedTime": "2026-10-15T22:52:53.985Z",
+   "fileSize": "251900"
+  },
+  "status": "new",
+  "textSha": "ab90bcce550dece4"
+ },
+ {
+  "id": "RH",
+  "driveKey": "da77b2234f874c53",
+  "track": "personal",
+  "authors": [
+   "라경주"
+  ],
+  "projectId": "P219",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "라경주_저널_RAG와 로컬 LLM을 이용한 자연어 명령 기반 HWPX 보고서 서식·표 편집.hwp",
+   "createdTime": "2026-10-15T23:05:26.998Z",
+   "modifiedTime": "2026-10-15T22:43:23.952Z",
+   "fileSize": "402432"
+  },
+  "status": "new",
+  "textSha": "912a41b8a8d64f68"
+ },
+ {
+  "id": "GM",
+  "driveKey": "38231d11cfb82b6a",
+  "track": "personal",
+  "authors": [
+   "김혜인"
+  ],
+  "projectId": "P218",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "김혜인_GC-MS 스펙트럼 기반 CWC 관련 물질 분자 구조 예측(전자).hwp",
+   "createdTime": "2026-10-15T04:41:36.102Z",
+   "modifiedTime": "2026-10-15T04:39:54.364Z",
+   "fileSize": "2020352"
+  },
+  "status": "new",
+  "textSha": "52bc68283a07c4dd"
+ },
+ {
+  "id": "CW",
+  "driveKey": "8868eea61991913a",
+  "track": "personal",
+  "authors": [
+   "김혜인"
+  ],
+  "projectId": "P218",
+  "projectMatch": "same",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "김혜인_딥러닝을 활용한 CWC 관련 미지화합물 식별 방법론 연구(정보).hwp",
+   "createdTime": "2026-10-15T04:41:12.323Z",
+   "modifiedTime": "2026-10-15T04:06:38.348Z",
+   "fileSize": "711168"
+  },
+  "status": "new",
+  "textSha": "4c62f22e6c150b95"
+ },
+ {
+  "id": "HR",
+  "driveKey": "494638a10629b149",
+  "track": "personal",
+  "authors": [
+   "임철희"
+  ],
+  "projectId": "P222",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "[임철희] 2026 대한전자공학회 저널 논문(홀로그래픽 레이더 지뢰 인식의 미지환경 일반화 분석)(최종).hwpx",
+   "createdTime": "2026-10-15T02:04:13.907Z",
+   "modifiedTime": "2026-10-15T01:45:08.909Z",
+   "fileSize": "2120595"
+  },
+  "status": "new",
+  "textSha": "4c7f4dbe620dea6f"
+ },
+ {
+  "id": "ST",
+  "driveKey": "3b23a74d1198ae21",
+  "track": "personal",
+  "authors": [
+   "김영수"
+  ],
+  "projectId": "P213",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "김영수_전자공학회_반복생성 불일치도를 활용한 합성 지형 텍스처의 검토 우선순위 결정.hwpx",
+   "createdTime": "2026-10-14T23:56:25.336Z",
+   "modifiedTime": "2026-10-14T23:54:26.293Z",
+   "fileSize": "1437664"
+  },
+  "status": "new",
+  "textSha": "226b9875287b1083"
+ },
+ {
+  "id": "LC",
+  "driveKey": "6233cbc584562655",
+  "track": "personal",
+  "authors": [
+   "박규민"
+  ],
+  "projectId": "P212",
+  "projectMatch": "same",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "박규민_물리모델 기반 통신·거리 균형 경로 추천을 위한 Learning-to-Rank 모델 비교.hwp",
+   "createdTime": "2026-10-14T23:47:34.146Z",
+   "modifiedTime": "2026-10-14T23:46:11.883Z",
+   "fileSize": "134144"
+  },
+  "status": "new",
+  "textSha": "6262aab02da1d8fd"
+ },
+ {
+  "id": "LT",
+  "driveKey": "f87ab7f717a7a16a",
+  "track": "personal",
+  "authors": [
+   "박규민"
+  ],
+  "projectId": "P212",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "박규민_물리모델 기반 Learning-to-Rank를 활용한 통신·거리 균형 전술 기동로 추천 연구(최종).hwp",
+   "createdTime": "2026-10-15T02:05:19.200Z",
+   "modifiedTime": "2026-10-15T00:01:49.987Z",
+   "fileSize": "285184"
+  },
+  "status": "new",
+  "textSha": "66387332e3965fa3"
+ },
+ {
+  "id": "SI",
+  "driveKey": "afb10d3fe361ff62",
+  "track": "personal",
+  "authors": [
+   "김영수"
+  ],
+  "projectId": "P213",
+  "projectMatch": "different",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "김영수_한국정보기술학회_반복생성 불일치도를 활용한 합성 지형 텍스처의 검토 우선순위 결정.hwpx",
+   "createdTime": "2026-10-14T23:56:44.030Z",
+   "modifiedTime": "2026-10-14T23:55:13.181Z",
+   "fileSize": "80867"
+  },
+  "status": "new",
+  "textSha": "c5c08ea28e5a3bf5"
+ },
+ {
+  "id": "RA",
+  "driveKey": "80ea95dd75ce8bce",
+  "track": "personal",
+  "authors": [
+   "이민우"
+  ],
+  "projectId": "P216",
+  "projectMatch": "related",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "[이민우]군 시설 운영비서 구현을 위한 챗봇·RAG·RAG-Agent 방식의 정확도 및 오류율 비교 연구 (항온항습기 점검 평가를 중심으로)_전자공학회(Ver.1).hwp",
+   "createdTime": "2026-10-15T04:50:22.711Z",
+   "modifiedTime": "2026-10-14T06:41:37.734Z",
+   "fileSize": "610304"
+  },
+  "status": "new",
+  "textSha": "4152d7592823ad03"
+ },
+ {
+  "id": "JY",
+  "driveKey": "67f7e7d27f5795bd",
+  "track": "personal",
+  "authors": [
+   "김정윤"
+  ],
+  "projectId": "P215",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "전자공학회_개인논문(김정윤).hwp",
+   "createdTime": "2026-10-14T07:08:27.075Z",
+   "modifiedTime": "2026-10-14T07:07:53.800Z",
+   "fileSize": "796160"
+  },
+  "status": "new",
+  "textSha": "fa79dc43f88da491"
+ },
+ {
+  "id": "MT",
+  "driveKey": "13b525cb5e64683e",
+  "track": "personal",
+  "authors": [
+   "남하늘"
+  ],
+  "projectId": "P209",
+  "projectMatch": "same",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "남하늘_자연어 대응 해석과 MITRE ATT&CK을 결합한 사이버 훈련 시스템 설계_정보기술학회.hwp",
+   "createdTime": "2026-10-14T06:01:28.399Z",
+   "modifiedTime": "2026-10-14T06:00:48.132Z",
+   "fileSize": "387072"
+  },
+  "status": "new",
+  "textSha": "beb21bfcddd50ac3"
+ },
+ {
+  "id": "CR",
+  "driveKey": "50a239470d59e33d",
+  "track": "personal",
+  "authors": [
+   "이민우"
+  ],
+  "projectId": "P216",
+  "projectMatch": "related",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "[이민우]군 시설 점검 지원을 위한 검색 기반 챗봇의 응답 구조 설계_한국정보기술학회(Ver.1).hwp",
+   "createdTime": "2026-10-15T04:49:55.488Z",
+   "modifiedTime": "2026-10-14T06:13:04.751Z",
+   "fileSize": "125952"
+  },
+  "status": "new",
+  "textSha": "30d293b2c12a9e50"
+ },
+ {
+  "id": "FS",
+  "driveKey": "9c3d87362780f08f",
+  "track": "personal",
+  "authors": [
+   "김민균"
+  ],
+  "projectId": "P208",
+  "projectMatch": "related",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "[김민균]Few-Shot 적응을 이용한 미학습 전력설비의 PRPD 기반 부분방전 종류 판별 개선.hwp",
+   "createdTime": "2026-10-13T08:24:20.484Z",
+   "modifiedTime": "2026-10-13T07:40:58.718Z",
+   "fileSize": "140288"
+  },
+  "status": "new",
+  "textSha": "0dc1d5f126081621"
+ },
+ {
+  "id": "JT",
+  "driveKey": "0c211cd41c380e93",
+  "track": "personal",
+  "authors": [
+   "김정윤"
+  ],
+  "projectId": "P215",
+  "projectMatch": "same",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "한국정보기술학회_개인논문(김정윤).hwp",
+   "createdTime": "2026-10-13T03:57:14.489Z",
+   "modifiedTime": "2026-10-13T03:56:44.422Z",
+   "fileSize": "234496"
+  },
+  "status": "new",
+  "textSha": "ed4a13dbff4a2e33"
+ },
+ {
+  "id": "RD",
+  "driveKey": "2d8223bd0a2caddc",
+  "track": "personal",
+  "authors": [
+   "임철희"
+  ],
+  "projectId": "P222",
+  "projectMatch": "different",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "[임철희] 한국정보기술학회지_개인논문(데이터분할에 따른 레이더 지뢰 인식 성능 비교).hwp",
+   "createdTime": "2026-10-13T02:16:41.209Z",
+   "modifiedTime": "2026-10-13T02:06:35.930Z",
+   "fileSize": "492032"
+  },
+  "status": "new",
+  "textSha": "cef4dc8a3ca65172"
+ },
+ {
+  "id": "SJ",
+  "driveKey": "b630c6a61457f204",
+  "track": "personal",
+  "authors": [
+   "김성진"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문 › 핵심5",
+  "file": {
+   "title": "[전자공학회] 김성진(저널).pdf",
+   "createdTime": "2026-10-15T03:03:07.559Z",
+   "modifiedTime": "2026-10-15T03:02:25.156Z",
+   "fileSize": "944617"
+  },
+  "status": "new",
+  "textSha": null,
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "MG",
+  "driveKey": "3bf1f4b3f525e95e",
+  "track": "personal",
+  "authors": [
+   "박명규"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문 › 핵심5",
+  "file": {
+   "title": "구조 소음환경에서 조난자 식별을 위한 clean-noisy 쌍 기반 일관성 학습 화자 식별 최종_박명규 개인정보.pdf",
+   "createdTime": "2026-10-14T05:10:07.110Z",
+   "modifiedTime": "2026-10-14T04:56:48.707Z",
+   "fileSize": "485866"
+  },
+  "status": "new",
+  "textSha": null,
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "BS",
+  "driveKey": "d087394de3c25b70",
+  "track": "personal",
+  "authors": [
+   "반성우"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문 › 핵심5",
+  "file": {
+   "title": "[전자공학회]음성 브리핑 기반 작전명령문 자동 생성_반성우.pdf",
+   "createdTime": "2026-10-13T06:31:43.630Z",
+   "modifiedTime": "2026-10-13T06:23:03.785Z",
+   "fileSize": "556537"
+  },
+  "status": "new",
+  "textSha": null,
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "DH",
+  "driveKey": "71ff5d570bb01e3e",
+  "track": "personal",
+  "authors": [
+   "박동희"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문 › 핵심5",
+  "file": {
+   "title": "전자공학회_저널_페이퍼_특별호_박동희_261012.pdf",
+   "createdTime": "2026-10-12T05:31:17.806Z",
+   "modifiedTime": "2026-10-12T05:23:56.489Z",
+   "fileSize": "1451555"
+  },
+  "status": "new",
+  "textSha": null,
+  "folderSub": "핵심5"
+ },
+ {
+  "id": "SO",
+  "driveKey": "24b9495dd5112f83",
+  "track": "personal",
+  "authors": [
+   "저자 가림(심사용)"
+  ],
+  "projectId": null,
+  "projectMatch": "none",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문 › 핵심5",
+  "file": {
+   "title": "폐쇄망 환경을 위한 로컬 sLLM 기반 국방 보안관제 대응 지침 자동 매핑 및 다중 경보 통합 연구(심사용).pdf",
+   "createdTime": "2026-10-12T00:09:28.491Z",
+   "modifiedTime": "2026-10-12T00:08:32.688Z",
+   "fileSize": "460495"
+  },
+  "status": "new",
+  "textSha": null,
   "folderSub": "핵심5"
  }
 ]

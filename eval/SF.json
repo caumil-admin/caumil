@@ -23,7 +23,7 @@
  "strengths": "MOT 레이블이 위치뿐 아니라 긴 구간의 신원 연결까지 요구해 비싸다는 문제를 tracklet 기반 위치 보완·pseudo identity 생성으로 직접 겨냥했고, 신뢰 tracklet 조건(10프레임 이상·평균 confidence 0.7 이상·15프레임 이내 누락 보완·나머지는 무시 영역)과 임곗값·EMA·최적화·손실 가중치를 구체적으로 밝혀 재현성이 높다. 사람에서는 Frame-wise adaptation 비교군을 두어 mAP50 5.81%p·recall 8.99%p 의 추가 향상을 보였고, 크기별 분석에서 small 객체 이득(차량 IDF1 +26.31%p)과 large 객체 IDF1 감소라는 한계를 함께 보고했다. 31편의 핵심·최신 문헌으로 지도 열화상 MOT·이미지 단위 SFOD 와의 차별점을 분명히 했다.",
  "fixes": [
   "같은 팀 SD 원고와의 관계를 정리: 이중 teacher 프레임 단위 pseudo-label 을 SD 의 결과로 인용·고지하고 SF 의 기여를 tracklet·identity·RGB 관계 증류로 한정하며, Frame-wise adaptation 비교군이 SD 방법인지 명시하고 그대로 겹치는 구현·평가 지표·결론 문장을 다시 쓴다",
-  "제목에 맞게 추적 평가를 보강: 전체 IDF1·MOTA(또는 HOTA)·ID switch 를 사람·차량 표로 제시하고, ThermalTrack[18]·ByteTrack[17]/FairMOT[6] 결합 RGB 모델, SFOD[13-16]·D3T[8] 등과 비교하며, anchor teacher·tracklet 보완·identity loss·RGB 관계 증류를 하나씩 뺀 절제 실험과 시드 반복을 추가한다(현재는 정합 RGB 증류의 효과와 시간적 정보의 효과가 분리되지 않음)",
+  "제목에 맞게 추적 평가를 보강: 전체 IDF1·MOTA(또는 HOTA)·ID switch 를 사람·차량 표로 제시하고, ThermalTrack[18]·ByteTrack[17]/FairMOT[6] 결합 RGB 모델, SFOD[13-16]·D3T[8] 등과 비교하며, anchor teacher·tracklet 보완·identity loss·RGB 관계 증류를 하나씩 뺀 절제 실험과 시드 반복을 추가하고 차량에도 Frame-wise adaptation 비교군을 둔다(현재는 정합 RGB 증류의 효과와 시간적 정보의 효과가 분리되지 않음)",
   "학습에 정합 RGB 영상이 필요하다는 조건을 초록·서론·결론에 명시하고, 표 3 사람 large IDF1(76.35→69.35 는 −7.00, 표·본문은 −6.82)·'+5.334'·서론 recall 45.4%(표 1은 45.51)·'16.925 bounding box' 등 수치와 영문 오탈자(leaverages·adpative·frame-levle·obejct·adaptvie·bouding·pesudo), 교신저자 영문 'Joonki Baek'→'Joonki Paik'·'ROK Marin Corps' 등 저자·소속 표기를 바로잡는다"
  ],
  "flags": [
@@ -57,7 +57,7 @@
   }
  ],
  "refCount": 31,
- "overlap": "SD(같은 5조 7인, 저자 순서만 다름, 국방기술학회, '레이블 없는 열화상 객체 탐지를 위한 소스 프리 도메인 적응', P105 related)와 방법의 뼈대를 공유하는 자매 원고다. 공유: anchor teacher(고정)+adaptive teacher(student EMA) 이중 teacher 의 상보적 pseudo-label 생성(SF Ⅱ장 2절 가 = SD 2.2.1, 같은 초기화 식·EMA 식, 독립 임곗값 후 클래스별 IoU 병합), 하이퍼파라미터(임곗값 0.5/0.7, IoU 0.5, EMA 0.999, SGD 1×10⁻³·momentum 0.9·weight decay 1×10⁻⁴·배치 8·clipping 10.0), COCO Faster R-CNN R50-FPN·단일 채널 3채널 복제, 사사 문단, 참고문헌 15편(SF 31편 중: 열화상 탐지 2, Meta-UDA·D3T, Mean Teacher·Unbiased Teacher, SFOD 4편, Arazo, COCO·Faster R-CNN·ResNet·FPN), 완전 일치 또는 조사·참고문헌 번호만 다른 문장 7개(3채널 복제, 평가 지표 2문장, 검출기 구성, SGD 2문장, 사사)와 서론 문제 제기·관련 연구(확증 편향·EMA)·결론 첫 문장·향후 계획의 바꿔 쓴 문단, 영문 초록의 같은 오타 'leaverages'와 키워드 'Source-free Self-training, Thermal obejct …', 교신저자 영문 오기 'Joonki Baek'. SF에만 있는 것: CAMEL 정합 비디오(사람·차량), 시간적 tracklet pseudo-label 과 pseudo identity(식 3), identity head·memory·정합 RGB 관계 증류(OSNet·ResNet-50, 식 4), association 추론(식 6), Frame-wise adaptation 비교군, IDF1, 표 1~4 의 모든 수치, 6,000 반복·RTX 6000 Ada. SD에만 있는 것: LLVIP·KAIST 열화상 정지영상(사람), 탐지 손실만의 student 학습, out-of-domain(HIT-UAV) 정성 평가, 5,000 반복·RTX 3090. 데이터·실험·수치는 겹치지 않아 SF 는 SD 를 비디오·추적으로 확장한 후속에 해당하지만, SD 의 핵심 기여가 SF 초록에서도 '제안 방법'으로 서술되고 SF 의 Frame-wise adaptation 비교군이 사실상 SD 방법으로 보이는데 두 원고가 서로를 인용·고지하지 않은 채 같은 시기에 투고되므로 중복게재 위험을 high 로 둔다. 참고로 드라이브의 SD 파일명은 SF 와 같은 '…다중 객체 추적을 위한 소스 프리 도메인 적응(국방)'이지만 본문은 탐지 원고다. 계획서 P105(Detection Loss 기반 Modality Translation)와는 RGB 사전학습 검출기의 IR 지식 전이라는 목표만 같고 영상 변환은 두 원고 모두 쓰지 않는다.",
+ "overlap": "SD(같은 5조 7인, 저자 순서만 다름, 국방기술학회, '레이블 없는 열화상 객체 탐지를 위한 소스 프리 도메인 적응', P105 related)와 방법의 뼈대를 공유하는 자매 원고다. 공유: anchor teacher(고정)+adaptive teacher(student EMA) 이중 teacher 의 상보적 pseudo-label 생성(SF Ⅱ장 2절 가 = SD 2.2.1, 같은 초기화 식·EMA 식, 독립 임곗값 후 클래스별 IoU 병합), 하이퍼파라미터(임곗값 0.5/0.7, IoU 0.5, EMA 0.999, SGD 1×10⁻³·momentum 0.9·weight decay 1×10⁻⁴·배치 8·clipping 10.0), COCO Faster R-CNN R50-FPN·단일 채널 3채널 복제, 사사 문단, 참고문헌 15편(SF 31편 중: 열화상 탐지 2, Meta-UDA·D3T, Mean Teacher·Unbiased Teacher, SFOD 4편, Arazo, COCO·Faster R-CNN·ResNet·FPN), 완전 일치 또는 조사·참고문헌 번호만 다른 문장 7개(3채널 복제, 평가 지표 2문장, 검출기 구성, SGD 2문장, 사사)와 서론 문제 제기·관련 연구(확증 편향·EMA)·결론 첫 문장·향후 계획의 바꿔 쓴 문단, 영문 초록의 같은 오타 'leaverages'와 키워드 'Source-free Self-training, Thermal obejct …', 교신저자 영문 오기 'Joonki Baek'. SF에만 있는 것: CAMEL 정합 비디오(사람·차량), 시간적 tracklet pseudo-label 과 pseudo identity(식 3), identity head·memory·정합 RGB 관계 증류(OSNet·ResNet-50, 식 4), association 추론(식 6), Frame-wise adaptation 비교군, IDF1, 표 1~4 의 모든 수치, 6,000 반복·RTX 6000 Ada. SD에만 있는 것: LLVIP·KAIST 열화상 정지영상(사람), 탐지 손실만의 student 학습, out-of-domain(HIT-UAV) 정성 평가, 5,000 반복·RTX 3090. 데이터·실험·수치는 겹치지 않아 SF 는 SD 를 비디오·추적으로 확장한 후속에 해당하지만, SD 의 핵심 기여가 SF 초록에서도 '제안 방법'으로 서술되고 SF 의 Frame-wise adaptation 비교군이 사실상 SD 방법으로 보이는데 두 원고가 서로를 인용·고지하지 않은 채 같은 시기에 투고되므로 중복게재 위험을 high 로 둔다. 참고로 드라이브의 SD 파일명은 SF 와 같은 '…다중 객체 추적을 위한 소스 프리 도메인 적응(국방)'이지만 본문은 탐지 원고다. 계획서 P105(Detection Loss 기반 Modality Translation)와는 RGB 사전학습 검출기의 IR 지식 전이라는 목표만 같고 영상 변환은 두 원고 모두 쓰지 않는다. 같은 저자들의 GM·CW(김혜인, GC-MS 스펙트럼 기반 CWC 물질 구조 예측)와 BE·BI(백지훈, 해양 객체 클래스 증분 학습)는 주제·데이터·수치가 전혀 다르고 저자·소속 표기와 머리글 양식만 공유한다.",
  "evidenceQuotes": [
   "실험 결과, 사람 객체에 대한 mAP는 RGB 사전학습 모델의 48.6%에서 프레임 단위 적응을 적용했을 때 51.4%로 향상되었으며, 제안 방법에서는 57.2%로 향상되었다.",
   "10프레임 이상 지속되고 평균 confidence가 0.7 이상인 tracklet을 신뢰 tracklet으로 선정하였으며, 해당 tracklet의 저신뢰 탐지와 15프레임 이내의 탐지 누락을 보완하여 pseudo-label로 활용하였다.",
@@ -66,6 +66,46 @@
   "Anchor teacher와 adaptive teacher의 신뢰도 임곗값은 각각 0.5와 0.7로 설정하였으며, 두 teacher의 중복 탐지를 판별하기 위한 IoU 임곗값은 0.5, adaptive teacher의 EMA 갱신 계수는 0.999로 설정하였다."
  ],
  "rubric": {
+  "technical": {
+   "sub": {
+    "validity": 0.75,
+    "sustainability": 0.55,
+    "understanding": 0.6
+   },
+   "score": 0.63,
+   "why": "타당성 0.75: 원본 RGB 데이터 재사용 제한과 MOT 레이블(위치+긴 구간 신원) 구축 비용이라는 과제 특성(Ⅰ장 3~4문단)에 맞춰 source-free 자기학습을 택하고, 도메인 차이가 클수록 심해지는 확증 편향(Ⅱ장 1절 나)을 고정 anchor teacher 로 억제한다는 선택 근거가 분명하며, 단일 프레임 pseudo-label 의 한계를 tracklet 으로 메우는 설계(Ⅱ장 2절 나)를 COCO Faster R-CNN R50-FPN 위에 구현해 CAMEL 에서 사람 mAP50 48.57→51.41→57.22, 차량 60.86→67.09 로 확인했다(표 1·2). 다만 검출기·백본 선택 근거는 일반적이고 추적기(식 6 의 Associate)와 tracklet 연결에 쓴 tracker 는 명시되지 않는다. 지속가능성 0.55: 전 과정을 구현해 사람 6개 시퀀스·차량 21,235 box 테스트에서 오프라인 검증했지만, 초록·결론의 '열화상 비디오만을 이용' 과 달리 학습에 정합 RGB 영상과 OSNet·ResNet-50 teacher 가 필요하고(Ⅱ장 2절 다, Ⅲ장 1절), 고정 카메라·336×256 공개 데이터 하나뿐이며 추론 속도·연산량·탑재 장비·재적응 주기 같은 운용 조건이 없어 조건 불명확 수준이다. 이해도 0.60: mean teacher 의 EMA 갱신(식 5)·확증 편향·source-free 정의(Ⅱ장 1절 나)와 anchor/adaptive teacher 역할 분담(Ⅱ장 2절 가)은 올바르게 설명하고 large 객체 IDF1 감소라는 한계(Ⅲ장 4절 라)도 보고했지만, 임곗값 0.5/0.7·IoU 0.5·EMA 0.999·tracklet 조건(10프레임·0.7·15프레임)·손실 가중치 0.25/1.0(Ⅲ장 3절)은 값만 나열하고 근거가 없으며, 구성요소 절제가 없고 large 객체에서 identity 가 왜 나빠졌는지 분석하지 않았다."
+  },
+  "innovation": {
+   "sub": {
+    "novelty": 0.65,
+    "valueProp": 0.5,
+    "creativeUse": 0.65
+   },
+   "score": 0.6,
+   "why": "참신성 0.65: 이미지 단위 SFOD[13-16]와 지도 열화상 MOT[18] 사이의 공백을 짚고(Ⅱ장 1절) source-free 설정을 열화상 다중 객체 추적으로 넓혀, 이중 teacher 의 프레임 pseudo-label 에 tracklet 기반 위치 보완·pseudo identity(식 3)와 정합 RGB 관계 증류(식 4)를 결합한 것은 의미 있는 새 조합이지만, 이중 teacher 자체는 같은 팀 SD 와 동일하고 tracklet pseudo-label[19,20]·관계 증류[22]·RoI 기반 identity head 는 기존 기법이라 새 접근·구조라 보기는 어렵다. 가치제안 0.50: 관련 연구에서 FairMOT·ByteTrack·ThermalTrack·SFOD 와의 차이를 정성적으로만 서술하고(Ⅱ장 1절), 정량 비교는 RGB 검출기와 자체 Frame-wise adaptation(사람만, 표 1)뿐이어서 인용한 어떤 외부 방법과도 수치 비교가 없으며 차량에는 Frame-wise 비교군도 없다(표 2). 창의적 활용 0.65: 열화상 비디오의 시간적 연속성에서 위치·신원 supervision 을 함께 끌어내고(신뢰 tracklet 의 저신뢰 탐지·15프레임 이내 누락 보완, 미달 tracklet 은 무시 영역, Ⅲ장 3절), 외형 정보가 빈약한 열화상 identity 를 정합 RGB 의 특징 관계 증류로 보강하는 구성(Ⅱ장 2절 다)은 문제 구조에 맞춘 조정이지만, tracklet 규칙이 임곗값 기반의 단순한 형태이고 각 구성요소는 표준 기법이다."
+  },
+  "structure": {
+   "sub": {
+    "flow": 0.55,
+    "dataDriven": 0.6,
+    "market": 0.5
+   },
+   "score": 0.55,
+   "why": "흐름 0.55: 문제–공백–방법–실험–결론의 골격은 서 있고 표 1·2 의 향상 폭(8.65·21.52·5.81·8.99, 6.23·18.33%p)이 본문과 일치하지만, 제목·초록은 '다중 객체 추적' 인데 초록·서론·결론의 대표 수치는 탐지 mAP 뿐이고 추적 지표는 표 3·4 의 크기별 IDF1 에만 있으며, '열화상 비디오만' 이라는 주장과 학습 시 정합 RGB 사용(Ⅲ장 1절)이 어긋나고, 표 3 large IDF1 76.35→69.35 는 −7.00 인데 '−6.82', medium '+5.334', 서론 recall '45.4%'(표 1 은 45.51), '16.925 bounding box', 그림 2 의 미정의 'RGB Anchor Tracker', 머리글 '(수정할 필요 없음)' 잔재와 영문 오탈자(leaverages·adpative·frame-levle·obejct·adaptvie·bouding·pesudo)가 눈에 띈다. 데이터 근거 0.60: 공개 CAMEL 의 분할(사람 14/6 시퀀스·11,667/5,958 프레임·288/150 ID, 차량 16,925/21,235 box·139/137 ID)과 SGD 1×10⁻³·momentum 0.9·weight decay 1×10⁻⁴·배치 8·clipping 10.0·6,000 반복·임곗값·EMA·tracklet 조건·손실 가중치·teacher 모델·GPU 까지 재현 설정은 충실하고(Ⅲ장 1·3절) 크기별 분석(표 3·4)도 있지만, 단일 실행이라 시드 반복·분산·검정이 없고 절제 실험과 외부 비교군이 없으며 λ_box·크기 구간 기준·차량 시퀀스 분할이 빠져 있다. 사업성 0.50: 적용 대상(야간·저가시성 군 감시·정찰·경계체계, 초록·Ⅰ장·Ⅳ장)과 절차(RGB 사전학습 검출기 + 현장 비레이블 열화상 비디오로 적응 → 추론 시 열화상만 사용, Ⅱ장 2절 라)는 드러나 있으나, 효과는 공개 데이터의 mAP·recall·IDF1 향상으로만 추정되고 학습용 정합 RGB 카메라 확보·추론 속도·탑재 장비 같은 운용 조건과 비용 추정이 없어 조건부 적용 수준이며, 확장 경로는 결론의 향후 계획(다양한 이동·촬영 환경 검증) 한 문단뿐이다."
+  },
+  "presentation": {
+   "sub": {
+    "clarity": 0.5,
+    "timing": 0.5,
+    "qa": 0.5
+   },
+   "score": 0.5,
+   "why": "발표 전 미평가(자리값): 피칭 명확성 0.5, 시간 관리 0.5, Q&A 대응 0.5 — 발표 후 채점해 교체한다."
+  },
+  "total": 59.4,
+  "evaluatedAt": "2026-10-16"
+ },
+ "rubricV4": {
   "creativity": {
    "sub": {
     "applicability": 0.8,
@@ -111,6 +151,6 @@
   "total": 66.5,
   "evaluatedAt": "2026-10-02"
  },
- "evaluatedAt": "2026-10-02",
+ "evaluatedAt": "2026-10-16",
  "textSha": "cc4cd1547f41543b"
 }

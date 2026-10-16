@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-10-07T03:09:54+00:00",
+ "generatedAt": "2026-10-16T22:47:03+00:00",
  "method": "rubric",
- "default": "equal",
+ "default": "manuscript",
  "mc": {
   "runs": 4000,
   "alpha": 60.0,
@@ -11,1316 +11,1832 @@
  "papers": {
   "MP": {
    "crit": {
-    "creativity": 0.7,
-    "completeness": 0.633333,
-    "innovation": 0.575,
-    "feasibility": 0.65,
-    "challenge": 0.55
+    "technical": 0.683333,
+    "innovation": 0.516667,
+    "structure": 0.633333,
+    "presentation": 0.5
    },
-   "equal": 62.1667,
-   "subEqual": 62.9167
+   "manuscript": 61.1111,
+   "equal4": 58.3333
   },
   "DR": {
    "crit": {
-    "creativity": 0.783333,
-    "completeness": 0.566667,
-    "innovation": 0.625,
-    "feasibility": 0.7,
-    "challenge": 0.6
+    "technical": 0.65,
+    "innovation": 0.533333,
+    "structure": 0.616667,
+    "presentation": 0.5
    },
-   "equal": 65.5,
-   "subEqual": 65.8333
+   "manuscript": 60.0,
+   "equal4": 57.5
   },
   "ON": {
    "crit": {
-    "creativity": 0.75,
-    "completeness": 0.533333,
-    "innovation": 0.65,
-    "feasibility": 0.65,
-    "challenge": 0.6
+    "technical": 0.566667,
+    "innovation": 0.616667,
+    "structure": 0.55,
+    "presentation": 0.5
    },
-   "equal": 63.6667,
-   "subEqual": 63.75
+   "manuscript": 57.7778,
+   "equal4": 55.8333
   },
   "VT": {
    "crit": {
-    "creativity": 0.816667,
-    "completeness": 0.8,
-    "innovation": 0.725,
-    "feasibility": 0.825,
-    "challenge": 0.825
+    "technical": 0.833333,
+    "innovation": 0.75,
+    "structure": 0.766667,
+    "presentation": 0.5
    },
-   "equal": 79.8333,
-   "subEqual": 80.0
+   "manuscript": 78.3333,
+   "equal4": 71.25
   },
   "HS": {
    "crit": {
-    "creativity": 0.833333,
-    "completeness": 0.85,
-    "innovation": 0.55,
-    "feasibility": 0.7,
-    "challenge": 0.625
+    "technical": 0.816667,
+    "innovation": 0.65,
+    "structure": 0.8,
+    "presentation": 0.5
    },
-   "equal": 71.1667,
-   "subEqual": 73.3333
+   "manuscript": 75.5556,
+   "equal4": 69.1667
   },
   "NM": {
    "crit": {
-    "creativity": 0.75,
-    "completeness": 0.8,
-    "innovation": 0.65,
-    "feasibility": 0.625,
-    "challenge": 0.65
+    "technical": 0.7,
+    "innovation": 0.633333,
+    "structure": 0.75,
+    "presentation": 0.5
    },
-   "equal": 69.5,
-   "subEqual": 70.8333
+   "manuscript": 69.4444,
+   "equal4": 64.5833
   },
   "MM": {
    "crit": {
-    "creativity": 0.716667,
-    "completeness": 0.616667,
-    "innovation": 0.675,
-    "feasibility": 0.65,
-    "challenge": 0.7
+    "technical": 0.666667,
+    "innovation": 0.65,
+    "structure": 0.616667,
+    "presentation": 0.5
    },
-   "equal": 67.1667,
-   "subEqual": 67.0833
+   "manuscript": 64.4444,
+   "equal4": 60.8333
   },
   "PK": {
    "crit": {
-    "creativity": 0.783333,
-    "completeness": 0.6,
-    "innovation": 0.6,
-    "feasibility": 0.65,
-    "challenge": 0.55
+    "technical": 0.65,
+    "innovation": 0.566667,
+    "structure": 0.616667,
+    "presentation": 0.5
    },
-   "equal": 63.6667,
-   "subEqual": 64.5833
+   "manuscript": 61.1111,
+   "equal4": 58.3333
   },
   "HB": {
    "crit": {
-    "creativity": 0.65,
-    "completeness": 0.7,
-    "innovation": 0.55,
-    "feasibility": 0.5,
-    "challenge": 0.45
+    "technical": 0.566667,
+    "innovation": 0.5,
+    "structure": 0.55,
+    "presentation": 0.5
    },
-   "equal": 57.0,
-   "subEqual": 58.75
+   "manuscript": 53.8889,
+   "equal4": 52.9167
   },
   "AD": {
    "crit": {
-    "creativity": 0.516667,
-    "completeness": 0.566667,
-    "innovation": 0.55,
-    "feasibility": 0.3,
-    "challenge": 0.525
+    "technical": 0.4,
+    "innovation": 0.483333,
+    "structure": 0.4,
+    "presentation": 0.5
    },
-   "equal": 49.1667,
-   "subEqual": 50.0
+   "manuscript": 42.7778,
+   "equal4": 44.5833
   },
   "TE": {
    "crit": {
-    "creativity": 0.816667,
-    "completeness": 0.733333,
+    "technical": 0.733333,
     "innovation": 0.65,
-    "feasibility": 0.7,
-    "challenge": 0.6
+    "structure": 0.716667,
+    "presentation": 0.5
    },
-   "equal": 70.0,
-   "subEqual": 71.25
+   "manuscript": 70.0,
+   "equal4": 65.0
   },
   "TC": {
    "crit": {
-    "creativity": 0.75,
-    "completeness": 0.65,
-    "innovation": 0.55,
-    "feasibility": 0.65,
-    "challenge": 0.5
+    "technical": 0.65,
+    "innovation": 0.566667,
+    "structure": 0.65,
+    "presentation": 0.5
    },
-   "equal": 62.0,
-   "subEqual": 63.3333
+   "manuscript": 62.2222,
+   "equal4": 59.1667
   },
   "LR": {
    "crit": {
-    "creativity": 0.75,
-    "completeness": 0.583333,
-    "innovation": 0.65,
-    "feasibility": 0.65,
-    "challenge": 0.55
+    "technical": 0.7,
+    "innovation": 0.533333,
+    "structure": 0.633333,
+    "presentation": 0.5
    },
-   "equal": 63.6667,
-   "subEqual": 64.1667
+   "manuscript": 62.2222,
+   "equal4": 59.1667
   },
   "NH": {
    "crit": {
-    "creativity": 0.683333,
-    "completeness": 0.55,
-    "innovation": 0.575,
-    "feasibility": 0.55,
-    "challenge": 0.525
+    "technical": 0.533333,
+    "innovation": 0.55,
+    "structure": 0.583333,
+    "presentation": 0.5
    },
-   "equal": 57.6667,
-   "subEqual": 58.3333
+   "manuscript": 55.5556,
+   "equal4": 54.1667
   },
   "DC": {
    "crit": {
-    "creativity": 0.466667,
-    "completeness": 0.45,
-    "innovation": 0.55,
-    "feasibility": 0.25,
-    "challenge": 0.45
+    "technical": 0.316667,
+    "innovation": 0.433333,
+    "structure": 0.35,
+    "presentation": 0.5
    },
-   "equal": 43.3333,
-   "subEqual": 43.75
+   "manuscript": 36.6667,
+   "equal4": 40.0
   },
   "GC": {
    "crit": {
-    "creativity": 0.85,
-    "completeness": 0.7,
-    "innovation": 0.65,
-    "feasibility": 0.6,
-    "challenge": 0.675
+    "technical": 0.75,
+    "innovation": 0.666667,
+    "structure": 0.633333,
+    "presentation": 0.5
    },
-   "equal": 69.5,
-   "subEqual": 70.8333
+   "manuscript": 68.3333,
+   "equal4": 63.75
   },
   "RM": {
    "crit": {
-    "creativity": 0.7,
-    "completeness": 0.7,
-    "innovation": 0.6,
-    "feasibility": 0.6,
-    "challenge": 0.7
+    "technical": 0.666667,
+    "innovation": 0.633333,
+    "structure": 0.65,
+    "presentation": 0.5
    },
-   "equal": 66.0,
-   "subEqual": 66.6667
+   "manuscript": 65.0,
+   "equal4": 61.25
   },
   "UF": {
    "crit": {
-    "creativity": 0.65,
-    "completeness": 0.6,
-    "innovation": 0.6,
-    "feasibility": 0.4,
-    "challenge": 0.475
+    "technical": 0.5,
+    "innovation": 0.583333,
+    "structure": 0.483333,
+    "presentation": 0.5
    },
-   "equal": 54.5,
-   "subEqual": 55.8333
+   "manuscript": 52.2222,
+   "equal4": 51.6667
   },
   "EG": {
    "crit": {
-    "creativity": 0.766667,
-    "completeness": 0.6,
-    "innovation": 0.65,
-    "feasibility": 0.65,
-    "challenge": 0.55
+    "technical": 0.716667,
+    "innovation": 0.616667,
+    "structure": 0.65,
+    "presentation": 0.5
    },
-   "equal": 64.3333,
-   "subEqual": 65.0
+   "manuscript": 66.1111,
+   "equal4": 62.0833
   },
   "ML": {
    "crit": {
-    "creativity": 0.7,
-    "completeness": 0.833333,
-    "innovation": 0.55,
-    "feasibility": 0.65,
-    "challenge": 0.6
+    "technical": 0.75,
+    "innovation": 0.583333,
+    "structure": 0.716667,
+    "presentation": 0.5
    },
-   "equal": 66.6667,
-   "subEqual": 68.3333
+   "manuscript": 68.3333,
+   "equal4": 63.75
   },
   "TD": {
    "crit": {
-    "creativity": 0.733333,
-    "completeness": 0.566667,
-    "innovation": 0.55,
-    "feasibility": 0.5,
-    "challenge": 0.55
+    "technical": 0.55,
+    "innovation": 0.533333,
+    "structure": 0.5,
+    "presentation": 0.5
    },
-   "equal": 58.0,
-   "subEqual": 59.1667
-  },
-  "SR": {
-   "crit": {
-    "creativity": 0.733333,
-    "completeness": 0.7,
-    "innovation": 0.55,
-    "feasibility": 0.65,
-    "challenge": 0.45
-   },
-   "equal": 61.6667,
-   "subEqual": 63.3333
-  },
-  "DI": {
-   "crit": {
-    "creativity": 0.75,
-    "completeness": 0.6,
-    "innovation": 0.55,
-    "feasibility": 0.65,
-    "challenge": 0.5
-   },
-   "equal": 61.0,
-   "subEqual": 62.0833
-  },
-  "SL": {
-   "crit": {
-    "creativity": 0.75,
-    "completeness": 0.633333,
-    "innovation": 0.525,
-    "feasibility": 0.65,
-    "challenge": 0.45
-   },
-   "equal": 60.1667,
-   "subEqual": 61.6667
+   "manuscript": 52.7778,
+   "equal4": 52.0833
   },
   "SV": {
    "crit": {
-    "creativity": 0.766667,
-    "completeness": 0.7,
-    "innovation": 0.625,
-    "feasibility": 0.625,
-    "challenge": 0.6
+    "technical": 0.666667,
+    "innovation": 0.65,
+    "structure": 0.583333,
+    "presentation": 0.5
    },
-   "equal": 66.3333,
-   "subEqual": 67.5
+   "manuscript": 63.3333,
+   "equal4": 60.0
   },
   "AL": {
    "crit": {
-    "creativity": 0.733333,
-    "completeness": 0.616667,
-    "innovation": 0.575,
-    "feasibility": 0.65,
-    "challenge": 0.55
+    "technical": 0.633333,
+    "innovation": 0.583333,
+    "structure": 0.65,
+    "presentation": 0.5
    },
-   "equal": 62.5,
-   "subEqual": 63.3333
+   "manuscript": 62.2222,
+   "equal4": 59.1667
   },
   "SF": {
    "crit": {
-    "creativity": 0.716667,
-    "completeness": 0.683333,
-    "innovation": 0.625,
-    "feasibility": 0.625,
-    "challenge": 0.675
+    "technical": 0.633333,
+    "innovation": 0.6,
+    "structure": 0.55,
+    "presentation": 0.5
    },
-   "equal": 66.5,
-   "subEqual": 67.0833
+   "manuscript": 59.4444,
+   "equal4": 57.0833
   },
   "SD": {
    "crit": {
-    "creativity": 0.733333,
-    "completeness": 0.683333,
-    "innovation": 0.6,
-    "feasibility": 0.625,
-    "challenge": 0.575
+    "technical": 0.616667,
+    "innovation": 0.566667,
+    "structure": 0.516667,
+    "presentation": 0.5
    },
-   "equal": 64.3333,
-   "subEqual": 65.4167
+   "manuscript": 56.6667,
+   "equal4": 55.0
   },
   "LD": {
    "crit": {
-    "creativity": 0.683333,
-    "completeness": 0.516667,
-    "innovation": 0.475,
-    "feasibility": 0.575,
-    "challenge": 0.45
+    "technical": 0.5,
+    "innovation": 0.366667,
+    "structure": 0.483333,
+    "presentation": 0.5
    },
-   "equal": 54.0,
-   "subEqual": 55.0
-  },
-  "SM": {
-   "crit": {
-    "creativity": 0.716667,
-    "completeness": 0.55,
-    "innovation": 0.6,
-    "feasibility": 0.65,
-    "challenge": 0.575
-   },
-   "equal": 61.8333,
-   "subEqual": 62.0833
-  },
-  "PS": {
-   "crit": {
-    "creativity": 0.75,
-    "completeness": 0.716667,
-    "innovation": 0.625,
-    "feasibility": 0.65,
-    "challenge": 0.625
-   },
-   "equal": 67.3333,
-   "subEqual": 68.3333
-  },
-  "EM": {
-   "crit": {
-    "creativity": 0.7,
-    "completeness": 0.616667,
-    "innovation": 0.55,
-    "feasibility": 0.65,
-    "challenge": 0.5
-   },
-   "equal": 60.3333,
-   "subEqual": 61.25
+   "manuscript": 45.0,
+   "equal4": 46.25
   },
   "AC": {
    "crit": {
-    "creativity": 0.7,
-    "completeness": 0.6,
+    "technical": 0.633333,
+    "innovation": 0.583333,
+    "structure": 0.566667,
+    "presentation": 0.5
+   },
+   "manuscript": 59.4444,
+   "equal4": 57.0833
+  },
+  "JI": {
+   "crit": {
+    "technical": 0.433333,
+    "innovation": 0.516667,
+    "structure": 0.533333,
+    "presentation": 0.5
+   },
+   "manuscript": 49.4444,
+   "equal4": 49.5833
+  },
+  "JA": {
+   "crit": {
+    "technical": 0.716667,
+    "innovation": 0.633333,
+    "structure": 0.766667,
+    "presentation": 0.5
+   },
+   "manuscript": 70.5556,
+   "equal4": 65.4167
+  },
+  "CD": {
+   "crit": {
+    "technical": 0.75,
+    "innovation": 0.6,
+    "structure": 0.716667,
+    "presentation": 0.5
+   },
+   "manuscript": 68.8889,
+   "equal4": 64.1667
+  },
+  "PA": {
+   "crit": {
+    "technical": 0.816667,
+    "innovation": 0.716667,
+    "structure": 0.75,
+    "presentation": 0.5
+   },
+   "manuscript": 76.1111,
+   "equal4": 69.5833
+  },
+  "CT": {
+   "crit": {
+    "technical": 0.766667,
+    "innovation": 0.7,
+    "structure": 0.8,
+    "presentation": 0.5
+   },
+   "manuscript": 75.5556,
+   "equal4": 69.1667
+  },
+  "KD": {
+   "crit": {
+    "technical": 0.633333,
+    "innovation": 0.616667,
+    "structure": 0.616667,
+    "presentation": 0.5
+   },
+   "manuscript": 62.2222,
+   "equal4": 59.1667
+  },
+  "PB": {
+   "crit": {
+    "technical": 0.733333,
+    "innovation": 0.716667,
+    "structure": 0.65,
+    "presentation": 0.5
+   },
+   "manuscript": 70.0,
+   "equal4": 65.0
+  },
+  "BE": {
+   "crit": {
+    "technical": 0.65,
+    "innovation": 0.483333,
+    "structure": 0.6,
+    "presentation": 0.5
+   },
+   "manuscript": 57.7778,
+   "equal4": 55.8333
+  },
+  "BI": {
+   "crit": {
+    "technical": 0.666667,
+    "innovation": 0.433333,
+    "structure": 0.616667,
+    "presentation": 0.5
+   },
+   "manuscript": 57.2222,
+   "equal4": 55.4167
+  },
+  "RJ": {
+   "crit": {
+    "technical": 0.55,
+    "innovation": 0.6,
+    "structure": 0.533333,
+    "presentation": 0.5
+   },
+   "manuscript": 56.1111,
+   "equal4": 54.5833
+  },
+  "RH": {
+   "crit": {
+    "technical": 0.833333,
+    "innovation": 0.7,
+    "structure": 0.8,
+    "presentation": 0.5
+   },
+   "manuscript": 77.7778,
+   "equal4": 70.8333
+  },
+  "GM": {
+   "crit": {
+    "technical": 0.75,
+    "innovation": 0.583333,
+    "structure": 0.716667,
+    "presentation": 0.5
+   },
+   "manuscript": 68.3333,
+   "equal4": 63.75
+  },
+  "CW": {
+   "crit": {
+    "technical": 0.683333,
     "innovation": 0.55,
-    "feasibility": 0.55,
-    "challenge": 0.625
+    "structure": 0.616667,
+    "presentation": 0.5
    },
-   "equal": 60.5,
-   "subEqual": 61.25
+   "manuscript": 61.6667,
+   "equal4": 58.75
   },
-  "IT": {
+  "HR": {
    "crit": {
-    "creativity": 0.783333,
-    "completeness": 0.7,
-    "innovation": 0.625,
-    "feasibility": 0.675,
-    "challenge": 0.65
+    "technical": 0.75,
+    "innovation": 0.566667,
+    "structure": 0.716667,
+    "presentation": 0.5
    },
-   "equal": 68.6667,
-   "subEqual": 69.5833
+   "manuscript": 67.7778,
+   "equal4": 63.3333
   },
-  "AP": {
+  "ST": {
    "crit": {
-    "creativity": 0.766667,
-    "completeness": 0.65,
-    "innovation": 0.625,
-    "feasibility": 0.675,
-    "challenge": 0.6
+    "technical": 0.8,
+    "innovation": 0.666667,
+    "structure": 0.766667,
+    "presentation": 0.5
    },
-   "equal": 66.3333,
-   "subEqual": 67.0833
+   "manuscript": 74.4444,
+   "equal4": 68.3333
   },
-  "FF": {
+  "LC": {
    "crit": {
-    "creativity": 0.716667,
-    "completeness": 0.55,
-    "innovation": 0.525,
-    "feasibility": 0.625,
-    "challenge": 0.45
+    "technical": 0.55,
+    "innovation": 0.533333,
+    "structure": 0.5,
+    "presentation": 0.5
    },
-   "equal": 57.3333,
-   "subEqual": 58.3333
+   "manuscript": 52.7778,
+   "equal4": 52.0833
   },
-  "TK": {
+  "LT": {
    "crit": {
-    "creativity": 0.75,
-    "completeness": 0.633333,
-    "innovation": 0.525,
-    "feasibility": 0.6,
-    "challenge": 0.55
+    "technical": 0.7,
+    "innovation": 0.6,
+    "structure": 0.7,
+    "presentation": 0.5
    },
-   "equal": 61.1667,
-   "subEqual": 62.5
+   "manuscript": 66.6667,
+   "equal4": 62.5
   },
-  "CY": {
+  "SI": {
    "crit": {
-    "creativity": 0.75,
-    "completeness": 0.816667,
-    "innovation": 0.625,
-    "feasibility": 0.6,
-    "challenge": 0.7
+    "technical": 0.683333,
+    "innovation": 0.616667,
+    "structure": 0.65,
+    "presentation": 0.5
    },
-   "equal": 69.8333,
-   "subEqual": 71.25
+   "manuscript": 65.0,
+   "equal4": 61.25
+  },
+  "RA": {
+   "crit": {
+    "technical": 0.716667,
+    "innovation": 0.6,
+    "structure": 0.75,
+    "presentation": 0.5
+   },
+   "manuscript": 68.8889,
+   "equal4": 64.1667
+  },
+  "JY": {
+   "crit": {
+    "technical": 0.8,
+    "innovation": 0.616667,
+    "structure": 0.733333,
+    "presentation": 0.5
+   },
+   "manuscript": 71.6667,
+   "equal4": 66.25
+  },
+  "MT": {
+   "crit": {
+    "technical": 0.45,
+    "innovation": 0.5,
+    "structure": 0.433333,
+    "presentation": 0.5
+   },
+   "manuscript": 46.1111,
+   "equal4": 47.0833
+  },
+  "CR": {
+   "crit": {
+    "technical": 0.566667,
+    "innovation": 0.483333,
+    "structure": 0.516667,
+    "presentation": 0.5
+   },
+   "manuscript": 52.2222,
+   "equal4": 51.6667
+  },
+  "FS": {
+   "crit": {
+    "technical": 0.75,
+    "innovation": 0.583333,
+    "structure": 0.7,
+    "presentation": 0.5
+   },
+   "manuscript": 67.7778,
+   "equal4": 63.3333
+  },
+  "JT": {
+   "crit": {
+    "technical": 0.633333,
+    "innovation": 0.533333,
+    "structure": 0.6,
+    "presentation": 0.5
+   },
+   "manuscript": 58.8889,
+   "equal4": 56.6667
+  },
+  "RD": {
+   "crit": {
+    "technical": 0.65,
+    "innovation": 0.516667,
+    "structure": 0.683333,
+    "presentation": 0.5
+   },
+   "manuscript": 61.6667,
+   "equal4": 58.75
   }
  },
  "ranks": {
-  "equal": {
+  "manuscript": {
    "personal": {
     "VT": 1,
-    "HS": 2,
-    "TE": 3,
-    "GC": 4,
-    "NM": 4,
-    "IT": 6,
-    "MM": 7,
-    "AP": 8,
-    "EG": 9,
-    "LR": 10,
-    "PK": 10,
-    "TC": 12,
-    "TK": 13,
-    "NH": 14,
-    "HB": 15,
-    "AD": 16,
-    "DC": 17
+    "RH": 2,
+    "PA": 3,
+    "CT": 4,
+    "HS": 4,
+    "ST": 6,
+    "JY": 7,
+    "JA": 8,
+    "TE": 9,
+    "NM": 10,
+    "CD": 11,
+    "RA": 11,
+    "GC": 13,
+    "GM": 13,
+    "FS": 15,
+    "HR": 15,
+    "LT": 17,
+    "EG": 18,
+    "SI": 19,
+    "MM": 20,
+    "KD": 21,
+    "LR": 21,
+    "TC": 21,
+    "CW": 24,
+    "RD": 24,
+    "PK": 26,
+    "JT": 27,
+    "BE": 28,
+    "BI": 29,
+    "RJ": 30,
+    "NH": 31,
+    "HB": 32,
+    "LC": 33,
+    "CR": 34,
+    "JI": 35,
+    "MT": 36,
+    "AD": 37,
+    "DC": 38
    },
    "team": {
-    "CY": 1,
-    "PS": 2,
-    "ML": 3,
-    "SF": 4,
-    "SV": 5,
-    "RM": 6,
+    "PB": 1,
+    "ML": 2,
+    "RM": 3,
+    "SV": 4,
+    "AL": 5,
+    "MP": 6,
     "DR": 7,
-    "SD": 8,
-    "ON": 9,
-    "AL": 10,
-    "MP": 11,
-    "SM": 12,
-    "SR": 13,
-    "DI": 14,
-    "AC": 15,
-    "EM": 16,
-    "SL": 17,
-    "TD": 18,
-    "FF": 19,
-    "UF": 20,
-    "LD": 21
+    "AC": 8,
+    "SF": 8,
+    "ON": 10,
+    "SD": 11,
+    "TD": 12,
+    "UF": 13,
+    "LD": 14
    },
    "people": {
     "최석철": 1,
-    "이건희": 2,
-    "서보윤": 3,
-    "이시연": 4,
-    "배진영": 5,
-    "이진욱": 6,
-    "저자 가림(AP)": 7,
-    "강현섭": 8,
-    "정동균": 9,
-    "강줄기": 10
+    "라경주": 2,
+    "김민균": 3,
+    "남하늘": 4,
+    "이건희": 4,
+    "김영수": 6,
+    "김정윤": 7,
+    "전누리": 8,
+    "서보윤": 9,
+    "이시연": 10,
+    "이민우": 11,
+    "임철희": 11,
+    "김혜인": 13,
+    "박규민": 14,
+    "강현섭": 15,
+    "이진욱": 16,
+    "김두환": 17,
+    "백지훈": 18,
+    "강줄기": 19
    }
   },
-  "subEqual": {
+  "equal4": {
    "personal": {
     "VT": 1,
-    "HS": 2,
-    "TE": 3,
-    "GC": 4,
-    "NM": 4,
-    "IT": 6,
-    "AP": 7,
-    "MM": 7,
-    "EG": 9,
-    "PK": 10,
-    "LR": 11,
-    "TC": 12,
-    "TK": 13,
-    "HB": 14,
-    "NH": 15,
-    "AD": 16,
-    "DC": 17
+    "RH": 2,
+    "PA": 3,
+    "CT": 4,
+    "HS": 4,
+    "ST": 6,
+    "JY": 7,
+    "JA": 8,
+    "TE": 9,
+    "NM": 10,
+    "CD": 11,
+    "RA": 11,
+    "GC": 13,
+    "GM": 13,
+    "FS": 15,
+    "HR": 15,
+    "LT": 17,
+    "EG": 18,
+    "SI": 19,
+    "MM": 20,
+    "KD": 21,
+    "LR": 21,
+    "TC": 21,
+    "CW": 24,
+    "RD": 24,
+    "PK": 26,
+    "JT": 27,
+    "BE": 28,
+    "BI": 29,
+    "RJ": 30,
+    "NH": 31,
+    "HB": 32,
+    "LC": 33,
+    "CR": 34,
+    "JI": 35,
+    "MT": 36,
+    "AD": 37,
+    "DC": 38
    },
    "team": {
-    "CY": 1,
+    "PB": 1,
     "ML": 2,
-    "PS": 2,
+    "RM": 3,
     "SV": 4,
-    "SF": 5,
-    "RM": 6,
+    "AL": 5,
+    "MP": 6,
     "DR": 7,
-    "SD": 8,
-    "ON": 9,
-    "AL": 10,
-    "SR": 10,
-    "MP": 12,
-    "DI": 13,
-    "SM": 13,
-    "SL": 15,
-    "AC": 16,
-    "EM": 16,
-    "TD": 18,
-    "FF": 19,
-    "UF": 20,
-    "LD": 21
+    "AC": 8,
+    "SF": 8,
+    "ON": 10,
+    "SD": 11,
+    "TD": 12,
+    "UF": 13,
+    "LD": 14
    },
    "people": {
     "최석철": 1,
-    "이건희": 2,
-    "서보윤": 3,
-    "이시연": 4,
-    "배진영": 5,
-    "이진욱": 6,
-    "저자 가림(AP)": 6,
-    "강현섭": 8,
-    "정동균": 9,
-    "강줄기": 10
+    "라경주": 2,
+    "김민균": 3,
+    "남하늘": 4,
+    "이건희": 4,
+    "김영수": 6,
+    "김정윤": 7,
+    "전누리": 8,
+    "서보윤": 9,
+    "이시연": 10,
+    "이민우": 11,
+    "임철희": 11,
+    "김혜인": 13,
+    "박규민": 14,
+    "강현섭": 15,
+    "이진욱": 16,
+    "김두환": 17,
+    "백지훈": 18,
+    "강줄기": 19
    }
   }
  },
  "stability": {
-  "equal": {
+  "manuscript": {
    "personal": {
     "VT": {
-     "p1": 1.0,
-     "top2": 1.0,
-     "top3": 1.0,
+     "p1": 0.5365,
+     "top2": 0.8227,
+     "top3": 0.9375,
      "p10": 1,
      "p50": 1,
-     "p90": 1
+     "p90": 3
     },
     "HS": {
-     "p1": 0.0,
-     "top2": 0.5627,
-     "top3": 0.7708,
-     "p10": 2,
-     "p50": 2,
-     "p90": 5
-    },
-    "NM": {
-     "p1": 0.0,
-     "top2": 0.1022,
-     "top3": 0.3093,
+     "p1": 0.0307,
+     "top2": 0.118,
+     "top3": 0.3053,
      "p10": 2,
      "p50": 4,
      "p90": 6
     },
+    "NM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 11,
+     "p90": 15
+    },
     "MM": {
      "p1": 0.0,
-     "top2": 0.0088,
-     "top3": 0.0278,
-     "p10": 5,
-     "p50": 7,
-     "p90": 8
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 17,
+     "p50": 20,
+     "p90": 22
     },
     "PK": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 9,
-     "p50": 10,
-     "p90": 12
+     "top3": 0.0,
+     "p10": 22,
+     "p50": 25,
+     "p90": 27
     },
     "HB": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 14,
-     "p50": 15,
-     "p90": 15
+     "p10": 31,
+     "p50": 32,
+     "p90": 34
     },
     "AD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 16,
-     "p50": 16,
-     "p90": 16
+     "p10": 37,
+     "p50": 37,
+     "p90": 37
     },
     "TE": {
      "p1": 0.0,
-     "top2": 0.1827,
-     "top3": 0.4708,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 7,
+     "p50": 10,
+     "p90": 14
     },
     "TC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 10,
-     "p50": 12,
-     "p90": 13
+     "p10": 20,
+     "p50": 23,
+     "p90": 26
     },
     "LR": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 9,
-     "p50": 10,
-     "p90": 12
+     "p10": 20,
+     "p50": 23,
+     "p90": 26
     },
     "NH": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 14,
-     "p50": 14,
-     "p90": 15
+     "p10": 29,
+     "p50": 31,
+     "p90": 32
     },
     "DC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 17,
-     "p50": 17,
-     "p90": 17
+     "p10": 38,
+     "p50": 38,
+     "p90": 38
     },
     "GC": {
      "p1": 0.0,
-     "top2": 0.1153,
-     "top3": 0.305,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 13,
+     "p90": 17
     },
     "EG": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 8,
-     "p50": 9,
-     "p90": 11
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 18,
+     "p90": 20
     },
-    "IT": {
-     "p1": 0.0,
-     "top2": 0.0283,
-     "top3": 0.1138,
-     "p10": 3,
-     "p50": 6,
-     "p90": 7
-    },
-    "AP": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0022,
-     "p10": 6,
-     "p50": 8,
-     "p90": 9
-    },
-    "TK": {
+    "JI": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 11,
-     "p50": 13,
-     "p90": 13
-    }
-   },
-   "people": {
-    "최석철": {
-     "p1": 1.0,
-     "top2": 1.0,
-     "top3": 1.0,
-     "p10": 1,
-     "p50": 1,
-     "p90": 1
+     "p10": 34,
+     "p50": 35,
+     "p90": 35
     },
-    "이건희": {
+    "JA": {
      "p1": 0.0,
-     "top2": 0.611,
-     "top3": 0.835,
-     "p10": 2,
-     "p50": 2,
-     "p90": 4
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 7,
+     "p50": 9,
+     "p90": 12
     },
-    "이시연": {
+    "CD": {
      "p1": 0.0,
-     "top2": 0.1205,
-     "top3": 0.3907,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 12,
+     "p90": 16
+    },
+    "PA": {
+     "p1": 0.054,
+     "top2": 0.2105,
+     "top3": 0.4733,
      "p10": 2,
      "p50": 4,
      "p90": 6
     },
-    "이진욱": {
+    "CT": {
+     "p1": 0.0235,
+     "top2": 0.114,
+     "top3": 0.3125,
+     "p10": 2,
+     "p50": 4,
+     "p90": 6
+    },
+    "KD": {
      "p1": 0.0,
-     "top2": 0.0158,
-     "top3": 0.0462,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 20,
+     "p50": 23,
+     "p90": 26
+    },
+    "BE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 28,
+     "p90": 30
+    },
+    "BI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 29,
+     "p90": 31
+    },
+    "RJ": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 28,
+     "p50": 30,
+     "p90": 32
+    },
+    "RH": {
+     "p1": 0.3515,
+     "top2": 0.7095,
+     "top3": 0.8795,
+     "p10": 1,
+     "p50": 2,
+     "p90": 4
+    },
+    "GM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 10,
+     "p50": 13,
+     "p90": 17
+    },
+    "CW": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 24,
+     "p90": 26
+    },
+    "HR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 10,
+     "p50": 15,
+     "p90": 18
+    },
+    "ST": {
+     "p1": 0.0037,
+     "top2": 0.0253,
+     "top3": 0.091,
      "p10": 4,
      "p50": 6,
-     "p90": 7
+     "p90": 6
+    },
+    "LC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 32,
+     "p50": 33,
+     "p90": 34
+    },
+    "LT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 13,
+     "p50": 17,
+     "p90": 19
+    },
+    "SI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 19,
+     "p90": 21
+    },
+    "RA": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 12,
+     "p90": 16
+    },
+    "JY": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 6,
+     "p50": 7,
+     "p90": 10
+    },
+    "MT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 36,
+     "p50": 36,
+     "p90": 36
+    },
+    "CR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 32,
+     "p50": 34,
+     "p90": 34
+    },
+    "FS": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 15,
+     "p90": 18
+    },
+    "JT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 26,
+     "p50": 27,
+     "p90": 29
+    },
+    "RD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 24,
+     "p90": 26
+    }
+   },
+   "people": {
+    "최석철": {
+     "p1": 0.5423,
+     "top2": 0.8285,
+     "top3": 0.931,
+     "p10": 1,
+     "p50": 1,
+     "p90": 3
+    },
+    "이건희": {
+     "p1": 0.0293,
+     "top2": 0.118,
+     "top3": 0.304,
+     "p10": 2,
+     "p50": 4,
+     "p90": 6
+    },
+    "이시연": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 10,
+     "p90": 13
+    },
+    "이진욱": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 16,
+     "p90": 17
     },
     "강줄기": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 10,
-     "p50": 10,
-     "p90": 10
+     "p10": 19,
+     "p50": 19,
+     "p90": 19
     },
     "서보윤": {
      "p1": 0.0,
-     "top2": 0.2175,
-     "top3": 0.5653,
-     "p10": 2,
-     "p50": 3,
-     "p90": 5
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 7,
+     "p50": 9,
+     "p90": 12
     },
     "강현섭": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 7,
-     "p50": 8,
-     "p90": 8
+     "p10": 13,
+     "p50": 15,
+     "p90": 16
     },
-    "배진영": {
+    "전누리": {
      "p1": 0.0,
-     "top2": 0.0343,
-     "top3": 0.1578,
-     "p10": 3,
-     "p50": 5,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 7,
+     "p50": 9,
+     "p90": 11
+    },
+    "임철희": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 11,
+     "p90": 14
+    },
+    "김민균": {
+     "p1": 0.0563,
+     "top2": 0.2082,
+     "top3": 0.4875,
+     "p10": 2,
+     "p50": 4,
      "p90": 6
     },
-    "저자 가림(AP)": {
-     "p1": 0.0,
-     "top2": 0.001,
-     "top3": 0.005,
-     "p10": 6,
-     "p50": 7,
-     "p90": 8
+    "남하늘": {
+     "p1": 0.029,
+     "top2": 0.1207,
+     "top3": 0.3043,
+     "p10": 2,
+     "p50": 4,
+     "p90": 6
     },
-    "정동균": {
+    "김두환": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 17,
+     "p90": 17
+    },
+    "백지훈": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 18,
+     "p50": 18,
+     "p90": 18
+    },
+    "라경주": {
+     "p1": 0.3402,
+     "top2": 0.7033,
+     "top3": 0.8758,
+     "p10": 1,
+     "p50": 2,
+     "p90": 4
+    },
+    "김혜인": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
      "p10": 9,
-     "p50": 9,
-     "p90": 9
+     "p50": 12,
+     "p90": 14
+    },
+    "김영수": {
+     "p1": 0.003,
+     "top2": 0.0213,
+     "top3": 0.0965,
+     "p10": 4,
+     "p50": 6,
+     "p90": 6
+    },
+    "박규민": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 14,
+     "p90": 16
+    },
+    "이민우": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 11,
+     "p90": 14
+    },
+    "김정윤": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.001,
+     "p10": 6,
+     "p50": 7,
+     "p90": 10
     }
    },
    "team": {
     "MP": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 12,
-     "p90": 15
-    },
-    "DR": {
-     "p1": 0.019,
-     "top2": 0.0777,
-     "top3": 0.1683,
-     "p10": 3,
+     "top3": 0.0152,
+     "p10": 4,
      "p50": 6,
      "p90": 9
     },
-    "ON": {
-     "p1": 0.0013,
-     "top2": 0.0037,
-     "top3": 0.015,
+    "DR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0022,
      "p10": 6,
-     "p50": 9,
-     "p90": 12
+     "p50": 7,
+     "p90": 10
+    },
+    "ON": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 10,
+     "p90": 11
     },
     "RM": {
-     "p1": 0.0097,
-     "top2": 0.0905,
-     "top3": 0.211,
+     "p1": 0.0025,
+     "top2": 0.0643,
+     "top3": 0.7515,
      "p10": 3,
-     "p50": 5,
-     "p90": 8
+     "p50": 3,
+     "p90": 4
     },
     "UF": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 19,
-     "p50": 20,
-     "p90": 21
+     "p10": 12,
+     "p50": 13,
+     "p90": 13
     },
     "ML": {
-     "p1": 0.03,
-     "top2": 0.2268,
-     "top3": 0.406,
-     "p10": 2,
-     "p50": 4,
-     "p90": 8
+     "p1": 0.2225,
+     "top2": 0.9307,
+     "top3": 0.9932,
+     "p10": 1,
+     "p50": 2,
+     "p90": 2
     },
     "TD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 16,
-     "p50": 18,
-     "p90": 19
+     "p10": 12,
+     "p50": 12,
+     "p90": 13
     },
-    "SR": {
+    "SV": {
+     "p1": 0.0,
+     "top2": 0.0095,
+     "top3": 0.186,
+     "p10": 3,
+     "p50": 4,
+     "p90": 6
+    },
+    "AL": {
+     "p1": 0.0,
+     "top2": 0.0005,
+     "top3": 0.0517,
+     "p10": 4,
+     "p50": 5,
+     "p90": 7
+    },
+    "SF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 6,
+     "p50": 8,
+     "p90": 10
+    },
+    "SD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
      "p10": 9,
-     "p50": 13,
-     "p90": 16
-    },
-    "DI": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 11,
-     "p50": 14,
-     "p90": 17
-    },
-    "SL": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 16,
-     "p90": 18
-    },
-    "SV": {
-     "p1": 0.0192,
-     "top2": 0.1242,
-     "top3": 0.2802,
-     "p10": 2,
-     "p50": 5,
-     "p90": 7
-    },
-    "AL": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 8,
      "p50": 11,
-     "p90": 14
-    },
-    "SF": {
-     "p1": 0.0257,
-     "top2": 0.1583,
-     "top3": 0.3252,
-     "p10": 2,
-     "p50": 4,
-     "p90": 7
-    },
-    "SD": {
-     "p1": 0.0,
-     "top2": 0.007,
-     "top3": 0.0205,
-     "p10": 5,
-     "p50": 8,
-     "p90": 10
+     "p90": 11
     },
     "LD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 20,
-     "p50": 21,
-     "p90": 21
-    },
-    "SM": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 9,
-     "p50": 12,
-     "p90": 16
-    },
-    "PS": {
-     "p1": 0.0735,
-     "top2": 0.3733,
-     "top3": 0.597,
-     "p10": 2,
-     "p50": 3,
-     "p90": 6
-    },
-    "EM": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 15,
-     "p90": 17
+     "p10": 14,
+     "p50": 14,
+     "p90": 14
     },
     "AC": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 11,
-     "p50": 15,
-     "p90": 17
+     "top3": 0.0003,
+     "p10": 6,
+     "p50": 8,
+     "p90": 10
     },
-    "FF": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 17,
-     "p50": 19,
-     "p90": 20
-    },
-    "CY": {
-     "p1": 0.8215,
-     "top2": 0.9385,
-     "top3": 0.9762,
+    "PB": {
+     "p1": 0.775,
+     "top2": 0.995,
+     "top3": 0.9998,
      "p10": 1,
      "p50": 1,
      "p90": 2
     }
    }
   },
-  "subEqual": {
+  "equal4": {
    "personal": {
     "VT": {
-     "p1": 1.0,
-     "top2": 1.0,
-     "top3": 1.0,
+     "p1": 0.4975,
+     "top2": 0.7738,
+     "top3": 0.9042,
      "p10": 1,
-     "p50": 1,
-     "p90": 1
-    },
-    "HS": {
-     "p1": 0.0,
-     "top2": 0.747,
-     "top3": 0.9002,
-     "p10": 2,
      "p50": 2,
      "p90": 3
     },
-    "NM": {
-     "p1": 0.0,
-     "top2": 0.067,
-     "top3": 0.2968,
-     "p10": 3,
+    "HS": {
+     "p1": 0.0432,
+     "top2": 0.1455,
+     "top3": 0.3265,
+     "p10": 2,
      "p50": 4,
      "p90": 6
     },
+    "NM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 11,
+     "p90": 15
+    },
     "MM": {
      "p1": 0.0,
-     "top2": 0.0005,
-     "top3": 0.003,
-     "p10": 6,
-     "p50": 8,
-     "p90": 9
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 20,
+     "p90": 23
     },
     "PK": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 8,
-     "p50": 10,
-     "p90": 12
+     "p10": 21,
+     "p50": 25,
+     "p90": 27
     },
     "HB": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 14,
-     "p50": 14,
-     "p90": 15
+     "p10": 30,
+     "p50": 32,
+     "p90": 34
     },
     "AD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 16,
-     "p50": 16,
-     "p90": 16
+     "p10": 37,
+     "p50": 37,
+     "p90": 37
     },
     "TE": {
      "p1": 0.0,
-     "top2": 0.1047,
-     "top3": 0.4465,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
+     "top2": 0.0,
+     "top3": 0.0008,
+     "p10": 7,
+     "p50": 10,
+     "p90": 14
     },
     "TC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 10,
-     "p50": 12,
-     "p90": 13
+     "p10": 20,
+     "p50": 23,
+     "p90": 26
     },
     "LR": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 9,
-     "p50": 11,
-     "p90": 13
+     "p10": 20,
+     "p50": 23,
+     "p90": 26
     },
     "NH": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 14,
-     "p50": 15,
-     "p90": 15
+     "p10": 28,
+     "p50": 30,
+     "p90": 32
     },
     "DC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 17,
-     "p50": 17,
-     "p90": 17
+     "p10": 38,
+     "p50": 38,
+     "p90": 38
     },
     "GC": {
      "p1": 0.0,
-     "top2": 0.074,
-     "top3": 0.2988,
-     "p10": 3,
-     "p50": 4,
-     "p90": 6
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 13,
+     "p90": 17
     },
     "EG": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 8,
-     "p50": 10,
-     "p90": 12
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 18,
+     "p90": 20
     },
-    "IT": {
-     "p1": 0.0,
-     "top2": 0.0067,
-     "top3": 0.0542,
-     "p10": 4,
-     "p50": 6,
-     "p90": 7
-    },
-    "AP": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 7,
-     "p50": 8,
-     "p90": 9
-    },
-    "TK": {
+    "JI": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 11,
-     "p50": 13,
+     "p10": 34,
+     "p50": 35,
+     "p90": 35
+    },
+    "JA": {
+     "p1": 0.0,
+     "top2": 0.0005,
+     "top3": 0.0013,
+     "p10": 7,
+     "p50": 9,
      "p90": 13
+    },
+    "CD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 12,
+     "p90": 16
+    },
+    "PA": {
+     "p1": 0.071,
+     "top2": 0.227,
+     "top3": 0.4665,
+     "p10": 2,
+     "p50": 4,
+     "p90": 6
+    },
+    "CT": {
+     "p1": 0.043,
+     "top2": 0.1427,
+     "top3": 0.3265,
+     "p10": 2,
+     "p50": 4,
+     "p90": 6
+    },
+    "KD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 20,
+     "p50": 23,
+     "p90": 26
+    },
+    "BE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 26,
+     "p50": 28,
+     "p90": 31
+    },
+    "BI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 29,
+     "p90": 31
+    },
+    "RJ": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 28,
+     "p50": 30,
+     "p90": 32
+    },
+    "RH": {
+     "p1": 0.336,
+     "top2": 0.6657,
+     "top3": 0.8468,
+     "p10": 1,
+     "p50": 2,
+     "p90": 4
+    },
+    "GM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 13,
+     "p90": 17
+    },
+    "CW": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 24,
+     "p90": 27
+    },
+    "HR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 10,
+     "p50": 14,
+     "p90": 18
+    },
+    "ST": {
+     "p1": 0.0092,
+     "top2": 0.044,
+     "top3": 0.1232,
+     "p10": 3,
+     "p50": 5,
+     "p90": 7
+    },
+    "LC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 31,
+     "p50": 33,
+     "p90": 34
+    },
+    "LT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 17,
+     "p90": 19
+    },
+    "SI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 19,
+     "p90": 22
+    },
+    "RA": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 8,
+     "p50": 12,
+     "p90": 16
+    },
+    "JY": {
+     "p1": 0.0,
+     "top2": 0.0008,
+     "top3": 0.004,
+     "p10": 6,
+     "p50": 8,
+     "p90": 11
+    },
+    "MT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 36,
+     "p50": 36,
+     "p90": 36
+    },
+    "CR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 32,
+     "p50": 34,
+     "p90": 35
+    },
+    "FS": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 10,
+     "p50": 14,
+     "p90": 18
+    },
+    "JT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 25,
+     "p50": 27,
+     "p90": 29
+    },
+    "RD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 24,
+     "p90": 26
     }
    },
    "people": {
     "최석철": {
-     "p1": 0.9988,
-     "top2": 1.0,
-     "top3": 1.0,
+     "p1": 0.5122,
+     "top2": 0.778,
+     "top3": 0.905,
      "p10": 1,
      "p50": 1,
-     "p90": 1
+     "p90": 3
     },
     "이건희": {
-     "p1": 0.0013,
-     "top2": 0.7933,
-     "top3": 0.9445,
+     "p1": 0.0462,
+     "top2": 0.1388,
+     "top3": 0.3272,
      "p10": 2,
-     "p50": 2,
-     "p90": 3
+     "p50": 4,
+     "p90": 6
     },
     "이시연": {
      "p1": 0.0,
-     "top2": 0.076,
-     "top3": 0.4105,
-     "p10": 3,
-     "p50": 4,
-     "p90": 5
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 10,
+     "p90": 13
     },
     "이진욱": {
      "p1": 0.0,
-     "top2": 0.0008,
-     "top3": 0.005,
-     "p10": 6,
-     "p50": 7,
-     "p90": 8
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 16,
+     "p90": 17
     },
     "강줄기": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 10,
-     "p50": 10,
-     "p90": 10
+     "p10": 19,
+     "p50": 19,
+     "p90": 19
     },
     "서보윤": {
      "p1": 0.0,
-     "top2": 0.116,
-     "top3": 0.5417,
-     "p10": 2,
-     "p50": 3,
-     "p90": 5
+     "top2": 0.0003,
+     "top3": 0.0005,
+     "p10": 7,
+     "p50": 9,
+     "p90": 13
     },
     "강현섭": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 7,
-     "p50": 8,
-     "p90": 8
+     "p10": 12,
+     "p50": 15,
+     "p90": 16
     },
-    "배진영": {
-     "p1": 0.0,
-     "top2": 0.014,
-     "top3": 0.0968,
-     "p10": 4,
-     "p50": 5,
-     "p90": 6
-    },
-    "저자 가림(AP)": {
+    "전누리": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0015,
-     "p10": 6,
-     "p50": 7,
-     "p90": 7
+     "top3": 0.0003,
+     "p10": 7,
+     "p50": 9,
+     "p90": 12
     },
-    "정동균": {
+    "임철희": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 9,
-     "p50": 9,
-     "p90": 9
-    }
-   },
-   "team": {
-    "MP": {
+     "p10": 8,
+     "p50": 11,
+     "p90": 14
+    },
+    "김민균": {
+     "p1": 0.0625,
+     "top2": 0.2165,
+     "top3": 0.4703,
+     "p10": 2,
+     "p50": 4,
+     "p90": 6
+    },
+    "남하늘": {
+     "p1": 0.0352,
+     "top2": 0.1343,
+     "top3": 0.3125,
+     "p10": 2,
+     "p50": 4,
+     "p90": 6
+    },
+    "김두환": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 17,
+     "p90": 17
+    },
+    "백지훈": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 18,
+     "p50": 18,
+     "p90": 18
+    },
+    "라경주": {
+     "p1": 0.3345,
+     "top2": 0.6853,
+     "top3": 0.8505,
+     "p10": 1,
+     "p50": 2,
+     "p90": 4
+    },
+    "김혜인": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
      "p10": 9,
      "p50": 12,
-     "p90": 15
+     "p90": 14
+    },
+    "김영수": {
+     "p1": 0.0092,
+     "top2": 0.0462,
+     "top3": 0.1288,
+     "p10": 3,
+     "p50": 5,
+     "p90": 7
+    },
+    "박규민": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 14,
+     "p90": 16
+    },
+    "이민우": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 8,
+     "p50": 11,
+     "p90": 14
+    },
+    "김정윤": {
+     "p1": 0.0,
+     "top2": 0.0008,
+     "top3": 0.0047,
+     "p10": 6,
+     "p50": 7,
+     "p90": 10
+    }
+   },
+   "team": {
+    "MP": {
+     "p1": 0.0,
+     "top2": 0.0003,
+     "top3": 0.0293,
+     "p10": 4,
+     "p50": 6,
+     "p90": 9
     },
     "DR": {
-     "p1": 0.0045,
-     "top2": 0.0372,
-     "top3": 0.0935,
-     "p10": 4,
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0053,
+     "p10": 5,
      "p50": 7,
-     "p90": 9
+     "p90": 10
     },
     "ON": {
      "p1": 0.0,
-     "top2": 0.0013,
-     "top3": 0.0035,
+     "top2": 0.0,
+     "top3": 0.0,
      "p10": 7,
      "p50": 10,
-     "p90": 14
+     "p90": 11
     },
     "RM": {
-     "p1": 0.0022,
-     "top2": 0.046,
-     "top3": 0.1388,
+     "p1": 0.006,
+     "top2": 0.0965,
+     "top3": 0.6845,
      "p10": 3,
-     "p50": 6,
-     "p90": 8
+     "p50": 3,
+     "p90": 4
     },
     "UF": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 19,
-     "p50": 20,
-     "p90": 21
+     "p10": 12,
+     "p50": 13,
+     "p90": 13
     },
     "ML": {
-     "p1": 0.0457,
-     "top2": 0.3683,
-     "top3": 0.5843,
-     "p10": 2,
-     "p50": 3,
-     "p90": 6
+     "p1": 0.252,
+     "top2": 0.8948,
+     "top3": 0.982,
+     "p10": 1,
+     "p50": 2,
+     "p90": 3
     },
     "TD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 16,
-     "p50": 18,
-     "p90": 19
-    },
-    "SR": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0005,
-     "p10": 8,
-     "p50": 11,
-     "p90": 15
-    },
-    "DI": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 10,
-     "p50": 14,
-     "p90": 17
-    },
-    "SL": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 11,
-     "p50": 15,
-     "p90": 17
+     "p10": 12,
+     "p50": 12,
+     "p90": 13
     },
     "SV": {
-     "p1": 0.0158,
-     "top2": 0.1378,
-     "top3": 0.3317,
-     "p10": 2,
+     "p1": 0.0005,
+     "top2": 0.0195,
+     "top3": 0.2188,
+     "p10": 3,
      "p50": 4,
-     "p90": 7
+     "p90": 6
     },
     "AL": {
      "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0005,
-     "p10": 8,
-     "p50": 11,
-     "p90": 14
-    },
-    "SF": {
-     "p1": 0.007,
-     "top2": 0.091,
-     "top3": 0.225,
-     "p10": 3,
+     "top2": 0.0032,
+     "top3": 0.0772,
+     "p10": 4,
      "p50": 5,
      "p90": 7
     },
-    "SD": {
-     "p1": 0.0003,
-     "top2": 0.0035,
-     "top3": 0.0168,
-     "p10": 5,
-     "p50": 7,
+    "SF": {
+     "p1": 0.0,
+     "top2": 0.0003,
+     "top3": 0.002,
+     "p10": 6,
+     "p50": 8,
      "p90": 10
+    },
+    "SD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 11,
+     "p90": 11
     },
     "LD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 20,
-     "p50": 21,
-     "p90": 21
-    },
-    "SM": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 10,
+     "p10": 14,
      "p50": 14,
-     "p90": 17
-    },
-    "PS": {
-     "p1": 0.0485,
-     "top2": 0.3435,
-     "top3": 0.615,
-     "p10": 2,
-     "p50": 3,
-     "p90": 5
-    },
-    "EM": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 15,
-     "p90": 18
+     "p90": 14
     },
     "AC": {
      "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 15,
-     "p90": 18
+     "top2": 0.0003,
+     "top3": 0.0022,
+     "p10": 6,
+     "p50": 8,
+     "p90": 10
     },
-    "FF": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 17,
-     "p50": 19,
-     "p90": 20
-    },
-    "CY": {
-     "p1": 0.876,
-     "top2": 0.9715,
-     "top3": 0.9902,
+    "PB": {
+     "p1": 0.7415,
+     "top2": 0.9852,
+     "top3": 0.9988,
      "p10": 1,
      "p50": 1,
      "p90": 2
@@ -1331,3270 +1847,4474 @@
  "levers": {
   "MP": [
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "creativeUse",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
+    "c": "structure",
+    "s": "flow",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "technical",
+    "s": "validity",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "DR": [
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
+    "s": "creativeUse",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
+    "c": "structure",
+    "s": "flow",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "market",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "ON": [
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "s": "valueProp",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "VT": [
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "valueProp",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "structure",
+    "s": "flow",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.9,
-    "to": 0.95,
-    "delta": 0.5
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.9,
-    "to": 0.95,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "HS": [
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
+    "s": "creativeUse",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "structure",
+    "s": "market",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
+    "c": "technical",
+    "s": "validity",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
+    "c": "structure",
+    "s": "flow",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.9,
     "to": 0.95,
-    "delta": 0.3333
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "NM": [
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "creativeUse",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "flow",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.9,
-    "to": 0.95,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "MM": [
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
+    "c": "structure",
+    "s": "flow",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "structure",
+    "s": "market",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "innovation",
+    "s": "creativeUse",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "technical",
+    "s": "validity",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "PK": [
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "innovation",
+    "s": "valueProp",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "creativeUse",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
+    "c": "structure",
+    "s": "market",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
+    "c": "technical",
+    "s": "validity",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "HB": [
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "innovation",
+    "s": "creativeUse",
     "from": 0.4,
     "to": 0.45,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.3333
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "AD": [
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.25,
     "to": 0.3,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.35,
     "to": 0.4,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "creativeUse",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.35,
-    "to": 0.4,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "flow",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "TE": [
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "innovation",
+    "s": "valueProp",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "technical",
+    "s": "validity",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "TC": [
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
     "c": "innovation",
     "s": "novelty",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
+    "c": "innovation",
+    "s": "valueProp",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "flow",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "LR": [
    {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "s": "creativeUse",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "structure",
+    "s": "flow",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.35,
-    "to": 0.4,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "NH": [
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "s": "valueProp",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "technical",
+    "s": "validity",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "structure",
+    "s": "flow",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "DC": [
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.2,
     "to": 0.25,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.3,
-    "to": 0.35,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
+    "s": "creativeUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "c": "technical",
+    "s": "validity",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.3,
-    "to": 0.35,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.3,
-    "to": 0.35,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "references",
+    "c": "presentation",
+    "s": "clarity",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.3333
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "GC": [
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "structure",
+    "s": "market",
     "from": 0.4,
     "to": 0.45,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "valueProp",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "structure",
+    "s": "flow",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "innovation",
+    "s": "creativeUse",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "technical",
+    "s": "validity",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "RM": [
    {
-    "c": "innovation",
-    "s": "impact",
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "innovation",
+    "s": "valueProp",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
+    "c": "technical",
+    "s": "validity",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
+    "c": "innovation",
+    "s": "creativeUse",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "UF": [
    {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.3,
-    "to": 0.35,
-    "delta": 0.5
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "structure",
+    "s": "market",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "c": "technical",
+    "s": "validity",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
+    "c": "innovation",
+    "s": "creativeUse",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "EG": [
    {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "innovation",
+    "s": "valueProp",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "creativeUse",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "technical",
+    "s": "validity",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "ML": [
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "valueProp",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
+    "c": "technical",
+    "s": "validity",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
+    "c": "structure",
+    "s": "flow",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "TD": [
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "innovation",
+    "s": "valueProp",
     "from": 0.45,
     "to": 0.5,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "structure",
+    "s": "market",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   }
-  ],
-  "SR": [
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   }
-  ],
-  "DI": [
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
    },
-   {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
-   }
-  ],
-  "SL": [
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
+    "s": "creativeUse",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "SV": [
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "c": "structure",
+    "s": "market",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "valueProp",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "AL": [
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
+    "s": "creativeUse",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
+    "c": "structure",
+    "s": "flow",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "SF": [
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
    },
    {
-    "c": "innovation",
-    "s": "impact",
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "innovation",
+    "s": "creativeUse",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
+    "c": "technical",
+    "s": "validity",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "SD": [
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
     "c": "innovation",
-    "s": "impact",
+    "s": "valueProp",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "innovation",
+    "s": "creativeUse",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "technical",
+    "s": "validity",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "LD": [
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
     "from": 0.35,
     "to": 0.4,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   }
-  ],
-  "SM": [
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   }
-  ],
-  "PS": [
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
+    "s": "valueProp",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
-    "s": "impact",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "s": "creativeUse",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "c": "structure",
+    "s": "market",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
-   }
-  ],
-  "EM": [
-   {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.45,
     "to": 0.5,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "technical",
+    "s": "validity",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "innovation",
-    "s": "impact",
+    "c": "structure",
+    "s": "flow",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
   "AC": [
    {
-    "c": "feasibility",
-    "s": "commercial",
+    "c": "structure",
+    "s": "market",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "JI": [
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
     "from": 0.4,
     "to": 0.45,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.3,
-    "to": 0.35,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   }
-  ],
-  "IT": [
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.3333
-   }
-  ],
-  "AP": [
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.3333
-   }
-  ],
-  "FF": [
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "c": "technical",
+    "s": "validity",
     "from": 0.45,
     "to": 0.5,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "reliability",
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
+    "c": "structure",
+    "s": "flow",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "creativity",
-    "s": "problem",
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "JA": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.3333
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ],
-  "TK": [
+  "CD": [
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
    {
     "c": "innovation",
     "s": "novelty",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "frontier",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "challenge",
-    "s": "convergence",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5
-   },
-   {
-    "c": "feasibility",
-    "s": "rnd",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5
-   },
-   {
-    "c": "completeness",
-    "s": "references",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "reliability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.3333
-   },
-   {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   },
-   {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
-   }
-  ],
-  "CY": [
-   {
-    "c": "feasibility",
-    "s": "commercial",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5
-   },
-   {
-    "c": "innovation",
-    "s": "impact",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "PA": [
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "CT": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "KD": [
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "PB": [
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "BE": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "BI": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "RJ": [
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "RH": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "GM": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "CW": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "HR": [
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.9,
+    "to": 0.95,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.9,
+    "to": 0.95,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "ST": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "LC": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "LT": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
    },
    {
     "c": "innovation",
     "s": "novelty",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "frontier",
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "challenge",
-    "s": "convergence",
+    "c": "technical",
+    "s": "validity",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "SI": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "feasibility",
-    "s": "rnd",
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "RA": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "applicability",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "problem",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "flow",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
    },
    {
-    "c": "creativity",
-    "s": "scoping",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.9,
+    "to": 0.95,
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "logic",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.3333
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    },
    {
-    "c": "completeness",
-    "s": "reliability",
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "JY": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
    },
    {
-    "c": "completeness",
-    "s": "references",
+    "c": "technical",
+    "s": "understanding",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.3333
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "MT": [
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "CR": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "FS": [
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "JT": [
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   }
+  ],
+  "RD": [
+   {
+    "c": "innovation",
+    "s": "novelty",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "valueProp",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "market",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "sustainability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "innovation",
+    "s": "creativeUse",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "validity",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "technical",
+    "s": "understanding",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "dataDriven",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.5556
+   },
+   {
+    "c": "structure",
+    "s": "flow",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.5556
+   },
+   {
+    "c": "presentation",
+    "s": "clarity",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "timing",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
+   },
+   {
+    "c": "presentation",
+    "s": "qa",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.0
    }
   ]
  },
@@ -4656,24 +6376,99 @@
    ]
   },
   {
-   "id": "배진영",
-   "paperId": "IT",
+   "id": "전누리",
+   "paperId": "JA",
    "papers": [
-    "IT"
+    "JI",
+    "JA"
    ]
   },
   {
-   "id": "저자 가림(AP)",
-   "paperId": "AP",
+   "id": "임철희",
+   "paperId": "CD",
    "papers": [
-    "AP"
+    "CD",
+    "HR",
+    "RD"
    ]
   },
   {
-   "id": "정동균",
-   "paperId": "TK",
+   "id": "김민균",
+   "paperId": "PA",
    "papers": [
-    "TK"
+    "PA",
+    "FS"
+   ]
+  },
+  {
+   "id": "남하늘",
+   "paperId": "CT",
+   "papers": [
+    "CT",
+    "MT"
+   ]
+  },
+  {
+   "id": "김두환",
+   "paperId": "KD",
+   "papers": [
+    "KD"
+   ]
+  },
+  {
+   "id": "백지훈",
+   "paperId": "BE",
+   "papers": [
+    "BE",
+    "BI"
+   ]
+  },
+  {
+   "id": "라경주",
+   "paperId": "RH",
+   "papers": [
+    "RJ",
+    "RH"
+   ]
+  },
+  {
+   "id": "김혜인",
+   "paperId": "GM",
+   "papers": [
+    "GM",
+    "CW"
+   ]
+  },
+  {
+   "id": "김영수",
+   "paperId": "ST",
+   "papers": [
+    "ST",
+    "SI"
+   ]
+  },
+  {
+   "id": "박규민",
+   "paperId": "LT",
+   "papers": [
+    "LC",
+    "LT"
+   ]
+  },
+  {
+   "id": "이민우",
+   "paperId": "RA",
+   "papers": [
+    "RA",
+    "CR"
+   ]
+  },
+  {
+   "id": "김정윤",
+   "paperId": "JY",
+   "papers": [
+    "JY",
+    "JT"
    ]
   }
  ]

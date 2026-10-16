@@ -56,7 +56,7 @@ def build_data(public=False, basis_date=None, last_sync=None):
                 p["driveId"] = f["id"]
                 p["file"]["viewUrl"] = f"https://drive.google.com/file/d/{f['id']}/view?usp=drivesdk"
     meta = {
-        "version": "v4",
+        "version": "v5",
         "basisDate": basis_date or datetime.date.today().isoformat(),
         "generatedAt": datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat(),
         "lastSync": last_sync,
@@ -128,7 +128,7 @@ def main():
         if os.path.exists(src):
             shutil.copy(src, os.path.join(site, name))
     c = data["meta"]["counts"]
-    print(f"built {'PUBLIC' if public else 'internal'} v4: {a.out}/artifact.html ({len(artifact)//1024} KB), {site}/ — papers {c['total']} (new {c['new']}, updated {c['updated']}, 핵심5 제외 {c['excluded']})")
+    print(f"built {'PUBLIC' if public else 'internal'} v5: {a.out}/artifact.html ({len(artifact)//1024} KB), {site}/ — papers {c['total']} (new {c['new']}, updated {c['updated']}, 핵심5 제외 {c['excluded']})")
     if a.root:
         write_site(ROOT, template, app, djs, favicon_links() + "\n" + robots)
         print("deployed PUBLIC v4 to repo root: index.html, app.js, data/data.js (v3/·v2/·v1/ 은 그대로)")

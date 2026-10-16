@@ -2,7 +2,7 @@
 """빌드 전 정합성 점검. 오류가 있으면 종료 코드 1.
 
 - 드라이브 목록 ↔ 카탈로그(data/papers.json) 대응, NEW- 임시 ID 여부
-- v4: 순위 대상(핵심5 하위 폴더·removed 제외) 원고마다 평가(eval/<ID>.json)와 심사 기준 5항목(rubric) 필수 — 격자·평균·합계
+- v5: 순위 대상(핵심5 하위 폴더·removed 제외) 원고마다 평가(eval/<ID>.json)와 심사 기준 4항목(rubric) 필수 — 격자·평균·합계(total 은 기본 프리셋 가중치의 심사 점수)
 - 6개 변수(scores)는 v3 까지의 기록이라 있으면 범위만 본다. 리스크 level, projectMatch, projectId 존재
 - 평가 당시 텍스트 해시(eval.textSha) == 현재 텍스트 해시(카탈로그 textSha)  → 다르면 재평가 필요
 - results.json·lint.json 이 평가된 원고 전부를 담고 있고 평가보다 최신인지
@@ -64,7 +64,7 @@ def main():
             errors.append(f"{pid}: authors 비어 있음")
         rub = p.get("rubric")
         if not rub:
-            errors.append(f"{pid}: 심사 기준 5항목(rubric) 없음 — v4 순위에 필요")
+            errors.append(f"{pid}: 심사 기준 4항목(rubric) 없음 — v5 순위에 필요")
         else:
             crit_def = {c["key"]: [x["key"] for x in c["sub"]] for c in load_json(os.path.join(DATA, "rubric.json"))["criteria"]}
             tot = []
@@ -86,8 +86,13 @@ def main():
                 if not c.get("why"):
                     errors.append(f"{pid}: rubric.{ck}.why 없음")
                 tot.append(mean)
-            if tot and abs((rub.get("total") or 0) - 100 * sum(tot) / len(tot)) > 0.11:
-                errors.append(f"{pid}: rubric.total {rub.get('total')} ≠ 항목 평균×100 {100*sum(tot)/len(tot):.1f}")
+            # v5: total = 기본 프리셋(data/rubric.json default) 가중치로 계산한 심사 점수 — 사이트의 기본 점수와 같다.
+            rdef = load_json(os.path.join(DATA, "rubric.json"))
+            w = rdef["presets"][rdef["default"]]["weights"]
+            means = dict(zip(crit_def.keys(), tot))
+            want = 100 * sum((w.get(k) or 0) * means.get(k, 0) for k in crit_def)
+            if tot and abs((rub.get("total") or 0) - want) > 0.11:
+                errors.append(f"{pid}: rubric.total {rub.get('total')} ≠ 기본 가중치 심사 점수 {want:.1f}")
     evaluated = {p["id"] for p in papers if p.get("evaluated")}
     rp = os.path.join(DATA, "results.json")
     if os.path.exists(rp):
