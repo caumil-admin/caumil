@@ -76,7 +76,7 @@
  },
  {
   "id": "VT",
-  "driveKey": "491a50717dfa39a0",
+  "driveKey": "a1d024227bf17f09",
   "track": "personal",
   "authors": [
    "최석철"
@@ -87,12 +87,12 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "최석철_스마트글래스 연동 지휘관 화상회의 복창 검증 프레임워크.hwpx",
-   "createdTime": "2026-09-29T05:56:27.875Z",
-   "modifiedTime": "2026-09-29T06:32:44.448Z",
-   "fileSize": "367167"
+   "title": "최석철_스마트글래스 연동 지휘관 화상회의 복창 검증 프레임워크(최종).pdf",
+   "createdTime": "2026-10-23T08:57:36.629Z",
+   "modifiedTime": "2026-10-23T02:01:51.253Z",
+   "fileSize": "717905"
   },
-  "status": "unchanged",
+  "status": "updated",
   "textSha": "657141adaa25fb6d"
  },
  {
@@ -181,7 +181,7 @@
  },
  {
   "id": "HB",
-  "driveKey": "da13fdf8b501ab9e",
+  "driveKey": "2e665df4e0ea69f4",
   "track": "personal",
   "authors": [
    "강줄기",
@@ -193,17 +193,17 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "강줄기_프로덕션 규모 트랜스포머 추론에서 서브레이어 간직접 전달로 제거 가능한 HBM 트래픽의 정량화_대한정보공학회_정규논문.hwpx",
-   "createdTime": "2026-10-16T13:40:43.343Z",
-   "modifiedTime": "2026-10-16T13:38:55.888Z",
-   "fileSize": "296891"
+   "title": "강줄기_프로덕션 규모 트랜스포머 추론에서 서브레이어 간 직접 전달로 제거 가능한 HBM 트래픽의 정량화.hwpx",
+   "createdTime": "2026-10-19T06:40:23.559Z",
+   "modifiedTime": "2026-10-19T06:39:59.127Z",
+   "fileSize": "296591"
   },
   "status": "updated",
   "textSha": "272c2b81da686a75"
  },
  {
   "id": "AD",
-  "driveKey": "d6a759d29e1299e3",
+  "driveKey": "7249f8f67b937004",
   "track": "personal",
   "authors": [
    "강줄기",
@@ -215,13 +215,13 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "강줄기_에이전트형 AI를 위한 실행 전 제약 실현 허용성과 구조적 허용성_대한정보공학회.hwpx",
-   "createdTime": "2026-10-16T13:40:43.386Z",
-   "modifiedTime": "2026-10-16T13:38:50.106Z",
-   "fileSize": "231256"
+   "title": "강줄기_에이전트형 AI를 위한 실행 전 제약 실현 허용성과 구조적 허용성.hwpx",
+   "createdTime": "2026-10-19T06:40:23.550Z",
+   "modifiedTime": "2026-10-19T06:36:41.588Z",
+   "fileSize": "233271"
   },
   "status": "updated",
-  "textSha": "764cf426aecefd30"
+  "textSha": "f6eaf555d961bc5a"
  },
  {
   "id": "TE",
@@ -262,7 +262,7 @@
    "modifiedTime": "2026-10-15T00:33:39.473Z",
    "fileSize": "290171"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "50c0dce7de95bb66"
  },
  {
@@ -326,7 +326,7 @@
    "modifiedTime": "2026-10-16T13:41:27.701Z",
    "fileSize": "160256"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "92221aa32c887ead"
  },
  {
@@ -384,7 +384,7 @@
  },
  {
   "id": "UB",
-  "driveKey": "15051769cce1ca51",
+  "driveKey": "be80627fdecde654",
   "track": "personal",
   "authors": [
    "이건희"
@@ -395,13 +395,14 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "이건희_UaVirBASE_KCI_검토용_논문.pdf",
-   "createdTime": "2026-09-29T01:39:50.425Z",
-   "modifiedTime": "2026-09-29T01:36:37.562Z",
-   "fileSize": "324097"
+   "title": "[이건희] 개인저널2.pdf",
+   "createdTime": "2026-10-16T14:26:51.196Z",
+   "modifiedTime": "2026-10-01T08:56:25.184Z",
+   "fileSize": "555400"
   },
-  "status": "removed",
-  "textSha": "242d14058a28b086"
+  "status": "updated",
+  "textSha": "d955c11746b8e974",
+  "note": "9/29 PDF 가 삭제됐다가 10/16 에 개정판([이건희] 개인저널2.pdf, 같은 연구의 확장)이 다시 올라옴 — 같은 ID 로 잇는다."
  },
  {
   "id": "TU",
@@ -558,12 +559,12 @@
   "venueName": "국방기술학회",
   "folder": "국방기술학회 팀논문",
   "file": {
-   "title": "[4조]무인기 영상 기반 전차 부품 손상 데이터셋 구축.hwpx",
+   "title": " [4조]무인기 영상 기반 전차 부품 손상 데이터셋 구축.hwpx",
    "createdTime": "2026-10-01T05:24:12.618Z",
    "modifiedTime": "2026-10-16T10:52:14.380Z",
    "fileSize": "3352866"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "6e9e3c419905600b",
   "team": "4조"
  },
@@ -882,8 +883,8 @@
   "file": {
    "title": "전자공학회_저널 페이퍼_특별호_배진영_2610061046.pdf",
    "createdTime": "2026-10-06T01:55:56.050Z",
-   "modifiedTime": "2026-10-06T01:55:10.064Z",
-   "fileSize": "615256"
+   "modifiedTime": "2026-10-20T09:54:34.768Z",
+   "fileSize": "668381"
   },
   "status": "unchanged",
   "textSha": "dc389271f67dd3bd",
@@ -1000,7 +1001,7 @@
    "modifiedTime": "2026-10-16T11:36:19.034Z",
    "fileSize": "646656"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "91551a797e647a2d"
  },
  {
@@ -1021,7 +1022,7 @@
    "modifiedTime": "2026-10-16T12:24:23.939Z",
    "fileSize": "2301952"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "13d4023ed2356726"
  },
  {
@@ -1042,7 +1043,7 @@
    "modifiedTime": "2026-10-16T11:38:50.119Z",
    "fileSize": "3606341"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "2c3160284abeaa47"
  },
  {
@@ -1063,7 +1064,7 @@
    "modifiedTime": "2026-10-16T01:38:07.483Z",
    "fileSize": "456192"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "bbec085a4265fd4a"
  },
  {
@@ -1084,29 +1085,30 @@
    "modifiedTime": "2026-10-16T02:02:18.821Z",
    "fileSize": "595968"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "72ccc1b492b7d616"
  },
  {
   "id": "KD",
-  "driveKey": "7b41b102aaef7dd5",
+  "driveKey": "a69d405ed89611ca",
   "track": "personal",
   "authors": [
    "김두환"
   ],
   "projectId": "P203",
   "projectMatch": "related",
-  "venue": "ee",
-  "venueName": "전자공학회 특별호",
-  "folder": "전자공학회특별저널 개인논문",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
   "file": {
    "title": "김두환_한국정보기술학회지.hwp",
-   "createdTime": "2026-10-16T00:41:58.709Z",
-   "modifiedTime": "2026-10-16T00:38:49.764Z",
+   "createdTime": "2026-10-18T12:30:09.283Z",
+   "modifiedTime": "2026-10-18T13:38:45.641Z",
    "fileSize": "661504"
   },
-  "status": "new",
-  "textSha": "30064575f144959f"
+  "status": "updated",
+  "textSha": "2da0735a490d4b0b",
+  "note": "10/16 에는 전자공학회 폴더에 올라온 정보기술학회 원고였고 10/18 에 정보기술학회 폴더로 옮겨 재업로드(같은 제목). 전자공학회 원고는 10/21 별도 제출."
  },
  {
   "id": "PB",
@@ -1129,7 +1131,7 @@
    "modifiedTime": "2026-10-16T00:11:57.109Z",
    "fileSize": "9318912"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "952929280e630777",
   "team": "4조"
  },
@@ -1151,7 +1153,7 @@
    "modifiedTime": "2026-10-16T00:23:20.498Z",
    "fileSize": "638755"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "2ce5e9a10483cf48"
  },
  {
@@ -1172,7 +1174,7 @@
    "modifiedTime": "2026-10-16T00:24:03.617Z",
    "fileSize": "293932"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "6b279dcf4963ab5e"
  },
  {
@@ -1193,7 +1195,7 @@
    "modifiedTime": "2026-10-15T22:52:53.985Z",
    "fileSize": "251900"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "ab90bcce550dece4"
  },
  {
@@ -1214,7 +1216,7 @@
    "modifiedTime": "2026-10-15T22:43:23.952Z",
    "fileSize": "402432"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "912a41b8a8d64f68"
  },
  {
@@ -1235,7 +1237,7 @@
    "modifiedTime": "2026-10-15T04:39:54.364Z",
    "fileSize": "2020352"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "52bc68283a07c4dd"
  },
  {
@@ -1256,7 +1258,7 @@
    "modifiedTime": "2026-10-15T04:06:38.348Z",
    "fileSize": "711168"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "4c62f22e6c150b95"
  },
  {
@@ -1277,7 +1279,7 @@
    "modifiedTime": "2026-10-15T01:45:08.909Z",
    "fileSize": "2120595"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "4c7f4dbe620dea6f"
  },
  {
@@ -1298,7 +1300,7 @@
    "modifiedTime": "2026-10-14T23:54:26.293Z",
    "fileSize": "1437664"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "226b9875287b1083"
  },
  {
@@ -1319,7 +1321,7 @@
    "modifiedTime": "2026-10-14T23:46:11.883Z",
    "fileSize": "134144"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "6262aab02da1d8fd"
  },
  {
@@ -1340,7 +1342,7 @@
    "modifiedTime": "2026-10-15T00:01:49.987Z",
    "fileSize": "285184"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "66387332e3965fa3"
  },
  {
@@ -1361,12 +1363,12 @@
    "modifiedTime": "2026-10-14T23:55:13.181Z",
    "fileSize": "80867"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "c5c08ea28e5a3bf5"
  },
  {
   "id": "RA",
-  "driveKey": "80ea95dd75ce8bce",
+  "driveKey": "a279bd650a414dec",
   "track": "personal",
   "authors": [
    "이민우"
@@ -1377,13 +1379,13 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "[이민우]군 시설 운영비서 구현을 위한 챗봇·RAG·RAG-Agent 방식의 정확도 및 오류율 비교 연구 (항온항습기 점검 평가를 중심으로)_전자공학회(Ver.1).hwp",
-   "createdTime": "2026-10-15T04:50:22.711Z",
-   "modifiedTime": "2026-10-14T06:41:37.734Z",
-   "fileSize": "610304"
+   "title": "[이민우]군 시설 운영비서 구현을 위한 챗봇·RAG·RAG-Agent 방식의 정확도 및 오류율 비교 연구_전자공학회(Ver.2).hwp",
+   "createdTime": "2026-10-19T06:34:49.382Z",
+   "modifiedTime": "2026-10-19T06:33:08.282Z",
+   "fileSize": "613376"
   },
-  "status": "new",
-  "textSha": "4152d7592823ad03"
+  "status": "updated",
+  "textSha": "779fa7844a48d7d0"
  },
  {
   "id": "JY",
@@ -1403,7 +1405,7 @@
    "modifiedTime": "2026-10-14T07:07:53.800Z",
    "fileSize": "796160"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "fa79dc43f88da491"
  },
  {
@@ -1424,12 +1426,12 @@
    "modifiedTime": "2026-10-14T06:00:48.132Z",
    "fileSize": "387072"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "beb21bfcddd50ac3"
  },
  {
   "id": "CR",
-  "driveKey": "50a239470d59e33d",
+  "driveKey": "b811f4e9dc33e54e",
   "track": "personal",
   "authors": [
    "이민우"
@@ -1440,13 +1442,13 @@
   "venueName": "정보기술학회",
   "folder": "정보기술학회 개인논문",
   "file": {
-   "title": "[이민우]군 시설 점검 지원을 위한 검색 기반 챗봇의 응답 구조 설계_한국정보기술학회(Ver.1).hwp",
-   "createdTime": "2026-10-15T04:49:55.488Z",
-   "modifiedTime": "2026-10-14T06:13:04.751Z",
-   "fileSize": "125952"
+   "title": "[이민우]군 시설 점검 지원을 위한 검색 기반 챗봇의 응답 구조 설계_한국정보기술학회(Ver.2).hwp",
+   "createdTime": "2026-10-19T06:47:37.813Z",
+   "modifiedTime": "2026-10-19T06:46:49.262Z",
+   "fileSize": "133120"
   },
-  "status": "new",
-  "textSha": "30d293b2c12a9e50"
+  "status": "updated",
+  "textSha": "942d566663de34ea"
  },
  {
   "id": "FS",
@@ -1466,7 +1468,7 @@
    "modifiedTime": "2026-10-13T07:40:58.718Z",
    "fileSize": "140288"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "0dc1d5f126081621"
  },
  {
@@ -1487,7 +1489,7 @@
    "modifiedTime": "2026-10-13T03:56:44.422Z",
    "fileSize": "234496"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "ed4a13dbff4a2e33"
  },
  {
@@ -1508,7 +1510,7 @@
    "modifiedTime": "2026-10-13T02:06:35.930Z",
    "fileSize": "492032"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "cef4dc8a3ca65172"
  },
  {
@@ -1529,7 +1531,7 @@
    "modifiedTime": "2026-10-15T03:02:25.156Z",
    "fileSize": "944617"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": null,
   "folderSub": "핵심5"
  },
@@ -1551,7 +1553,7 @@
    "modifiedTime": "2026-10-14T04:56:48.707Z",
    "fileSize": "485866"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": null,
   "folderSub": "핵심5"
  },
@@ -1573,7 +1575,7 @@
    "modifiedTime": "2026-10-13T06:23:03.785Z",
    "fileSize": "556537"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": null,
   "folderSub": "핵심5"
  },
@@ -1595,7 +1597,7 @@
    "modifiedTime": "2026-10-12T05:23:56.489Z",
    "fileSize": "1451555"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": null,
   "folderSub": "핵심5"
  },
@@ -1617,8 +1619,142 @@
    "modifiedTime": "2026-10-12T00:08:32.688Z",
    "fileSize": "460495"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": null,
   "folderSub": "핵심5"
+ },
+ {
+  "id": "MB",
+  "driveKey": "ebbd4c52e91dd818",
+  "track": "personal",
+  "authors": [
+   "최석철"
+  ],
+  "projectId": "P207",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "최석철_악성코드 정적 분석의 바이트 표현과 정보 보존_주파수 변환·이미지화·비전 Transformer 및 설명 가능성 관점의 문헌고찰.pdf",
+   "createdTime": "2026-10-29T03:39:17.312Z",
+   "modifiedTime": "2026-10-29T03:39:17.428Z",
+   "fileSize": "699310"
+  },
+  "status": "new",
+  "textSha": "f6d2ce8fccaa1860",
+  "note": "2026-10-29 제출. 악성코드 정적 분석 바이트 표현 문헌고찰(실험 없음). 커넥터 텍스트에는 부록 표 A1~A3 가 없음."
+ },
+ {
+  "id": "KE",
+  "driveKey": "c9ed2855be978b15",
+  "track": "personal",
+  "authors": [
+   "김두환"
+  ],
+  "projectId": "P203",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "김두환_대한전자공학회.hwp",
+   "createdTime": "2026-10-21T05:45:28.103Z",
+   "modifiedTime": "2026-10-21T05:39:39.654Z",
+   "fileSize": "3931648"
+  },
+  "status": "new",
+  "textSha": "f5cc1cba95c0b62d",
+  "note": "10/21 제출 전자공학회 원고(계획서 P203 과 같은 과제). 정보기술학회판은 KD."
+ },
+ {
+  "id": "GS",
+  "driveKey": "98bd7e2ab4e6081a",
+  "track": "personal",
+  "authors": [
+   "이건희"
+  ],
+  "projectId": "P204",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "[이건희] 개인저널4.pdf",
+   "createdTime": "2026-10-16T14:23:46.152Z",
+   "modifiedTime": "2026-10-16T14:10:39.105Z",
+   "fileSize": "767837"
+  },
+  "status": "new",
+  "textSha": "7cbf944d078b096e",
+  "note": "[이건희] 개인저널4.pdf — 심사용 익명본(총성 탐지기 실측 일반화)."
+ },
+ {
+  "id": "DZ",
+  "driveKey": "a1d308a9d6522aa1",
+  "track": "personal",
+  "authors": [
+   "강현재",
+   "노하은"
+  ],
+  "projectId": "P220",
+  "projectMatch": "same",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "강현재_얼굴 행동의 개인차 반영 여부에 따른 졸림 위험 분류 성능 비교(전자).hwp",
+   "createdTime": "2026-10-18T14:59:49.335Z",
+   "modifiedTime": "2026-10-16T02:07:04.664Z",
+   "fileSize": "956928"
+  },
+  "status": "new",
+  "textSha": "c14cd3d5921e7c7a",
+  "note": "10/18 제출(파일 수정 10/16). 발표자료 DZ 의 기준 원고. v5 평가는 10/28 eval_external 로 먼저 했고 10/29 카탈로그에 편입."
+ },
+ {
+  "id": "MN",
+  "driveKey": "52b06c69506fd736",
+  "track": "personal",
+  "authors": [
+   "이건희"
+  ],
+  "projectId": "P204",
+  "projectMatch": "different",
+  "venue": "ee",
+  "venueName": "전자공학회 특별호",
+  "folder": "전자공학회특별저널 개인논문",
+  "file": {
+   "title": "[이건희] 개인저널3.pdf",
+   "createdTime": "2026-10-16T14:23:49.313Z",
+   "modifiedTime": "2026-10-13T10:27:10.129Z",
+   "fileSize": "1004905"
+  },
+  "status": "new",
+  "textSha": "3208111f140ea81a",
+  "note": "[이건희] 개인저널3.pdf — 심사용 익명본(항공기 탑재장비 자기교란원 식별)."
+ },
+ {
+  "id": "DF",
+  "driveKey": "c371003dd75dd14e",
+  "track": "personal",
+  "authors": [
+   "강현재",
+   "노하은"
+  ],
+  "projectId": "P220",
+  "projectMatch": "related",
+  "venue": "it",
+  "venueName": "정보기술학회",
+  "folder": "정보기술학회 개인논문",
+  "file": {
+   "title": "강현재_개인별 얼굴 행동 기준값을 활용한 머신러닝 기반 졸림 위험 추정 프레임워크 설계(정보).hwp",
+   "createdTime": "2026-10-18T14:56:50.941Z",
+   "modifiedTime": "2026-10-16T01:08:25.191Z",
+   "fileSize": "5640704"
+  },
+  "status": "new",
+  "textSha": "00b7f55a4b5346b3",
+  "note": "정보기술학회판 설계 논문(결과 없음). 전자공학회판 DZ 가 실행 결과."
  }
 ]

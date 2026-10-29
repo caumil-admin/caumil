@@ -12,6 +12,22 @@
   "백준기**** (Joonki Baekⓒ)"
  ],
  "venueHeader": "20**년 **월 전자공학회논문지 제**권 제**호 (수정할 필요 없음)",
+ "scores": {
+  "sota": 0.55,
+  "orig": 0.7,
+  "hwUse": 0.25,
+  "hwFit": 0.15,
+  "stability": 0.5,
+  "delivery": 0.65
+ },
+ "rationale": {
+  "sota": "계획서 0.75→0.55(−0.20). 공개 벤치마크 CAMEL(Ⅲ장 1절, 사람 테스트 6개 시퀀스·20,128 box, 차량 21,235 box)에서 RGB 사전학습 Faster R-CNN 대비 사람 mAP50 48.57→57.22·recall 45.51→67.03, 차량 60.86→67.09·55.08→73.41(표 1·2)로 수치를 제시하고 크기별 mAP50·recall·IDF1(표 3·4)까지 나눠 보여 '강한 baseline 과 비교하고 공개 데이터에서 수치 제시'(0.5) 요건은 넘는다. 그러나 비교군이 RGB 검출기와 자체 Frame-wise adaptation(사람만) 둘뿐이라 인용한 SFOD[13-16]·D3T[8]·ThermalTrack[18]·ByteTrack[17] 등 외부 방법과의 수치 비교가 없고, anchor teacher·tracklet 보완·identity loss·RGB 관계 증류를 가르는 절제 실험과 시드 반복·신뢰구간이 없으며(Ⅲ장 3절 단일 설정, 6,000 반복 1회), 제목이 내세운 추적 성능은 전체 IDF1·MOTA 없이 크기별 IDF1 변화량뿐이고 large 객체 IDF1 은 −6.82·−5.55%p 감소했다(Ⅲ장 4절 라). 계획서가 기대한 SOTA 급 비교 수준에는 못 미쳐 0.55.",
+  "orig": "계획서 0.90→0.70(−0.20). 계획서의 Detection Loss 기반 Modality Translation(영상 변환) 은 버리고, 이미지 단위 SFOD 와 지도 열화상 MOT 사이의 공백(Ⅱ장 1절)을 짚어 source-free 설정을 열화상 다중 객체 추적으로 넓힌 문제 정의는 새롭다. 고정 anchor teacher 와 EMA adaptive teacher 의 상보적 프레임 pseudo-label(Ⅱ장 2절 가, 식 1·2·5)에 신뢰 tracklet 으로 저신뢰·누락 탐지를 보완하고 pseudo identity 를 부여하는 시간적 pseudo-labeling(식 3), identity head 와 정합 RGB 관계 증류(식 4), 추론 association(식 6)을 한 틀로 묶은 구성은 차별점이 분명해 0.7 앵커에 맞는다. 다만 이중 teacher 부분은 같은 팀 SD 원고와 동일하고 mean teacher[10]·tracklet pseudo-label[19,20]·관계 증류[22]·RoI 기반 identity head 는 기존 기법이며 tracklet 규칙도 임곗값 기반(10프레임·0.7·15프레임)의 단순한 형태라 '명확한 신규 프레임워크'(0.85+)로는 보지 않는다.",
+  "hwUse": "계획서 0.25→0.25(±0). 열화상 센서 모달리티가 문제의 핵심이지만 실기기·센서를 직접 구동하지 않고 고정 카메라로 촬영된 공개 CAMEL 정합 비디오(336×256, 30fps, Ⅲ장 1절)만 쓰며 단일 RTX 6000 Ada 에서 오프라인으로 학습·평가했다(Ⅲ장 3절). 운용 장비·추론 속도·탑재 조건 언급이 없어 데이터 중심 순수 SW 과제 관례(0.10~0.35) 안에서 센서 특성이 과제를 규정한다는 점만 반영해 계획서 값을 유지한다.",
+  "hwFit": "계획서 0.20→0.15(−0.05). 추론 단계에서 열화상 프레임만으로 box 와 identity embedding 을 뽑아 연결한다는 설계(Ⅱ장 2절 라)는 있으나 실시간 연동·지연·처리율 측정이 없고, 학습에는 정합 RGB 영상과 OSNet·ResNet-50 teacher 가 추가로 필요해(Ⅱ장 2절 다, Ⅲ장 1절) 실제 열화상 카메라 단독 파이프라인으로 검증된 것이 아니다. 순수 SW 시뮬레이션 구간(0.05~0.30)에서 end-to-end 추적 추론 경로가 정의돼 있는 점만 더해 0.15.",
+  "stability": "계획서 0.85→0.50(−0.35). 사람 6개 시퀀스·차량 21,235 box 의 큰 테스트 집합에서 두 클래스 모두 일관되게 향상되고(표 1·2) 크기별 분석(표 3·4)이 민감도 분석의 구실을 일부 하며, 신뢰 tracklet 조건·임곗값·EMA·gradient clipping 등 설정을 상세히 밝혀(Ⅲ장 3절) 통제 환경 재현은 가능하다. 그러나 단일 실행이라 시드 반복·분산·신뢰구간이 없고, 데이터가 고정 카메라 공개 데이터셋 하나뿐이며 이동 카메라·기상·가림 등 변수 상황 검증은 결론의 향후 계획(Ⅳ장)에만 있고, large 객체 IDF1 감소(−6.82·−5.55%p)처럼 결과가 불안정한 구간도 있다. '통제 환경 또는 오프라인에서 일부 반복' 수준인 0.50.",
+  "delivery": "계획서 0.90→0.65(−0.25). 초록·서론 끝·결론이 문제(RGB→열화상 모달리티 차이·MOT 레이블 비용)–방법(anchor/adaptive teacher·tracklet pseudo identity)–수치(사람 mAP 48.6→51.4→57.2%)를 같은 문장 구조로 반복해 핵심은 분명히 전달되고, 표 1·2 의 향상 폭(8.65·21.52·5.81·8.99, 6.23·18.33%p)이 본문과 일치한다. 그러나 제목·초록은 '다중 객체 추적'인데 대표 수치는 탐지 mAP 뿐이고 추적 지표는 표 3·4 크기별 IDF1 에만 있으며, '열화상 비디오만을 이용'이라는 주장과 학습 시 정합 RGB 사용(Ⅲ장 1절)이 어긋나고, 표 3 large IDF1 76.35→69.35 를 −6.82 로, medium 을 '+5.334' 로, 서론 recall 을 45.4%(표 1 은 45.51)로 적는 수치 불일치와 영문 오탈자(leaverages·adpative·frame-levle·obejct·adaptvie·bouding·pesudo), 머리글 '(수정할 필요 없음)' 잔재가 있어 주장 범위와 증거가 맞는 0.85 에는 못 미친다."
+ },
  "planDelta": "계획서는 Detection Loss 로 유도한 Modality Translation(RGB↔IR 영상 변환)으로 RGB 사전학습 탐지기의 지식을 IR 로 옮기는 탐지 과제였으나, 원고는 영상 변환 없이 고정 anchor teacher·EMA adaptive teacher 의 source-free 자기학습으로 바꾸고 tracklet 기반 pseudo identity 와 identity head 를 더해 열화상 다중 객체 추적으로 범위를 넓혔다. 'RGB 사전학습 검출기 → 열화상 지식 전이' 라는 목표와 Faster R-CNN 계열 검출기만 이어진다.",
  "keyNumbers": [
   "사람 mAP50: RGB 검출기 48.57 → Frame-wise adaptation 51.41 → 제안 57.22% (recall 45.51 → 58.04 → 67.03%, 표 1)",
@@ -151,6 +167,6 @@
   "total": 66.5,
   "evaluatedAt": "2026-10-02"
  },
- "evaluatedAt": "2026-10-16",
+ "evaluatedAt": "2026-10-29",
  "textSha": "cc4cd1547f41543b"
 }

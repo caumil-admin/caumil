@@ -131,5 +131,17 @@
   "evaluatedAt": "2026-10-07"
  },
  "evaluatedAt": "2026-10-07",
- "textSha": "efe23ab4ddd3cf4b"
+ "textSha": "efe23ab4ddd3cf4b",
+ "scoresV3": {
+  "scores": {
+   "sota": 0.6,
+   "orig": 0.35,
+   "hwUse": 0.25,
+   "hwFit": 0.2,
+   "stability": 0.55,
+   "delivery": 0.8
+  },
+  "evaluatedAt": "2026-10-07",
+  "note": "v3(엑셀 6개 변수·노트북 사전함수) 시기의 점수 기록. v6(2026-10-29) 재평가로 scores 를 새로 매김"
+ }
 }

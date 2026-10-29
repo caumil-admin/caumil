@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-"""data/·eval/·results 를 합쳐 v4 사이트를 만든다(심사 기준 5항목 순위, '핵심5' 하위 폴더 제외).
+"""data/·eval/·results 를 합쳐 v6 사이트를 만든다(경진대회 6개 변수 · 노트북 사전함수 순위, '핵심5' 하위 폴더 제외).
 
 출력:
   dist/artifact.html      한 파일(CSS·데이터·스크립트 인라인) — claude.ai 아티팩트 게시용(내부용)
   dist/site/              GitHub Pages 형태(index.html, app.js, data/data.js, favicon.svg)
-  --root                  공개판을 저장소 루트(index.html, app.js, data/data.js)에 써서 Pages 배포 준비
-                          ※ 2026-10-14 임시 폐쇄: 환경 변수 CAUMIL_REOPEN=1 이 없으면 거부한다(루트는 폐쇄 안내 페이지).
-v3/(6개 변수 사전함수, 2026-10-02 동결)·v2/·v1/ 은 정적 보관본이라 이 스크립트가 건드리지 않는다.
+  --root                  공개판을 저장소 루트(index.html, app.js, data/data.js)에 써서 Pages 배포 준비(2026-10-29 재개)
+v3/(6개 변수, 2026-10-02 동결)·v2/·v1/ 은 정적 보관본이라 이 스크립트가 건드리지 않는다.
 
 --public(공개판): 원고 인용문(evidenceQuotes)을 빼고, 드라이브 파일 ID·원문 링크를 붙이지 않으며, robots noindex 를 단다.
 내부용 빌드는 inputs/drive_listing.json 이 있을 때만 driveId·viewUrl 을 붙인다(카탈로그에는 해시만 있다).
+발표자료 점수(data/deck_results.json)는 원고 ID 로 묶어 참고용으로 싣는다(점수·순위·슬라이드 수만, 원문 링크 없음).
 사용: python3 pipeline/build.py [--public] [--root] [--basis-date YYYY-MM-DD] [--last-sync ISO] [--out dist]
 """
 import argparse, datetime, hashlib, json, os, shutil, sys
@@ -18,19 +18,51 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import DATA, DIST, ROOT, SITE, drive_key, excluded_subs, load_json, load_listing, load_papers  # noqa: E402
 
 PUBLIC_DROP_PAPER = ("evidenceQuotes",)
-V4_DROP_PAPER = ("scores", "rationale", "planDelta")  # v3 까지의 6개 변수 기록 — v4 화면에서 쓰지 않음(eval/ 에는 남음)
 ROBOTS = '<meta name="robots" content="noindex" />'
+
+
 def favicon_links():
-    """v4 파비콘(남색 바탕 순위 막대). 브라우저가 파비콘을 오래 잡고 있으므로 내용 해시를 붙인다."""
+    """파비콘(붉은 주황 바탕 순위 막대). 브라우저가 파비콘을 오래 잡고 있으므로 내용 해시를 붙인다."""
     svg = os.path.join(ROOT, "favicon.svg")
     h = hashlib.sha256(open(svg, "rb").read()).hexdigest()[:8] if os.path.exists(svg) else "0"
     return (f'<link rel="icon" href="favicon.svg?v={h}" type="image/svg+xml" />\n'
             '<link rel="apple-touch-icon" href="apple-touch-icon.png" />')
 
 
+def deck_refs():
+    """원고 ID → 발표자료 참고 정보. 세는 자료(counted)만, 주 원고(papers[0])와 함께 다룬 원고 모두에 붙인다."""
+    rp = os.path.join(DATA, "deck_results.json")
+    cp = os.path.join(DATA, "decks.json")
+    if not (os.path.exists(rp) and os.path.exists(cp)):
+        return {}
+    res = load_json(rp)
+    cat = {d["id"]: d for d in load_json(cp)}
+    pre = res.get("default", "manuscript")
+    out = {}
+    for did, r in res.get("decks", {}).items():
+        d = cat.get(did, {})
+        if d.get("counted") is False:
+            continue
+        track = d.get("track")
+        ranks = res.get("ranks", {}).get(pre, {}).get(track, {})
+        n = len(ranks)
+        for i, pid in enumerate(r.get("papers") or d.get("papers") or []):
+            if pid in out and i > 0:
+                continue
+            out[pid] = {
+                "id": did, "track": track, "score": r.get(pre), "crit": r.get("crit"),
+                "rank": ranks.get(did), "n": n, "slides": d.get("slides"), "kind": d.get("kind"),
+                "imputed": bool(d.get("imputed")),
+                "paperScore": (r.get("paper") or {}).get("score") if i == 0 else None,
+                "note": ("주 원고 " + r["papers"][0] + " 과 함께 다룬 발표자료" if i > 0 and r.get("papers") else None),
+            }
+    return out
+
+
 def build_data(public=False, basis_date=None, last_sync=None):
-    papers = [p for p in load_papers() if p.get("evaluated") and p.get("rubric")]
+    papers = [p for p in load_papers() if p.get("evaluated") and p.get("scores")]
     n_ex = sum(1 for p in load_papers(with_eval=False, include_excluded=True) if p.get("folderSub") in excluded_subs())
+    folders = load_json(os.path.join(DATA, "folders.json"))
     listing = load_listing()
     if last_sync is None and listing:
         last_sync = listing.get("syncedAt")
@@ -42,11 +74,10 @@ def build_data(public=False, basis_date=None, last_sync=None):
         "new": sum(p.get("status") == "new" for p in papers),
         "updated": sum(p.get("status") == "updated" for p in papers),
         "excluded": n_ex,
-        "sub": sum(1 for p in papers if p.get("folderSub")),  # 순위에 들어간 하위 폴더(핵심5) 원고 수
     }
     for p in papers:
-        for k in ("evaluated", "evalTextSha") + V4_DROP_PAPER:
-            p.pop(k, None)
+        p.pop("evaluated", None)
+        p.pop("evalTextSha", None)
         if public:
             for k in PUBLIC_DROP_PAPER:
                 p.pop(k, None)
@@ -56,10 +87,11 @@ def build_data(public=False, basis_date=None, last_sync=None):
                 p["driveId"] = f["id"]
                 p["file"]["viewUrl"] = f"https://drive.google.com/file/d/{f['id']}/view?usp=drivesdk"
     meta = {
-        "version": "v5",
+        "version": "v6",
         "basisDate": basis_date or datetime.date.today().isoformat(),
         "generatedAt": datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat(),
         "lastSync": last_sync,
+        "excel": folders["excel"]["title"],
         "counts": counts,
         "excludedSub": sorted(excluded_subs()),
     }
@@ -67,9 +99,13 @@ def build_data(public=False, basis_date=None, last_sync=None):
         meta["rootUrl"] = f"https://drive.google.com/drive/folders/{listing['root']}"
     return {
         "meta": meta,
-        "rubric": load_json(os.path.join(DATA, "rubric.json")),
+        "criteria": load_json(os.path.join(DATA, "criteria.json")),
+        "rubric": load_json(os.path.join(DATA, "rubric.json")) if os.path.exists(os.path.join(DATA, "rubric.json")) else None,
+        "weights": load_json(os.path.join(DATA, "weights.json")),
         "papers": papers,
         "results": load_json(os.path.join(DATA, "results.json")),
+        "projects": [({k: v for k, v in pj.items() if k != "source"} if public else pj) for pj in load_json(os.path.join(DATA, "projects.json"))],  # 공개판에는 계획서 드라이브 링크를 싣지 않는다
+        "decks": deck_refs(),
         "lint": load_json(os.path.join(DATA, "lint.json")) if os.path.exists(os.path.join(DATA, "lint.json")) else {},
         "public": public,
     }
@@ -105,10 +141,6 @@ def main():
     ap.add_argument("--last-sync")
     ap.add_argument("--out", default=DIST)
     a = ap.parse_args()
-    if a.root and os.environ.get("CAUMIL_REOPEN") != "1":
-        sys.exit("[closed] 2026-10-14 임시 폐쇄 — 결과를 저장소 루트·Pages 에 배포하지 않는다. "
-                 "루트 index.html 은 폐쇄 안내 페이지다. 재개가 결정되면 CAUMIL_REOPEN=1 로 실행하고 "
-                 ".github/workflows/pages.yml 도 되돌린다(docs/WORKFLOW.md 6단계).")
     public = a.public or a.root
     data = build_data(public, a.basis_date, a.last_sync)
     template = open(os.path.join(SITE, "template.html"), encoding="utf-8").read()
@@ -128,10 +160,10 @@ def main():
         if os.path.exists(src):
             shutil.copy(src, os.path.join(site, name))
     c = data["meta"]["counts"]
-    print(f"built {'PUBLIC' if public else 'internal'} v5: {a.out}/artifact.html ({len(artifact)//1024} KB), {site}/ — papers {c['total']} (new {c['new']}, updated {c['updated']}, 핵심5 제외 {c['excluded']})")
+    print(f"built {'PUBLIC' if public else 'internal'} v6: {a.out}/artifact.html ({len(artifact)//1024} KB), {site}/ — papers {c['total']} (new {c['new']}, updated {c['updated']}, 핵심5 제외 {c['excluded']})")
     if a.root:
         write_site(ROOT, template, app, djs, favicon_links() + "\n" + robots)
-        print("deployed PUBLIC v4 to repo root: index.html, app.js, data/data.js (v3/·v2/·v1/ 은 그대로)")
+        print("deployed PUBLIC v6 to repo root: index.html, app.js, data/data.js (v3/·v2/·v1/ 은 그대로)")
 
 
 if __name__ == "__main__":

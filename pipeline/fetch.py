@@ -24,7 +24,7 @@ def fetch(f, force=False):
     if r.returncode != 0 or not os.path.exists(out):
         return out, f"curl 실패({r.returncode})"
     head = open(out, "rb").read(4)
-    if not any(head.startswith(m) for m in MAGIC):
+    if not any(head.startswith(m) for m in MAGIC) and not f.get("ext") == "html":
         # 큰 파일은 '바이러스 검사 경고' 페이지가 먼저 온다. 폼의 숨은 필드(id, export, confirm, uuid)로 다시 받는다.
         html = open(out, "rb").read().decode("utf-8", "replace")
         m = re.search(r'<form[^>]*id="download-form"[^>]*action="([^"]+)"', html)

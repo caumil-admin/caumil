@@ -1,0 +1,983 @@
+{
+ "generatedAt": "2026-10-29T06:32:01+00:00",
+ "method": "rubric-deck",
+ "default": "manuscript",
+ "decks": {
+  "AC": {
+   "crit": {
+    "technical": 0.616667,
+    "innovation": 0.566667,
+    "structure": 0.533333,
+    "presentation": 0.666667
+   },
+   "papers": [
+    "AC"
+   ],
+   "manuscript": 57.2222,
+   "equal4": 59.5833,
+   "paper": {
+    "id": "AC",
+    "crit": {
+     "technical": 0.633333,
+     "innovation": 0.583333,
+     "structure": 0.566667,
+     "presentation": 0.5
+    },
+    "score": 59.4444,
+    "rank": 8,
+    "n": 14
+   },
+   "delta": -2.2222,
+   "critDelta": {
+    "technical": -0.016667,
+    "innovation": -0.016667,
+    "structure": -0.033333,
+    "presentation": 0.166667
+   },
+   "clarity": 0.8
+  },
+  "ML": {
+   "crit": {
+    "technical": 0.7,
+    "innovation": 0.566667,
+    "structure": 0.716667,
+    "presentation": 0.716667
+   },
+   "papers": [
+    "ML"
+   ],
+   "manuscript": 66.1111,
+   "equal4": 67.5,
+   "paper": {
+    "id": "ML",
+    "crit": {
+     "technical": 0.75,
+     "innovation": 0.583333,
+     "structure": 0.716667,
+     "presentation": 0.5
+    },
+    "score": 68.3333,
+    "rank": 2,
+    "n": 14
+   },
+   "delta": -2.2222,
+   "critDelta": {
+    "technical": -0.05,
+    "innovation": -0.016667,
+    "structure": 0.0,
+    "presentation": 0.216667
+   },
+   "clarity": 0.8
+  },
+  "JT": {
+   "crit": {
+    "technical": 0.683333,
+    "innovation": 0.55,
+    "structure": 0.583333,
+    "presentation": 0.633333
+   },
+   "papers": [
+    "JT"
+   ],
+   "manuscript": 60.5556,
+   "equal4": 61.25,
+   "paper": {
+    "id": "JT",
+    "crit": {
+     "technical": 0.633333,
+     "innovation": 0.533333,
+     "structure": 0.6,
+     "presentation": 0.5
+    },
+    "score": 58.8889,
+    "rank": 28,
+    "n": 39
+   },
+   "delta": 1.6667,
+   "critDelta": {
+    "technical": 0.05,
+    "innovation": 0.016667,
+    "structure": -0.016667,
+    "presentation": 0.133333
+   },
+   "clarity": 0.7
+  },
+  "RA": {
+   "crit": {
+    "technical": 0.683333,
+    "innovation": 0.583333,
+    "structure": 0.733333,
+    "presentation": 0.616667
+   },
+   "papers": [
+    "RA"
+   ],
+   "manuscript": 66.6667,
+   "equal4": 65.4167,
+   "paper": {
+    "id": "RA",
+    "crit": {
+     "technical": 0.716667,
+     "innovation": 0.6,
+     "structure": 0.75,
+     "presentation": 0.5
+    },
+    "score": 68.8889,
+    "rank": 11,
+    "n": 39
+   },
+   "delta": -2.2222,
+   "critDelta": {
+    "technical": -0.033333,
+    "innovation": -0.016667,
+    "structure": -0.016667,
+    "presentation": 0.116667
+   },
+   "clarity": 0.85
+  },
+  "NM": {
+   "crit": {
+    "technical": 0.666667,
+    "innovation": 0.583333,
+    "structure": 0.733333,
+    "presentation": 0.6
+   },
+   "papers": [
+    "NM",
+    "NH"
+   ],
+   "manuscript": 66.1111,
+   "equal4": 64.5833,
+   "paper": {
+    "id": "NM",
+    "crit": {
+     "technical": 0.7,
+     "innovation": 0.633333,
+     "structure": 0.75,
+     "presentation": 0.5
+    },
+    "score": 69.4444,
+    "rank": 10,
+    "n": 39
+   },
+   "delta": -3.3333,
+   "critDelta": {
+    "technical": -0.033333,
+    "innovation": -0.05,
+    "structure": -0.016667,
+    "presentation": 0.1
+   },
+   "clarity": 0.7
+  },
+  "VT": {
+   "crit": {
+    "technical": 0.8,
+    "innovation": 0.733333,
+    "structure": 0.766667,
+    "presentation": 0.6
+   },
+   "papers": [
+    "VT"
+   ],
+   "manuscript": 76.6667,
+   "equal4": 72.5,
+   "paper": {
+    "id": "VT",
+    "crit": {
+     "technical": 0.833333,
+     "innovation": 0.75,
+     "structure": 0.766667,
+     "presentation": 0.5
+    },
+    "score": 78.3333,
+    "rank": 1,
+    "n": 39
+   },
+   "delta": -1.6666,
+   "critDelta": {
+    "technical": -0.033333,
+    "innovation": -0.016667,
+    "structure": 0.0,
+    "presentation": 0.1
+   },
+   "clarity": 0.8
+  },
+  "ST": {
+   "crit": {
+    "technical": 0.716667,
+    "innovation": 0.633333,
+    "structure": 0.716667,
+    "presentation": 0.65
+   },
+   "papers": [
+    "ST",
+    "SI"
+   ],
+   "manuscript": 68.8889,
+   "equal4": 67.9167,
+   "paper": {
+    "id": "ST",
+    "crit": {
+     "technical": 0.8,
+     "innovation": 0.666667,
+     "structure": 0.766667,
+     "presentation": 0.5
+    },
+    "score": 74.4444,
+    "rank": 6,
+    "n": 39
+   },
+   "delta": -5.5555,
+   "critDelta": {
+    "technical": -0.083333,
+    "innovation": -0.033333,
+    "structure": -0.05,
+    "presentation": 0.15
+   },
+   "clarity": 0.8
+  },
+  "DR": {
+   "crit": {
+    "technical": 0.6,
+    "innovation": 0.516667,
+    "structure": 0.6,
+    "presentation": 0.583333
+   },
+   "papers": [
+    "DR"
+   ],
+   "manuscript": 57.2222,
+   "equal4": 57.5,
+   "paper": {
+    "id": "DR",
+    "crit": {
+     "technical": 0.65,
+     "innovation": 0.533333,
+     "structure": 0.616667,
+     "presentation": 0.5
+    },
+    "score": 60.0,
+    "rank": 7,
+    "n": 14
+   },
+   "delta": -2.7778,
+   "critDelta": {
+    "technical": -0.05,
+    "innovation": -0.016667,
+    "structure": -0.016667,
+    "presentation": 0.083333
+   },
+   "clarity": 0.75
+  },
+  "AL": {
+   "crit": {
+    "technical": 0.583333,
+    "innovation": 0.583333,
+    "structure": 0.6,
+    "presentation": 0.533333
+   },
+   "papers": [
+    "AL"
+   ],
+   "manuscript": 58.8889,
+   "equal4": 57.5,
+   "paper": {
+    "id": "AL",
+    "crit": {
+     "technical": 0.633333,
+     "innovation": 0.583333,
+     "structure": 0.65,
+     "presentation": 0.5
+    },
+    "score": 62.2222,
+    "rank": 5,
+    "n": 14
+   },
+   "delta": -3.3333,
+   "critDelta": {
+    "technical": -0.05,
+    "innovation": 0.0,
+    "structure": -0.05,
+    "presentation": 0.033333
+   },
+   "clarity": 0.6
+  },
+  "PB": {
+   "crit": {
+    "technical": 0.666667,
+    "innovation": 0.716667,
+    "structure": 0.716667,
+    "presentation": 0.6
+   },
+   "papers": [
+    "PB"
+   ],
+   "manuscript": 70.0,
+   "equal4": 67.5,
+   "paper": {
+    "id": "PB",
+    "crit": {
+     "technical": 0.733333,
+     "innovation": 0.716667,
+     "structure": 0.65,
+     "presentation": 0.5
+    },
+    "score": 70.0,
+    "rank": 1,
+    "n": 14
+   },
+   "delta": 0.0,
+   "critDelta": {
+    "technical": -0.066667,
+    "innovation": 0.0,
+    "structure": 0.066667,
+    "presentation": 0.1
+   },
+   "clarity": 0.8
+  },
+  "SV": {
+   "crit": {
+    "technical": 0.65,
+    "innovation": 0.616667,
+    "structure": 0.6,
+    "presentation": 0.566667
+   },
+   "papers": [
+    "SV"
+   ],
+   "manuscript": 62.2222,
+   "equal4": 60.8333,
+   "paper": {
+    "id": "SV",
+    "crit": {
+     "technical": 0.666667,
+     "innovation": 0.65,
+     "structure": 0.583333,
+     "presentation": 0.5
+    },
+    "score": 63.3333,
+    "rank": 4,
+    "n": 14
+   },
+   "delta": -1.1111,
+   "critDelta": {
+    "technical": -0.016667,
+    "innovation": -0.033333,
+    "structure": 0.016667,
+    "presentation": 0.066667
+   },
+   "clarity": 0.7
+  },
+  "BE": {
+   "crit": {
+    "technical": 0.583333,
+    "innovation": 0.483333,
+    "structure": 0.583333,
+    "presentation": 0.616667
+   },
+   "papers": [
+    "BE",
+    "BI"
+   ],
+   "manuscript": 55.0,
+   "equal4": 56.6667,
+   "paper": {
+    "id": "BE",
+    "crit": {
+     "technical": 0.65,
+     "innovation": 0.483333,
+     "structure": 0.6,
+     "presentation": 0.5
+    },
+    "score": 57.7778,
+    "rank": 29,
+    "n": 39
+   },
+   "delta": -2.7778,
+   "critDelta": {
+    "technical": -0.066667,
+    "innovation": 0.0,
+    "structure": -0.016667,
+    "presentation": 0.116667
+   },
+   "clarity": 0.75
+  },
+  "PK": {
+   "crit": {
+    "technical": 0.716667,
+    "innovation": 0.6,
+    "structure": 0.716667,
+    "presentation": 0.6
+   },
+   "papers": [
+    "PK"
+   ],
+   "manuscript": 67.7778,
+   "equal4": 65.8333,
+   "paper": {
+    "id": "PK",
+    "crit": {
+     "technical": 0.65,
+     "innovation": 0.566667,
+     "structure": 0.616667,
+     "presentation": 0.5
+    },
+    "score": 61.1111,
+    "rank": 27,
+    "n": 39
+   },
+   "delta": 6.6667,
+   "critDelta": {
+    "technical": 0.066667,
+    "innovation": 0.033333,
+    "structure": 0.1,
+    "presentation": 0.1
+   },
+   "clarity": 0.8
+  },
+  "CT": {
+   "crit": {
+    "technical": 0.766667,
+    "innovation": 0.666667,
+    "structure": 0.7,
+    "presentation": 0.65
+   },
+   "papers": [
+    "CT"
+   ],
+   "manuscript": 71.1111,
+   "equal4": 69.5833,
+   "paper": {
+    "id": "CT",
+    "crit": {
+     "technical": 0.766667,
+     "innovation": 0.7,
+     "structure": 0.8,
+     "presentation": 0.5
+    },
+    "score": 75.5556,
+    "rank": 4,
+    "n": 39
+   },
+   "delta": -4.4445,
+   "critDelta": {
+    "technical": 0.0,
+    "innovation": -0.033333,
+    "structure": -0.1,
+    "presentation": 0.15
+   },
+   "clarity": 0.75
+  },
+  "JA": {
+   "crit": {
+    "technical": 0.533333,
+    "innovation": 0.616667,
+    "structure": 0.616667,
+    "presentation": 0.583333
+   },
+   "papers": [
+    "JA",
+    "JI"
+   ],
+   "manuscript": 58.8889,
+   "equal4": 58.75,
+   "paper": {
+    "id": "JA",
+    "crit": {
+     "technical": 0.716667,
+     "innovation": 0.633333,
+     "structure": 0.766667,
+     "presentation": 0.5
+    },
+    "score": 70.5556,
+    "rank": 8,
+    "n": 39
+   },
+   "delta": -11.6667,
+   "critDelta": {
+    "technical": -0.183333,
+    "innovation": -0.016667,
+    "structure": -0.15,
+    "presentation": 0.083333
+   },
+   "clarity": 0.75
+  },
+  "GM": {
+   "crit": {
+    "technical": 0.666667,
+    "innovation": 0.55,
+    "structure": 0.65,
+    "presentation": 0.633333
+   },
+   "papers": [
+    "GM"
+   ],
+   "manuscript": 62.2222,
+   "equal4": 62.5,
+   "paper": {
+    "id": "GM",
+    "crit": {
+     "technical": 0.75,
+     "innovation": 0.583333,
+     "structure": 0.716667,
+     "presentation": 0.5
+    },
+    "score": 68.3333,
+    "rank": 13,
+    "n": 39
+   },
+   "delta": -6.1111,
+   "critDelta": {
+    "technical": -0.083333,
+    "innovation": -0.033333,
+    "structure": -0.066667,
+    "presentation": 0.133333
+   },
+   "clarity": 0.7
+  },
+  "PA": {
+   "crit": {
+    "technical": 0.783333,
+    "innovation": 0.7,
+    "structure": 0.733333,
+    "presentation": 0.6
+   },
+   "papers": [
+    "PA"
+   ],
+   "manuscript": 73.8889,
+   "equal4": 70.4167,
+   "paper": {
+    "id": "PA",
+    "crit": {
+     "technical": 0.816667,
+     "innovation": 0.716667,
+     "structure": 0.75,
+     "presentation": 0.5
+    },
+    "score": 76.1111,
+    "rank": 3,
+    "n": 39
+   },
+   "delta": -2.2222,
+   "critDelta": {
+    "technical": -0.033333,
+    "innovation": -0.016667,
+    "structure": -0.016667,
+    "presentation": 0.1
+   },
+   "clarity": 0.8
+  },
+  "RH": {
+   "crit": {
+    "technical": 0.733333,
+    "innovation": 0.616667,
+    "structure": 0.666667,
+    "presentation": 0.6
+   },
+   "papers": [
+    "RH"
+   ],
+   "manuscript": 67.2222,
+   "equal4": 65.4167,
+   "paper": {
+    "id": "RH",
+    "crit": {
+     "technical": 0.833333,
+     "innovation": 0.7,
+     "structure": 0.8,
+     "presentation": 0.5
+    },
+    "score": 77.7778,
+    "rank": 2,
+    "n": 39
+   },
+   "delta": -10.5556,
+   "critDelta": {
+    "technical": -0.1,
+    "innovation": -0.083333,
+    "structure": -0.133333,
+    "presentation": 0.1
+   },
+   "clarity": 0.8
+  },
+  "EG": {
+   "crit": {
+    "technical": 0.716667,
+    "innovation": 0.616667,
+    "structure": 0.7,
+    "presentation": 0.6
+   },
+   "papers": [
+    "EG"
+   ],
+   "manuscript": 67.7778,
+   "equal4": 65.8333,
+   "paper": {
+    "id": "EG",
+    "crit": {
+     "technical": 0.716667,
+     "innovation": 0.616667,
+     "structure": 0.65,
+     "presentation": 0.5
+    },
+    "score": 66.1111,
+    "rank": 18,
+    "n": 39
+   },
+   "delta": 1.6667,
+   "critDelta": {
+    "technical": 0.0,
+    "innovation": 0.0,
+    "structure": 0.05,
+    "presentation": 0.1
+   },
+   "clarity": 0.8
+  },
+  "KD": {
+   "crit": {
+    "technical": 0.65,
+    "innovation": 0.616667,
+    "structure": 0.583333,
+    "presentation": 0.533333
+   },
+   "papers": [
+    "KE",
+    "KD"
+   ],
+   "manuscript": 61.6667,
+   "equal4": 59.5833,
+   "clarity": 0.6
+  },
+  "LT": {
+   "crit": {
+    "technical": 0.65,
+    "innovation": 0.55,
+    "structure": 0.633333,
+    "presentation": 0.666667
+   },
+   "papers": [
+    "LC",
+    "LT"
+   ],
+   "manuscript": 61.1111,
+   "equal4": 62.5,
+   "paper": {
+    "id": "LC",
+    "crit": {
+     "technical": 0.55,
+     "innovation": 0.533333,
+     "structure": 0.5,
+     "presentation": 0.5
+    },
+    "score": 52.7778,
+    "rank": 34,
+    "n": 39
+   },
+   "delta": 8.3333,
+   "critDelta": {
+    "technical": 0.1,
+    "innovation": 0.016667,
+    "structure": 0.133333,
+    "presentation": 0.166667
+   },
+   "clarity": 0.75
+  },
+  "TE": {
+   "crit": {
+    "technical": 0.6,
+    "innovation": 0.566667,
+    "structure": 0.65,
+    "presentation": 0.583333
+   },
+   "papers": [
+    "TC",
+    "TE"
+   ],
+   "manuscript": 60.5556,
+   "equal4": 60.0,
+   "paper": {
+    "id": "TC",
+    "crit": {
+     "technical": 0.65,
+     "innovation": 0.566667,
+     "structure": 0.65,
+     "presentation": 0.5
+    },
+    "score": 62.2222,
+    "rank": 22,
+    "n": 39
+   },
+   "delta": -1.6666,
+   "critDelta": {
+    "technical": -0.05,
+    "innovation": 0.0,
+    "structure": 0.0,
+    "presentation": 0.083333
+   },
+   "clarity": 0.75
+  },
+  "SF": {
+   "crit": {
+    "technical": 0.666667,
+    "innovation": 0.65,
+    "structure": 0.633333,
+    "presentation": 0.583333
+   },
+   "papers": [
+    "SF",
+    "SD"
+   ],
+   "manuscript": 65.0,
+   "equal4": 63.3333,
+   "paper": {
+    "id": "SF",
+    "crit": {
+     "technical": 0.633333,
+     "innovation": 0.6,
+     "structure": 0.55,
+     "presentation": 0.5
+    },
+    "score": 59.4444,
+    "rank": 8,
+    "n": 14
+   },
+   "delta": 5.5556,
+   "critDelta": {
+    "technical": 0.033333,
+    "innovation": 0.05,
+    "structure": 0.083333,
+    "presentation": 0.083333
+   },
+   "clarity": 0.75
+  },
+  "DZ": {
+   "crit": {
+    "technical": 0.633333,
+    "innovation": 0.533333,
+    "structure": 0.6,
+    "presentation": 0.516667
+   },
+   "papers": [],
+   "manuscript": 58.8889,
+   "equal4": 57.0833,
+   "clarity": 0.55
+  },
+  "HR": {
+   "crit": {
+    "technical": 0.7,
+    "innovation": 0.55,
+    "structure": 0.683333,
+    "presentation": 0.683333
+   },
+   "papers": [
+    "HR"
+   ],
+   "manuscript": 64.4444,
+   "equal4": 65.4167,
+   "paper": {
+    "id": "HR",
+    "crit": {
+     "technical": 0.75,
+     "innovation": 0.566667,
+     "structure": 0.716667,
+     "presentation": 0.5
+    },
+    "score": 67.7778,
+    "rank": 15,
+    "n": 39
+   },
+   "delta": -3.3334,
+   "critDelta": {
+    "technical": -0.05,
+    "innovation": -0.016667,
+    "structure": -0.033333,
+    "presentation": 0.183333
+   },
+   "clarity": 0.75
+  },
+  "NR": {
+   "crit": {
+    "technical": 0.716667,
+    "innovation": 0.7,
+    "structure": 0.733333,
+    "presentation": 0.7
+   },
+   "papers": [],
+   "manuscript": 71.6667,
+   "equal4": 71.25,
+   "clarity": 0.8
+  },
+  "HS": {
+   "crit": {
+    "technical": 0.783333,
+    "innovation": 0.634375,
+    "structure": 0.779167,
+    "presentation": 0.619792
+   },
+   "papers": [
+    "HS"
+   ],
+   "manuscript": 73.2292,
+   "equal4": 70.4167,
+   "paper": {
+    "id": "HS",
+    "crit": {
+     "technical": 0.816667,
+     "innovation": 0.65,
+     "structure": 0.8,
+     "presentation": 0.5
+    },
+    "score": 75.5556,
+    "rank": 4,
+    "n": 39
+   },
+   "delta": -2.3264,
+   "critDelta": {
+    "technical": -0.033333,
+    "innovation": -0.015625,
+    "structure": -0.020833,
+    "presentation": 0.119792
+   },
+   "imputed": {
+    "method": "원고 항목 점수 + 개인 발표자료 평균 변화",
+    "n": 16,
+    "meanDelta": {
+     "technical": -0.033333,
+     "innovation": -0.015625,
+     "structure": -0.020833,
+     "presentation": 0.119792
+    },
+    "plainMeanScore": 65.3216,
+    "plainMeanRank": 11
+   },
+   "clarity": null
+  }
+ },
+ "ranks": {
+  "manuscript": {
+   "personal": {
+    "VT": 1,
+    "PA": 2,
+    "HS": 3,
+    "NR": 4,
+    "CT": 5,
+    "ST": 6,
+    "EG": 7,
+    "PK": 7,
+    "RH": 9,
+    "RA": 10,
+    "NM": 11,
+    "HR": 12,
+    "GM": 13,
+    "KD": 14,
+    "LT": 15,
+    "JT": 16,
+    "TE": 16,
+    "DZ": 18,
+    "JA": 18,
+    "BE": 20
+   },
+   "team": {
+    "PB": 1,
+    "ML": 2,
+    "SF": 3,
+    "SV": 4,
+    "AL": 5,
+    "AC": 6,
+    "DR": 6
+   },
+   "all": {
+    "VT": 1,
+    "PA": 2,
+    "HS": 3,
+    "NR": 4,
+    "CT": 5,
+    "PB": 6,
+    "ST": 7,
+    "EG": 8,
+    "PK": 8,
+    "RH": 10,
+    "RA": 11,
+    "ML": 12,
+    "NM": 12,
+    "SF": 14,
+    "HR": 15,
+    "GM": 16,
+    "SV": 16,
+    "KD": 18,
+    "LT": 19,
+    "JT": 20,
+    "TE": 20,
+    "AL": 22,
+    "DZ": 22,
+    "JA": 22,
+    "AC": 25,
+    "DR": 25,
+    "BE": 27
+   }
+  },
+  "equal4": {
+   "personal": {
+    "VT": 1,
+    "NR": 2,
+    "HS": 3,
+    "PA": 3,
+    "CT": 5,
+    "ST": 6,
+    "EG": 7,
+    "PK": 7,
+    "HR": 9,
+    "RA": 9,
+    "RH": 9,
+    "NM": 12,
+    "GM": 13,
+    "LT": 13,
+    "JT": 15,
+    "TE": 16,
+    "KD": 17,
+    "JA": 18,
+    "DZ": 19,
+    "BE": 20
+   },
+   "team": {
+    "ML": 1,
+    "PB": 1,
+    "SF": 3,
+    "SV": 4,
+    "AC": 5,
+    "AL": 6,
+    "DR": 6
+   },
+   "all": {
+    "VT": 1,
+    "NR": 2,
+    "HS": 3,
+    "PA": 3,
+    "CT": 5,
+    "ST": 6,
+    "ML": 7,
+    "PB": 7,
+    "EG": 9,
+    "PK": 9,
+    "HR": 11,
+    "RA": 11,
+    "RH": 11,
+    "NM": 14,
+    "SF": 15,
+    "GM": 16,
+    "LT": 16,
+    "JT": 18,
+    "SV": 19,
+    "TE": 20,
+    "AC": 21,
+    "KD": 21,
+    "JA": 23,
+    "AL": 24,
+    "DR": 24,
+    "DZ": 26,
+    "BE": 27
+   }
+  }
+ }
+}

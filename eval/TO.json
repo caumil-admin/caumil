@@ -72,5 +72,17 @@
   "다만 전체 mAP50과 mAP50:95는 FFCA-YOLO의 보고치보다 각각 2.0 및 2.1 퍼센트 포인트 낮았다."
  ],
  "evaluatedAt": "2026-09-28",
- "textSha": "43afc0968d80401a"
+ "textSha": "43afc0968d80401a",
+ "scoresV3": {
+  "scores": {
+   "sota": 0.55,
+   "orig": 0.7,
+   "hwUse": 0.2,
+   "hwFit": 0.1,
+   "stability": 0.5,
+   "delivery": 0.8
+  },
+  "evaluatedAt": "2026-09-28",
+  "note": "v3(엑셀 6개 변수·노트북 사전함수) 시기의 점수 기록. v6(2026-10-29) 재평가로 scores 를 새로 매김"
+ }
 }

@@ -120,7 +120,7 @@
   "figures": 2,
   "tables": 1,
   "abstractNumbers": false,
-  "chars": 20280
+  "chars": 21430
  },
  "TE": {
   "residue": [],
@@ -189,12 +189,25 @@
   "chars": 13940
  },
  "UB": {
-  "residue": [],
-  "refs": 7,
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   },
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 1
+   },
+   {
+    "label": "사사 자리표시자 'Acknowledgment 내용 입력'",
+    "count": 1
+   }
+  ],
+  "refs": 12,
   "figures": 3,
-  "tables": 6,
+  "tables": 4,
   "abstractNumbers": true,
-  "chars": 17340
+  "chars": 26988
  },
  "TU": {
   "residue": [],
@@ -520,7 +533,7 @@
   "figures": 1,
   "tables": 3,
   "abstractNumbers": true,
-  "chars": 8505
+  "chars": 8506
  },
  "PB": {
   "residue": [
@@ -662,8 +675,8 @@
   "refs": 9,
   "figures": 3,
   "tables": 10,
-  "abstractNumbers": true,
-  "chars": 25478
+  "abstractNumbers": false,
+  "chars": 25111
  },
  "JY": {
   "residue": [],
@@ -682,17 +695,12 @@
   "chars": 6842
  },
  "CR": {
-  "residue": [
-   {
-    "label": "사사 자리표시자 '지원기관표기'",
-    "count": 1
-   }
-  ],
+  "residue": [],
   "refs": 5,
   "figures": 1,
   "tables": 1,
   "abstractNumbers": false,
-  "chars": 7191
+  "chars": 8240
  },
  "FS": {
   "residue": [],
@@ -717,5 +725,76 @@
   "tables": 1,
   "abstractNumbers": true,
   "chars": 7454
+ },
+ "MB": {
+  "residue": [],
+  "refs": 38,
+  "figures": 1,
+  "tables": 7,
+  "abstractNumbers": true,
+  "chars": 30282
+ },
+ "KE": {
+  "residue": [],
+  "refs": 11,
+  "figures": 5,
+  "tables": 6,
+  "abstractNumbers": true,
+  "chars": 21524
+ },
+ "GS": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   }
+  ],
+  "refs": 20,
+  "figures": 3,
+  "tables": 13,
+  "abstractNumbers": true,
+  "chars": 33780
+ },
+ "DZ": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   }
+  ],
+  "refs": 14,
+  "figures": 2,
+  "tables": 6,
+  "abstractNumbers": true,
+  "chars": 21784
+ },
+ "MN": {
+  "residue": [
+   {
+    "label": "템플릿 안내문 '(수정할 필요 없음)'",
+    "count": 2
+   },
+   {
+    "label": "소속 자리표시자 '**소속/학과'",
+    "count": 4
+   },
+   {
+    "label": "사사 자리표시자 'Acknowledgment 내용 입력'",
+    "count": 1
+   }
+  ],
+  "refs": 18,
+  "figures": 5,
+  "tables": 6,
+  "abstractNumbers": true,
+  "chars": 29412
+ },
+ "DF": {
+  "residue": [],
+  "refs": 13,
+  "figures": 3,
+  "tables": 1,
+  "abstractNumbers": false,
+  "chars": 13255
  }
 }

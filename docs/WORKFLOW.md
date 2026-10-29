@@ -1,7 +1,7 @@
 # CAUMIL 논문 순위 — 작업 절차
 
-공유 드라이브 제출 폴더의 개인·팀 원고를 경진대회 **심사 기준 4항목(v5, 2026-10-16~)**(기술·혁신·구성·발표, 세부 요소 12개, 항목 최대 5점)으로 채점하고, 발표 전에는 발표를 뺀 세 항목 평균×100(**심사 점수**, 20점 환산 ÷5)으로 순위를 매겨 사이트로 만든다(로컬 `dist/` 빌드만, 배포 없음). v4(2026-10-02~10-14)는 심사 기준 5항목이었고 git 태그 `v4-2026-10-14`·`eval` 의 `rubricV4` 로 남겼다. '핵심5' 하위 폴더 원고는 v4 에서 넣었다가 v5 에서 다시 뺀다(`data/rubric.json` 의 `scope.excludeFolderSub`).
-**v5 채점 지침은 `docs/EVAL_PROMPT_v5.md`**(아래 4단계의 5항목 절은 v4 기록). `rubric.total` 은 기본 프리셋 가중치의 심사 점수(= 3항목 평균×100)이며 `check.py` 가 검증한다.
+공유 드라이브 제출 폴더의 개인·팀 원고를 **경진대회 엑셀 6개 변수(v6, 2026-10-29~ — 최초 체계로 복귀)** 로 채점하고 가중치 노트북의 사전함수(닫힌식)로 적합도·순위를 매겨 GitHub Pages 사이트로 만든다. v5(심사 기준 4항목, 2026-10-16~10-28)·v4(5항목)는 `eval` 의 `rubric`·`rubricV4` 에 기록으로 남고 사이트에 참고 열로만 보인다. v4(2026-10-02~10-14)는 심사 기준 5항목이었고 git 태그 `v4-2026-10-14`·`eval` 의 `rubricV4` 로 남겼다. '핵심5' 하위 폴더 원고는 v4 에서 넣었다가 v5 에서 다시 뺀다(`data/rubric.json` 의 `scope.excludeFolderSub`).
+**v6 채점 지침은 `docs/EVAL_PROMPT_v6.md`**(v5 는 `EVAL_PROMPT_v5.md`, v4 는 `EVAL_PROMPT.md`). 발표자료(`eval_deck/`)는 참고 자료이며 점수 근거가 아니다. `rubric.total` 은 기본 프리셋 가중치의 심사 점수(= 3항목 평균×100)이며 `check.py` 가 검증한다.
 v3 까지는 경진대회 엑셀의 6개 변수와 가중치 노트북의 사전함수(닫힌식)로 순위를 매겼다 — 그 결과는 `v3/`(정적 동결본, git 태그 `v3-2026-10-02`)에 있고, 6개 변수 관련 절(아래 '6개 변수(v3 기록)')은 기록으로 남긴다.
 원고 평가는 사람이(또는 에이전트가) 전문을 읽고 `eval/<ID>.json` 에 쓰고, 나머지는 `pipeline/` 스크립트가 처리한다. 표준 라이브러리만 쓴다(olefile 은 `pipeline/vendor/` 에 벤더링).
 `make <target>` 이 없는 환경(이 WSL 머신에는 make 가 없다)에서는 같은 이름으로 `./run.sh <target>` 을 쓴다.
@@ -84,9 +84,9 @@ make lint           # 템플릿 잔재·참고문헌 수·그림·표·초록 �
 }
 ```
 
-**v4 에서는 새 원고·수정본에 `scores`·`rationale`(6개 변수)을 쓰지 않는다.** 순위는 `rubric` 만으로 매기며, 기존 원고의 6개 변수 기록은 그대로 둔다(빌드가 v4 데이터에서 뺀다). 나머지 필드(제목·저자·요약·강점·보완·리스크·인용 등)는 그대로 쓴다.
+**v6 에서는 `scores`·`rationale`(6개 변수)이 순위의 유일한 근거다.** `rubric`(v5)·`rubricV4`·`scoresV3`(v3 시기 점수) 블록은 기록으로 보존한다. 나머지 필드(제목·저자·요약·강점·보완·리스크·인용 등)는 그대로 쓴다.
 
-6개 변수(v3 기록) 채점 규칙 — v3 동결본을 다시 만들 일이 있을 때만:
+6개 변수 채점 규칙(v6 현행, 상세는 `docs/EVAL_PROMPT_v6.md`):
 - 6개 변수는 엑셀 `입력가이드` 앵커(0 / 0.5 / 1)를 따르고 **0.05 단위**로 준다. 앵커는 `data/criteria.json` 에 있다.
 - **원고에 적힌 근거만** 점수에 넣는다. 그림은 읽지 않으므로(텍스트 추출) 그림에만 있는 내용은 근거로 쓰지 않는다.
 - 계획서(엑셀 `data/projects.json`)가 같은 과제(`projectMatch: same|related`)면 계획서 점수에서 출발해 원고 근거로 올리고 내리며, 근거마다 `계획서 a→b(±d)` 를 적는다. `different` 면 사전값을 쓰지 않는다.
@@ -132,26 +132,37 @@ make build          # 내부용: dist/artifact.html + dist/site/ (원문 링크 
 make public         # 공개용: 원고 인용문(evidenceQuotes)을 빼고 드라이브 링크를 붙이지 않으며 robots noindex 를 단다 → dist/
 make deploy         # (2026-10-14 임시 폐쇄 — CAUMIL_REOPEN=1 없이는 거부) 공개용을 저장소 루트에 배치. 커밋·푸시하면 Pages 가 갱신된다
 ```
-- **임시 폐쇄(2026-10-14)**: 사용자 결정(사유 "재미도 없고 경진대회에 직접적인 영향을 끼칠 수 있어서"). 루트 `index.html`·`404.html` 은 안내 페이지, `app.js`·`data/data.js` 는 삭제, `pages.yml` 은 안내 페이지만 올린다. 결과는 `dist/`(gitignore)로만 빌드하고 외부로 내보내지 않는다. 저장소의 Pages 설정이 "브랜치에서 배포"(Jekyll)여서 `pages.yml` 과 별개로 저장소 전체가 올라가므로 `.nojekyll` 을 지우고 `_config.yml` 로 안내 페이지 외 전부 제외했다. 재개 절차: ① `pages.yml` 의 "Stage closure notice only" 단계를 지우고 `path: .` 으로 되돌림 ② `_config.yml` 삭제, `.nojekyll` 복원 ③ `CAUMIL_REOPEN=1 make deploy` ④ `make check` 후 커밋·푸시. 저장소 private 전환·Pages 비활성화는 GitHub 설정에서 사용자가 직접 한다.
+- 2026-10-14~10-28 임시 폐쇄(안내 페이지만 배포)는 2026-10-29 사용자 결정으로 해제했다: `pages.yml` 을 저장소 전체 배포로 되돌리고 `_config.yml` 삭제·`.nojekyll` 복원, `build.py` 의 `CAUMIL_REOPEN` 가드 제거.
 - **claude.ai 아티팩트**(비공개): `dist/artifact.html` 을 기존 URL `https://claude.ai/artifact/L58PAzgKkDc6NZR6QSgbGz` 에 `url` 로 넘겨 다시 게시한다.
-- **GitHub Pages** `caumil-admin/caumil` (`https://caumil-admin.github.io/caumil/`): (재개 후) `make deploy` 로 루트를 갱신하고 커밋·푸시한다. `.github/workflows/pages.yml` 이 main 푸시마다 배포한다(폐쇄 중에는 안내 페이지만). 루트에는 항상 공개판만 둔다.
+- **GitHub Pages** `caumil-admin/caumil` (`https://caumil-admin.github.io/caumil/`): `make deploy` 로 루트를 갱신하고 커밋·푸시한다. `.github/workflows/pages.yml` 이 main 푸시마다 저장소 전체를 배포한다. 루트에는 항상 공개판만 둔다.
 - 푸시는 내장 브라우저의 `caumil-admin` 세션으로 GitHub 웹 업로드를 쓴다(클라우드 git 프록시가 이 저장소 쓰기를 막음).
 
-## 사이트 구조(v4)
+## 사이트 구조(v6 — v3 화면 복원)
 - 한 페이지 앱이며 해시로 화면을 나눈다: `#rank`(`#rank-<personal|people|team>[-<ee|it|dt>]`), `#categories`, `#method`, `#<원고 ID>`.
 - 계산은 전부 브라우저에서 한다(`site/app.js` 의 항목 점수·심사 점수·공동 순위·백분위·사분위·레버는 `pipeline/score.py` 와 같다). 순위 범위·1위 확률은 프리셋 2종은 `data/results.json` 의 4,000회 값을 쓰고, 사용자 가중치나 학회 필터가 걸리면 브라우저에서 1,500회 다시 계산하거나 표시하지 않는다.
-- 버전: v4 = 현재(루트, 심사 5항목 순위, 핵심5 제외), v3 = 6개 변수 사전함수 순위의 2026-10-02 동결본(`v3/`, 내부용은 아티팩트 버전 12), v2 = 캔버스 적용 전 다크 페이지(`v2/`), v1 = 경진대회 전략 사이트(`v1/`). 헤더의 버전 전환과 푸터 링크로 오간다. 보관본은 빌드하지 않는 정적 파일이다.
+- 버전: v6 = 현재(루트, 6개 변수 사전함수 순위, 핵심5 제외, 심사(v5)·발표자료 참고 열), v3 = 같은 계산식의 2026-10-02 동결본(`v3/`, 내부용은 아티팩트 버전 12), v2 = 캔버스 적용 전 다크 페이지(`v2/`), v1 = 경진대회 전략 사이트(`v1/`). 헤더의 버전 전환과 푸터 링크로 오간다. 보관본은 빌드하지 않는 정적 파일이다.
 - 상위 2편 기준: 순위표는 1·2위를 왼쪽 띠로 강조하고, 범주 개요는 범주마다 1·2위 원고를 보여 주며, 안정성에는 1위 확률·2위 안 확률(`top2`)·3위 안 확률이 있다(`pipeline/score.py` 몬테카를로).
 - 내부용 빌드(`make build`)에는 원고 프로필에 '투고 전 확인'(리스크·자동 점검·원문 링크) 패널이 있고, 공개판(`make public`/`deploy`)에는 없다. 아티팩트에서는 CSV 내려받기가 막혀 있어 'CSV 복사' 버튼이 된다.
 - 디자인 원본은 Claude Design 캔버스 https://claude.ai/artifact/9tBbBaMpePcUWcuFiKSsCm 이고, 토큰(색·서체)은 `site/template.html` 의 `:root` 에 있다. 다크 테마는 같은 토큰을 재정의한다.
 - 렌더링 확인은 이 머신의 Windows Chrome 을 헤드리스로 쓴다(`"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" --headless=new --screenshot=... file:///...`). 헤드리스 창은 500px 아래로 줄지 않으므로 모바일 폭은 390px iframe 으로 감싸 찍는다.
+
+## 발표자료 트랙(2026-10-23~)
+원고와 별개로, 드라이브 **국방AI 경진대회 발표자료 폴더**(개인·팀 두 폴더, 그 안에 조·사람별 하위 폴더 — 폴더 ID 는 `inputs/deck_listing.json` 의 `folders`)의 슬라이드(pptx·pdf)와 대본(hwpx)을 같은 심사 기준 4항목으로 채점해 발표자료 기준 순위를 낸다. 스크립트는 `pipeline/decks.py` 하나이고 `./run.sh decks <sub>` 로 부른다.
+1. **목록** — Drive 커넥터로 루트 → 팀/개인 → 조/사람 폴더를 차례로 `parentId` 조회해 `inputs/deck_listing.json` 에 `folders`·`files`(id, parentId, title, ext, fileSize, createdTime, modifiedTime, owner, **kind**)를 쓴다. `kind` 는 deck(채점 대상), deck-pdf(같은 자료의 PDF 판 — 중복이라 제외), video, paper(원고 사본), other. ID·메일이 들어 있으므로 커밋하지 않는다(gitignore).
+2. **내려받기·변환·추출** — `decks fetch`(공유 링크 curl, 바이러스 경고 페이지 처리 포함) → `decks render`(pptx → `raw/decks/pdf/<driveId>.pdf`, 이 머신의 PowerPoint 16 COM 을 PowerShell 로 호출 — 일반 열기가 '손상됨'으로 실패하면 '열고 복구'(Open2007 repair)로 다시 열고 출력에 REPAIRED 를 찍는다; pdf 는 복사; html 슬라이드는 따로 떼어 둔 폴더에서 헤드리스 Chrome `--print-to-pdf`, 덱의 @media print 가 슬라이드를 쪽마다 펼친다) → `decks extract`(pptx 는 zip 의 슬라이드 XML 을 `presentation.xml` 순서대로 읽어 `[슬라이드 n]` 본문 + `[노트]`, hwpx 는 `extract.py`, html 은 `<section class="slide">` 마다 본문 + `data-notes` 노트, 노트 참조가 깨진 pptx 는 `[노트 참조 깨짐]` 으로 표시하고 계속, 카탈로그에 `manualText` 가 있으면 KEEP(슬라이드가 그림뿐인 자료), pdf 는 기존 파일이 있으면 KEEP — pdftotext 는 한글 글꼴에서 깨지므로 커넥터 `read_file_content` 텍스트를 `source_text/decks/<ID>.txt` 에 직접 넣는다).
+3. **카탈로그** — `decks sync --apply` 가 `data/decks.json` 을 만든다(새 파일은 `NEW-n`). 항목: `id`(= 주 원고 ID; 같은 원고에 자료가 둘이면 `MP2` 처럼 붙임), `driveKey`, `track`, `team`/`presenter`, `papers`(다루는 원고 — '통합발표'면 둘 다), `kind`(slides|script), `durationMin`, `file`, `status`, `textSha`, `slides`, `note`. ID 를 채운 뒤 `decks extract` → `decks sync --apply` 를 다시 돌려 텍스트 파일 이름과 `textSha` 를 맞춘다.
+4. **평가 → `eval_deck/<ID>.json`** — `docs/EVAL_PROMPT_decks.md` 의 지침으로 자료당 에이전트 1개. 심사위원이 발표자료만 보고 얻을 근거로 매기고(슬라이드 본문·노트·PDF 화면·대본), 원고 전문·`eval/<PID>.json` 은 수치·주장 대조용(`consistency`, 어긋나면 flags). 세부 요소 0.05 단위, 항목 score = 세부 평균, `total` = 기술·혁신·구성 평균×100(원고와 같은 식이라 비교 가능). 발표 항목: `clarity` 는 메시지·시각 위계·가독성, `timing` 은 자료 속 시간 배분 근거(없으면 0.5 자리값), `qa` 는 발표 전 자리값 0.5. 받은 뒤 전 자료의 세부 요소를 한 표에 놓고 척도를 보정한다.
+5. **점수·점검·보고서** — `decks score`(→ `data/deck_results.json`: 프리셋별 점수, 팀/개인/전체 순위, 주 원고의 v5 원고 점수·순위와의 차이) → `decks check`(격자·평균·total·textSha·papers 매핑·'@' 부재) → `decks report`(→ `dist/decks.html`, 내부용 — 원문 링크 포함, 배포·푸시 금지).
+영상(mp4)·시연 페이지·코드는 채점하지 않는다. 사이트(`site/app.js`)에는 아직 넣지 않았다(보고서 페이지만).
+**선정 규칙(사용자 2026-10-24)**: 팀은 조당 발표자료 1건(6조처럼 둘이면 '경연대회' 용으로 이름 붙인 쪽을 세고 나머지는 `counted: false`), 개인은 전자공학회 논문 기준으로 이름 폴더의 ppt·pptx·pdf·hwp·html(10/27 사용자 결정으로 인정) 중 1건만 — `papers[0]` 은 그 사람의 전자공학회 논문. 예외는 카탈로그 `venueException` 에 사유를 적는다(김정윤 JT — 사용자 결정 10/24, 박규민 LC·서보윤 TC — 10/26: 자료가 정보기술학회판을 다루므로 그 원고 기준). `decks check` 가 조·사람당 1건인지와 기준 원고가 전자공학회인지(예외 필드 없을 때) 본다. 보고서의 미제출 목록은 `data/deck_roster.json`(팀 7개 조, 개인 21명 중 `excludePersonal` 제외)을 따른다.
 
 ## 가중치·엑셀이 바뀌었을 때
 - 엑셀이 갱신되면 파일을 `inputs/` 에 받고 `python3 pipeline/excel.py --compare data/projects.json` 으로 차이를 본 뒤 `-o data/projects.json` 으로 쓴다.
 - 노트북 가중치가 바뀌면 `data/weights.json` 의 프리셋과 `fixes`·`validation` 을 함께 고친다. 상호작용 항은 노트북 주석 의도(독창성×HW결합도, HW유용성×시연안정성)를 따른다.
 
 ## 결정 사항
-- (2026-10-02) **v4 부터 순위는 심사 기준 5항목으로만 매긴다.** 6개 변수·사전함수 순위는 v3 로 동결.
+- (2026-10-29) **v6 부터 순위는 다시 경진대회 6개 변수·노트북 사전함수로 매긴다**(최초 체계). 심사 기준 4·5항목과 발표자료 점수는 참고.
+- (2026-10-02~10-28) v4·v5 는 심사 기준 5·4항목으로 순위를 매겼다(기록).
 - (2026-10-07) '핵심5' 하위 폴더 원고도 순위에 넣는다(10/2 에는 뺐음). 팀 폴더에 학생 저자 1명의 원고가 올라오면 개인논문으로 분류하고 카탈로그 `note` 에 적는다(TK). PDF 원고는 Drive 커넥터 텍스트를 `source_text/<ID>.txt` 로 두고 `make extract` 가 KEEP 으로 유지한다.
 - (2026-09-23, v3) 순위는 닫힌식 사전함수로 계산한다. 노트북 신경망은 이 함수를 근사하는 것일 뿐이다.
 - 기본값은 가중치를 합 1로 정규화한 것. 원본(합 0.92)은 프리셋으로 남긴다.

@@ -1,0 +1,687 @@
+[
+ {
+  "id": "AC",
+  "driveKey": "0305d779264d6c81",
+  "track": "team",
+  "team": "1조",
+  "presenter": null,
+  "papers": [
+   "AC"
+  ],
+  "kind": "slides",
+  "durationMin": null,
+  "file": {
+   "title": "한국국방기술학회_발표자료(1조).pptx",
+   "ext": "pptx",
+   "fileSize": "25562840",
+   "createdTime": "2026-10-23T04:11:48.191Z",
+   "modifiedTime": "2026-10-22T06:14:26.212Z"
+  },
+  "status": "new",
+  "note": "1조 국방기술학회 팀논문(적대적 패턴) 발표. 전자공학회 팀논문 RM 의 자료는 아직 없음",
+  "textSha": "26eafd0e8c8b4073",
+  "slides": 19,
+  "counted": true
+ },
+ {
+  "id": "ML",
+  "driveKey": "489369ca3c428921",
+  "track": "team",
+  "team": "6조",
+  "presenter": null,
+  "papers": [
+   "ML"
+  ],
+  "kind": "slides",
+  "durationMin": 10,
+  "file": {
+   "title": "MIL-PLAN_경연대회_발표2(10분).pptx",
+   "ext": "pptx",
+   "fileSize": "4331525",
+   "createdTime": "2026-10-23T03:02:02.140Z",
+   "modifiedTime": "2026-10-23T03:00:52.821Z"
+  },
+  "status": "new",
+  "note": "6조 전자공학회 팀논문(MIL-PLAN + 언어모델) 발표. 파일명의 '경연대회' 는 전자공학회 발표를 가리킴(1쪽 '전자공학회 논문 발표')",
+  "textSha": "8b828e295c5efde2",
+  "slides": 16,
+  "counted": true
+ },
+ {
+  "id": "MP",
+  "driveKey": "27b1b5137192c17d",
+  "track": "team",
+  "team": "6조",
+  "presenter": null,
+  "papers": [
+   "MP"
+  ],
+  "kind": "slides",
+  "durationMin": 10,
+  "file": {
+   "title": "MIL-PLAN_국방기술학회_발표(10분)2.pptx",
+   "ext": "pptx",
+   "fileSize": "4256150",
+   "createdTime": "2026-10-23T03:02:06.584Z",
+   "modifiedTime": "2026-10-22T23:50:10.368Z"
+  },
+  "status": "new",
+  "note": "6조 국방기술학회 팀논문(MIL-PLAN 재계획) 발표 · 조당 1건 규칙(사용자 10/24): 6조는 '경연대회' 라고 이름 붙인 전자공학회 발표(ML)를 세고 이 자료는 참고용으로 둔다(평가는 남김).",
+  "textSha": "85afe998f982781d",
+  "slides": 17,
+  "counted": false
+ },
+ {
+  "id": "JT",
+  "driveKey": "5aedbc6ffd4b0818",
+  "track": "personal",
+  "team": null,
+  "presenter": "김정윤",
+  "papers": [
+   "JT"
+  ],
+  "kind": "slides",
+  "durationMin": null,
+  "file": {
+   "title": "한국정보기술학회(김정윤).pptx",
+   "ext": "pptx",
+   "fileSize": "8153860",
+   "createdTime": "2026-10-26T13:13:07.016Z",
+   "modifiedTime": "2026-10-26T13:12:54.600Z"
+  },
+  "status": "new",
+  "note": "정보기술학회 개인논문(가짜 음성 탐지기 결합) 발표. 개인 자료의 기준 원고는 전자공학회 논문이 원칙이나 김정윤은 예외(venueException).",
+  "textSha": "5c48d327d5331ddd",
+  "slides": 9,
+  "counted": true,
+  "venueException": "사용자 결정 2026-10-24: 김정윤은 예외 — 자료가 정보기술학회판(JT)을 다루므로 기준 원고를 JT 로 둔다(전자공학회 기준 규칙 적용 안 함)."
+ },
+ {
+  "id": "RA",
+  "driveKey": "b8e1ae38db62d3a8",
+  "track": "personal",
+  "team": null,
+  "presenter": "이민우",
+  "papers": [
+   "RA"
+  ],
+  "kind": "slides",
+  "durationMin": null,
+  "file": {
+   "title": "261021_군운영AI비서_발표자료_이민우.pptx",
+   "ext": "pptx",
+   "fileSize": "2357510",
+   "createdTime": "2026-10-23T04:09:59.731Z",
+   "modifiedTime": "2026-10-21T06:30:46.288Z"
+  },
+  "status": "new",
+  "note": "전자공학회 개인논문(챗봇·RAG·RAG-Agent 비교) 발표(노트 '근거: 전자공학회 투고 원고 Ver.2'). 정보기술학회판 CR 자료는 아직 없음",
+  "textSha": "af19e1c3381ff90f",
+  "slides": 8,
+  "counted": true
+ },
+ {
+  "id": "NM",
+  "driveKey": "c8a5da21be175a09",
+  "track": "personal",
+  "team": null,
+  "presenter": "이시연",
+  "papers": [
+   "NM",
+   "NH"
+  ],
+  "kind": "slides",
+  "durationMin": 5,
+  "file": {
+   "title": "아차사고_통합발표_5분_최종 업로드.pptx",
+   "ext": "pptx",
+   "fileSize": "6442825",
+   "createdTime": "2026-10-23T05:24:15.428Z",
+   "modifiedTime": "2026-10-23T05:23:48.492Z"
+  },
+  "status": "new",
+  "note": "'통합발표' — 전자공학회판 NM 제목을 쓰며 정보기술학회판 NH 와 같은 주제. 같은 폴더의 PDF(아차사고_통합발표_5분_최종.pdf)는 같은 자료의 PDF 판",
+  "textSha": "c01630c965f5ae1c",
+  "slides": 15,
+  "counted": true
+ },
+ {
+  "id": "VT",
+  "driveKey": "548df1f294f7d40b",
+  "track": "personal",
+  "team": null,
+  "presenter": "최석철",
+  "papers": [
+   "VT"
+  ],
+  "kind": "slides",
+  "durationMin": null,
+  "file": {
+   "title": "최석철_VTC-ASSURE.pdf",
+   "ext": "pdf",
+   "fileSize": "717976",
+   "createdTime": "2026-10-23T02:26:15.487Z",
+   "modifiedTime": "2026-10-23T15:16:43.269Z"
+  },
+  "status": "updated",
+  "note": "전자공학회 개인논문(VTC-ASSURE) 발표 PDF 22쪽. 같은 폴더의 VTC-ASSURE_발표자료.html 은 PDF·HUD 미러·논문·코드·데이터로 가는 링크 모음, HUD미러.html 은 시연 페이지",
+  "textSha": "944e607d1bf2d5e1",
+  "slides": 22,
+  "counted": true
+ },
+ {
+  "id": "ST",
+  "driveKey": "0f04c059a3f134e9",
+  "track": "personal",
+  "team": null,
+  "presenter": "김영수",
+  "papers": [
+   "ST",
+   "SI"
+  ],
+  "kind": "slides",
+  "durationMin": null,
+  "file": {
+   "title": "20261026_반복생성불일치도_발표_프리젠테이션.pptx",
+   "ext": "pptx",
+   "fileSize": "2843534",
+   "createdTime": "2026-10-26T11:06:15.885Z",
+   "modifiedTime": "2026-10-26T07:32:47.113Z"
+  },
+  "status": "new",
+  "note": "10/26 슬라이드 pptx(20261026_반복생성불일치도_발표_프리젠테이션) 제출 — 10/23 의 hwpx 대본을 대체. 같은 폴더의 발표대본 docx 는 별도 파일이라 세지 않음(사람당 1건). 전자공학회판 ST·정보기술학회판 SI 같은 제목",
+  "textSha": "99938dbd7c00a311",
+  "counted": true,
+  "slides": 9
+ },
+ {
+  "id": "DR",
+  "driveKey": "547cff0b3734034f",
+  "track": "team",
+  "team": "2조",
+  "presenter": null,
+  "papers": [
+   "DR"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "2팀 제주도 학회 팀 발표자료.pptx",
+   "ext": "pptx",
+   "fileSize": "3022791",
+   "createdTime": "2026-10-25T10:09:14.172Z",
+   "modifiedTime": "2026-10-20T00:16:25.117Z"
+  },
+  "status": "new",
+  "slides": 10,
+  "durationMin": null,
+  "note": "2조 국방기술학회 팀논문(AI 드론운용 지원체계) 발표. 파일명 '2팀 제주도 학회'",
+  "counted": true,
+  "textSha": "745f0d667c8e2db5"
+ },
+ {
+  "id": "AL",
+  "driveKey": "08a02c37c9da5ab8",
+  "track": "team",
+  "team": "3조",
+  "presenter": null,
+  "papers": [
+   "AL"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "[3조] 에이스_국방 AI 경진대회.pptx",
+   "ext": "pptx",
+   "fileSize": "9043381",
+   "createdTime": "2026-10-25T14:49:23.995Z",
+   "modifiedTime": "2026-10-25T10:14:59.210Z"
+  },
+  "status": "new",
+  "slides": 29,
+  "durationMin": null,
+  "note": "3조 전자공학회 팀논문(딥러닝 융합 자동 라벨링) 발표. 같은 폴더의 PDF 는 같은 자료",
+  "counted": true,
+  "textSha": "12b5774f0a736d8b"
+ },
+ {
+  "id": "PB",
+  "driveKey": "d0090c10e94797c8",
+  "track": "team",
+  "team": "4조",
+  "presenter": null,
+  "papers": [
+   "PB"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "4조 국방AI경진대회_팀발표_PartBDA_수정.pptx",
+   "ext": "pptx",
+   "fileSize": "25142240",
+   "createdTime": "2026-10-26T06:23:16.622Z",
+   "modifiedTime": "2026-10-26T06:22:44.224Z"
+  },
+  "status": "new",
+  "slides": 14,
+  "durationMin": null,
+  "note": "4조 전자공학회 팀논문(PartBDA) 발표",
+  "counted": true,
+  "textSha": "114c814e5afab62e"
+ },
+ {
+  "id": "SV",
+  "driveKey": "bd68b0d5e0332dc6",
+  "track": "team",
+  "team": "7조",
+  "presenter": null,
+  "papers": [
+   "SV"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "7조 TS-RPST.pptx의 사본",
+   "ext": "pptx",
+   "fileSize": "2371774",
+   "createdTime": "2026-10-25T20:49:33.674Z",
+   "modifiedTime": "2026-10-25T20:59:09.266Z"
+  },
+  "status": "new",
+  "slides": 12,
+  "durationMin": null,
+  "note": "7조 전자공학회 팀논문(초소형 객체 생존 다운샘플링 — 발표명 TS-RPST, 저자 최석철·이건희·김민규) 발표. 파일명이 '…의 사본'이고 확장자가 없음",
+  "counted": true,
+  "textSha": "b215a894b86462c0"
+ },
+ {
+  "id": "BE",
+  "driveKey": "6c2e9bd9684946a8",
+  "track": "personal",
+  "team": null,
+  "presenter": "백지훈",
+  "papers": [
+   "BE",
+   "BI"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "백지훈_FineTuning_vs_YOLO-IOD_5분발표자료_핵심.pdf",
+   "ext": "pdf",
+   "fileSize": "374347",
+   "createdTime": "2026-10-25T21:54:14.408Z",
+   "modifiedTime": "2026-10-25T21:44:26.030Z"
+  },
+  "status": "new",
+  "slides": 7,
+  "durationMin": 5,
+  "note": "전자공학회 개인논문(해양 객체 클래스 순차 학습) 발표 PDF. pdftotext 한글 깨짐 → 커넥터 텍스트",
+  "counted": true,
+  "textSha": "f34f753290b0715a"
+ },
+ {
+  "id": "PK",
+  "driveKey": "8d11bdd537215b42",
+  "track": "personal",
+  "team": null,
+  "presenter": "이진욱",
+  "papers": [
+   "PK"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "제주도 학회 개인 발표자료(상사 이진욱).html",
+   "ext": "html",
+   "fileSize": "2797523",
+   "createdTime": "2026-10-26T12:27:27.635Z",
+   "modifiedTime": "2026-10-26T12:24:56.971Z"
+  },
+  "status": "new",
+  "slides": 17,
+  "durationMin": null,
+  "note": "전자공학회 개인논문(KCTC PK-Table 기반 AI 화력지원체계) 발표 — 형식이 HTML 슬라이드(IAMSEC 2026 발표, 17장·노트 포함). HTML 형식은 10/27 사용자 결정으로 인정. 헤드리스 Chrome 인쇄로 PDF 변환",
+  "counted": true,
+  "formatException": "html — 사용자 결정 2026-10-27: HTML 발표자료도 인정해 순위에 둔다",
+  "textSha": "5e6c5c25bab5f34e"
+ },
+ {
+  "id": "CT",
+  "driveKey": "97cd1171672d91cb",
+  "track": "personal",
+  "team": null,
+  "presenter": "남하늘",
+  "papers": [
+   "CT"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "ACTS_발표자료_최종 (1).pptx",
+   "ext": "pptx",
+   "fileSize": "332997",
+   "createdTime": "2026-10-25T14:55:50.824Z",
+   "modifiedTime": "2026-10-25T14:48:45.013Z"
+  },
+  "status": "new",
+  "slides": 8,
+  "durationMin": null,
+  "note": "전자공학회 개인논문(ACTS 적응형 사이버 대응 훈련) 발표. 같은 폴더 PDF 는 같은 자료",
+  "counted": true,
+  "textSha": "9c3cec82365029fb"
+ },
+ {
+  "id": "JA",
+  "driveKey": "28e8c35b49ec3c5e",
+  "track": "personal",
+  "team": null,
+  "presenter": "전누리",
+  "papers": [
+   "JA",
+   "JI"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "(한국정보기술학회)합동연합화력_AI의사결정지원_전누리.pptx",
+   "ext": "pptx",
+   "fileSize": "15556986",
+   "createdTime": "2026-10-27T01:20:01.879Z",
+   "modifiedTime": "2026-10-27T01:16:32.294Z"
+  },
+  "status": "new",
+  "slides": 8,
+  "durationMin": 5,
+  "note": "10/27 최신 pptx '(한국정보기술학회)합동연합화력_AI의사결정지원_전누리' 를 셈(같은 폴더의 10/25 v6·10/26 '최종본' 은 이전 판). 파일명은 정보기술학회판이나 기준 원고는 규칙대로 전자공학회판 JA",
+  "counted": true,
+  "textSha": "bc1b317478f926ef",
+  "manualText": "10/27 PDF 판 커넥터 텍스트"
+ },
+ {
+  "id": "GM",
+  "driveKey": "87924e28d1a44f99",
+  "track": "personal",
+  "team": null,
+  "presenter": "김혜인",
+  "papers": [
+   "GM"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "GCMS_CWC_구조예측_발표_261023.pptx",
+   "ext": "pptx",
+   "fileSize": "2010176",
+   "createdTime": "2026-10-25T13:29:55.267Z",
+   "modifiedTime": "2026-10-24T09:03:36.136Z"
+  },
+  "status": "new",
+  "slides": 8,
+  "durationMin": null,
+  "note": "전자공학회 개인논문(GC-MS CWC 구조 예측) 발표. 같은 폴더 PDF 는 같은 자료",
+  "counted": true,
+  "textSha": "8e51f5ef1c157cc1"
+ },
+ {
+  "id": "PA",
+  "driveKey": "e53b0cc9fee163b0",
+  "track": "personal",
+  "team": null,
+  "presenter": "김민균",
+  "papers": [
+   "PA"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "부분방전 진단 논문 발표(최종).pptx",
+   "ext": "pptx",
+   "fileSize": "713839",
+   "createdTime": "2026-10-27T01:02:17.946Z",
+   "modifiedTime": "2026-10-27T01:00:29.627Z"
+  },
+  "status": "new",
+  "slides": 22,
+  "durationMin": null,
+  "note": "전자공학회 개인논문(PRPD 부분방전) 발표",
+  "counted": true,
+  "textSha": "2f14fe748a89fad2"
+ },
+ {
+  "id": "RH",
+  "driveKey": "f5188b638fe12dac",
+  "track": "personal",
+  "team": null,
+  "presenter": "라경주",
+  "papers": [
+   "RH"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "라경주_발표자료.pptx",
+   "ext": "pptx",
+   "fileSize": "89781",
+   "createdTime": "2026-10-25T20:30:18.389Z",
+   "modifiedTime": "2026-10-25T20:28:19.956Z"
+  },
+  "status": "new",
+  "slides": 9,
+  "durationMin": null,
+  "note": "전자공학회 개인논문(RAG·로컬 LLM HWPX 편집) 발표. 같은 폴더 PDF 는 같은 자료",
+  "counted": true,
+  "textSha": "71a0ec767a9a34a6"
+ },
+ {
+  "id": "EG",
+  "driveKey": "1689217925a36820",
+  "track": "personal",
+  "team": null,
+  "presenter": "강현섭",
+  "papers": [
+   "EG"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "강현섭_발표.pptx",
+   "ext": "pptx",
+   "fileSize": "272526",
+   "createdTime": "2026-10-25T09:58:06.256Z",
+   "modifiedTime": "2026-10-25T07:45:04.173Z"
+  },
+  "status": "new",
+  "slides": 14,
+  "durationMin": null,
+  "note": "전자공학회 개인논문(근거 결손 입도) 발표",
+  "counted": true,
+  "textSha": "8eabb20fb0fa6c2c"
+ },
+ {
+  "id": "KD",
+  "driveKey": "690d9cfb20d05bdf",
+  "track": "personal",
+  "team": null,
+  "presenter": "김두환",
+  "papers": [
+   "KE",
+   "KD"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "김두환_국방 AI 경진대회.pptx",
+   "ext": "pptx",
+   "fileSize": "9204944",
+   "createdTime": "2026-10-25T15:20:52.336Z",
+   "modifiedTime": "2026-10-25T15:16:57.041Z"
+  },
+  "status": "new",
+  "slides": 24,
+  "durationMin": null,
+  "note": "발표 주제(유전 알고리즘 항적 데이터 딥러닝 충돌회피)는 10/21 새로 올린 전자공학회 원고와 같고 카탈로그의 KD(10/16 기준, 항적 최적화)와 다름 — 원고 카탈로그 동기화 보류 중이라 기준 원고는 KD 로 두고 새 원고 텍스트는 평가 대조용으로만 씀 10/29 원고 카탈로그 동기화로 전자공학회 원고 KE(10/21)가 들어와 기준 원고를 KE 로 바꿈(평가 당시 대조는 KD 텍스트; KE 는 v5 rubric 이 없어 원고 점수 비교 칸은 비어 있음).",
+  "counted": true,
+  "textSha": "e195ef49deb3f80c"
+ },
+ {
+  "id": "LT",
+  "driveKey": "17f46ab5364ed918",
+  "track": "personal",
+  "team": null,
+  "presenter": "박규민",
+  "papers": [
+   "LC",
+   "LT"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "통신·거리 균형 경로 추천 LTR 모델 비교(최종).pptx",
+   "ext": "pptx",
+   "fileSize": "343617",
+   "createdTime": "2026-10-25T09:29:07.302Z",
+   "modifiedTime": "2026-10-25T09:27:43.399Z"
+  },
+  "status": "new",
+  "slides": 9,
+  "durationMin": null,
+  "note": "정보기술학회 개인논문 LC(물리모델 기반 통신·거리 균형 경로 추천 LTR 모델 비교) 발표. 개인 기준 원고는 전자공학회 논문이 원칙이나 박규민은 예외(venueException) — LT 는 대조용.",
+  "counted": true,
+  "textSha": "091b98f145edf9d8",
+  "venueException": "사용자 결정 2026-10-26: 박규민은 김정윤처럼 예외 — 발표 제목·실험(4개 모델·12개 중계소)이 정보기술학회판 LC 와 같다. 기준 원고를 LC 로 둔다(전자공학회판 LT 는 대조용)."
+ },
+ {
+  "id": "TE",
+  "driveKey": "1f75474455449c2b",
+  "track": "personal",
+  "team": null,
+  "presenter": "서보윤",
+  "papers": [
+   "TC",
+   "TE"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "국방AI경진대회_TICN_AI장애판별_서보윤1.pptx",
+   "ext": "pptx",
+   "fileSize": "1421818",
+   "createdTime": "2026-10-26T13:07:39.827Z",
+   "modifiedTime": "2026-10-26T13:07:23.284Z"
+  },
+  "status": "new",
+  "slides": 7,
+  "durationMin": null,
+  "note": "정보기술학회 개인논문 TC(TICN 백본 노드 파괴 AI 장애 판별·자율복구) 발표. 개인 기준 원고는 전자공학회 논문이 원칙이나 서보윤은 예외(venueException) — TE 는 대조용. pptx 가 없는 노트 파일을 참조해 PowerPoint 가 '손상됨'으로 보고 '열고 복구'에서만 열림",
+  "counted": true,
+  "textSha": "1f7757692b03a3f9",
+  "venueException": "사용자 결정 2026-10-26: 서보윤은 김정윤처럼 예외 — 발표 제목·S1 단독 범위·수치가 정보기술학회판 TC 와 같다. 기준 원고를 TC 로 둔다(전자공학회판 TE 는 대조용)."
+ },
+ {
+  "id": "SF",
+  "driveKey": "179361be4ec4af18",
+  "track": "team",
+  "team": "5조",
+  "presenter": null,
+  "papers": [
+   "SF",
+   "SD"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "5조_오지_경영대회용.pptx",
+   "ext": "pptx",
+   "fileSize": "2037072",
+   "createdTime": "2026-10-26T06:04:02.055Z",
+   "modifiedTime": "2026-10-26T06:04:02.141Z"
+  },
+  "status": "new",
+  "slides": 12,
+  "durationMin": null,
+  "note": "5조 팀논문(비레이블 열화상 다중 객체 추적 소스 프리 도메인 적응) 발표 — 전자공학회판 SF·국방기술학회판 SD 가 같은 제목이라 둘 다 대조, 기준은 SF. 파일명 '경영대회용'(경연대회 오기)",
+  "counted": true,
+  "textSha": "ed7f775dfce80071"
+ },
+ {
+  "id": "DZ",
+  "driveKey": "3928def9056fb381",
+  "track": "personal",
+  "team": null,
+  "presenter": "강현재",
+  "papers": [
+   "DZ"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "프레젠테이션2_v2.pptx",
+   "ext": "pptx",
+   "fileSize": "391816121",
+   "createdTime": "2026-10-27T02:00:48.657Z",
+   "modifiedTime": "2026-10-27T01:56:01.148Z"
+  },
+  "status": "new",
+  "slides": 25,
+  "durationMin": null,
+  "note": "강현재 개인 발표(졸림 위험 분류). 파일 391MB — 영상 내장으로 보임. 같은 폴더의 '화면 녹화.mp4'(369MB)는 영상이라 채점 안 함. 원고가 카탈로그 밖이라 원고 점수 비교 없음 10/29 원고 카탈로그 동기화로 DZ 가 카탈로그에 들어와 papers=[DZ] 로 연결(이전 externalPaper: 얼굴 행동의 개인차 반영 여부에 따른 졸림 위험 분류 성능 비교: 참가자 독립 평가).",
+  "counted": true,
+  "textSha": "28f904799ca653a5"
+ },
+ {
+  "id": "HR",
+  "driveKey": "9002fc351893fca2",
+  "track": "personal",
+  "team": null,
+  "presenter": "임철희",
+  "papers": [
+   "HR"
+  ],
+  "kind": "slides",
+  "file": {
+   "title": "홀로그래픽_레이더_지뢰_인식의_미지_환경_일반화_분석_수정.pptx",
+   "ext": "pptx",
+   "fileSize": "325539",
+   "createdTime": "2026-10-26T14:39:49.425Z",
+   "modifiedTime": "2026-10-26T14:35:18.942Z"
+  },
+  "status": "new",
+  "slides": 8,
+  "durationMin": null,
+  "note": "전자공학회 개인논문 HR(홀로그래픽 레이더 지뢰 인식 미지 환경 일반화) 발표",
+  "counted": true,
+  "textSha": "5c6eec05e8dca0c6"
+ },
+ {
+  "id": "NR",
+  "driveKey": "d72b9ecffdc487bf",
+  "track": "personal",
+  "team": null,
+  "presenter": "강줄기",
+  "papers": [],
+  "kind": "slides",
+  "file": {
+   "title": "Morpheus_Neo_v14.html",
+   "ext": "html",
+   "fileSize": "32137170",
+   "createdTime": "2026-10-27T00:44:49.768Z",
+   "modifiedTime": "2026-10-26T01:30:09.755Z"
+  },
+  "status": "new",
+  "slides": 22,
+  "durationMin": 5,
+  "formatException": "html — 사용자 결정 2026-10-27: HTML 발표자료도 인정해 순위에 둔다",
+  "externalPaper": {
+   "title": "Navigation with a Reconfigurable Payload: Capability-State Footprints and Staged Pose Restoration",
+   "venue": "?",
+   "note": "같은 폴더에 올린 논문 PDF(Navigation_with_a_Reconfigurable_Payload(10.2)_ko.pdf, 7쪽) — 강줄기의 카탈로그 원고(HB·AD·DC)와 다른 연구"
+  },
+  "note": "강줄기 개인 발표 'Morpheus Neo v14 · 5분 연구성과 발표' — HTML 슬라이드 22장(영상 6개 내장, 노트 없음). HTML 형식은 10/27 사용자 결정으로 인정. 같은 폴더의 zip 은 같은 덱의 묶음으로 보여 채점 안 함",
+  "counted": true,
+  "textSha": "6b9b28ceccc615b8"
+ },
+ {
+  "id": "HS",
+  "driveKey": null,
+  "track": "personal",
+  "team": null,
+  "presenter": "이건희",
+  "papers": [
+   "HS"
+  ],
+  "kind": "imputed",
+  "durationMin": null,
+  "file": {
+   "title": "(발표자료 미제출 — 추정치)",
+   "ext": "—"
+  },
+  "status": "imputed",
+  "counted": true,
+  "imputed": "사용자 지시 2026-10-28: 이건희는 발표자료를 내지 않았지만 발표했다고 가정해 평균적으로 계산 — 원고 HS 의 항목 점수 + 원고가 카탈로그에 있는 개인 발표자료들의 평균 변화(발표자료 − 원고) — 사용자 확정 2026-10-28(전체 평균 방식 대신 이 방식)",
+  "note": "이건희는 발표자료를 제출하지 않았다. 사용자 지시(10/28)로 발표했다고 가정한 추정치를 순위에 넣는다. 기준 원고는 전자공학회 개인논문 HS."
+ }
+]

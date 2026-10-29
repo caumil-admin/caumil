@@ -1,7 +1,6 @@
 {
- "generatedAt": "2026-10-16T22:47:03+00:00",
- "method": "rubric",
- "default": "manuscript",
+ "generatedAt": "2026-10-29T06:29:28+00:00",
+ "default": "notebook",
  "mc": {
   "runs": 4000,
   "alpha": 60.0,
@@ -10,1811 +9,2267 @@
  },
  "papers": {
   "MP": {
-   "crit": {
-    "technical": 0.683333,
-    "innovation": 0.516667,
-    "structure": 0.633333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.415141,
+    "fit": 8.026,
+    "score": 34.595
    },
-   "manuscript": 61.1111,
-   "equal4": 58.3333
+   "raw": {
+    "latent": 0.38275,
+    "fit": 6.309,
+    "score": 34.174
+   },
+   "equal": {
+    "latent": 0.466668,
+    "fit": 11.643,
+    "score": 46.667
+   },
+   "noHw": {
+    "latent": 0.6625,
+    "fit": 38.699,
+    "score": 66.25
+   }
   },
   "DR": {
-   "crit": {
-    "technical": 0.65,
-    "innovation": 0.533333,
-    "structure": 0.616667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.529261,
+    "fit": 17.859,
+    "score": 44.105
    },
-   "manuscript": 60.0,
-   "equal4": 57.5
+   "raw": {
+    "latent": 0.49,
+    "fit": 13.705,
+    "score": 43.75
+   },
+   "equal": {
+    "latent": 0.516668,
+    "fit": 16.429,
+    "score": 51.667
+   },
+   "noHw": {
+    "latent": 0.625,
+    "fit": 31.865,
+    "score": 62.5
+   }
   },
   "ON": {
-   "crit": {
-    "technical": 0.566667,
-    "innovation": 0.616667,
-    "structure": 0.55,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.386076,
+    "fit": 6.468,
+    "score": 32.173
    },
-   "manuscript": 57.7778,
-   "equal4": 55.8333
+   "raw": {
+    "latent": 0.35625,
+    "fit": 5.166,
+    "score": 31.808
+   },
+   "equal": {
+    "latent": 0.416668,
+    "fit": 8.116,
+    "score": 41.667
+   },
+   "noHw": {
+    "latent": 0.5625,
+    "fit": 22.097,
+    "score": 56.25
+   }
   },
   "VT": {
-   "crit": {
-    "technical": 0.833333,
-    "innovation": 0.75,
-    "structure": 0.766667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.907152,
+    "fit": 81.716,
+    "score": 75.596
    },
-   "manuscript": 78.3333,
-   "equal4": 71.25
+   "raw": {
+    "latent": 0.8445,
+    "fit": 73.027,
+    "score": 75.402
+   },
+   "equal": {
+    "latent": 0.783335,
+    "fit": 62.403,
+    "score": 78.333
+   },
+   "noHw": {
+    "latent": 0.7625,
+    "fit": 58.419,
+    "score": 76.25
+   }
   },
   "HS": {
-   "crit": {
-    "technical": 0.816667,
-    "innovation": 0.65,
-    "structure": 0.8,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.574239,
+    "fit": 23.756,
+    "score": 47.853
    },
-   "manuscript": 75.5556,
-   "equal4": 69.1667
+   "raw": {
+    "latent": 0.5315,
+    "fit": 18.124,
+    "score": 47.455
+   },
+   "equal": {
+    "latent": 0.583335,
+    "fit": 25.099,
+    "score": 58.333
+   },
+   "noHw": {
+    "latent": 0.725,
+    "fit": 51.0,
+    "score": 72.5
+   }
   },
   "NM": {
-   "crit": {
-    "technical": 0.7,
-    "innovation": 0.633333,
-    "structure": 0.75,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.44975,
+    "fit": 10.322,
+    "score": 37.479
    },
-   "manuscript": 69.4444,
-   "equal4": 64.5833
+   "raw": {
+    "latent": 0.41575,
+    "fit": 8.062,
+    "score": 37.121
+   },
+   "equal": {
+    "latent": 0.458334,
+    "fit": 10.975,
+    "score": 45.833
+   },
+   "noHw": {
+    "latent": 0.5875,
+    "fit": 25.731,
+    "score": 58.75
+   }
   },
   "MM": {
-   "crit": {
-    "technical": 0.666667,
-    "innovation": 0.65,
-    "structure": 0.616667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.50237,
+    "fit": 14.918,
+    "score": 41.864
    },
-   "manuscript": 64.4444,
-   "equal4": 60.8333
+   "raw": {
+    "latent": 0.4645,
+    "fit": 11.466,
+    "score": 41.473
+   },
+   "equal": {
+    "latent": 0.508334,
+    "fit": 15.534,
+    "score": 50.833
+   },
+   "noHw": {
+    "latent": 0.65,
+    "fit": 36.355,
+    "score": 65.0
+   }
   },
   "PK": {
-   "crit": {
-    "technical": 0.65,
-    "innovation": 0.566667,
-    "structure": 0.616667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.435587,
+    "fit": 9.319,
+    "score": 36.299
    },
-   "manuscript": 61.1111,
-   "equal4": 58.3333
+   "raw": {
+    "latent": 0.4025,
+    "fit": 7.31,
+    "score": 35.938
+   },
+   "equal": {
+    "latent": 0.466668,
+    "fit": 11.643,
+    "score": 46.667
+   },
+   "noHw": {
+    "latent": 0.6125,
+    "fit": 29.734,
+    "score": 61.25
+   }
   },
   "HB": {
-   "crit": {
-    "technical": 0.566667,
-    "innovation": 0.5,
-    "structure": 0.55,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.298044,
+    "fit": 3.307,
+    "score": 24.837
    },
-   "manuscript": 53.8889,
-   "equal4": 52.9167
+   "raw": {
+    "latent": 0.275,
+    "fit": 2.765,
+    "score": 24.554
+   },
+   "equal": {
+    "latent": 0.333334,
+    "fit": 4.338,
+    "score": 33.333
+   },
+   "noHw": {
+    "latent": 0.4375,
+    "fit": 9.449,
+    "score": 43.75
+   }
   },
   "AD": {
-   "crit": {
-    "technical": 0.4,
-    "innovation": 0.483333,
-    "structure": 0.4,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.205967,
+    "fit": 1.611,
+    "score": 17.164
    },
-   "manuscript": 42.7778,
-   "equal4": 44.5833
+   "raw": {
+    "latent": 0.18975,
+    "fit": 1.417,
+    "score": 16.942
+   },
+   "equal": {
+    "latent": 0.225,
+    "fit": 1.871,
+    "score": 22.5
+   },
+   "noHw": {
+    "latent": 0.3,
+    "fit": 3.357,
+    "score": 30.0
+   }
   },
   "TE": {
-   "crit": {
-    "technical": 0.733333,
-    "innovation": 0.65,
-    "structure": 0.716667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.535848,
+    "fit": 18.645,
+    "score": 44.654
    },
-   "manuscript": 70.0,
-   "equal4": 65.0
+   "raw": {
+    "latent": 0.4955,
+    "fit": 14.234,
+    "score": 44.241
+   },
+   "equal": {
+    "latent": 0.558334,
+    "fit": 21.529,
+    "score": 55.833
+   },
+   "noHw": {
+    "latent": 0.725,
+    "fit": 51.0,
+    "score": 72.5
+   }
   },
   "TC": {
-   "crit": {
-    "technical": 0.65,
-    "innovation": 0.566667,
-    "structure": 0.65,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.481054,
+    "fit": 12.881,
+    "score": 40.088
    },
-   "manuscript": 62.2222,
-   "equal4": 59.1667
+   "raw": {
+    "latent": 0.44475,
+    "fit": 9.957,
+    "score": 39.71
+   },
+   "equal": {
+    "latent": 0.508334,
+    "fit": 15.534,
+    "score": 50.833
+   },
+   "noHw": {
+    "latent": 0.65,
+    "fit": 36.355,
+    "score": 65.0
+   }
   },
   "LR": {
-   "crit": {
-    "technical": 0.7,
-    "innovation": 0.533333,
-    "structure": 0.633333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.490196,
+    "fit": 13.724,
+    "score": 40.85
    },
-   "manuscript": 62.2222,
-   "equal4": 59.1667
+   "raw": {
+    "latent": 0.4535,
+    "fit": 10.603,
+    "score": 40.491
+   },
+   "equal": {
+    "latent": 0.491668,
+    "fit": 13.864,
+    "score": 49.167
+   },
+   "noHw": {
+    "latent": 0.6,
+    "fit": 27.688,
+    "score": 60.0
+   }
   },
   "NH": {
-   "crit": {
-    "technical": 0.533333,
-    "innovation": 0.55,
-    "structure": 0.583333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.37687,
+    "fit": 6.037,
+    "score": 31.406
    },
-   "manuscript": 55.5556,
-   "equal4": 54.1667
+   "raw": {
+    "latent": 0.348,
+    "fit": 4.852,
+    "score": 31.071
+   },
+   "equal": {
+    "latent": 0.391667,
+    "fit": 6.744,
+    "score": 39.167
+   },
+   "noHw": {
+    "latent": 0.5125,
+    "fit": 15.976,
+    "score": 51.25
+   }
   },
   "DC": {
-   "crit": {
-    "technical": 0.316667,
-    "innovation": 0.433333,
-    "structure": 0.35,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.202163,
+    "fit": 1.563,
+    "score": 16.847
    },
-   "manuscript": 36.6667,
-   "equal4": 40.0
+   "raw": {
+    "latent": 0.18625,
+    "fit": 1.379,
+    "score": 16.629
+   },
+   "equal": {
+    "latent": 0.216667,
+    "fit": 1.752,
+    "score": 21.667
+   },
+   "noHw": {
+    "latent": 0.2875,
+    "fit": 3.047,
+    "score": 28.75
+   }
+  },
+  "UB": {
+   "notebook": {
+    "latent": 0.5355,
+    "fit": 18.603,
+    "score": 44.625
+   },
+   "raw": {
+    "latent": 0.4955,
+    "fit": 14.234,
+    "score": 44.241
+   },
+   "equal": {
+    "latent": 0.541668,
+    "fit": 19.362,
+    "score": 54.167
+   },
+   "noHw": {
+    "latent": 0.675,
+    "fit": 41.096,
+    "score": 67.5
+   }
   },
   "GC": {
-   "crit": {
-    "technical": 0.75,
-    "innovation": 0.666667,
-    "structure": 0.633333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.472978,
+    "fit": 12.173,
+    "score": 39.415
    },
-   "manuscript": 68.3333,
-   "equal4": 63.75
+   "raw": {
+    "latent": 0.4365,
+    "fit": 9.381,
+    "score": 38.973
+   },
+   "equal": {
+    "latent": 0.516668,
+    "fit": 16.429,
+    "score": 51.667
+   },
+   "noHw": {
+    "latent": 0.7125,
+    "fit": 48.5,
+    "score": 71.25
+   }
   },
   "RM": {
-   "crit": {
-    "technical": 0.666667,
-    "innovation": 0.633333,
-    "structure": 0.65,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.451457,
+    "fit": 10.449,
+    "score": 37.621
    },
-   "manuscript": 65.0,
-   "equal4": 61.25
+   "raw": {
+    "latent": 0.4175,
+    "fit": 8.166,
+    "score": 37.277
+   },
+   "equal": {
+    "latent": 0.450001,
+    "fit": 10.34,
+    "score": 45.0
+   },
+   "noHw": {
+    "latent": 0.55,
+    "fit": 20.424,
+    "score": 55.0
+   }
   },
   "UF": {
-   "crit": {
-    "technical": 0.5,
-    "innovation": 0.583333,
-    "structure": 0.483333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.382511,
+    "fit": 6.298,
+    "score": 31.876
    },
-   "manuscript": 52.2222,
-   "equal4": 51.6667
+   "raw": {
+    "latent": 0.35325,
+    "fit": 5.05,
+    "score": 31.54
+   },
+   "equal": {
+    "latent": 0.400001,
+    "fit": 7.176,
+    "score": 40.0
+   },
+   "noHw": {
+    "latent": 0.5125,
+    "fit": 15.976,
+    "score": 51.25
+   }
   },
   "EG": {
-   "crit": {
-    "technical": 0.716667,
-    "innovation": 0.616667,
-    "structure": 0.65,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.532489,
+    "fit": 18.241,
+    "score": 44.374
    },
-   "manuscript": 66.1111,
-   "equal4": 62.0833
+   "raw": {
+    "latent": 0.49275,
+    "fit": 13.967,
+    "score": 43.996
+   },
+   "equal": {
+    "latent": 0.541668,
+    "fit": 19.362,
+    "score": 54.167
+   },
+   "noHw": {
+    "latent": 0.675,
+    "fit": 41.096,
+    "score": 67.5
+   }
   },
   "ML": {
-   "crit": {
-    "technical": 0.75,
-    "innovation": 0.583333,
-    "structure": 0.716667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.425967,
+    "fit": 8.689,
+    "score": 35.497
    },
-   "manuscript": 68.3333,
-   "equal4": 63.75
+   "raw": {
+    "latent": 0.39275,
+    "fit": 6.799,
+    "score": 35.067
+   },
+   "equal": {
+    "latent": 0.475001,
+    "fit": 12.347,
+    "score": 47.5
+   },
+   "noHw": {
+    "latent": 0.675,
+    "fit": 41.096,
+    "score": 67.5
+   }
   },
   "TD": {
-   "crit": {
-    "technical": 0.55,
-    "innovation": 0.533333,
-    "structure": 0.5,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.366011,
+    "fit": 5.562,
+    "score": 30.501
    },
-   "manuscript": 52.7778,
-   "equal4": 52.0833
+   "raw": {
+    "latent": 0.33775,
+    "fit": 4.487,
+    "score": 30.156
+   },
+   "equal": {
+    "latent": 0.400001,
+    "fit": 7.176,
+    "score": 40.0
+   },
+   "noHw": {
+    "latent": 0.5375,
+    "fit": 18.847,
+    "score": 53.75
+   }
   },
   "SV": {
-   "crit": {
-    "technical": 0.666667,
-    "innovation": 0.65,
-    "structure": 0.583333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.45062,
+    "fit": 10.386,
+    "score": 37.552
    },
-   "manuscript": 63.3333,
-   "equal4": 60.0
+   "raw": {
+    "latent": 0.41575,
+    "fit": 8.062,
+    "score": 37.121
+   },
+   "equal": {
+    "latent": 0.483334,
+    "fit": 13.087,
+    "score": 48.333
+   },
+   "noHw": {
+    "latent": 0.6625,
+    "fit": 38.699,
+    "score": 66.25
+   }
   },
   "AL": {
-   "crit": {
-    "technical": 0.633333,
-    "innovation": 0.583333,
-    "structure": 0.65,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.413163,
+    "fit": 7.91,
+    "score": 34.43
    },
-   "manuscript": 62.2222,
-   "equal4": 59.1667
+   "raw": {
+    "latent": 0.38125,
+    "fit": 6.239,
+    "score": 34.04
+   },
+   "equal": {
+    "latent": 0.450001,
+    "fit": 10.34,
+    "score": 45.0
+   },
+   "noHw": {
+    "latent": 0.6125,
+    "fit": 29.734,
+    "score": 61.25
+   }
   },
   "SF": {
-   "crit": {
-    "technical": 0.633333,
-    "innovation": 0.6,
-    "structure": 0.55,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.465391,
+    "fit": 11.539,
+    "score": 38.783
    },
-   "manuscript": 59.4444,
-   "equal4": 57.0833
+   "raw": {
+    "latent": 0.43,
+    "fit": 8.948,
+    "score": 38.393
+   },
+   "equal": {
+    "latent": 0.466668,
+    "fit": 11.643,
+    "score": 46.667
+   },
+   "noHw": {
+    "latent": 0.6,
+    "fit": 27.688,
+    "score": 60.0
+   }
   },
   "SD": {
-   "crit": {
-    "technical": 0.616667,
-    "innovation": 0.566667,
-    "structure": 0.516667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.413196,
+    "fit": 7.911,
+    "score": 34.433
    },
-   "manuscript": 56.6667,
-   "equal4": 55.0
+   "raw": {
+    "latent": 0.3815,
+    "fit": 6.25,
+    "score": 34.062
+   },
+   "equal": {
+    "latent": 0.433334,
+    "fit": 9.168,
+    "score": 43.333
+   },
+   "noHw": {
+    "latent": 0.575,
+    "fit": 23.867,
+    "score": 57.5
+   }
   },
   "LD": {
-   "crit": {
-    "technical": 0.5,
-    "innovation": 0.366667,
-    "structure": 0.483333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.30787,
+    "fit": 3.567,
+    "score": 25.656
    },
-   "manuscript": 45.0,
-   "equal4": 46.25
+   "raw": {
+    "latent": 0.284,
+    "fit": 2.966,
+    "score": 25.357
+   },
+   "equal": {
+    "latent": 0.350001,
+    "fit": 4.927,
+    "score": 35.0
+   },
+   "noHw": {
+    "latent": 0.4625,
+    "fit": 11.305,
+    "score": 46.25
+   }
   },
   "AC": {
-   "crit": {
-    "technical": 0.633333,
-    "innovation": 0.583333,
-    "structure": 0.566667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.410359,
+    "fit": 7.748,
+    "score": 34.197
    },
-   "manuscript": 59.4444,
-   "equal4": 57.0833
+   "raw": {
+    "latent": 0.37875,
+    "fit": 6.123,
+    "score": 33.817
+   },
+   "equal": {
+    "latent": 0.450001,
+    "fit": 10.34,
+    "score": 45.0
+   },
+   "noHw": {
+    "latent": 0.6125,
+    "fit": 29.734,
+    "score": 61.25
+   }
   },
   "JI": {
-   "crit": {
-    "technical": 0.433333,
-    "innovation": 0.516667,
-    "structure": 0.533333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.337337,
+    "fit": 4.473,
+    "score": 28.111
    },
-   "manuscript": 49.4444,
-   "equal4": 49.5833
+   "raw": {
+    "latent": 0.31125,
+    "fit": 3.661,
+    "score": 27.79
+   },
+   "equal": {
+    "latent": 0.358334,
+    "fit": 5.248,
+    "score": 35.833
+   },
+   "noHw": {
+    "latent": 0.475,
+    "fit": 12.347,
+    "score": 47.5
+   }
   },
   "JA": {
-   "crit": {
-    "technical": 0.716667,
-    "innovation": 0.633333,
-    "structure": 0.766667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.500043,
+    "fit": 14.683,
+    "score": 41.67
    },
-   "manuscript": 70.5556,
-   "equal4": 65.4167
+   "raw": {
+    "latent": 0.462,
+    "fit": 11.265,
+    "score": 41.25
+   },
+   "equal": {
+    "latent": 0.525001,
+    "fit": 17.365,
+    "score": 52.5
+   },
+   "noHw": {
+    "latent": 0.7,
+    "fit": 46.009,
+    "score": 70.0
+   }
   },
   "CD": {
-   "crit": {
-    "technical": 0.75,
-    "innovation": 0.6,
-    "structure": 0.716667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.449109,
+    "fit": 10.274,
+    "score": 37.426
    },
-   "manuscript": 68.8889,
-   "equal4": 64.1667
+   "raw": {
+    "latent": 0.4145,
+    "fit": 7.988,
+    "score": 37.009
+   },
+   "equal": {
+    "latent": 0.491668,
+    "fit": 13.864,
+    "score": 49.167
+   },
+   "noHw": {
+    "latent": 0.675,
+    "fit": 41.096,
+    "score": 67.5
+   }
   },
   "PA": {
-   "crit": {
-    "technical": 0.816667,
-    "innovation": 0.716667,
-    "structure": 0.75,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.548815,
+    "fit": 20.27,
+    "score": 45.735
    },
-   "manuscript": 76.1111,
-   "equal4": 69.5833
+   "raw": {
+    "latent": 0.50725,
+    "fit": 15.42,
+    "score": 45.29
+   },
+   "equal": {
+    "latent": 0.575001,
+    "fit": 23.867,
+    "score": 57.5
+   },
+   "noHw": {
+    "latent": 0.7625,
+    "fit": 58.419,
+    "score": 76.25
+   }
   },
   "CT": {
-   "crit": {
-    "technical": 0.766667,
-    "innovation": 0.7,
-    "structure": 0.8,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.532044,
+    "fit": 18.188,
+    "score": 44.337
    },
-   "manuscript": 75.5556,
-   "equal4": 69.1667
+   "raw": {
+    "latent": 0.492,
+    "fit": 13.895,
+    "score": 43.929
+   },
+   "equal": {
+    "latent": 0.550001,
+    "fit": 20.424,
+    "score": 55.0
+   },
+   "noHw": {
+    "latent": 0.7125,
+    "fit": 48.5,
+    "score": 71.25
+   }
   },
   "KD": {
-   "crit": {
-    "technical": 0.633333,
-    "innovation": 0.616667,
-    "structure": 0.616667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.411783,
+    "fit": 7.83,
+    "score": 34.315
    },
-   "manuscript": 62.2222,
-   "equal4": 59.1667
+   "raw": {
+    "latent": 0.38,
+    "fit": 6.18,
+    "score": 33.929
+   },
+   "equal": {
+    "latent": 0.458334,
+    "fit": 10.975,
+    "score": 45.833
+   },
+   "noHw": {
+    "latent": 0.625,
+    "fit": 31.865,
+    "score": 62.5
+   }
   },
   "PB": {
-   "crit": {
-    "technical": 0.733333,
-    "innovation": 0.716667,
-    "structure": 0.65,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.437283,
+    "fit": 9.434,
+    "score": 36.44
    },
-   "manuscript": 70.0,
-   "equal4": 65.0
+   "raw": {
+    "latent": 0.4035,
+    "fit": 7.365,
+    "score": 36.027
+   },
+   "equal": {
+    "latent": 0.458334,
+    "fit": 10.975,
+    "score": 45.833
+   },
+   "noHw": {
+    "latent": 0.625,
+    "fit": 31.865,
+    "score": 62.5
+   }
   },
   "BE": {
-   "crit": {
-    "technical": 0.65,
-    "innovation": 0.483333,
-    "structure": 0.6,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.32275,
+    "fit": 4.0,
+    "score": 26.896
    },
-   "manuscript": 57.7778,
-   "equal4": 55.8333
+   "raw": {
+    "latent": 0.29775,
+    "fit": 3.299,
+    "score": 26.585
+   },
+   "equal": {
+    "latent": 0.366667,
+    "fit": 5.59,
+    "score": 36.667
+   },
+   "noHw": {
+    "latent": 0.4875,
+    "fit": 13.47,
+    "score": 48.75
+   }
   },
   "BI": {
-   "crit": {
-    "technical": 0.666667,
-    "innovation": 0.433333,
-    "structure": 0.616667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.314054,
+    "fit": 3.741,
+    "score": 26.171
    },
-   "manuscript": 57.2222,
-   "equal4": 55.4167
+   "raw": {
+    "latent": 0.28975,
+    "fit": 3.101,
+    "score": 25.871
+   },
+   "equal": {
+    "latent": 0.358334,
+    "fit": 5.248,
+    "score": 35.833
+   },
+   "noHw": {
+    "latent": 0.475,
+    "fit": 12.347,
+    "score": 47.5
+   }
   },
   "RJ": {
-   "crit": {
-    "technical": 0.55,
-    "innovation": 0.6,
-    "structure": 0.533333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.334956,
+    "fit": 4.393,
+    "score": 27.913
    },
-   "manuscript": 56.1111,
-   "equal4": 54.5833
+   "raw": {
+    "latent": 0.309,
+    "fit": 3.599,
+    "score": 27.589
+   },
+   "equal": {
+    "latent": 0.358334,
+    "fit": 5.248,
+    "score": 35.833
+   },
+   "noHw": {
+    "latent": 0.475,
+    "fit": 12.347,
+    "score": 47.5
+   }
   },
   "RH": {
-   "crit": {
-    "technical": 0.833333,
-    "innovation": 0.7,
-    "structure": 0.8,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.523978,
+    "fit": 17.248,
+    "score": 43.665
    },
-   "manuscript": 77.7778,
-   "equal4": 70.8333
+   "raw": {
+    "latent": 0.4845,
+    "fit": 13.193,
+    "score": 43.259
+   },
+   "equal": {
+    "latent": 0.550001,
+    "fit": 20.424,
+    "score": 55.0
+   },
+   "noHw": {
+    "latent": 0.7125,
+    "fit": 48.5,
+    "score": 71.25
+   }
   },
   "GM": {
-   "crit": {
-    "technical": 0.75,
-    "innovation": 0.583333,
-    "structure": 0.716667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.506391,
+    "fit": 15.331,
+    "score": 42.199
    },
-   "manuscript": 68.3333,
-   "equal4": 63.75
+   "raw": {
+    "latent": 0.468,
+    "fit": 11.753,
+    "score": 41.786
+   },
+   "equal": {
+    "latent": 0.533334,
+    "fit": 18.342,
+    "score": 53.333
+   },
+   "noHw": {
+    "latent": 0.7,
+    "fit": 46.009,
+    "score": 70.0
+   }
   },
   "CW": {
-   "crit": {
-    "technical": 0.683333,
-    "innovation": 0.55,
-    "structure": 0.616667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.395391,
+    "fit": 6.934,
+    "score": 32.949
    },
-   "manuscript": 61.6667,
-   "equal4": 58.75
+   "raw": {
+    "latent": 0.365,
+    "fit": 5.52,
+    "score": 32.589
+   },
+   "equal": {
+    "latent": 0.433334,
+    "fit": 9.168,
+    "score": 43.333
+   },
+   "noHw": {
+    "latent": 0.575,
+    "fit": 23.867,
+    "score": 57.5
+   }
   },
   "HR": {
-   "crit": {
-    "technical": 0.75,
-    "innovation": 0.566667,
-    "structure": 0.716667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.442631,
+    "fit": 9.806,
+    "score": 36.886
    },
-   "manuscript": 67.7778,
-   "equal4": 63.3333
+   "raw": {
+    "latent": 0.4085,
+    "fit": 7.642,
+    "score": 36.473
+   },
+   "equal": {
+    "latent": 0.483334,
+    "fit": 13.087,
+    "score": 48.333
+   },
+   "noHw": {
+    "latent": 0.6625,
+    "fit": 38.699,
+    "score": 66.25
+   }
   },
   "ST": {
-   "crit": {
-    "technical": 0.8,
-    "innovation": 0.666667,
-    "structure": 0.766667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.464283,
+    "fit": 11.448,
+    "score": 38.69
    },
-   "manuscript": 74.4444,
-   "equal4": 68.3333
+   "raw": {
+    "latent": 0.4285,
+    "fit": 8.851,
+    "score": 38.259
+   },
+   "equal": {
+    "latent": 0.508334,
+    "fit": 15.534,
+    "score": 50.833
+   },
+   "noHw": {
+    "latent": 0.7,
+    "fit": 46.009,
+    "score": 70.0
+   }
   },
   "LC": {
-   "crit": {
-    "technical": 0.55,
-    "innovation": 0.533333,
-    "structure": 0.5,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.421891,
+    "fit": 8.433,
+    "score": 35.158
    },
-   "manuscript": 52.7778,
-   "equal4": 52.0833
+   "raw": {
+    "latent": 0.3895,
+    "fit": 6.636,
+    "score": 34.777
+   },
+   "equal": {
+    "latent": 0.441668,
+    "fit": 9.738,
+    "score": 44.167
+   },
+   "noHw": {
+    "latent": 0.5875,
+    "fit": 25.731,
+    "score": 58.75
+   }
   },
   "LT": {
-   "crit": {
-    "technical": 0.7,
-    "innovation": 0.6,
-    "structure": 0.7,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.506391,
+    "fit": 15.331,
+    "score": 42.199
    },
-   "manuscript": 66.6667,
-   "equal4": 62.5
+   "raw": {
+    "latent": 0.468,
+    "fit": 11.753,
+    "score": 41.786
+   },
+   "equal": {
+    "latent": 0.533334,
+    "fit": 18.342,
+    "score": 53.333
+   },
+   "noHw": {
+    "latent": 0.7,
+    "fit": 46.009,
+    "score": 70.0
+   }
   },
   "SI": {
-   "crit": {
-    "technical": 0.683333,
-    "innovation": 0.616667,
-    "structure": 0.65,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.389587,
+    "fit": 6.64,
+    "score": 32.466
    },
-   "manuscript": 65.0,
-   "equal4": 61.25
+   "raw": {
+    "latent": 0.3595,
+    "fit": 5.295,
+    "score": 32.098
+   },
+   "equal": {
+    "latent": 0.425001,
+    "fit": 8.627,
+    "score": 42.5
+   },
+   "noHw": {
+    "latent": 0.575,
+    "fit": 23.867,
+    "score": 57.5
+   }
   },
   "RA": {
-   "crit": {
-    "technical": 0.716667,
-    "innovation": 0.6,
-    "structure": 0.75,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.424522,
+    "fit": 8.597,
+    "score": 35.377
    },
-   "manuscript": 68.8889,
-   "equal4": 64.1667
+   "raw": {
+    "latent": 0.392,
+    "fit": 6.761,
+    "score": 35.0
+   },
+   "equal": {
+    "latent": 0.458334,
+    "fit": 10.975,
+    "score": 45.833
+   },
+   "noHw": {
+    "latent": 0.6125,
+    "fit": 29.734,
+    "score": 61.25
+   }
   },
   "JY": {
-   "crit": {
-    "technical": 0.8,
-    "innovation": 0.616667,
-    "structure": 0.733333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.493022,
+    "fit": 13.994,
+    "score": 41.085
    },
-   "manuscript": 71.6667,
-   "equal4": 66.25
+   "raw": {
+    "latent": 0.4555,
+    "fit": 10.755,
+    "score": 40.67
+   },
+   "equal": {
+    "latent": 0.516668,
+    "fit": 16.429,
+    "score": 51.667
+   },
+   "noHw": {
+    "latent": 0.675,
+    "fit": 41.096,
+    "score": 67.5
+   }
   },
   "MT": {
-   "crit": {
-    "technical": 0.45,
-    "innovation": 0.5,
-    "structure": 0.433333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.292402,
+    "fit": 3.165,
+    "score": 24.367
    },
-   "manuscript": 46.1111,
-   "equal4": 47.0833
+   "raw": {
+    "latent": 0.26975,
+    "fit": 2.655,
+    "score": 24.085
+   },
+   "equal": {
+    "latent": 0.308334,
+    "fit": 3.58,
+    "score": 30.833
+   },
+   "noHw": {
+    "latent": 0.4,
+    "fit": 7.176,
+    "score": 40.0
+   }
   },
   "CR": {
-   "crit": {
-    "technical": 0.566667,
-    "innovation": 0.483333,
-    "structure": 0.516667,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.308413,
+    "fit": 3.582,
+    "score": 25.701
    },
-   "manuscript": 52.2222,
-   "equal4": 51.6667
+   "raw": {
+    "latent": 0.2845,
+    "fit": 2.977,
+    "score": 25.402
+   },
+   "equal": {
+    "latent": 0.333334,
+    "fit": 4.338,
+    "score": 33.333
+   },
+   "noHw": {
+    "latent": 0.4375,
+    "fit": 9.449,
+    "score": 43.75
+   }
   },
   "FS": {
-   "crit": {
-    "technical": 0.75,
-    "innovation": 0.583333,
-    "structure": 0.7,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.470696,
+    "fit": 11.979,
+    "score": 39.225
    },
-   "manuscript": 67.7778,
-   "equal4": 63.3333
+   "raw": {
+    "latent": 0.435,
+    "fit": 9.279,
+    "score": 38.839
+   },
+   "equal": {
+    "latent": 0.500001,
+    "fit": 14.679,
+    "score": 50.0
+   },
+   "noHw": {
+    "latent": 0.65,
+    "fit": 36.355,
+    "score": 65.0
+   }
   },
   "JT": {
-   "crit": {
-    "technical": 0.633333,
-    "innovation": 0.533333,
-    "structure": 0.6,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.397739,
+    "fit": 7.056,
+    "score": 33.145
    },
-   "manuscript": 58.8889,
-   "equal4": 56.6667
+   "raw": {
+    "latent": 0.367,
+    "fit": 5.604,
+    "score": 32.768
+   },
+   "equal": {
+    "latent": 0.450001,
+    "fit": 10.34,
+    "score": 45.0
+   },
+   "noHw": {
+    "latent": 0.6125,
+    "fit": 29.734,
+    "score": 61.25
+   }
   },
   "RD": {
-   "crit": {
-    "technical": 0.65,
-    "innovation": 0.516667,
-    "structure": 0.683333,
-    "presentation": 0.5
+   "notebook": {
+    "latent": 0.374163,
+    "fit": 5.915,
+    "score": 31.18
    },
-   "manuscript": 61.6667,
-   "equal4": 58.75
+   "raw": {
+    "latent": 0.34525,
+    "fit": 4.752,
+    "score": 30.826
+   },
+   "equal": {
+    "latent": 0.425001,
+    "fit": 8.627,
+    "score": 42.5
+   },
+   "noHw": {
+    "latent": 0.575,
+    "fit": 23.867,
+    "score": 57.5
+   }
+  },
+  "MB": {
+   "notebook": {
+    "latent": 0.236902,
+    "fit": 2.054,
+    "score": 19.742
+   },
+   "raw": {
+    "latent": 0.21825,
+    "fit": 1.774,
+    "score": 19.487
+   },
+   "equal": {
+    "latent": 0.266667,
+    "fit": 2.592,
+    "score": 26.667
+   },
+   "noHw": {
+    "latent": 0.3625,
+    "fit": 5.417,
+    "score": 36.25
+   }
+  },
+  "KE": {
+   "notebook": {
+    "latent": 0.451511,
+    "fit": 10.453,
+    "score": 37.626
+   },
+   "raw": {
+    "latent": 0.41725,
+    "fit": 8.151,
+    "score": 37.254
+   },
+   "equal": {
+    "latent": 0.475001,
+    "fit": 12.347,
+    "score": 47.5
+   },
+   "noHw": {
+    "latent": 0.6125,
+    "fit": 29.734,
+    "score": 61.25
+   }
+  },
+  "GS": {
+   "notebook": {
+    "latent": 0.526663,
+    "fit": 17.556,
+    "score": 43.889
+   },
+   "raw": {
+    "latent": 0.48675,
+    "fit": 13.401,
+    "score": 43.46
+   },
+   "equal": {
+    "latent": 0.550001,
+    "fit": 20.424,
+    "score": 55.0
+   },
+   "noHw": {
+    "latent": 0.725,
+    "fit": 51.0,
+    "score": 72.5
+   }
+  },
+  "DZ": {
+   "notebook": {
+    "latent": 0.60287,
+    "fit": 28.15,
+    "score": 50.239
+   },
+   "raw": {
+    "latent": 0.559,
+    "fit": 21.619,
+    "score": 49.911
+   },
+   "equal": {
+    "latent": 0.575001,
+    "fit": 23.867,
+    "score": 57.5
+   },
+   "noHw": {
+    "latent": 0.6375,
+    "fit": 34.074,
+    "score": 63.75
+   }
+  },
+  "MN": {
+   "notebook": {
+    "latent": 0.578837,
+    "fit": 24.429,
+    "score": 48.236
+   },
+   "raw": {
+    "latent": 0.53575,
+    "fit": 18.634,
+    "score": 47.835
+   },
+   "equal": {
+    "latent": 0.575001,
+    "fit": 23.867,
+    "score": 57.5
+   },
+   "noHw": {
+    "latent": 0.7125,
+    "fit": 48.5,
+    "score": 71.25
+   }
+  },
+  "DF": {
+   "notebook": {
+    "latent": 0.389565,
+    "fit": 6.639,
+    "score": 32.464
+   },
+   "raw": {
+    "latent": 0.36,
+    "fit": 5.315,
+    "score": 32.143
+   },
+   "equal": {
+    "latent": 0.391667,
+    "fit": 6.744,
+    "score": 39.167
+   },
+   "noHw": {
+    "latent": 0.4625,
+    "fit": 11.305,
+    "score": 46.25
+   }
   }
  },
  "ranks": {
-  "manuscript": {
+  "notebook": {
    "personal": {
     "VT": 1,
-    "RH": 2,
-    "PA": 3,
-    "CT": 4,
+    "DZ": 2,
+    "MN": 3,
     "HS": 4,
-    "ST": 6,
-    "JY": 7,
-    "JA": 8,
-    "TE": 9,
-    "NM": 10,
-    "CD": 11,
-    "RA": 11,
-    "GC": 13,
-    "GM": 13,
-    "FS": 15,
-    "HR": 15,
-    "LT": 17,
-    "EG": 18,
-    "SI": 19,
-    "MM": 20,
-    "KD": 21,
-    "LR": 21,
-    "TC": 21,
-    "CW": 24,
-    "RD": 24,
+    "PA": 5,
+    "TE": 6,
+    "UB": 7,
+    "EG": 8,
+    "CT": 9,
+    "GS": 10,
+    "RH": 11,
+    "GM": 12,
+    "LT": 13,
+    "MM": 14,
+    "JA": 15,
+    "JY": 16,
+    "LR": 17,
+    "TC": 18,
+    "GC": 19,
+    "FS": 20,
+    "ST": 21,
+    "KE": 22,
+    "NM": 23,
+    "CD": 24,
+    "HR": 25,
     "PK": 26,
-    "JT": 27,
-    "BE": 28,
-    "BI": 29,
-    "RJ": 30,
-    "NH": 31,
-    "HB": 32,
-    "LC": 33,
-    "CR": 34,
-    "JI": 35,
-    "MT": 36,
-    "AD": 37,
-    "DC": 38
+    "RA": 27,
+    "LC": 28,
+    "KD": 29,
+    "JT": 30,
+    "CW": 31,
+    "SI": 32,
+    "DF": 33,
+    "NH": 34,
+    "RD": 35,
+    "JI": 36,
+    "RJ": 37,
+    "BE": 38,
+    "BI": 39,
+    "CR": 40,
+    "HB": 41,
+    "MT": 42,
+    "MB": 43,
+    "AD": 44,
+    "DC": 45
    },
    "team": {
-    "PB": 1,
-    "ML": 2,
+    "DR": 1,
+    "SF": 2,
     "RM": 3,
     "SV": 4,
-    "AL": 5,
-    "MP": 6,
-    "DR": 7,
-    "AC": 8,
-    "SF": 8,
-    "ON": 10,
-    "SD": 11,
-    "TD": 12,
-    "UF": 13,
+    "PB": 5,
+    "ML": 6,
+    "MP": 7,
+    "SD": 8,
+    "AL": 9,
+    "AC": 10,
+    "ON": 11,
+    "UF": 12,
+    "TD": 13,
     "LD": 14
    },
    "people": {
     "최석철": 1,
-    "라경주": 2,
-    "김민균": 3,
-    "남하늘": 4,
-    "이건희": 4,
-    "김영수": 6,
-    "김정윤": 7,
-    "전누리": 8,
-    "서보윤": 9,
-    "이시연": 10,
-    "이민우": 11,
-    "임철희": 11,
-    "김혜인": 13,
-    "박규민": 14,
-    "강현섭": 15,
-    "이진욱": 16,
-    "김두환": 17,
-    "백지훈": 18,
-    "강줄기": 19
+    "강현재": 2,
+    "이건희": 3,
+    "김민균": 4,
+    "서보윤": 5,
+    "강현섭": 6,
+    "남하늘": 7,
+    "라경주": 8,
+    "김혜인": 9,
+    "박규민": 10,
+    "이진욱": 11,
+    "전누리": 12,
+    "김정윤": 13,
+    "김영수": 14,
+    "김두환": 15,
+    "이시연": 16,
+    "임철희": 17,
+    "이민우": 18,
+    "백지훈": 19,
+    "강줄기": 20
    }
   },
-  "equal4": {
+  "raw": {
    "personal": {
     "VT": 1,
-    "RH": 2,
-    "PA": 3,
-    "CT": 4,
+    "DZ": 2,
+    "MN": 3,
     "HS": 4,
-    "ST": 6,
-    "JY": 7,
-    "JA": 8,
-    "TE": 9,
-    "NM": 10,
-    "CD": 11,
-    "RA": 11,
-    "GC": 13,
-    "GM": 13,
-    "FS": 15,
-    "HR": 15,
-    "LT": 17,
-    "EG": 18,
-    "SI": 19,
-    "MM": 20,
-    "KD": 21,
-    "LR": 21,
-    "TC": 21,
-    "CW": 24,
-    "RD": 24,
+    "PA": 5,
+    "UB": 6,
+    "TE": 7,
+    "EG": 8,
+    "CT": 9,
+    "GS": 10,
+    "RH": 11,
+    "GM": 12,
+    "LT": 13,
+    "MM": 14,
+    "JA": 15,
+    "JY": 16,
+    "LR": 17,
+    "TC": 18,
+    "GC": 19,
+    "FS": 20,
+    "ST": 21,
+    "KE": 22,
+    "NM": 23,
+    "CD": 24,
+    "HR": 25,
     "PK": 26,
-    "JT": 27,
-    "BE": 28,
-    "BI": 29,
-    "RJ": 30,
-    "NH": 31,
-    "HB": 32,
-    "LC": 33,
-    "CR": 34,
-    "JI": 35,
-    "MT": 36,
-    "AD": 37,
-    "DC": 38
+    "RA": 27,
+    "LC": 28,
+    "KD": 29,
+    "JT": 30,
+    "CW": 31,
+    "DF": 32,
+    "SI": 33,
+    "NH": 34,
+    "RD": 35,
+    "JI": 36,
+    "RJ": 37,
+    "BE": 38,
+    "BI": 39,
+    "CR": 40,
+    "HB": 41,
+    "MT": 42,
+    "MB": 43,
+    "AD": 44,
+    "DC": 45
    },
    "team": {
-    "PB": 1,
-    "ML": 2,
+    "DR": 1,
+    "SF": 2,
     "RM": 3,
     "SV": 4,
-    "AL": 5,
-    "MP": 6,
-    "DR": 7,
-    "AC": 8,
+    "PB": 5,
+    "ML": 6,
+    "MP": 7,
+    "SD": 8,
+    "AL": 9,
+    "AC": 10,
+    "ON": 11,
+    "UF": 12,
+    "TD": 13,
+    "LD": 14
+   },
+   "people": {
+    "최석철": 1,
+    "강현재": 2,
+    "이건희": 3,
+    "김민균": 4,
+    "서보윤": 5,
+    "강현섭": 6,
+    "남하늘": 7,
+    "라경주": 8,
+    "김혜인": 9,
+    "박규민": 10,
+    "이진욱": 11,
+    "전누리": 12,
+    "김정윤": 13,
+    "김영수": 14,
+    "김두환": 15,
+    "이시연": 16,
+    "임철희": 17,
+    "이민우": 18,
+    "백지훈": 19,
+    "강줄기": 20
+   }
+  },
+  "equal": {
+   "personal": {
+    "VT": 1,
+    "HS": 2,
+    "DZ": 3,
+    "MN": 4,
+    "PA": 5,
+    "TE": 6,
+    "CT": 7,
+    "GS": 8,
+    "RH": 9,
+    "EG": 10,
+    "UB": 11,
+    "GM": 12,
+    "LT": 13,
+    "JA": 14,
+    "GC": 15,
+    "JY": 16,
+    "MM": 17,
+    "ST": 18,
+    "TC": 19,
+    "FS": 20,
+    "CD": 21,
+    "LR": 22,
+    "HR": 23,
+    "KE": 24,
+    "PK": 25,
+    "KD": 26,
+    "NM": 27,
+    "RA": 28,
+    "JT": 29,
+    "LC": 30,
+    "CW": 31,
+    "RD": 32,
+    "SI": 33,
+    "DF": 34,
+    "NH": 35,
+    "BE": 36,
+    "BI": 37,
+    "JI": 38,
+    "RJ": 39,
+    "CR": 40,
+    "HB": 41,
+    "MT": 42,
+    "MB": 43,
+    "AD": 44,
+    "DC": 45
+   },
+   "team": {
+    "DR": 1,
+    "SV": 2,
+    "ML": 3,
+    "MP": 4,
+    "SF": 5,
+    "PB": 6,
+    "AC": 7,
+    "AL": 8,
+    "RM": 9,
+    "SD": 10,
+    "ON": 11,
+    "UF": 12,
+    "TD": 13,
+    "LD": 14
+   },
+   "people": {
+    "최석철": 1,
+    "이건희": 2,
+    "강현재": 3,
+    "김민균": 4,
+    "서보윤": 5,
+    "남하늘": 6,
+    "라경주": 7,
+    "강현섭": 8,
+    "김혜인": 9,
+    "박규민": 10,
+    "전누리": 11,
+    "김정윤": 12,
+    "김영수": 13,
+    "이진욱": 14,
+    "임철희": 15,
+    "김두환": 16,
+    "이민우": 17,
+    "이시연": 18,
+    "백지훈": 19,
+    "강줄기": 20
+   }
+  },
+  "noHw": {
+   "personal": {
+    "PA": 1,
+    "VT": 2,
+    "HS": 3,
+    "GS": 4,
+    "TE": 5,
+    "CT": 6,
+    "GC": 7,
+    "MN": 8,
+    "RH": 9,
+    "GM": 10,
+    "JA": 11,
+    "LT": 12,
+    "ST": 13,
+    "CD": 14,
+    "EG": 15,
+    "JY": 16,
+    "UB": 17,
+    "HR": 18,
+    "FS": 19,
+    "TC": 20,
+    "MM": 21,
+    "DZ": 22,
+    "KD": 23,
+    "JT": 24,
+    "KE": 25,
+    "PK": 26,
+    "RA": 27,
+    "LR": 28,
+    "LC": 29,
+    "NM": 30,
+    "CW": 31,
+    "RD": 32,
+    "SI": 33,
+    "NH": 34,
+    "BE": 35,
+    "BI": 36,
+    "JI": 37,
+    "RJ": 38,
+    "DF": 39,
+    "CR": 40,
+    "HB": 41,
+    "MT": 42,
+    "MB": 43,
+    "AD": 44,
+    "DC": 45
+   },
+   "team": {
+    "ML": 1,
+    "MP": 2,
+    "SV": 3,
+    "DR": 4,
+    "PB": 5,
+    "AC": 6,
+    "AL": 7,
     "SF": 8,
+    "SD": 9,
     "ON": 10,
-    "SD": 11,
+    "RM": 11,
     "TD": 12,
     "UF": 13,
     "LD": 14
    },
    "people": {
-    "최석철": 1,
-    "라경주": 2,
-    "김민균": 3,
-    "남하늘": 4,
-    "이건희": 4,
-    "김영수": 6,
-    "김정윤": 7,
-    "전누리": 8,
-    "서보윤": 9,
-    "이시연": 10,
-    "이민우": 11,
-    "임철희": 11,
-    "김혜인": 13,
-    "박규민": 14,
-    "강현섭": 15,
-    "이진욱": 16,
-    "김두환": 17,
-    "백지훈": 18,
-    "강줄기": 19
+    "김민균": 1,
+    "최석철": 2,
+    "이건희": 3,
+    "서보윤": 4,
+    "남하늘": 5,
+    "라경주": 6,
+    "김영수": 7,
+    "김혜인": 8,
+    "박규민": 9,
+    "전누리": 10,
+    "강현섭": 11,
+    "김정윤": 12,
+    "임철희": 13,
+    "이진욱": 14,
+    "강현재": 15,
+    "김두환": 16,
+    "이민우": 17,
+    "이시연": 18,
+    "백지훈": 19,
+    "강줄기": 20
    }
   }
  },
  "stability": {
-  "manuscript": {
+  "notebook": {
    "personal": {
     "VT": {
-     "p1": 0.5365,
-     "top2": 0.8227,
-     "top3": 0.9375,
+     "p1": 1.0,
+     "top2": 1.0,
+     "top3": 1.0,
      "p10": 1,
      "p50": 1,
-     "p90": 3
+     "p90": 1
     },
     "HS": {
-     "p1": 0.0307,
-     "top2": 0.118,
-     "top3": 0.3053,
+     "p1": 0.0,
+     "top2": 0.1405,
+     "top3": 0.4263,
      "p10": 2,
      "p50": 4,
-     "p90": 6
+     "p90": 7
     },
     "NM": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 8,
-     "p50": 11,
-     "p90": 15
+     "p10": 18,
+     "p50": 23,
+     "p90": 28
     },
     "MM": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 17,
-     "p50": 20,
-     "p90": 22
+     "top3": 0.0005,
+     "p10": 8,
+     "p50": 14,
+     "p90": 19
     },
     "PK": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 22,
+     "p10": 21,
      "p50": 25,
-     "p90": 27
+     "p90": 29
     },
     "HB": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 31,
-     "p50": 32,
-     "p90": 34
+     "p10": 38,
+     "p50": 41,
+     "p90": 42
     },
     "AD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 37,
-     "p50": 37,
-     "p90": 37
+     "p10": 43,
+     "p50": 44,
+     "p90": 45
     },
     "TE": {
      "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 7,
-     "p50": 10,
-     "p90": 14
+     "top2": 0.0067,
+     "top3": 0.0302,
+     "p10": 5,
+     "p50": 8,
+     "p90": 13
     },
     "TC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 20,
-     "p50": 23,
-     "p90": 26
+     "p10": 13,
+     "p50": 18,
+     "p90": 23
     },
     "LR": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 20,
-     "p50": 23,
-     "p90": 26
+     "p10": 11,
+     "p50": 16,
+     "p90": 22
     },
     "NH": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 29,
-     "p50": 31,
-     "p90": 32
-    },
-    "DC": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 38,
-     "p50": 38,
-     "p90": 38
-    },
-    "GC": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 13,
-     "p90": 17
-    },
-    "EG": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 14,
-     "p50": 18,
-     "p90": 20
-    },
-    "JI": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 34,
-     "p50": 35,
-     "p90": 35
-    },
-    "JA": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0005,
-     "p10": 7,
-     "p50": 9,
-     "p90": 12
-    },
-    "CD": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 12,
-     "p90": 16
-    },
-    "PA": {
-     "p1": 0.054,
-     "top2": 0.2105,
-     "top3": 0.4733,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
-    },
-    "CT": {
-     "p1": 0.0235,
-     "top2": 0.114,
-     "top3": 0.3125,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
-    },
-    "KD": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 20,
-     "p50": 23,
-     "p90": 26
-    },
-    "BE": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 27,
-     "p50": 28,
-     "p90": 30
-    },
-    "BI": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 27,
-     "p50": 29,
-     "p90": 31
-    },
-    "RJ": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 28,
-     "p50": 30,
-     "p90": 32
-    },
-    "RH": {
-     "p1": 0.3515,
-     "top2": 0.7095,
-     "top3": 0.8795,
-     "p10": 1,
-     "p50": 2,
-     "p90": 4
-    },
-    "GM": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 10,
-     "p50": 13,
-     "p90": 17
-    },
-    "CW": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 21,
-     "p50": 24,
-     "p90": 26
-    },
-    "HR": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 10,
-     "p50": 15,
-     "p90": 18
-    },
-    "ST": {
-     "p1": 0.0037,
-     "top2": 0.0253,
-     "top3": 0.091,
-     "p10": 4,
-     "p50": 6,
-     "p90": 6
-    },
-    "LC": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 32,
-     "p50": 33,
-     "p90": 34
-    },
-    "LT": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 13,
-     "p50": 17,
-     "p90": 19
-    },
-    "SI": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 16,
-     "p50": 19,
-     "p90": 21
-    },
-    "RA": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 12,
-     "p90": 16
-    },
-    "JY": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0005,
-     "p10": 6,
-     "p50": 7,
-     "p90": 10
-    },
-    "MT": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 36,
-     "p50": 36,
-     "p90": 36
-    },
-    "CR": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 32,
-     "p50": 34,
-     "p90": 34
-    },
-    "FS": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 11,
-     "p50": 15,
-     "p90": 18
-    },
-    "JT": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 26,
-     "p50": 27,
-     "p90": 29
-    },
-    "RD": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 21,
-     "p50": 24,
-     "p90": 26
-    }
-   },
-   "people": {
-    "최석철": {
-     "p1": 0.5423,
-     "top2": 0.8285,
-     "top3": 0.931,
-     "p10": 1,
-     "p50": 1,
-     "p90": 3
-    },
-    "이건희": {
-     "p1": 0.0293,
-     "top2": 0.118,
-     "top3": 0.304,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
-    },
-    "이시연": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 8,
-     "p50": 10,
-     "p90": 13
-    },
-    "이진욱": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 14,
-     "p50": 16,
-     "p90": 17
-    },
-    "강줄기": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 19,
-     "p50": 19,
-     "p90": 19
-    },
-    "서보윤": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 7,
-     "p50": 9,
-     "p90": 12
-    },
-    "강현섭": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 13,
-     "p50": 15,
-     "p90": 16
-    },
-    "전누리": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 7,
-     "p50": 9,
-     "p90": 11
-    },
-    "임철희": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 8,
-     "p50": 11,
-     "p90": 14
-    },
-    "김민균": {
-     "p1": 0.0563,
-     "top2": 0.2082,
-     "top3": 0.4875,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
-    },
-    "남하늘": {
-     "p1": 0.029,
-     "top2": 0.1207,
-     "top3": 0.3043,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
-    },
-    "김두환": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 16,
-     "p50": 17,
-     "p90": 17
-    },
-    "백지훈": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 18,
-     "p50": 18,
-     "p90": 18
-    },
-    "라경주": {
-     "p1": 0.3402,
-     "top2": 0.7033,
-     "top3": 0.8758,
-     "p10": 1,
-     "p50": 2,
-     "p90": 4
-    },
-    "김혜인": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 12,
-     "p90": 14
-    },
-    "김영수": {
-     "p1": 0.003,
-     "top2": 0.0213,
-     "top3": 0.0965,
-     "p10": 4,
-     "p50": 6,
-     "p90": 6
-    },
-    "박규민": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 14,
-     "p90": 16
-    },
-    "이민우": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 11,
-     "p90": 14
-    },
-    "김정윤": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.001,
-     "p10": 6,
-     "p50": 7,
-     "p90": 10
-    }
-   },
-   "team": {
-    "MP": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0152,
-     "p10": 4,
-     "p50": 6,
-     "p90": 9
-    },
-    "DR": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0022,
-     "p10": 6,
-     "p50": 7,
-     "p90": 10
-    },
-    "ON": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 8,
-     "p50": 10,
-     "p90": 11
-    },
-    "RM": {
-     "p1": 0.0025,
-     "top2": 0.0643,
-     "top3": 0.7515,
-     "p10": 3,
-     "p50": 3,
-     "p90": 4
-    },
-    "UF": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 13,
-     "p90": 13
-    },
-    "ML": {
-     "p1": 0.2225,
-     "top2": 0.9307,
-     "top3": 0.9932,
-     "p10": 1,
-     "p50": 2,
-     "p90": 2
-    },
-    "TD": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 12,
-     "p90": 13
-    },
-    "SV": {
-     "p1": 0.0,
-     "top2": 0.0095,
-     "top3": 0.186,
-     "p10": 3,
-     "p50": 4,
-     "p90": 6
-    },
-    "AL": {
-     "p1": 0.0,
-     "top2": 0.0005,
-     "top3": 0.0517,
-     "p10": 4,
-     "p50": 5,
-     "p90": 7
-    },
-    "SF": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 6,
-     "p50": 8,
-     "p90": 10
-    },
-    "SD": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 11,
-     "p90": 11
-    },
-    "LD": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 14,
-     "p50": 14,
-     "p90": 14
-    },
-    "AC": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 6,
-     "p50": 8,
-     "p90": 10
-    },
-    "PB": {
-     "p1": 0.775,
-     "top2": 0.995,
-     "top3": 0.9998,
-     "p10": 1,
-     "p50": 1,
-     "p90": 2
-    }
-   }
-  },
-  "equal4": {
-   "personal": {
-    "VT": {
-     "p1": 0.4975,
-     "top2": 0.7738,
-     "top3": 0.9042,
-     "p10": 1,
-     "p50": 2,
-     "p90": 3
-    },
-    "HS": {
-     "p1": 0.0432,
-     "top2": 0.1455,
-     "top3": 0.3265,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
-    },
-    "NM": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 8,
-     "p50": 11,
-     "p90": 15
-    },
-    "MM": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 16,
-     "p50": 20,
-     "p90": 23
-    },
-    "PK": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 21,
-     "p50": 25,
-     "p90": 27
-    },
-    "HB": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
      "p10": 30,
-     "p50": 32,
-     "p90": 34
-    },
-    "AD": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 37,
-     "p50": 37,
-     "p90": 37
-    },
-    "TE": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0008,
-     "p10": 7,
-     "p50": 10,
-     "p90": 14
-    },
-    "TC": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 20,
-     "p50": 23,
-     "p90": 26
-    },
-    "LR": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 20,
-     "p50": 23,
-     "p90": 26
-    },
-    "NH": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 28,
-     "p50": 30,
-     "p90": 32
+     "p50": 33,
+     "p90": 36
     },
     "DC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 38,
-     "p50": 38,
-     "p90": 38
+     "p10": 44,
+     "p50": 45,
+     "p90": 45
+    },
+    "UB": {
+     "p1": 0.0,
+     "top2": 0.0027,
+     "top3": 0.0265,
+     "p10": 5,
+     "p50": 8,
+     "p90": 13
     },
     "GC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 9,
-     "p50": 13,
-     "p90": 17
+     "p10": 14,
+     "p50": 19,
+     "p90": 24
     },
     "EG": {
      "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 14,
-     "p50": 18,
-     "p90": 20
+     "top2": 0.0025,
+     "top3": 0.02,
+     "p10": 5,
+     "p50": 9,
+     "p90": 14
     },
     "JI": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 34,
-     "p50": 35,
-     "p90": 35
+     "p10": 35,
+     "p50": 37,
+     "p90": 40
     },
     "JA": {
      "p1": 0.0,
-     "top2": 0.0005,
-     "top3": 0.0013,
-     "p10": 7,
-     "p50": 9,
-     "p90": 13
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 9,
+     "p50": 14,
+     "p90": 20
     },
     "CD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 8,
-     "p50": 12,
-     "p90": 16
+     "p10": 19,
+     "p50": 23,
+     "p90": 28
     },
     "PA": {
-     "p1": 0.071,
-     "top2": 0.227,
-     "top3": 0.4665,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
+     "p1": 0.0,
+     "top2": 0.028,
+     "top3": 0.1067,
+     "p10": 3,
+     "p50": 6,
+     "p90": 11
     },
     "CT": {
-     "p1": 0.043,
-     "top2": 0.1427,
-     "top3": 0.3265,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
+     "p1": 0.0,
+     "top2": 0.0035,
+     "top3": 0.0213,
+     "p10": 5,
+     "p50": 9,
+     "p90": 14
     },
     "KD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 20,
-     "p50": 23,
-     "p90": 26
+     "p10": 25,
+     "p50": 29,
+     "p90": 33
     },
     "BE": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 26,
-     "p50": 28,
-     "p90": 31
+     "p10": 36,
+     "p50": 38,
+     "p90": 41
     },
     "BI": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 27,
-     "p50": 29,
-     "p90": 31
+     "p10": 36,
+     "p50": 39,
+     "p90": 42
     },
     "RJ": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 28,
-     "p50": 30,
-     "p90": 32
+     "p10": 35,
+     "p50": 37,
+     "p90": 40
     },
     "RH": {
-     "p1": 0.336,
-     "top2": 0.6657,
-     "top3": 0.8468,
-     "p10": 1,
-     "p50": 2,
-     "p90": 4
+     "p1": 0.0,
+     "top2": 0.0013,
+     "top3": 0.0073,
+     "p10": 6,
+     "p50": 10,
+     "p90": 15
     },
     "GM": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
+     "top3": 0.0008,
+     "p10": 8,
      "p50": 13,
-     "p90": 17
+     "p90": 18
     },
     "CW": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 21,
-     "p50": 24,
-     "p90": 27
+     "p10": 27,
+     "p50": 31,
+     "p90": 34
     },
     "HR": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 10,
-     "p50": 14,
-     "p90": 18
+     "p10": 19,
+     "p50": 24,
+     "p90": 29
     },
     "ST": {
-     "p1": 0.0092,
-     "top2": 0.044,
-     "top3": 0.1232,
-     "p10": 3,
-     "p50": 5,
-     "p90": 7
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 21,
+     "p90": 25
     },
     "LC": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 31,
-     "p50": 33,
-     "p90": 34
+     "p10": 23,
+     "p50": 28,
+     "p90": 31
     },
     "LT": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 17,
-     "p90": 19
+     "top3": 0.0005,
+     "p10": 8,
+     "p50": 13,
+     "p90": 18
     },
     "SI": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 16,
-     "p50": 19,
-     "p90": 22
+     "p10": 28,
+     "p50": 32,
+     "p90": 35
     },
     "RA": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 8,
-     "p50": 12,
-     "p90": 16
+     "top3": 0.0,
+     "p10": 23,
+     "p50": 27,
+     "p90": 31
     },
     "JY": {
      "p1": 0.0,
-     "top2": 0.0008,
-     "top3": 0.004,
-     "p10": 6,
-     "p50": 8,
-     "p90": 11
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 16,
+     "p90": 21
     },
     "MT": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 36,
-     "p50": 36,
-     "p90": 36
+     "p10": 38,
+     "p50": 41,
+     "p90": 42
     },
     "CR": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 32,
-     "p50": 34,
-     "p90": 35
+     "p10": 37,
+     "p50": 40,
+     "p90": 42
     },
     "FS": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 10,
-     "p50": 14,
-     "p90": 18
+     "p10": 15,
+     "p50": 20,
+     "p90": 24
     },
     "JT": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 25,
-     "p50": 27,
-     "p90": 29
+     "p10": 27,
+     "p50": 31,
+     "p90": 34
     },
     "RD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 21,
-     "p50": 24,
-     "p90": 26
+     "p10": 30,
+     "p50": 34,
+     "p90": 36
+    },
+    "MB": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 43,
+     "p50": 43,
+     "p90": 44
+    },
+    "KE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 18,
+     "p50": 23,
+     "p90": 27
+    },
+    "GS": {
+     "p1": 0.0,
+     "top2": 0.0025,
+     "top3": 0.0143,
+     "p10": 5,
+     "p50": 10,
+     "p90": 15
+    },
+    "DZ": {
+     "p1": 0.0,
+     "top2": 0.623,
+     "top3": 0.8335,
+     "p10": 2,
+     "p50": 2,
+     "p90": 4
+    },
+    "MN": {
+     "p1": 0.0,
+     "top2": 0.1893,
+     "top3": 0.512,
+     "p10": 2,
+     "p50": 3,
+     "p90": 6
+    },
+    "DF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 32,
+     "p90": 35
     }
    },
    "people": {
     "최석철": {
-     "p1": 0.5122,
-     "top2": 0.778,
-     "top3": 0.905,
+     "p1": 1.0,
+     "top2": 1.0,
+     "top3": 1.0,
      "p10": 1,
      "p50": 1,
-     "p90": 3
+     "p90": 1
     },
     "이건희": {
-     "p1": 0.0462,
-     "top2": 0.1388,
-     "top3": 0.3272,
+     "p1": 0.0,
+     "top2": 0.2235,
+     "top3": 0.7335,
      "p10": 2,
-     "p50": 4,
-     "p90": 6
+     "p50": 3,
+     "p90": 5
     },
     "이시연": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 8,
-     "p50": 10,
-     "p90": 13
+     "p10": 13,
+     "p50": 16,
+     "p90": 18
     },
     "이진욱": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 14,
-     "p50": 16,
-     "p90": 17
+     "top3": 0.0015,
+     "p10": 7,
+     "p50": 11,
+     "p90": 14
     },
     "강줄기": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
      "p10": 19,
-     "p50": 19,
-     "p90": 19
+     "p50": 20,
+     "p90": 20
     },
     "서보윤": {
      "p1": 0.0,
-     "top2": 0.0003,
-     "top3": 0.0005,
-     "p10": 7,
-     "p50": 9,
-     "p90": 13
+     "top2": 0.0103,
+     "top3": 0.0583,
+     "p10": 4,
+     "p50": 6,
+     "p90": 10
     },
     "강현섭": {
      "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 15,
-     "p90": 16
+     "top2": 0.002,
+     "top3": 0.0425,
+     "p10": 4,
+     "p50": 7,
+     "p90": 11
     },
     "전누리": {
      "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0003,
+     "top2": 0.0005,
+     "top3": 0.0022,
      "p10": 7,
-     "p50": 9,
-     "p90": 12
+     "p50": 11,
+     "p90": 14
     },
     "임철희": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 8,
-     "p50": 11,
-     "p90": 14
+     "p10": 14,
+     "p50": 16,
+     "p90": 18
     },
     "김민균": {
-     "p1": 0.0625,
-     "top2": 0.2165,
-     "top3": 0.4703,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
+     "p1": 0.0,
+     "top2": 0.04,
+     "top3": 0.186,
+     "p10": 3,
+     "p50": 5,
+     "p90": 8
     },
     "남하늘": {
-     "p1": 0.0352,
-     "top2": 0.1343,
-     "top3": 0.3125,
-     "p10": 2,
-     "p50": 4,
-     "p90": 6
+     "p1": 0.0,
+     "top2": 0.006,
+     "top3": 0.0405,
+     "p10": 4,
+     "p50": 7,
+     "p90": 10
     },
     "김두환": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 16,
-     "p50": 17,
-     "p90": 17
+     "p10": 13,
+     "p50": 16,
+     "p90": 18
     },
     "백지훈": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 18,
-     "p50": 18,
-     "p90": 18
+     "p10": 19,
+     "p50": 19,
+     "p90": 20
     },
     "라경주": {
-     "p1": 0.3345,
-     "top2": 0.6853,
-     "top3": 0.8505,
-     "p10": 1,
-     "p50": 2,
-     "p90": 4
+     "p1": 0.0,
+     "top2": 0.0015,
+     "top3": 0.0222,
+     "p10": 5,
+     "p50": 8,
+     "p90": 11
     },
     "김혜인": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 12,
-     "p90": 14
+     "top3": 0.0022,
+     "p10": 6,
+     "p50": 10,
+     "p90": 13
     },
     "김영수": {
-     "p1": 0.0092,
-     "top2": 0.0462,
-     "top3": 0.1288,
-     "p10": 3,
-     "p50": 5,
-     "p90": 7
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 15,
+     "p90": 17
     },
     "박규민": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 11,
-     "p50": 14,
-     "p90": 16
+     "top3": 0.0015,
+     "p10": 6,
+     "p50": 10,
+     "p90": 13
     },
     "이민우": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0003,
-     "p10": 8,
-     "p50": 11,
-     "p90": 14
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 18,
+     "p90": 18
     },
     "김정윤": {
      "p1": 0.0,
-     "top2": 0.0008,
-     "top3": 0.0047,
-     "p10": 6,
-     "p50": 7,
-     "p90": 10
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 12,
+     "p90": 14
+    },
+    "강현재": {
+     "p1": 0.0,
+     "top2": 0.7163,
+     "top3": 0.9095,
+     "p10": 2,
+     "p50": 2,
+     "p90": 3
     }
    },
    "team": {
     "MP": {
      "p1": 0.0,
-     "top2": 0.0003,
-     "top3": 0.0293,
+     "top2": 0.0118,
+     "top3": 0.0398,
      "p10": 4,
-     "p50": 6,
-     "p90": 9
+     "p50": 8,
+     "p90": 11
     },
     "DR": {
-     "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0053,
-     "p10": 5,
-     "p50": 7,
-     "p90": 10
+     "p1": 0.9645,
+     "top2": 0.9952,
+     "top3": 0.9992,
+     "p10": 1,
+     "p50": 1,
+     "p90": 1
     },
     "ON": {
      "p1": 0.0,
      "top2": 0.0,
-     "top3": 0.0,
-     "p10": 7,
-     "p50": 10,
-     "p90": 11
+     "top3": 0.0005,
+     "p10": 8,
+     "p50": 11,
+     "p90": 13
     },
     "RM": {
-     "p1": 0.006,
-     "top2": 0.0965,
-     "top3": 0.6845,
-     "p10": 3,
-     "p50": 3,
-     "p90": 4
+     "p1": 0.004,
+     "top2": 0.226,
+     "top3": 0.4462,
+     "p10": 2,
+     "p50": 4,
+     "p90": 7
     },
     "UF": {
      "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 12,
-     "p50": 13,
+     "top2": 0.0005,
+     "top3": 0.0025,
+     "p10": 8,
+     "p50": 11,
      "p90": 13
     },
     "ML": {
-     "p1": 0.252,
-     "top2": 0.8948,
-     "top3": 0.982,
-     "p10": 1,
-     "p50": 2,
-     "p90": 3
+     "p1": 0.001,
+     "top2": 0.0398,
+     "top3": 0.1092,
+     "p10": 3,
+     "p50": 7,
+     "p90": 10
     },
     "TD": {
      "p1": 0.0,
      "top2": 0.0,
      "top3": 0.0,
-     "p10": 12,
-     "p50": 12,
+     "p10": 10,
+     "p50": 13,
      "p90": 13
     },
     "SV": {
-     "p1": 0.0005,
-     "top2": 0.0195,
-     "top3": 0.2188,
-     "p10": 3,
+     "p1": 0.0103,
+     "top2": 0.205,
+     "top3": 0.4258,
+     "p10": 2,
      "p50": 4,
-     "p90": 6
+     "p90": 7
     },
     "AL": {
      "p1": 0.0,
-     "top2": 0.0032,
-     "top3": 0.0772,
-     "p10": 4,
-     "p50": 5,
-     "p90": 7
+     "top2": 0.005,
+     "top3": 0.0272,
+     "p10": 5,
+     "p50": 8,
+     "p90": 11
     },
     "SF": {
-     "p1": 0.0,
-     "top2": 0.0003,
-     "top3": 0.002,
-     "p10": 6,
-     "p50": 8,
-     "p90": 10
+     "p1": 0.0175,
+     "top2": 0.4328,
+     "top3": 0.6925,
+     "p10": 2,
+     "p50": 3,
+     "p90": 5
     },
     "SD": {
      "p1": 0.0,
-     "top2": 0.0,
-     "top3": 0.0,
-     "p10": 9,
-     "p50": 11,
+     "top2": 0.0035,
+     "top3": 0.0232,
+     "p10": 5,
+     "p50": 8,
      "p90": 11
     },
     "LD": {
@@ -1827,19 +2282,1939 @@
     },
     "AC": {
      "p1": 0.0,
-     "top2": 0.0003,
-     "top3": 0.0022,
-     "p10": 6,
-     "p50": 8,
-     "p90": 10
+     "top2": 0.0045,
+     "top3": 0.0267,
+     "p10": 5,
+     "p50": 9,
+     "p90": 12
     },
     "PB": {
-     "p1": 0.7415,
-     "top2": 0.9852,
-     "top3": 0.9988,
+     "p1": 0.0027,
+     "top2": 0.076,
+     "top3": 0.207,
+     "p10": 3,
+     "p50": 5,
+     "p90": 9
+    }
+   }
+  },
+  "raw": {
+   "personal": {
+    "VT": {
+     "p1": 1.0,
+     "top2": 1.0,
+     "top3": 1.0,
+     "p10": 1,
+     "p50": 1,
+     "p90": 1
+    },
+    "HS": {
+     "p1": 0.0,
+     "top2": 0.1378,
+     "top3": 0.427,
+     "p10": 2,
+     "p50": 4,
+     "p90": 7
+    },
+    "NM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 18,
+     "p50": 23,
+     "p90": 28
+    },
+    "MM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 8,
+     "p50": 14,
+     "p90": 19
+    },
+    "PK": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 25,
+     "p90": 29
+    },
+    "HB": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 38,
+     "p50": 41,
+     "p90": 42
+    },
+    "AD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 43,
+     "p50": 44,
+     "p90": 45
+    },
+    "TE": {
+     "p1": 0.0,
+     "top2": 0.0063,
+     "top3": 0.0297,
+     "p10": 5,
+     "p50": 8,
+     "p90": 13
+    },
+    "TC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 13,
+     "p50": 18,
+     "p90": 23
+    },
+    "LR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 16,
+     "p90": 21
+    },
+    "NH": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 30,
+     "p50": 33,
+     "p90": 36
+    },
+    "DC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 44,
+     "p50": 45,
+     "p90": 45
+    },
+    "UB": {
+     "p1": 0.0,
+     "top2": 0.0025,
+     "top3": 0.027,
+     "p10": 5,
+     "p50": 8,
+     "p90": 13
+    },
+    "GC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 19,
+     "p90": 24
+    },
+    "EG": {
+     "p1": 0.0,
+     "top2": 0.0022,
+     "top3": 0.0203,
+     "p10": 5,
+     "p50": 8,
+     "p90": 14
+    },
+    "JI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 35,
+     "p50": 37,
+     "p90": 40
+    },
+    "JA": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 9,
+     "p50": 14,
+     "p90": 20
+    },
+    "CD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 23,
+     "p90": 28
+    },
+    "PA": {
+     "p1": 0.0,
+     "top2": 0.027,
+     "top3": 0.1005,
+     "p10": 3,
+     "p50": 6,
+     "p90": 11
+    },
+    "CT": {
+     "p1": 0.0,
+     "top2": 0.003,
+     "top3": 0.0213,
+     "p10": 5,
+     "p50": 9,
+     "p90": 14
+    },
+    "KD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 25,
+     "p50": 29,
+     "p90": 33
+    },
+    "BE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 36,
+     "p50": 38,
+     "p90": 41
+    },
+    "BI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 36,
+     "p50": 39,
+     "p90": 42
+    },
+    "RJ": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 35,
+     "p50": 37,
+     "p90": 40
+    },
+    "RH": {
+     "p1": 0.0,
+     "top2": 0.0013,
+     "top3": 0.007,
+     "p10": 6,
+     "p50": 10,
+     "p90": 15
+    },
+    "GM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 8,
+     "p50": 13,
+     "p90": 18
+    },
+    "CW": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 31,
+     "p90": 34
+    },
+    "HR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 20,
+     "p50": 24,
+     "p90": 29
+    },
+    "ST": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 21,
+     "p90": 25
+    },
+    "LC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 23,
+     "p50": 28,
+     "p90": 31
+    },
+    "LT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 8,
+     "p50": 13,
+     "p90": 18
+    },
+    "SI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 28,
+     "p50": 32,
+     "p90": 35
+    },
+    "RA": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 23,
+     "p50": 27,
+     "p90": 31
+    },
+    "JY": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 16,
+     "p90": 21
+    },
+    "MT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 38,
+     "p50": 41,
+     "p90": 42
+    },
+    "CR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 37,
+     "p50": 40,
+     "p90": 42
+    },
+    "FS": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 15,
+     "p50": 20,
+     "p90": 24
+    },
+    "JT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 31,
+     "p90": 34
+    },
+    "RD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 30,
+     "p50": 34,
+     "p90": 36
+    },
+    "MB": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 43,
+     "p50": 43,
+     "p90": 44
+    },
+    "KE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 18,
+     "p50": 23,
+     "p90": 27
+    },
+    "GS": {
+     "p1": 0.0,
+     "top2": 0.0022,
+     "top3": 0.013,
+     "p10": 5,
+     "p50": 10,
+     "p90": 15
+    },
+    "DZ": {
+     "p1": 0.0,
+     "top2": 0.6358,
+     "top3": 0.8423,
+     "p10": 2,
+     "p50": 2,
+     "p90": 4
+    },
+    "MN": {
+     "p1": 0.0,
+     "top2": 0.182,
+     "top3": 0.5105,
+     "p10": 2,
+     "p50": 3,
+     "p90": 6
+    },
+    "DF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 32,
+     "p90": 35
+    }
+   },
+   "people": {
+    "최석철": {
+     "p1": 1.0,
+     "top2": 1.0,
+     "top3": 1.0,
+     "p10": 1,
+     "p50": 1,
+     "p90": 1
+    },
+    "이건희": {
+     "p1": 0.0,
+     "top2": 0.2177,
+     "top3": 0.7355,
+     "p10": 2,
+     "p50": 3,
+     "p90": 5
+    },
+    "이시연": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 13,
+     "p50": 16,
+     "p90": 18
+    },
+    "이진욱": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0015,
+     "p10": 7,
+     "p50": 11,
+     "p90": 14
+    },
+    "강줄기": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 20,
+     "p90": 20
+    },
+    "서보윤": {
+     "p1": 0.0,
+     "top2": 0.0097,
+     "top3": 0.056,
+     "p10": 4,
+     "p50": 6,
+     "p90": 10
+    },
+    "강현섭": {
+     "p1": 0.0,
+     "top2": 0.002,
+     "top3": 0.0445,
+     "p10": 4,
+     "p50": 7,
+     "p90": 11
+    },
+    "전누리": {
+     "p1": 0.0,
+     "top2": 0.0005,
+     "top3": 0.0022,
+     "p10": 7,
+     "p50": 11,
+     "p90": 14
+    },
+    "임철희": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 16,
+     "p90": 18
+    },
+    "김민균": {
+     "p1": 0.0,
+     "top2": 0.0385,
+     "top3": 0.1797,
+     "p10": 3,
+     "p50": 5,
+     "p90": 8
+    },
+    "남하늘": {
+     "p1": 0.0,
+     "top2": 0.0053,
+     "top3": 0.0398,
+     "p10": 4,
+     "p50": 7,
+     "p90": 10
+    },
+    "김두환": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 13,
+     "p50": 16,
+     "p90": 18
+    },
+    "백지훈": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 19,
+     "p90": 20
+    },
+    "라경주": {
+     "p1": 0.0,
+     "top2": 0.0015,
+     "top3": 0.0217,
+     "p10": 5,
+     "p50": 8,
+     "p90": 11
+    },
+    "김혜인": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0022,
+     "p10": 6,
+     "p50": 10,
+     "p90": 13
+    },
+    "김영수": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 15,
+     "p90": 17
+    },
+    "박규민": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0015,
+     "p10": 6,
+     "p50": 10,
+     "p90": 13
+    },
+    "이민우": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 18,
+     "p90": 18
+    },
+    "김정윤": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 12,
+     "p90": 15
+    },
+    "강현재": {
+     "p1": 0.0,
+     "top2": 0.7248,
+     "top3": 0.9153,
+     "p10": 2,
+     "p50": 2,
+     "p90": 3
+    }
+   },
+   "team": {
+    "MP": {
+     "p1": 0.0,
+     "top2": 0.0118,
+     "top3": 0.039,
+     "p10": 5,
+     "p50": 8,
+     "p90": 11
+    },
+    "DR": {
+     "p1": 0.9667,
+     "top2": 0.9955,
+     "top3": 0.9992,
+     "p10": 1,
+     "p50": 1,
+     "p90": 1
+    },
+    "ON": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 8,
+     "p50": 11,
+     "p90": 13
+    },
+    "RM": {
+     "p1": 0.0037,
+     "top2": 0.2308,
+     "top3": 0.4582,
+     "p10": 2,
+     "p50": 4,
+     "p90": 7
+    },
+    "UF": {
+     "p1": 0.0,
+     "top2": 0.0005,
+     "top3": 0.0025,
+     "p10": 8,
+     "p50": 11,
+     "p90": 13
+    },
+    "ML": {
+     "p1": 0.0005,
+     "top2": 0.0372,
+     "top3": 0.1047,
+     "p10": 3,
+     "p50": 7,
+     "p90": 10
+    },
+    "TD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 10,
+     "p50": 13,
+     "p90": 13
+    },
+    "SV": {
+     "p1": 0.0097,
+     "top2": 0.2005,
+     "top3": 0.4185,
+     "p10": 2,
+     "p50": 4,
+     "p90": 7
+    },
+    "AL": {
+     "p1": 0.0,
+     "top2": 0.0047,
+     "top3": 0.0275,
+     "p10": 5,
+     "p50": 8,
+     "p90": 11
+    },
+    "SF": {
+     "p1": 0.0168,
+     "top2": 0.4353,
+     "top3": 0.695,
+     "p10": 2,
+     "p50": 3,
+     "p90": 5
+    },
+    "SD": {
+     "p1": 0.0,
+     "top2": 0.0035,
+     "top3": 0.0238,
+     "p10": 5,
+     "p50": 8,
+     "p90": 11
+    },
+    "LD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 14,
+     "p90": 14
+    },
+    "AC": {
+     "p1": 0.0,
+     "top2": 0.0047,
+     "top3": 0.0267,
+     "p10": 5,
+     "p50": 8,
+     "p90": 12
+    },
+    "PB": {
+     "p1": 0.0025,
+     "top2": 0.0755,
+     "top3": 0.2042,
+     "p10": 3,
+     "p50": 5,
+     "p90": 9
+    }
+   }
+  },
+  "equal": {
+   "personal": {
+    "VT": {
+     "p1": 1.0,
+     "top2": 1.0,
+     "top3": 1.0,
+     "p10": 1,
+     "p50": 1,
+     "p90": 1
+    },
+    "HS": {
+     "p1": 0.0,
+     "top2": 0.327,
+     "top3": 0.5647,
+     "p10": 2,
+     "p50": 3,
+     "p90": 7
+    },
+    "NM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 23,
+     "p50": 27,
+     "p90": 31
+    },
+    "MM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 18,
+     "p90": 22
+    },
+    "PK": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 26,
+     "p90": 30
+    },
+    "HB": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 38,
+     "p50": 40,
+     "p90": 42
+    },
+    "AD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 44,
+     "p50": 44,
+     "p90": 45
+    },
+    "TE": {
+     "p1": 0.0,
+     "top2": 0.038,
+     "top3": 0.1055,
+     "p10": 3,
+     "p50": 7,
+     "p90": 12
+    },
+    "TC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 13,
+     "p50": 18,
+     "p90": 22
+    },
+    "LR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 21,
+     "p90": 26
+    },
+    "NH": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 33,
+     "p50": 35,
+     "p90": 37
+    },
+    "DC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 44,
+     "p50": 45,
+     "p90": 45
+    },
+    "UB": {
+     "p1": 0.0,
+     "top2": 0.002,
+     "top3": 0.011,
+     "p10": 6,
+     "p50": 10,
+     "p90": 16
+    },
+    "GC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 10,
+     "p50": 16,
+     "p90": 21
+    },
+    "EG": {
+     "p1": 0.0,
+     "top2": 0.004,
+     "top3": 0.0145,
+     "p10": 6,
+     "p50": 10,
+     "p90": 16
+    },
+    "JI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 35,
+     "p50": 38,
+     "p90": 40
+    },
+    "JA": {
+     "p1": 0.0,
+     "top2": 0.0003,
+     "top3": 0.0018,
+     "p10": 9,
+     "p50": 14,
+     "p90": 19
+    },
+    "CD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 21,
+     "p90": 25
+    },
+    "PA": {
+     "p1": 0.0,
+     "top2": 0.188,
+     "top3": 0.3795,
+     "p10": 2,
+     "p50": 4,
+     "p90": 8
+    },
+    "CT": {
+     "p1": 0.0,
+     "top2": 0.0138,
+     "top3": 0.0488,
+     "p10": 5,
+     "p50": 8,
+     "p90": 14
+    },
+    "KD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 23,
+     "p50": 27,
+     "p90": 30
+    },
+    "BE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 35,
+     "p50": 37,
+     "p90": 40
+    },
+    "BI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 35,
+     "p50": 38,
+     "p90": 40
+    },
+    "RJ": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 36,
+     "p50": 38,
+     "p90": 40
+    },
+    "RH": {
+     "p1": 0.0,
+     "top2": 0.0132,
+     "top3": 0.0437,
+     "p10": 4,
+     "p50": 9,
+     "p90": 13
+    },
+    "GM": {
+     "p1": 0.0,
+     "top2": 0.0005,
+     "top3": 0.0032,
+     "p10": 7,
+     "p50": 12,
+     "p90": 17
+    },
+    "CW": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 31,
+     "p90": 33
+    },
+    "HR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 18,
+     "p50": 23,
+     "p90": 27
+    },
+    "ST": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 13,
+     "p50": 18,
+     "p90": 22
+    },
+    "LC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 26,
+     "p50": 30,
+     "p90": 33
+    },
+    "LT": {
+     "p1": 0.0,
+     "top2": 0.001,
+     "top3": 0.005,
+     "p10": 7,
+     "p50": 12,
+     "p90": 17
+    },
+    "SI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 29,
+     "p50": 32,
+     "p90": 34
+    },
+    "RA": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 23,
+     "p50": 27,
+     "p90": 31
+    },
+    "JY": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 16,
+     "p90": 21
+    },
+    "MT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 40,
+     "p50": 42,
+     "p90": 42
+    },
+    "CR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 38,
+     "p50": 40,
+     "p90": 42
+    },
+    "FS": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 15,
+     "p50": 20,
+     "p90": 24
+    },
+    "JT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 24,
+     "p50": 28,
+     "p90": 32
+    },
+    "RD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 29,
+     "p50": 32,
+     "p90": 34
+    },
+    "MB": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 43,
+     "p50": 43,
+     "p90": 43
+    },
+    "KE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 20,
+     "p50": 24,
+     "p90": 28
+    },
+    "GS": {
+     "p1": 0.0,
+     "top2": 0.0155,
+     "top3": 0.0515,
+     "p10": 4,
+     "p50": 8,
+     "p90": 14
+    },
+    "DZ": {
+     "p1": 0.0,
+     "top2": 0.2303,
+     "top3": 0.4027,
+     "p10": 2,
+     "p50": 4,
+     "p90": 10
+    },
+    "MN": {
+     "p1": 0.0,
+     "top2": 0.1665,
+     "top3": 0.3675,
+     "p10": 2,
+     "p50": 4,
+     "p90": 8
+    },
+    "DF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 32,
+     "p50": 35,
+     "p90": 37
+    }
+   },
+   "people": {
+    "최석철": {
+     "p1": 1.0,
+     "top2": 1.0,
+     "top3": 1.0,
+     "p10": 1,
+     "p50": 1,
+     "p90": 1
+    },
+    "이건희": {
+     "p1": 0.0,
+     "top2": 0.3743,
+     "top3": 0.6683,
+     "p10": 2,
+     "p50": 3,
+     "p90": 6
+    },
+    "이시연": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 17,
+     "p90": 18
+    },
+    "이진욱": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 10,
+     "p50": 13,
+     "p90": 15
+    },
+    "강줄기": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 20,
+     "p90": 20
+    },
+    "서보윤": {
+     "p1": 0.0,
+     "top2": 0.0535,
+     "top3": 0.16,
+     "p10": 3,
+     "p50": 5,
+     "p90": 9
+    },
+    "강현섭": {
+     "p1": 0.0,
+     "top2": 0.0065,
+     "top3": 0.0288,
+     "p10": 5,
+     "p50": 8,
+     "p90": 12
+    },
+    "전누리": {
+     "p1": 0.0,
+     "top2": 0.0015,
+     "top3": 0.0035,
+     "p10": 7,
+     "p50": 11,
+     "p90": 14
+    },
+    "임철희": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 15,
+     "p90": 17
+    },
+    "김민균": {
+     "p1": 0.0,
+     "top2": 0.2417,
+     "top3": 0.4933,
+     "p10": 2,
+     "p50": 4,
+     "p90": 6
+    },
+    "남하늘": {
+     "p1": 0.0,
+     "top2": 0.021,
+     "top3": 0.0767,
+     "p10": 4,
+     "p50": 7,
+     "p90": 10
+    },
+    "김두환": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 16,
+     "p90": 18
+    },
+    "백지훈": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 19,
+     "p90": 20
+    },
+    "라경주": {
+     "p1": 0.0,
+     "top2": 0.0192,
+     "top3": 0.0678,
+     "p10": 4,
+     "p50": 7,
+     "p90": 10
+    },
+    "김혜인": {
+     "p1": 0.0,
+     "top2": 0.0013,
+     "top3": 0.009,
+     "p10": 6,
+     "p50": 9,
+     "p90": 13
+    },
+    "김영수": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 10,
+     "p50": 13,
+     "p90": 15
+    },
+    "박규민": {
+     "p1": 0.0,
+     "top2": 0.0015,
+     "top3": 0.0075,
+     "p10": 6,
+     "p50": 9,
+     "p90": 13
+    },
+    "이민우": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 17,
+     "p90": 18
+    },
+    "김정윤": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 12,
+     "p90": 15
+    },
+    "강현재": {
+     "p1": 0.0,
+     "top2": 0.2795,
+     "top3": 0.485,
+     "p10": 2,
+     "p50": 4,
+     "p90": 8
+    }
+   },
+   "team": {
+    "MP": {
+     "p1": 0.022,
+     "top2": 0.1192,
+     "top3": 0.2627,
+     "p10": 2,
+     "p50": 5,
+     "p90": 9
+    },
+    "DR": {
+     "p1": 0.7985,
+     "top2": 0.9307,
+     "top3": 0.9722,
      "p10": 1,
      "p50": 1,
      "p90": 2
+    },
+    "ON": {
+     "p1": 0.0,
+     "top2": 0.0005,
+     "top3": 0.0015,
+     "p10": 9,
+     "p50": 11,
+     "p90": 13
+    },
+    "RM": {
+     "p1": 0.0005,
+     "top2": 0.0372,
+     "top3": 0.0983,
+     "p10": 4,
+     "p50": 7,
+     "p90": 10
+    },
+    "UF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 10,
+     "p50": 12,
+     "p90": 13
+    },
+    "ML": {
+     "p1": 0.0617,
+     "top2": 0.2585,
+     "top3": 0.4432,
+     "p10": 2,
+     "p50": 4,
+     "p90": 8
+    },
+    "TD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 12,
+     "p90": 13
+    },
+    "SV": {
+     "p1": 0.0995,
+     "top2": 0.4255,
+     "top3": 0.634,
+     "p10": 2,
+     "p50": 3,
+     "p90": 6
+    },
+    "AL": {
+     "p1": 0.0008,
+     "top2": 0.0187,
+     "top3": 0.0628,
+     "p10": 4,
+     "p50": 7,
+     "p90": 10
+    },
+    "SF": {
+     "p1": 0.0103,
+     "top2": 0.1308,
+     "top3": 0.2958,
+     "p10": 2,
+     "p50": 5,
+     "p90": 8
+    },
+    "SD": {
+     "p1": 0.0,
+     "top2": 0.0015,
+     "top3": 0.008,
+     "p10": 7,
+     "p50": 10,
+     "p90": 12
+    },
+    "LD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 14,
+     "p90": 14
+    },
+    "AC": {
+     "p1": 0.002,
+     "top2": 0.0175,
+     "top3": 0.0698,
+     "p10": 4,
+     "p50": 7,
+     "p90": 10
+    },
+    "PB": {
+     "p1": 0.0047,
+     "top2": 0.0597,
+     "top3": 0.1512,
+     "p10": 3,
+     "p50": 6,
+     "p90": 9
+    }
+   }
+  },
+  "noHw": {
+   "personal": {
+    "VT": {
+     "p1": 0.4275,
+     "top2": 0.732,
+     "top3": 0.8528,
+     "p10": 1,
+     "p50": 2,
+     "p90": 4
+    },
+    "HS": {
+     "p1": 0.042,
+     "top2": 0.1335,
+     "top3": 0.2745,
+     "p10": 2,
+     "p50": 5,
+     "p90": 11
+    },
+    "NM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 25,
+     "p50": 30,
+     "p90": 33
+    },
+    "MM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 15,
+     "p50": 20,
+     "p90": 24
+    },
+    "PK": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 26,
+     "p90": 30
+    },
+    "HB": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 38,
+     "p50": 40,
+     "p90": 42
+    },
+    "AD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 44,
+     "p50": 44,
+     "p90": 45
+    },
+    "TE": {
+     "p1": 0.0227,
+     "top2": 0.0968,
+     "top3": 0.2417,
+     "p10": 3,
+     "p50": 6,
+     "p90": 11
+    },
+    "TC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 15,
+     "p50": 20,
+     "p90": 24
+    },
+    "LR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 23,
+     "p50": 28,
+     "p90": 31
+    },
+    "NH": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 34,
+     "p50": 34,
+     "p90": 36
+    },
+    "DC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 44,
+     "p50": 45,
+     "p90": 45
+    },
+    "UB": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 10,
+     "p50": 16,
+     "p90": 20
+    },
+    "GC": {
+     "p1": 0.007,
+     "top2": 0.0352,
+     "top3": 0.0983,
+     "p10": 4,
+     "p50": 8,
+     "p90": 13
+    },
+    "EG": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0005,
+     "p10": 10,
+     "p50": 15,
+     "p90": 20
+    },
+    "JI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 35,
+     "p50": 37,
+     "p90": 40
+    },
+    "JA": {
+     "p1": 0.0005,
+     "top2": 0.0065,
+     "top3": 0.0297,
+     "p10": 5,
+     "p50": 11,
+     "p90": 16
+    },
+    "CD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 10,
+     "p50": 15,
+     "p90": 20
+    },
+    "PA": {
+     "p1": 0.442,
+     "top2": 0.7518,
+     "top3": 0.87,
+     "p10": 1,
+     "p50": 2,
+     "p90": 4
+    },
+    "CT": {
+     "p1": 0.0055,
+     "top2": 0.0357,
+     "top3": 0.102,
+     "p10": 3,
+     "p50": 8,
+     "p90": 14
+    },
+    "KD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 24,
+     "p90": 28
+    },
+    "BE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 34,
+     "p50": 36,
+     "p90": 39
+    },
+    "BI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 35,
+     "p50": 37,
+     "p90": 40
+    },
+    "RJ": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 35,
+     "p50": 37,
+     "p90": 40
+    },
+    "RH": {
+     "p1": 0.0053,
+     "top2": 0.0352,
+     "top3": 0.099,
+     "p10": 4,
+     "p50": 8,
+     "p90": 14
+    },
+    "GM": {
+     "p1": 0.0008,
+     "top2": 0.0065,
+     "top3": 0.0248,
+     "p10": 5,
+     "p50": 11,
+     "p90": 16
+    },
+    "CW": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 31,
+     "p90": 33
+    },
+    "HR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0003,
+     "p10": 12,
+     "p50": 18,
+     "p90": 22
+    },
+    "ST": {
+     "p1": 0.0008,
+     "top2": 0.0065,
+     "top3": 0.0235,
+     "p10": 5,
+     "p50": 11,
+     "p90": 16
+    },
+    "LC": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 25,
+     "p50": 29,
+     "p90": 33
+    },
+    "LT": {
+     "p1": 0.0005,
+     "top2": 0.008,
+     "top3": 0.0295,
+     "p10": 5,
+     "p50": 11,
+     "p90": 16
+    },
+    "SI": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 31,
+     "p90": 33
+    },
+    "RA": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 26,
+     "p90": 30
+    },
+    "JY": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0008,
+     "p10": 10,
+     "p50": 15,
+     "p90": 20
+    },
+    "MT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 41,
+     "p50": 42,
+     "p90": 43
+    },
+    "CR": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 38,
+     "p50": 40,
+     "p90": 41
+    },
+    "FS": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 15,
+     "p50": 20,
+     "p90": 24
+    },
+    "JT": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 26,
+     "p90": 30
+    },
+    "RD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 27,
+     "p50": 31,
+     "p90": 33
+    },
+    "MB": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 42,
+     "p50": 43,
+     "p90": 43
+    },
+    "KE": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 21,
+     "p50": 26,
+     "p90": 30
+    },
+    "GS": {
+     "p1": 0.0395,
+     "top2": 0.118,
+     "top3": 0.253,
+     "p10": 2,
+     "p50": 6,
+     "p90": 11
+    },
+    "DZ": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 17,
+     "p50": 22,
+     "p90": 26
+    },
+    "MN": {
+     "p1": 0.006,
+     "top2": 0.0343,
+     "top3": 0.099,
+     "p10": 4,
+     "p50": 8,
+     "p90": 14
+    },
+    "DF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 36,
+     "p50": 38,
+     "p90": 40
+    }
+   },
+   "people": {
+    "최석철": {
+     "p1": 0.4522,
+     "top2": 0.7833,
+     "top3": 0.9005,
+     "p10": 1,
+     "p50": 2,
+     "p90": 3
+    },
+    "이건희": {
+     "p1": 0.0445,
+     "top2": 0.1578,
+     "top3": 0.3618,
+     "p10": 2,
+     "p50": 4,
+     "p90": 9
+    },
+    "이시연": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 16,
+     "p50": 18,
+     "p90": 18
+    },
+    "이진욱": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 11,
+     "p50": 14,
+     "p90": 16
+    },
+    "강줄기": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 20,
+     "p50": 20,
+     "p90": 20
+    },
+    "서보윤": {
+     "p1": 0.029,
+     "top2": 0.123,
+     "top3": 0.308,
+     "p10": 2,
+     "p50": 5,
+     "p90": 9
+    },
+    "강현섭": {
+     "p1": 0.0,
+     "top2": 0.0003,
+     "top3": 0.0022,
+     "p10": 8,
+     "p50": 12,
+     "p90": 14
+    },
+    "전누리": {
+     "p1": 0.0013,
+     "top2": 0.0088,
+     "top3": 0.0515,
+     "p10": 4,
+     "p50": 8,
+     "p90": 12
+    },
+    "임철희": {
+     "p1": 0.0003,
+     "top2": 0.0003,
+     "top3": 0.0015,
+     "p10": 8,
+     "p50": 12,
+     "p90": 14
+    },
+    "김민균": {
+     "p1": 0.4532,
+     "top2": 0.807,
+     "top3": 0.9223,
+     "p10": 1,
+     "p50": 2,
+     "p90": 3
+    },
+    "남하늘": {
+     "p1": 0.0077,
+     "top2": 0.0403,
+     "top3": 0.1465,
+     "p10": 3,
+     "p50": 6,
+     "p90": 10
+    },
+    "김두환": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 16,
+     "p90": 17
+    },
+    "백지훈": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 19,
+     "p50": 19,
+     "p90": 19
+    },
+    "라경주": {
+     "p1": 0.0077,
+     "top2": 0.0445,
+     "top3": 0.149,
+     "p10": 3,
+     "p50": 6,
+     "p90": 10
+    },
+    "김혜인": {
+     "p1": 0.0015,
+     "top2": 0.0095,
+     "top3": 0.0493,
+     "p10": 4,
+     "p50": 8,
+     "p90": 12
+    },
+    "김영수": {
+     "p1": 0.001,
+     "top2": 0.0132,
+     "top3": 0.0553,
+     "p10": 4,
+     "p50": 8,
+     "p90": 12
+    },
+    "박규민": {
+     "p1": 0.0015,
+     "top2": 0.012,
+     "top3": 0.05,
+     "p10": 4,
+     "p50": 8,
+     "p90": 12
+    },
+    "이민우": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 15,
+     "p50": 17,
+     "p90": 18
+    },
+    "김정윤": {
+     "p1": 0.0,
+     "top2": 0.0003,
+     "top3": 0.0022,
+     "p10": 8,
+     "p50": 12,
+     "p90": 14
+    },
+    "강현재": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 13,
+     "p50": 15,
+     "p90": 17
+    }
+   },
+   "team": {
+    "MP": {
+     "p1": 0.2318,
+     "top2": 0.5493,
+     "top3": 0.8143,
+     "p10": 1,
+     "p50": 2,
+     "p90": 4
+    },
+    "DR": {
+     "p1": 0.0097,
+     "top2": 0.0495,
+     "top3": 0.1585,
+     "p10": 3,
+     "p50": 5,
+     "p90": 8
+    },
+    "ON": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 8,
+     "p50": 10,
+     "p90": 12
+    },
+    "RM": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 9,
+     "p50": 11,
+     "p90": 12
+    },
+    "UF": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 12,
+     "p50": 13,
+     "p90": 13
+    },
+    "ML": {
+     "p1": 0.479,
+     "top2": 0.7642,
+     "top3": 0.917,
+     "p10": 1,
+     "p50": 2,
+     "p90": 3
+    },
+    "TD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 10,
+     "p50": 12,
+     "p90": 13
+    },
+    "SV": {
+     "p1": 0.2595,
+     "top2": 0.5433,
+     "top3": 0.7995,
+     "p10": 1,
+     "p50": 2,
+     "p90": 4
+    },
+    "AL": {
+     "p1": 0.002,
+     "top2": 0.0145,
+     "top3": 0.0607,
+     "p10": 4,
+     "p50": 6,
+     "p90": 8
+    },
+    "SF": {
+     "p1": 0.0003,
+     "top2": 0.0032,
+     "top3": 0.0203,
+     "p10": 5,
+     "p50": 7,
+     "p90": 10
+    },
+    "SD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 7,
+     "p50": 9,
+     "p90": 11
+    },
+    "LD": {
+     "p1": 0.0,
+     "top2": 0.0,
+     "top3": 0.0,
+     "p10": 14,
+     "p50": 14,
+     "p90": 14
+    },
+    "AC": {
+     "p1": 0.0018,
+     "top2": 0.0155,
+     "top3": 0.06,
+     "p10": 4,
+     "p50": 6,
+     "p90": 9
+    },
+    "PB": {
+     "p1": 0.016,
+     "top2": 0.0605,
+     "top3": 0.1698,
+     "p10": 3,
+     "p50": 5,
+     "p90": 8
     }
    }
   }
@@ -1847,4496 +4222,2474 @@
  "levers": {
   "MP": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 1.069
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "orig",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.682
    },
    {
-    "c": "technical",
-    "s": "understanding",
+    "key": "hwFit",
+    "from": 0.05,
+    "to": 0.1,
+    "delta": 0.665
+   },
+   {
+    "key": "sota",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.529
+   },
+   {
+    "key": "stability",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.358
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.228
    }
   ],
   "DR": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 2.03
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "orig",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 1.467
    },
    {
-    "c": "structure",
-    "s": "market",
+    "key": "hwFit",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.341
+   },
+   {
+    "key": "sota",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 1.043
+   },
+   {
+    "key": "stability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.859
+   },
+   {
+    "key": "delivery",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.451
    }
   ],
   "ON": [
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.81
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "orig",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.573
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.546
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.434
    },
    {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "stability",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.306
    },
    {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.187
    }
   ],
   "VT": [
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "hwUse",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 1.955
+   },
+   {
+    "key": "orig",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 1.738
+   },
+   {
+    "key": "hwFit",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 1.347
+   },
+   {
+    "key": "stability",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 1.101
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 1.017
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.45
    }
   ],
   "HS": [
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwUse",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 2.603
+   },
+   {
+    "key": "orig",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 1.801
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.533
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 1.283
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "stability",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5556
+    "delta": 1.057
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.9,
-    "to": 0.95,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.556
    }
   ],
   "NM": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.295
    },
    {
-    "c": "technical",
-    "s": "validity",
+    "key": "orig",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.893
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.832
+   },
+   {
+    "key": "sota",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.662
+   },
+   {
+    "key": "stability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.506
+   },
+   {
+    "key": "delivery",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.285
    }
   ],
   "MM": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.764
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 1.246
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "hwFit",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.163
+   },
+   {
+    "key": "sota",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.905
+   },
+   {
+    "key": "stability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.692
+   },
+   {
+    "key": "delivery",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.39
    }
   ],
   "PK": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.202
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.816
    },
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.742
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.605
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "stability",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.444
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.26
    }
   ],
   "HB": [
    {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.423
+   },
+   {
+    "key": "orig",
     "from": 0.4,
     "to": 0.45,
-    "delta": 0.5556
+    "delta": 0.303
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.255
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.23
    },
    {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.162
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "delivery",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.099
    }
   ],
   "AD": [
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.25,
-    "to": 0.3,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.189
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.3,
-    "to": 0.35,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.147
    },
    {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.35,
-    "to": 0.4,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.05,
+    "to": 0.1,
+    "delta": 0.13
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.35,
-    "to": 0.4,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.114
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.35,
-    "to": 0.4,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.077
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
+    "key": "delivery",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.049
    }
   ],
   "TE": [
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 2.163
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "orig",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 1.483
    },
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.386
    },
    {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 1.078
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.825
    },
    {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.85,
+    "to": 0.9,
+    "delta": 0.466
    }
   ],
   "TC": [
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.588
+   },
+   {
+    "key": "orig",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 1.104
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 0.959
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "sota",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.801
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
+    "key": "stability",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.612
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.345
    }
   ],
   "LR": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 1.622
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 1.189
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.036
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.845
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.67
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
+    "key": "delivery",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.364
    }
   ],
   "NH": [
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 0.773
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.537
    },
    {
-    "c": "structure",
-    "s": "flow",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.5
+   },
+   {
+    "key": "sota",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.407
+   },
+   {
+    "key": "stability",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.299
+   },
+   {
+    "key": "delivery",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.175
    }
   ],
   "DC": [
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.2,
-    "to": 0.25,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.183
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.25,
-    "to": 0.3,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.25,
-    "to": 0.3,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.3,
-    "to": 0.35,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.3,
-    "to": 0.35,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "orig",
     "from": 0.45,
     "to": 0.5,
-    "delta": 0.5556
+    "delta": 0.143
    },
    {
-    "c": "structure",
-    "s": "flow",
+    "key": "hwFit",
+    "from": 0.05,
+    "to": 0.1,
+    "delta": 0.126
+   },
+   {
+    "key": "sota",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.111
+   },
+   {
+    "key": "stability",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.075
+   },
+   {
+    "key": "delivery",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.048
+   }
+  ],
+  "UB": [
+   {
+    "key": "hwUse",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 2.159
+   },
+   {
+    "key": "orig",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 1.481
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.288
    },
    {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "sota",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 1.076
    },
    {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "stability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.886
    },
    {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.465
    }
   ],
   "GC": [
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.539
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "orig",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 1.006
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.96
+   },
+   {
+    "key": "sota",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.764
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "stability",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.539
    },
    {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.329
    }
   ],
   "RM": [
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 1.267
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.922
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwFit",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 0.821
+   },
+   {
+    "key": "sota",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.669
+   },
+   {
+    "key": "stability",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.531
+   },
+   {
+    "key": "delivery",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.288
    }
   ],
   "UF": [
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "hwUse",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 0.764
+   },
+   {
+    "key": "orig",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.571
+   },
+   {
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.533
+   },
+   {
+    "key": "sota",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.423
+   },
+   {
+    "key": "stability",
     "from": 0.35,
     "to": 0.4,
-    "delta": 0.5556
+    "delta": 0.311
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.182
    }
   ],
   "EG": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 2.095
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 1.491
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "hwFit",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.331
+   },
+   {
+    "key": "sota",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 1.06
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "stability",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.842
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.458
    }
   ],
   "ML": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 1.165
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.732
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwFit",
+    "from": 0.05,
+    "to": 0.1,
+    "delta": 0.714
+   },
+   {
+    "key": "sota",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.568
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.384
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "delivery",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.245
    }
   ],
   "TD": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.704
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.498
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.463
    },
    {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "sota",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.377
    },
    {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "stability",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.266
    },
    {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.162
    }
   ],
   "SV": [
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.281
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.878
    },
    {
-    "c": "technical",
-    "s": "understanding",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.837
+   },
+   {
+    "key": "sota",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.666
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.47
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.287
    }
   ],
   "AL": [
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.006
+   },
+   {
+    "key": "orig",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.688
+   },
+   {
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.641
+   },
+   {
+    "key": "sota",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.522
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.368
    },
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.225
    }
   ],
   "SF": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.38
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.983
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.939
+   },
+   {
+    "key": "sota",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.729
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.557
    },
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "delivery",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.314
    }
   ],
   "SD": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.006
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.689
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.641
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "sota",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.522
+   },
+   {
+    "key": "stability",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.383
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.225
    }
   ],
   "LD": [
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.455
+   },
+   {
+    "key": "orig",
     "from": 0.35,
     "to": 0.4,
-    "delta": 0.5556
+    "delta": 0.326
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.35,
-    "to": 0.4,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.267
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "sota",
     "from": 0.4,
     "to": 0.45,
-    "delta": 0.5556
+    "delta": 0.247
    },
    {
-    "c": "structure",
-    "s": "market",
+    "key": "stability",
     "from": 0.4,
     "to": 0.45,
-    "delta": 0.5556
+    "delta": 0.174
    },
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.106
    }
   ],
   "AC": [
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.35,
-    "to": 0.4,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.019
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.676
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.613
+   },
+   {
+    "key": "sota",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.512
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "stability",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.361
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.22
    }
   ],
   "JI": [
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.555
+   },
+   {
+    "key": "orig",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.405
+   },
+   {
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.377
+   },
+   {
+    "key": "sota",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.307
+   },
+   {
+    "key": "stability",
     "from": 0.35,
     "to": 0.4,
-    "delta": 0.5556
+    "delta": 0.216
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "delivery",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.132
    }
   ],
   "JA": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.796
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "orig",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 1.203
+   },
+   {
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.149
+   },
+   {
+    "key": "sota",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.893
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.657
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.385
    }
   ],
   "CD": [
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.33
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.869
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.809
+   },
+   {
+    "key": "sota",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.659
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.465
    },
    {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.284
    }
   ],
   "PA": [
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 2.334
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 1.544
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.474
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "sota",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5556
+    "delta": 1.148
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "stability",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5556
+    "delta": 0.878
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.496
    }
   ],
   "CT": [
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 2.123
+   },
+   {
+    "key": "orig",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 1.456
+   },
+   {
+    "key": "hwFit",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.36
+   },
+   {
+    "key": "sota",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 1.058
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "stability",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.809
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.457
    }
   ],
   "KD": [
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.013
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "orig",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.682
    },
    {
-    "c": "technical",
-    "s": "understanding",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.619
+   },
+   {
+    "key": "sota",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.517
+   },
+   {
+    "key": "stability",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.365
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.222
    }
   ],
   "PB": [
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.158
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.806
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.806
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.611
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "stability",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.431
+   },
+   {
+    "key": "delivery",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.263
    }
   ],
   "BE": [
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.516
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 0.364
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.298
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.276
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.194
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.119
    }
   ],
   "BI": [
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.484
+   },
+   {
+    "key": "orig",
     "from": 0.35,
     "to": 0.4,
-    "delta": 0.5556
+    "delta": 0.342
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.279
+   },
+   {
+    "key": "sota",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 0.259
+   },
+   {
+    "key": "stability",
     "from": 0.45,
     "to": 0.5,
-    "delta": 0.5556
+    "delta": 0.182
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.111
    }
   ],
   "RJ": [
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.536
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.398
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.371
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.302
    },
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.213
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.13
    }
   ],
   "RH": [
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 2.039
+   },
+   {
+    "key": "orig",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 1.398
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwFit",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.275
+   },
+   {
+    "key": "sota",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 1.016
+   },
+   {
+    "key": "stability",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.777
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.85,
     "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.439
    }
   ],
   "GM": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.86
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 1.246
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.134
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "sota",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.925
    },
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.707
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.399
    }
   ],
   "CW": [
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwUse",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 0.892
+   },
+   {
+    "key": "orig",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.61
+   },
+   {
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.527
+   },
+   {
+    "key": "sota",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.463
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "stability",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.34
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.75,
     "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.199
    }
   ],
   "HR": [
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.277
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "orig",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.834
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.758
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.633
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.446
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.9,
-    "to": 0.95,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.9,
-    "to": 0.95,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.272
    }
   ],
   "ST": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.46
    },
    {
-    "c": "structure",
-    "s": "market",
+    "key": "orig",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.955
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.911
+   },
+   {
+    "key": "sota",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.724
+   },
+   {
+    "key": "stability",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.511
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "delivery",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.312
    }
   ],
   "LC": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.066
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.729
    },
    {
-    "c": "technical",
-    "s": "validity",
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.679
+   },
+   {
+    "key": "sota",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.553
+   },
+   {
+    "key": "stability",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.406
+   },
+   {
+    "key": "delivery",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.238
    }
   ],
   "LT": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.86
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 1.246
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.134
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "sota",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.925
    },
    {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.707
    },
    {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
+    "key": "delivery",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.399
    }
   ],
   "SI": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.844
    },
    {
-    "c": "structure",
-    "s": "market",
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.587
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.546
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.444
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
+    "key": "stability",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.0
+    "delta": 0.313
    },
    {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.191
    }
   ],
   "RA": [
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwUse",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 1.119
+   },
+   {
+    "key": "orig",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.5556
+    "delta": 0.742
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.657
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "sota",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.563
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "stability",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.413
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.9,
-    "to": 0.95,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.242
    }
   ],
   "JY": [
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.675
+   },
+   {
+    "key": "orig",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 1.157
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.053
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "sota",
     "from": 0.7,
     "to": 0.75,
-    "delta": 0.5556
+    "delta": 0.858
    },
    {
-    "c": "structure",
-    "s": "flow",
+    "key": "stability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.656
+   },
+   {
+    "key": "delivery",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.85,
-    "to": 0.9,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.37
    }
   ],
   "MT": [
    {
-    "c": "structure",
-    "s": "dataDriven",
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.385
+   },
+   {
+    "key": "orig",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.291
+   },
+   {
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.264
+   },
+   {
+    "key": "sota",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 0.22
+   },
+   {
+    "key": "stability",
     "from": 0.25,
     "to": 0.3,
-    "delta": 0.5556
+    "delta": 0.155
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.35,
-    "to": 0.4,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.095
    }
   ],
   "CR": [
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.441
    },
    {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.4,
-    "to": 0.45,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.45,
-    "to": 0.5,
-    "delta": 0.5556
-   },
-   {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "orig",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.5556
+    "delta": 0.328
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.29
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.248
    },
    {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.175
    },
    {
-    "c": "technical",
-    "s": "understanding",
+    "key": "delivery",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.107
    }
   ],
   "FS": [
    {
-    "c": "innovation",
-    "s": "valueProp",
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.494
+   },
+   {
+    "key": "orig",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 1.015
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.902
    },
    {
-    "c": "innovation",
-    "s": "novelty",
+    "key": "sota",
     "from": 0.6,
     "to": 0.65,
-    "delta": 0.5556
+    "delta": 0.753
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.6,
-    "to": 0.65,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "stability",
     "from": 0.65,
     "to": 0.7,
-    "delta": 0.5556
+    "delta": 0.575
    },
    {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
+    "key": "delivery",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.8,
-    "to": 0.85,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "delta": 0.325
    }
   ],
   "JT": [
    {
-    "c": "structure",
-    "s": "market",
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.921
+   },
+   {
+    "key": "orig",
     "from": 0.45,
     "to": 0.5,
-    "delta": 0.5556
+    "delta": 0.62
    },
    {
-    "c": "technical",
-    "s": "sustainability",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.535
    },
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "sota",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.47
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
+    "key": "stability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.331
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.65,
-    "to": 0.7,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
-   },
-   {
-    "c": "presentation",
-    "s": "qa",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "delivery",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.202
    }
   ],
   "RD": [
    {
-    "c": "innovation",
-    "s": "novelty",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwUse",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.771
    },
    {
-    "c": "innovation",
-    "s": "valueProp",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "orig",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.527
    },
    {
-    "c": "structure",
-    "s": "market",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.5556
+    "key": "hwFit",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.454
    },
    {
-    "c": "technical",
-    "s": "sustainability",
+    "key": "sota",
+    "from": 0.5,
+    "to": 0.55,
+    "delta": 0.399
+   },
+   {
+    "key": "stability",
     "from": 0.55,
     "to": 0.6,
-    "delta": 0.5556
+    "delta": 0.281
    },
    {
-    "c": "innovation",
-    "s": "creativeUse",
-    "from": 0.55,
-    "to": 0.6,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "validity",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "technical",
-    "s": "understanding",
-    "from": 0.7,
-    "to": 0.75,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "dataDriven",
-    "from": 0.75,
-    "to": 0.8,
-    "delta": 0.5556
-   },
-   {
-    "c": "structure",
-    "s": "flow",
+    "key": "delivery",
     "from": 0.8,
     "to": 0.85,
-    "delta": 0.5556
+    "delta": 0.172
+   }
+  ],
+  "MB": [
+   {
+    "key": "hwUse",
+    "from": 0.1,
+    "to": 0.15,
+    "delta": 0.244
    },
    {
-    "c": "presentation",
-    "s": "clarity",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "orig",
+    "from": 0.45,
+    "to": 0.5,
+    "delta": 0.187
    },
    {
-    "c": "presentation",
-    "s": "timing",
-    "from": 0.5,
-    "to": 0.55,
-    "delta": 0.0
+    "key": "hwFit",
+    "from": 0.05,
+    "to": 0.1,
+    "delta": 0.165
    },
    {
-    "c": "presentation",
-    "s": "qa",
+    "key": "sota",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 0.145
+   },
+   {
+    "key": "stability",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.098
+   },
+   {
+    "key": "delivery",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 0.062
+   }
+  ],
+  "KE": [
+   {
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.309
+   },
+   {
+    "key": "orig",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.903
+   },
+   {
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 0.801
+   },
+   {
+    "key": "sota",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.669
+   },
+   {
+    "key": "stability",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 0.511
+   },
+   {
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.288
+   }
+  ],
+  "GS": [
+   {
+    "key": "hwUse",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 2.099
+   },
+   {
+    "key": "orig",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 1.386
+   },
+   {
+    "key": "hwFit",
+    "from": 0.15,
+    "to": 0.2,
+    "delta": 1.262
+   },
+   {
+    "key": "sota",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 1.03
+   },
+   {
+    "key": "stability",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.788
+   },
+   {
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.445
+   }
+  ],
+  "DZ": [
+   {
+    "key": "hwUse",
     "from": 0.5,
     "to": 0.55,
-    "delta": 0.0
+    "delta": 2.803
+   },
+   {
+    "key": "orig",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 2.128
+   },
+   {
+    "key": "hwFit",
+    "from": 0.4,
+    "to": 0.45,
+    "delta": 1.706
+   },
+   {
+    "key": "sota",
+    "from": 0.6,
+    "to": 0.65,
+    "delta": 1.428
+   },
+   {
+    "key": "stability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 1.302
+   },
+   {
+    "key": "delivery",
+    "from": 0.75,
+    "to": 0.8,
+    "delta": 0.62
+   }
+  ],
+  "MN": [
+   {
+    "key": "hwUse",
+    "from": 0.35,
+    "to": 0.4,
+    "delta": 2.571
+   },
+   {
+    "key": "orig",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 1.834
+   },
+   {
+    "key": "hwFit",
+    "from": 0.25,
+    "to": 0.3,
+    "delta": 1.678
+   },
+   {
+    "key": "sota",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 1.307
+   },
+   {
+    "key": "stability",
+    "from": 0.65,
+    "to": 0.7,
+    "delta": 1.077
+   },
+   {
+    "key": "delivery",
+    "from": 0.8,
+    "to": 0.85,
+    "delta": 0.566
+   }
+  ],
+  "DF": [
+   {
+    "key": "hwUse",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.788
+   },
+   {
+    "key": "orig",
+    "from": 0.55,
+    "to": 0.6,
+    "delta": 0.613
+   },
+   {
+    "key": "hwFit",
+    "from": 0.2,
+    "to": 0.25,
+    "delta": 0.532
+   },
+   {
+    "key": "sota",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.444
+   },
+   {
+    "key": "stability",
+    "from": 0.3,
+    "to": 0.35,
+    "delta": 0.352
+   },
+   {
+    "key": "delivery",
+    "from": 0.7,
+    "to": 0.75,
+    "delta": 0.191
    }
   ]
+ },
+ "plan": {
+  "personal": {
+   "P217": {
+    "rank": 1,
+    "of": 22,
+    "fit": 96.858,
+    "score": 95.712
+   },
+   "P221": {
+    "rank": 2,
+    "of": 22,
+    "fit": 90.544,
+    "score": 83.534
+   },
+   "P220": {
+    "rank": 3,
+    "of": 22,
+    "fit": 87.469,
+    "score": 80.24
+   },
+   "P213": {
+    "rank": 4,
+    "of": 22,
+    "fit": 86.534,
+    "score": 79.379
+   },
+   "P201": {
+    "rank": 5,
+    "of": 22,
+    "fit": 85.848,
+    "score": 78.778
+   },
+   "P222": {
+    "rank": 6,
+    "of": 22,
+    "fit": 78.422,
+    "score": 73.442
+   },
+   "P203": {
+    "rank": 7,
+    "of": 22,
+    "fit": 72.061,
+    "score": 69.87
+   },
+   "P215": {
+    "rank": 8,
+    "of": 22,
+    "fit": 57.004,
+    "score": 62.938
+   },
+   "P212": {
+    "rank": 9,
+    "of": 22,
+    "fit": 54.725,
+    "score": 61.975
+   },
+   "P204": {
+    "rank": 10,
+    "of": 22,
+    "fit": 53.198,
+    "score": 61.334
+   },
+   "P218": {
+    "rank": 11,
+    "of": 22,
+    "fit": 47.888,
+    "score": 59.12
+   },
+   "P216": {
+    "rank": 12,
+    "of": 22,
+    "fit": 42.273,
+    "score": 56.755
+   },
+   "P202": {
+    "rank": 13,
+    "of": 22,
+    "fit": 39.825,
+    "score": 55.7
+   },
+   "P207": {
+    "rank": 14,
+    "of": 22,
+    "fit": 39.046,
+    "score": 55.361
+   },
+   "P211": {
+    "rank": 15,
+    "of": 22,
+    "fit": 38.443,
+    "score": 55.096
+   },
+   "P205": {
+    "rank": 16,
+    "of": 22,
+    "fit": 38.16,
+    "score": 54.971
+   },
+   "P210": {
+    "rank": 17,
+    "of": 22,
+    "fit": 38.16,
+    "score": 54.971
+   },
+   "P208": {
+    "rank": 18,
+    "of": 22,
+    "fit": 37.617,
+    "score": 54.731
+   },
+   "P206": {
+    "rank": 19,
+    "of": 22,
+    "fit": 33.998,
+    "score": 53.09
+   },
+   "P219": {
+    "rank": 20,
+    "of": 22,
+    "fit": 32.962,
+    "score": 52.605
+   },
+   "P209": {
+    "rank": 21,
+    "of": 22,
+    "fit": 30.624,
+    "score": 51.482
+   },
+   "P214": {
+    "rank": 22,
+    "of": 22,
+    "fit": 27.391,
+    "score": 49.845
+   }
+  },
+  "team": {
+   "P101": {
+    "rank": 1,
+    "of": 7,
+    "fit": 77.409,
+    "score": 72.829
+   },
+   "P102": {
+    "rank": 2,
+    "of": 7,
+    "fit": 57.387,
+    "score": 63.101
+   },
+   "P107": {
+    "rank": 3,
+    "of": 7,
+    "fit": 44.971,
+    "score": 57.898
+   },
+   "P105": {
+    "rank": 4,
+    "of": 7,
+    "fit": 31.791,
+    "score": 52.048
+   },
+   "P104": {
+    "rank": 5,
+    "of": 7,
+    "fit": 20.248,
+    "score": 45.72
+   },
+   "P103": {
+    "rank": 6,
+    "of": 7,
+    "fit": 16.849,
+    "score": 43.371
+   },
+   "P106": {
+    "rank": 7,
+    "of": 7,
+    "fit": 12.87,
+    "score": 40.078
+   }
+  }
  },
  "people": [
   {
    "id": "최석철",
    "paperId": "VT",
+   "scores": {
+    "sota": 0.7,
+    "orig": 0.8,
+    "hwUse": 0.8,
+    "hwFit": 0.85,
+    "stability": 0.7,
+    "delivery": 0.85
+   },
    "papers": [
     "VT",
-    "GC"
+    "GC",
+    "MB"
    ]
   },
   {
    "id": "이건희",
-   "paperId": "HS",
+   "paperId": "MN",
+   "scores": {
+    "sota": 0.7,
+    "orig": 0.7,
+    "hwUse": 0.35,
+    "hwFit": 0.25,
+    "stability": 0.65,
+    "delivery": 0.8
+   },
    "papers": [
-    "HS"
+    "HS",
+    "UB",
+    "GS",
+    "MN"
    ]
   },
   {
    "id": "이시연",
    "paperId": "NM",
+   "scores": {
+    "sota": 0.45,
+    "orig": 0.65,
+    "hwUse": 0.25,
+    "hwFit": 0.15,
+    "stability": 0.6,
+    "delivery": 0.65
+   },
    "papers": [
     "NM",
     "NH"
@@ -6345,6 +6698,14 @@
   {
    "id": "이진욱",
    "paperId": "MM",
+   "scores": {
+    "sota": 0.6,
+    "orig": 0.7,
+    "hwUse": 0.25,
+    "hwFit": 0.2,
+    "stability": 0.6,
+    "delivery": 0.7
+   },
    "papers": [
     "MM",
     "PK"
@@ -6353,6 +6714,14 @@
   {
    "id": "강줄기",
    "paperId": "HB",
+   "scores": {
+    "sota": 0.3,
+    "orig": 0.4,
+    "hwUse": 0.15,
+    "hwFit": 0.1,
+    "stability": 0.4,
+    "delivery": 0.65
+   },
    "papers": [
     "HB",
     "AD",
@@ -6362,6 +6731,14 @@
   {
    "id": "서보윤",
    "paperId": "TE",
+   "scores": {
+    "sota": 0.65,
+    "orig": 0.7,
+    "hwUse": 0.25,
+    "hwFit": 0.2,
+    "stability": 0.7,
+    "delivery": 0.85
+   },
    "papers": [
     "TE",
     "TC"
@@ -6370,6 +6747,14 @@
   {
    "id": "강현섭",
    "paperId": "EG",
+   "scores": {
+    "sota": 0.6,
+    "orig": 0.65,
+    "hwUse": 0.3,
+    "hwFit": 0.25,
+    "stability": 0.65,
+    "delivery": 0.8
+   },
    "papers": [
     "LR",
     "EG"
@@ -6378,6 +6763,14 @@
   {
    "id": "전누리",
    "paperId": "JA",
+   "scores": {
+    "sota": 0.65,
+    "orig": 0.7,
+    "hwUse": 0.2,
+    "hwFit": 0.15,
+    "stability": 0.7,
+    "delivery": 0.75
+   },
    "papers": [
     "JI",
     "JA"
@@ -6386,6 +6779,14 @@
   {
    "id": "임철희",
    "paperId": "CD",
+   "scores": {
+    "sota": 0.65,
+    "orig": 0.6,
+    "hwUse": 0.15,
+    "hwFit": 0.1,
+    "stability": 0.7,
+    "delivery": 0.75
+   },
    "papers": [
     "CD",
     "HR",
@@ -6395,6 +6796,14 @@
   {
    "id": "김민균",
    "paperId": "PA",
+   "scores": {
+    "sota": 0.75,
+    "orig": 0.7,
+    "hwUse": 0.25,
+    "hwFit": 0.15,
+    "stability": 0.75,
+    "delivery": 0.85
+   },
    "papers": [
     "PA",
     "FS"
@@ -6403,6 +6812,14 @@
   {
    "id": "남하늘",
    "paperId": "CT",
+   "scores": {
+    "sota": 0.65,
+    "orig": 0.7,
+    "hwUse": 0.25,
+    "hwFit": 0.2,
+    "stability": 0.7,
+    "delivery": 0.8
+   },
    "papers": [
     "CT",
     "MT"
@@ -6410,14 +6827,31 @@
   },
   {
    "id": "김두환",
-   "paperId": "KD",
+   "paperId": "KE",
+   "scores": {
+    "sota": 0.55,
+    "orig": 0.55,
+    "hwUse": 0.25,
+    "hwFit": 0.15,
+    "stability": 0.6,
+    "delivery": 0.75
+   },
    "papers": [
-    "KD"
+    "KD",
+    "KE"
    ]
   },
   {
    "id": "백지훈",
    "paperId": "BE",
+   "scores": {
+    "sota": 0.45,
+    "orig": 0.35,
+    "hwUse": 0.15,
+    "hwFit": 0.1,
+    "stability": 0.45,
+    "delivery": 0.7
+   },
    "papers": [
     "BE",
     "BI"
@@ -6426,6 +6860,14 @@
   {
    "id": "라경주",
    "paperId": "RH",
+   "scores": {
+    "sota": 0.65,
+    "orig": 0.65,
+    "hwUse": 0.25,
+    "hwFit": 0.2,
+    "stability": 0.7,
+    "delivery": 0.85
+   },
    "papers": [
     "RJ",
     "RH"
@@ -6434,6 +6876,14 @@
   {
    "id": "김혜인",
    "paperId": "GM",
+   "scores": {
+    "sota": 0.7,
+    "orig": 0.6,
+    "hwUse": 0.25,
+    "hwFit": 0.15,
+    "stability": 0.7,
+    "delivery": 0.8
+   },
    "papers": [
     "GM",
     "CW"
@@ -6442,6 +6892,14 @@
   {
    "id": "김영수",
    "paperId": "ST",
+   "scores": {
+    "sota": 0.65,
+    "orig": 0.65,
+    "hwUse": 0.15,
+    "hwFit": 0.1,
+    "stability": 0.7,
+    "delivery": 0.8
+   },
    "papers": [
     "ST",
     "SI"
@@ -6450,6 +6908,14 @@
   {
    "id": "박규민",
    "paperId": "LT",
+   "scores": {
+    "sota": 0.7,
+    "orig": 0.6,
+    "hwUse": 0.25,
+    "hwFit": 0.15,
+    "stability": 0.7,
+    "delivery": 0.8
+   },
    "papers": [
     "LC",
     "LT"
@@ -6458,6 +6924,14 @@
   {
    "id": "이민우",
    "paperId": "RA",
+   "scores": {
+    "sota": 0.6,
+    "orig": 0.5,
+    "hwUse": 0.2,
+    "hwFit": 0.1,
+    "stability": 0.65,
+    "delivery": 0.7
+   },
    "papers": [
     "RA",
     "CR"
@@ -6466,9 +6940,33 @@
   {
    "id": "김정윤",
    "paperId": "JY",
+   "scores": {
+    "sota": 0.7,
+    "orig": 0.6,
+    "hwUse": 0.25,
+    "hwFit": 0.15,
+    "stability": 0.6,
+    "delivery": 0.8
+   },
    "papers": [
     "JY",
     "JT"
+   ]
+  },
+  {
+   "id": "강현재",
+   "paperId": "DZ",
+   "scores": {
+    "sota": 0.6,
+    "orig": 0.55,
+    "hwUse": 0.5,
+    "hwFit": 0.4,
+    "stability": 0.65,
+    "delivery": 0.75
+   },
+   "papers": [
+    "DZ",
+    "DF"
    ]
   }
  ]

@@ -2,8 +2,9 @@
 """빌드 전 정합성 점검. 오류가 있으면 종료 코드 1.
 
 - 드라이브 목록 ↔ 카탈로그(data/papers.json) 대응, NEW- 임시 ID 여부
-- v5: 순위 대상(핵심5 하위 폴더·removed 제외) 원고마다 평가(eval/<ID>.json)와 심사 기준 4항목(rubric) 필수 — 격자·평균·합계(total 은 기본 프리셋 가중치의 심사 점수)
-- 6개 변수(scores)는 v3 까지의 기록이라 있으면 범위만 본다. 리스크 level, projectMatch, projectId 존재
+- v6: 순위 대상(핵심5 하위 폴더·removed 제외) 원고마다 평가(eval/<ID>.json)와 6개 점수(scores) 0~1·0.05 격자·근거(rationale) 필수
+- 심사 기준 4항목(rubric, v5 기록)은 있으면 격자·평균·total(기본 프리셋 가중치의 심사 점수)을 본다(없으면 경고만)
+- 리스크 level, projectMatch, projectId 존재
 - 평가 당시 텍스트 해시(eval.textSha) == 현재 텍스트 해시(카탈로그 textSha)  → 다르면 재평가 필요
 - results.json·lint.json 이 평가된 원고 전부를 담고 있고 평가보다 최신인지
 """
@@ -40,17 +41,23 @@ def main():
         if p["id"].startswith("NEW-"):
             errors.append(f"{p['id']}: 임시 ID — 2글자 ID·저자·과제 매핑을 채워야 함")
     n_ex = sum(1 for p in allp if p.get("folderSub") in excluded_subs())
+    rdef = load_json(os.path.join(DATA, "rubric.json"))
+    crit_def = {c["key"]: [x["key"] for x in c["sub"]] for c in rdef["criteria"]}
+    rw = rdef["presets"][rdef["default"]]["weights"]
     for p in papers:
         pid = p["id"]
         if not p.get("evaluated"):
             errors.append(f"{pid}: eval/{pid}.json 없음(미평가)")
             continue
-        sc = p.get("scores")
-        if sc:  # v3 까지의 6개 변수 기록 — 있으면 범위만 본다(v4 순위에는 쓰지 않음)
-            for k in keys:
-                v = sc.get(k)
-                if v is not None and not (0 <= v <= 1):
-                    errors.append(f"{pid}: 점수 {k}={v} 범위 밖")
+        sc = p.get("scores") or {}
+        for k in keys:
+            v = sc.get(k)
+            if v is None or not (0 <= v <= 1):
+                errors.append(f"{pid}: 점수 {k}={v} 범위 밖")
+            elif abs(v * 20 - round(v * 20)) > 1e-6:
+                warns.append(f"{pid}: 점수 {k}={v} 가 0.05 격자가 아님")
+            if not (p.get("rationale") or {}).get(k):
+                errors.append(f"{pid}: {k} 근거(rationale) 없음")
         for f in p.get("flags") or []:
             if f.get("level") not in ("high", "mid"):
                 errors.append(f"{pid}: flag level '{f.get('level')}' (high|mid)")
@@ -64,10 +71,9 @@ def main():
             errors.append(f"{pid}: authors 비어 있음")
         rub = p.get("rubric")
         if not rub:
-            errors.append(f"{pid}: 심사 기준 4항목(rubric) 없음 — v5 순위에 필요")
+            warns.append(f"{pid}: 심사 기준 4항목(rubric, v5 기록) 없음 — 참고 열이 비게 됨")
         else:
-            crit_def = {c["key"]: [x["key"] for x in c["sub"]] for c in load_json(os.path.join(DATA, "rubric.json"))["criteria"]}
-            tot = []
+            tot = {}
             for ck, subs in crit_def.items():
                 c = rub.get(ck)
                 if not isinstance(c, dict) or not isinstance(c.get("sub"), dict):
@@ -83,20 +89,16 @@ def main():
                 mean = sum(vals) / len(vals)
                 if abs((c.get("score") or 0) - mean) > 0.011:
                     errors.append(f"{pid}: rubric.{ck}.score {c.get('score')} ≠ 세부 평균 {mean:.2f}")
-                if not c.get("why"):
-                    errors.append(f"{pid}: rubric.{ck}.why 없음")
-                tot.append(mean)
-            # v5: total = 기본 프리셋(data/rubric.json default) 가중치로 계산한 심사 점수 — 사이트의 기본 점수와 같다.
-            rdef = load_json(os.path.join(DATA, "rubric.json"))
-            w = rdef["presets"][rdef["default"]]["weights"]
-            means = dict(zip(crit_def.keys(), tot))
-            want = 100 * sum((w.get(k) or 0) * means.get(k, 0) for k in crit_def)
+                tot[ck] = mean
+            want = 100 * sum((rw.get(k) or 0) * tot.get(k, 0) for k in crit_def)
             if tot and abs((rub.get("total") or 0) - want) > 0.11:
                 errors.append(f"{pid}: rubric.total {rub.get('total')} ≠ 기본 가중치 심사 점수 {want:.1f}")
     evaluated = {p["id"] for p in papers if p.get("evaluated")}
     rp = os.path.join(DATA, "results.json")
     if os.path.exists(rp):
         res = load_json(rp)
+        if res.get("method") == "rubric":
+            errors.append("results.json 이 v5(rubric) 형식 — make score 로 v6(6개 변수) 결과를 다시 만든다")
         missing = evaluated - set(res["papers"])
         if missing:
             errors.append("results.json 에 없는 원고(make score): " + ", ".join(sorted(missing)))
