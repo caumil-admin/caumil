@@ -92,7 +92,7 @@
    "modifiedTime": "2026-10-23T02:01:51.253Z",
    "fileSize": "717905"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "657141adaa25fb6d"
  },
  {
@@ -198,7 +198,7 @@
    "modifiedTime": "2026-10-19T06:39:59.127Z",
    "fileSize": "296591"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "272c2b81da686a75"
  },
  {
@@ -220,7 +220,7 @@
    "modifiedTime": "2026-10-19T06:36:41.588Z",
    "fileSize": "233271"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "f6eaf555d961bc5a"
  },
  {
@@ -400,7 +400,7 @@
    "modifiedTime": "2026-10-01T08:56:25.184Z",
    "fileSize": "555400"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "d955c11746b8e974",
   "note": "9/29 PDF 가 삭제됐다가 10/16 에 개정판([이건희] 개인저널2.pdf, 같은 연구의 확장)이 다시 올라옴 — 같은 ID 로 잇는다."
  },
@@ -1106,7 +1106,7 @@
    "modifiedTime": "2026-10-18T13:38:45.641Z",
    "fileSize": "661504"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "2da0735a490d4b0b",
   "note": "10/16 에는 전자공학회 폴더에 올라온 정보기술학회 원고였고 10/18 에 정보기술학회 폴더로 옮겨 재업로드(같은 제목). 전자공학회 원고는 10/21 별도 제출."
  },
@@ -1384,7 +1384,7 @@
    "modifiedTime": "2026-10-19T06:33:08.282Z",
    "fileSize": "613376"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "779fa7844a48d7d0"
  },
  {
@@ -1447,7 +1447,7 @@
    "modifiedTime": "2026-10-19T06:46:49.262Z",
    "fileSize": "133120"
   },
-  "status": "updated",
+  "status": "unchanged",
   "textSha": "942d566663de34ea"
  },
  {
@@ -1625,7 +1625,7 @@
  },
  {
   "id": "MB",
-  "driveKey": "ebbd4c52e91dd818",
+  "driveKey": "ba5c135f02baad72",
   "track": "personal",
   "authors": [
    "최석철"
@@ -1636,13 +1636,13 @@
   "venueName": "전자공학회 특별호",
   "folder": "전자공학회특별저널 개인논문",
   "file": {
-   "title": "최석철_악성코드 정적 분석의 바이트 표현과 정보 보존_주파수 변환·이미지화·비전 Transformer 및 설명 가능성 관점의 문헌고찰.pdf",
-   "createdTime": "2026-10-29T03:39:17.312Z",
-   "modifiedTime": "2026-10-29T03:39:17.428Z",
-   "fileSize": "699310"
+   "title": "최석철_악성코드 정적 분석의 바이트열 변환 방식과 정보 보존_주파수 변환·이미지화 및 설명 가능성 관점의 문헌고찰.pdf",
+   "createdTime": "2026-10-30T11:30:29.641Z",
+   "modifiedTime": "2026-10-30T11:29:39.459Z",
+   "fileSize": "660957"
   },
-  "status": "new",
-  "textSha": "f6d2ce8fccaa1860",
+  "status": "updated",
+  "textSha": "a522ceebf266d2f2",
   "note": "2026-10-29 제출. 악성코드 정적 분석 바이트 표현 문헌고찰(실험 없음). 커넥터 텍스트에는 부록 표 A1~A3 가 없음."
  },
  {
@@ -1663,7 +1663,7 @@
    "modifiedTime": "2026-10-21T05:39:39.654Z",
    "fileSize": "3931648"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "f5cc1cba95c0b62d",
   "note": "10/21 제출 전자공학회 원고(계획서 P203 과 같은 과제). 정보기술학회판은 KD."
  },
@@ -1685,7 +1685,7 @@
    "modifiedTime": "2026-10-16T14:10:39.105Z",
    "fileSize": "767837"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "7cbf944d078b096e",
   "note": "[이건희] 개인저널4.pdf — 심사용 익명본(총성 탐지기 실측 일반화)."
  },
@@ -1708,7 +1708,7 @@
    "modifiedTime": "2026-10-16T02:07:04.664Z",
    "fileSize": "956928"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "c14cd3d5921e7c7a",
   "note": "10/18 제출(파일 수정 10/16). 발표자료 DZ 의 기준 원고. v5 평가는 10/28 eval_external 로 먼저 했고 10/29 카탈로그에 편입."
  },
@@ -1730,7 +1730,7 @@
    "modifiedTime": "2026-10-13T10:27:10.129Z",
    "fileSize": "1004905"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "3208111f140ea81a",
   "note": "[이건희] 개인저널3.pdf — 심사용 익명본(항공기 탑재장비 자기교란원 식별)."
  },
@@ -1753,7 +1753,7 @@
    "modifiedTime": "2026-10-16T01:08:25.191Z",
    "fileSize": "5640704"
   },
-  "status": "new",
+  "status": "unchanged",
   "textSha": "00b7f55a4b5346b3",
   "note": "정보기술학회판 설계 논문(결과 없음). 전자공학회판 DZ 가 실행 결과."
  }
